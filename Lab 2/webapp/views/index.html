@@ -1,0 +1,91 @@
+<html>
+<body>     
+	<div>Hello world</div>
+</body>
+<p1>
+	<input type="image" src = "http://www.clker.com/cliparts/K/K/o/K/N/d/blue-button-hi.png" id=b1 width="400" height="100"onclick="myFunction(id)">
+	</input>
+	<input type="image" src = "http://www.clker.com/cliparts/K/K/o/K/N/d/blue-button-hi.png" id=b2 width="400" height="100"onclick="myFunction(id)">
+	</input>
+</p1>
+<!--p2>
+	<input type="image" src = "http://www.clker.com/cliparts/K/K/o/K/N/d/blue-button-hi.png" id=b3 width="400" height="100"onclick="myFunction(id)">
+	</input>
+	<input type="image" src = "http://www.clker.com/cliparts/K/K/o/K/N/d/blue-button-hi.png" id=b4 width="400" height="100"onclick="myFunction(id)">
+	</input>
+</p2>
+</!-->
+<script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+<script>
+var red = "http://www.clker.com/cliparts/a/9/0/0/1194984762373696923pill-button-red_benji_pa_01.svg.med.png";
+var blue = "http://www.clker.com/cliparts/K/K/o/K/N/d/blue-button-hi.png";
+
+$(function(){
+
+	function jpost(data){
+		$.ajax({
+			type: 'POST',
+			data: JSON.stringify(data),
+	        contentType: 'application/json',
+	        url: '/blink',						
+	        success: function(data) {
+	            console.log('success');
+	            console.log(JSON.stringify(data));
+	        }
+	    });
+	}
+	f = jpost;
+});
+
+function myFunction(btnID) {
+	var data = {};
+	var bin = "";
+	if(document.getElementById(btnID).src == blue){
+	    document.getElementById(btnID).src = red;
+	}
+	else
+		document.getElementById(btnID).src = blue;
+	for(var i = 1; i <= 2; i++){
+		var id = 'b' + i.toString();
+		if(document.getElementById(id).src == red){
+			bin += "f";
+	    	/*var client = new HttpClient();
+			client.post('/blink', 'blk=f', function(response) {
+			    console.log('dont blink');
+			});*/
+		}
+		else{
+			bin += "t";
+	    	/*var client = new HttpClient();
+			client.post('/blink', 'blk=t', function(response) {
+			    console.log('do blink');
+			});*/
+		}
+	}
+	data.blk = bin;
+	f(data);
+}
+
+/*var HttpClient = function() {
+    this.get = function(aUrl, aCallback) {
+        var anHttpRequest = new XMLHttpRequest();
+        anHttpRequest.onreadystatechange = function() { 
+            if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
+                aCallback(anHttpRequest.responseText);
+        }
+        anHttpRequest.open( "GET", aUrl, true );            
+        anHttpRequest.send( null );
+    }
+    this.post = function(aUrl, data, aCallback) {
+        var anHttpRequest = new XMLHttpRequest();
+        anHttpRequest.onreadystatechange = function() { 
+            if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
+                aCallback(anHttpRequest.responseText);
+        }
+        anHttpRequest.open( "POST", aUrl, true );            
+        anHttpRequest.send( data );
+    }
+}*/
+
+</script>
+</html>
