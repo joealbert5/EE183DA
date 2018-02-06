@@ -86,23 +86,13 @@ else
   octave2 = 0;
 }
 */
-if (button3 == 1)
-{
-  octave1 = f;
-  octave2 = as;
-}
-else
-{
-  octave1 = c;
-  octave2 = g;
-}
 
-if(v > 0.5 && v < 1.5)
+if(v < 0.5)
 {
   if(x == 0)
   {
-  tone(PIN,octave1);
-  x = 1;
+    tone(PIN,f);
+    x = 1;
   }
 }
 else if (x == 1)
@@ -111,18 +101,18 @@ else if (x == 1)
   x = 0;
 }
 
-if(v >= 1.5)
+if(v >= 0.5)
 {
-  if(y == 0)
+  if(x == 0)
   {
-  tone(PIN,octave2);
-  y = 1;
+  tone(PIN,c);
+  x = 2;
   }
 }
-else if (y == 1)
+else if (x == 2)
 {
   noTone(PIN);
-  y = 0;
+  x = 0;
 }
 
 
