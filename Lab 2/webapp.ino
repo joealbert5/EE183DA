@@ -1,15 +1,21 @@
 #include <ESP8266WiFi.h>
+#include <Servo.h>
 //const char* ssid = "Verizon-SM-N930V-1D89";
 //const char* password = "akju819!";
 //const char* host = "192.168.43.215";  // IP serveur - Server IP
-const char* ssid = "MySpectrumWiFi40-2G";
-const char* password = "greensquirrel477";
-const char* host = "192.168.1.11";  // IP serveur - Server IP
+//const char* ssid = "MySpectrumWiFi40-2G";
+//const char* password = "greensquirrel477";
+//const char* host = "192.168.1.11";  // IP serveur - Server IP
+const char* ssid = "House TARGAYREN";
+const char* password = "khaldrogosdick69";
+const char* host = "192.168.1.9";  // IP serveur - Server IP
 const int   port = 3000;            // Port serveur - Server Port
 const int   watchdog = 10;        // Fréquence du watchdog - Watchdog frequency
 unsigned long previousMillis = millis(); 
 const short int ledPin = D2;
-const short int ledPin2 = 16;
+const short int ledpin2 = D0;
+const short int motorpin = D1;
+Servo Servo1;
 
 void blink(){
   for(int i = 0; i < 5; i++){
@@ -23,26 +29,27 @@ void blink(){
 void decoder(String bin){
   if(bin == "ff"){
     digitalWrite(ledPin, LOW);
-    digitalWrite(ledPin2, HIGH);
+    digitalWrite(ledpin2, LOW);
   }
   else if(bin == "ft"){
     digitalWrite(ledPin, LOW);
-    digitalWrite(ledPin2, LOW);
+    digitalWrite(ledpin2, HIGH);
   }
   else if(bin == "tf"){
     digitalWrite(ledPin, HIGH);
-    digitalWrite(ledPin2, HIGH);
+    digitalWrite(ledpin2, LOW);
   }
   else if(bin == "tt"){
     digitalWrite(ledPin, HIGH);
-    digitalWrite(ledPin2, LOW);
+    digitalWrite(ledpin2, HIGH);
   }
 }
 
 void setup() {
   Serial.begin(115200);
   pinMode(ledPin, OUTPUT);
-  pinMode(ledPin2, OUTPUT);
+  pinMode(ledpin2, OUTPUT);
+  Servo1.attach(motorpin);
   Serial.print("Connecting to ");
   Serial.println(ssid);
   
@@ -66,6 +73,10 @@ void loop() {
       Serial.println("connection failed");
       return;
     }
+    //Servo1.write(0);
+    //delay(500);
+    //Servo1.write(90);
+    //delay(200);
  
     String url = "/blink";
     //This will send the request to the server
@@ -91,10 +102,7 @@ void loop() {
     Serial.println();
     String catLine = "";
     for(int i = 1; i < line.length(); i++){
-      if(line[i] != '@')
-        catLine += line[i];
-      else
-        break;
+      catLine += line[i];
     }
     //Serial.print("printing catLine: ");
     //Serial.println(catLine);
