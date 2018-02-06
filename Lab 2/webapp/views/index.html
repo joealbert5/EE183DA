@@ -1,13 +1,18 @@
 <html>
-<body>     
-	<div>Hello world</div>
-</body>
 <p1>
-	<input type="image" src = "http://www.clker.com/cliparts/K/K/o/K/N/d/blue-button-hi.png" id=b1 width="400" height="100"onclick="myFunction(id)">
+	<input type="image" src = "https://media.wwbw.com/is/image/MMGS7/5J-Series-4-Valve-4-4-BBb-Tuba-Only/468315000000000-00-500x500.jpg" id=b1 width="400" height="400"onclick="myFunction(id)" value="tuba">
 	</input>
-	<input type="image" src = "http://www.clker.com/cliparts/K/K/o/K/N/d/blue-button-hi.png" id=b2 width="400" height="100"onclick="myFunction(id)">
+	<input type="image" src = "http://www.clker.com/cliparts/K/K/o/K/N/d/blue-button-hi.png" id=b2 width="400" height="100"onclick="myFunction(id)" value="blue">
 	</input>
 </p1>
+<p2>
+	<table style="width:800">
+  <tr>
+    <th id=l1>label 1</th>
+    <th id=l2>label 2</th> 
+  </tr>
+</table>
+</p2>
 <!--p2>
 	<input type="image" src = "http://www.clker.com/cliparts/K/K/o/K/N/d/blue-button-hi.png" id=b3 width="400" height="100"onclick="myFunction(id)">
 	</input>
@@ -19,8 +24,24 @@
 <script>
 var red = "http://www.clker.com/cliparts/a/9/0/0/1194984762373696923pill-button-red_benji_pa_01.svg.med.png";
 var blue = "http://www.clker.com/cliparts/K/K/o/K/N/d/blue-button-hi.png";
+var tuba = "https://media.wwbw.com/is/image/MMGS7/5J-Series-4-Valve-4-4-BBb-Tuba-Only/468315000000000-00-500x500.jpg";
+var trumpet = "https://i.ytimg.com/vi/2l0rRHXtlUw/hqdefault.jpg";
+
+function loadLabels(){
+	var b1 = document.getElementById("b1");
+	var b2 = document.getElementById("b2");
+	if (b1.value == "tuba")
+		document.getElementById("l1").innerHTML = "Tuba";
+	else if (b1.value == "trumpet")
+		document.getElementById("l1").innerHTML = "Trumpet";
+	if (b2.value == "blue")
+		document.getElementById("l2").innerHTML = "blue";
+	else
+		document.getElementById("l2").innerHTML = "red";
+}
 
 $(function(){
+	loadLabels();
 
 	function jpost(data){
 		$.ajax({
@@ -40,52 +61,39 @@ $(function(){
 function myFunction(btnID) {
 	var data = {};
 	var bin = "";
-	if(document.getElementById(btnID).src == blue){
-	    document.getElementById(btnID).src = red;
+	if(document.getElementById(btnID).id == "b1"){
+		if(document.getElementById(btnID).value == "tuba"){
+		    document.getElementById(btnID).src = trumpet;
+		    document.getElementById(btnID).value = "trumpet";
+		}
+		else{
+			document.getElementById(btnID).src = tuba;
+			document.getElementById(btnID).value = "tuba";
+		}
 	}
-	else
-		document.getElementById(btnID).src = blue;
+	else if(document.getElementById(btnID).id == "b2"){
+		if(document.getElementById(btnID).value == "blue"){
+		    document.getElementById(btnID).src = red;
+		    document.getElementById(btnID).value = "red";
+		}
+		else{
+			document.getElementById(btnID).src = blue;
+			document.getElementById(btnID).value = "blue";
+		}
+	}
 	for(var i = 1; i <= 2; i++){
 		var id = 'b' + i.toString();
-		if(document.getElementById(id).src == red){
+		if(document.getElementById(id).src == red || document.getElementById(id).src == trumpet){
 			bin += "f";
-	    	/*var client = new HttpClient();
-			client.post('/blink', 'blk=f', function(response) {
-			    console.log('dont blink');
-			});*/
 		}
 		else{
 			bin += "t";
-	    	/*var client = new HttpClient();
-			client.post('/blink', 'blk=t', function(response) {
-			    console.log('do blink');
-			});*/
 		}
 	}
+	loadLabels();
 	data.blk = bin;
 	f(data);
 }
-
-/*var HttpClient = function() {
-    this.get = function(aUrl, aCallback) {
-        var anHttpRequest = new XMLHttpRequest();
-        anHttpRequest.onreadystatechange = function() { 
-            if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
-                aCallback(anHttpRequest.responseText);
-        }
-        anHttpRequest.open( "GET", aUrl, true );            
-        anHttpRequest.send( null );
-    }
-    this.post = function(aUrl, data, aCallback) {
-        var anHttpRequest = new XMLHttpRequest();
-        anHttpRequest.onreadystatechange = function() { 
-            if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
-                aCallback(anHttpRequest.responseText);
-        }
-        anHttpRequest.open( "POST", aUrl, true );            
-        anHttpRequest.send( data );
-    }
-}*/
 
 </script>
 </html>
