@@ -32,7 +32,7 @@ int prevState = 0;
 
 void brassMode(int x)
 {
-  if (x == 0)
+  if (x == 0) // tuba mode (low notes, low frequencies)
   {
     c = 131;
     cs = 139;
@@ -48,7 +48,7 @@ void brassMode(int x)
     b = 247;
     cc = 262;
   }
-  if (x == 1)
+  if (x == 1) // trumpet mode (high notes, high frequencies)
   {
     c = 523;
     cs = 554;
@@ -67,7 +67,7 @@ void brassMode(int x)
 }
 
 bool buttonChange()
-{
+{ // determines if the button fingering has changed (a note change)
   if (buttonState == prevState)
     return false;
   else
@@ -75,8 +75,7 @@ bool buttonChange()
 }
 
 int buttonDecode(int three, int two, int one)
-{
-
+{ // decodes what note is being played based on the button fingering
   if (three == 0 && two == 1 && one == 0)
   {
     octave1 = fs;
@@ -147,10 +146,12 @@ void loop() {
   button3 = digitalRead(b3);
   double v = val * 0.0049;
   Serial.println(v);
-
+  
+  // makes sure the speaker changes notes when button presses change
   prevState = buttonState;
   buttonState = buttonDecode(button3, button2, button1);
-
+  
+  // determines the embouchure of the trumpet (based on analog readings from phototransistor)
   if (v < 0.5 && v >= 0.1)
   {
     if (x == 0)
