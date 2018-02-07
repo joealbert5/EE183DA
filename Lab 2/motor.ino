@@ -16,7 +16,7 @@ void loop() {
    delay(1000);
   }
 }
-
+//different tempos will be same code with different delays
 
 // this is what i did to get the motor to stop after a set # of iterations 
 /*
