@@ -3,7 +3,7 @@ const short int b1 = D3;
 const short int b2 = D2;
 const short int b3 = D0;
 
-int c = 65;
+int c = 523;
 int cs = 554;
 int d = 587;
 int ds = 622;
@@ -17,7 +17,31 @@ int as = 932;
 int b = 988;
 int cc = 1046;
 
-int song[23] = {g, a, g, f, e, f, g, d, e, f, e, f, g, g, a, f, e, f, g, d, g, e, c};
+int song[192] = {b, b, b, b, b, c, 0, d,
+                 0, 0, 0, g, b, c, 0, b,
+                 0, g, 0, 0, 0, 0, 0, 0,
+                 0, 0, 0, 0, 0, 0, 0, 0,
+                 b, b, b, b, b, c, 0, d,
+                 0, 0, 0, g, b, c, 0, b,
+                 0, g, 0, 0, 0, 0, 0, 0,
+                 0, 0, 0, 0, 0, 0, 0, 0,
+                 f, f, f, f, f, 0, 0, 0,
+                 f, f, f, f, f, 0, 0, 0,
+                 f, g, g, g, g, g, g, g,
+                 0, 0, 0, 0, 0, 0, 0, 0,
+                 b, b, b, b, b, c, 0, d,
+                 0, 0, 0, g, b, c, 0, b,
+                 0, g, 0, 0, 0, 0, 0, 0,
+                 0, 0, 0, 0, 0, 0, 0, 0,
+                 b, b, b, b, b, c, 0, d,
+                 0, 0, 0, g, b, c, 0, b,
+                 0, g, 0, 0, 0, 0, 0, 0,
+                 0, 0, 0, 0, 0, 0, 0, 0,
+                 f, f, f, f, f, 0, 0, 0,
+                 f, f, f, f, f, 0, 0, 0,
+                 f, g, g, g, g, g, g, g,
+                 0, 0, 0, 0, 0, 0, 0, 0
+                };
 int val = 0;
 int x = 0;
 int y = 0;
@@ -27,12 +51,14 @@ int octave3 = 0;
 int button1 = 0;
 int button2 = 0;
 int button3 = 0;
+int brassState = 0;
 int buttonState = 0;
 int prevState = 0;
+int start = 0;
 
 void brassMode(int x)
 {
-  if (x == 0) // tuba mode (low notes, low frequencies)
+  if (x == 1)
   {
     c = 131;
     cs = 139;
@@ -48,7 +74,7 @@ void brassMode(int x)
     b = 247;
     cc = 262;
   }
-  if (x == 1) // trumpet mode (high notes, high frequencies)
+  if (x == 0)
   {
     c = 523;
     cs = 554;
@@ -67,7 +93,7 @@ void brassMode(int x)
 }
 
 bool buttonChange()
-{ // determines if the button fingering has changed (a note change)
+{
   if (buttonState == prevState)
     return false;
   else
@@ -75,7 +101,8 @@ bool buttonChange()
 }
 
 int buttonDecode(int three, int two, int one)
-{ // decodes what note is being played based on the button fingering
+{
+
   if (three == 0 && two == 1 && one == 0)
   {
     octave1 = fs;
@@ -136,7 +163,8 @@ void setup() {
   pinMode(b2, INPUT);
   pinMode(b3, INPUT);
   pinMode(A0, INPUT);
-  brassMode(0);
+  pinMode(D4, INPUT);
+  pinMode(D5, INPUT);
 }
 
 void loop() {
@@ -144,68 +172,74 @@ void loop() {
   button1 = digitalRead(b1);
   button2 = digitalRead(b2);
   button3 = digitalRead(b3);
+  brassState = digitalRead(D4);
   double v = val * 0.0049;
-  Serial.println(v);
-  
-  // makes sure the speaker changes notes when button presses change
-  prevState = buttonState;
-  buttonState = buttonDecode(button3, button2, button1);
-  
-  // determines the embouchure of the trumpet (based on analog readings from phototransistor)
-  if (v < 0.5 && v >= 0.1)
+
+  start = digitalRead(D5);
+
+  if (start == 0) // user control mode
   {
-    if (x == 0)
+    brassMode(brassState);
+
+    prevState = buttonState;
+    buttonState = buttonDecode(button3, button2, button1);
+
+    if (v < 0.5 && v >= 0.1)
     {
-      tone(PIN, octave1);
-      x = 1;
+      if (x == 0)
+      {
+        tone(PIN, octave1);
+        x = 1;
+      }
+    }
+    else if (x == 1 || buttonChange())
+    {
+      noTone(PIN);
+      x = 0;
+    }
+
+    if (v >= 0.5 && v < 0.9)
+    {
+      if (x == 0)
+      {
+        tone(PIN, octave2);
+        x = 2;
+      }
+    }
+    else if (x == 2 || buttonChange())
+    {
+      noTone(PIN);
+      x = 0;
+    }
+
+    if (v >= 0.9)
+    {
+      if (x == 0)
+      {
+        tone(PIN, octave3);
+        x = 3;
+      }
+    }
+    else if (x == 3 || buttonChange())
+    {
+      noTone(PIN);
+      x = 0;
     }
   }
-  else if (x == 1 || buttonChange())
-  {
-    noTone(PIN);
-    x = 0;
-  }
-
-  if (v >= 0.5 && v < 1)
-  {
-    if (x == 0)
-    {
-      tone(PIN, octave2);
-      x = 2;
-    }
-  }
-  else if (x == 2 || buttonChange())
-  {
-    noTone(PIN);
-    x = 0;
-  }
-
-  if (v >= 1)
-  {
-    if (x == 0)
-    {
-      tone(PIN, octave3);
-      x = 3;
-    }
-  }
-  else if (x == 3 || buttonChange())
-  {
-    noTone(PIN);
-    x = 0;
-  }
 
 
-
-  /*
+  if (start == 1) // song mode
+  {
+    int tempo = 114;
     // play preprogrammed song array
     int i;
-    for(i = 0;i < sizeof(song);i++)
+    for (i = 0; i < sizeof(song); i++)
     {
-    tone(PIN,song[i]);
-    delay(100);
-    noTone(PIN);
-    delay(100);
+      tone(PIN, song[i]);
+      delay(tempo);
+      noTone(PIN);
+      delay(tempo);
     }
-  */
+  }
 
 }
