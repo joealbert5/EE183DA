@@ -1,3 +1,5 @@
+//Various dependencies for node
+//npm install all of these if running for first time
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -6,9 +8,8 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var path = require('path');
 
+//routers for different web pages
 var index = require('./routes/index');
-var users = require('./routes/users');
-var wiki = require('./routes/wiki');
 var blink = require('./routes/blink');
 
 var app = express();
@@ -30,9 +31,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+//enabling the routers
 app.use('/', index);
-app.use('/users', users);
-app.use('/wiki', wiki);
 app.use('/blink', blink);
 
 // catch 404 and forward to error handler
@@ -52,25 +52,5 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-
-/*
-var SerialPort = require("serialport").SerialPort;
-var serialport = new SerialPort("COM4");
-serialport.on('open', function(){
-  console.log('Serial Port Opened');
-  serialport.on('data', function(data){
-      console.log(data);
-  });
-});*/
-/*
-var five = require("johnny-five");
-var board = new five.Board();
- 
-board.on("ready", function() {
-  // Create an Led on pin 13
-  var led = new five.Led(2);
-  // Blink every half second
-  led.blink(500);
-});*/
 
 module.exports = app;
