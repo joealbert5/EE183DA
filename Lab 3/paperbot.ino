@@ -47,6 +47,7 @@
 #include "file.h"
 #include "server.h"
 #include "lasermag.h"
+#include "kalman.h"
 
 
 const int SERVO_LEFT = D1;
@@ -56,6 +57,12 @@ Servo servo_right;
 int servo_left_ctr = 90;
 int servo_right_ctr = 90;
 
+Kalman Sx(0.125,32,102,0);
+uint16_t offsetX = 20;
+Kalman Sy(0.125,32,102,0);
+uint16_t offsetY = 0;
+Kalman St(0.125,32,102,0);
+uint16_t offsetT = 20;
 
 // WiFi AP parameters
 char ap_ssid[13];
@@ -149,8 +156,13 @@ void right() {
 void sendCoords(uint8_t id){
   char buff [50];
   uint16_t* p = scanXY();
+  uint16_t sensX = *(p + 1);
+  uint16_t sensY = *(p + 2);
   printArr(p, *p);
-  sprintf (buff, "x: %d y: %d", *(p+1), *(p+2));
+  uint16_t filX = Sx.getFilteredValue(sensX) + offsetX;
+  uint16_t filY = Sy.getFilteredValue(sensY) + offsetY;
+  sprintf (buff, "x: %d y: %d", filX, filY);
+  
   Serial.println(buff);
   wsSend(id, buff);
 }

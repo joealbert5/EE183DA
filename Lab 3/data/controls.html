@@ -66,7 +66,11 @@
 
       var btns = document.getElementsByName("bt");
       for (var i = 0; i < btns.length; i++) {
-          btns[i].ontouchstart = function(e) {btnSend(this.value); e.stopPropagation(); e.preventDefault();};
+          btns[i].ontouchstart = function(e) {
+            btnSend(this.value); 
+            e.stopPropagation(); 
+            e.preventDefault();
+          };
           btns[i].onmousedown = function(e) {btnSend(this.value); e.stopPropagation(); e.preventDefault();};
           btns[i].ontouchend = function() {btnRelease(); e.stopPropagation(); e.preventDefault();}
           btns[i].onmouseup = function() {btnRelease(); e.stopPropagation(); e.preventDefault();}
