@@ -24,8 +24,8 @@
 #define    ACC_FULL_SCALE_8_G        0x10
 #define    ACC_FULL_SCALE_16_G       0x18
 
-#define SDA_PORT 14
-#define SCL_PORT 12
+#define SDA_PORT D5
+#define SCL_PORT D6
 //#define HIGH_ACCURACY
 #define HIGH_SPEED
 //#define LONG_RANGE
@@ -45,7 +45,7 @@ uint16_t* scanXY(){
   return ret;
 }
 
-void printMag(){
+float* printMag(){
     // :::  Magnetometer ::: 
 
   // Request first magnetometer single measurement
@@ -97,6 +97,8 @@ void printMag(){
   Serial.print(" Radians   \t");
   Serial.print(headingDegrees);
   Serial.println(" Degrees   \t");
+  float ret[3] = {3, heading, headingDegrees};
+  return ret;
 }
 
 void printArr(uint16_t arr[], int len){

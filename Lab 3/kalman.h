@@ -8,14 +8,14 @@
 class Kalman {
   private:
     /* Kalman filter variables */
-    uint16_t q; //process noise covariance
-    uint16_t r; //measurement noise covariance
-    uint16_t x; //value
-    uint16_t p; //estimation error covariance
-    uint16_t k; //kalman gain
+    double q; //process noise covariance
+    double r; //measurement noise covariance
+    double x; //value
+    double p; //estimation error covariance
+    double k; //kalman gain
     
   public:
-    Kalman(uint16_t process_noise, uint16_t sensor_noise, uint16_t estimated_error, uint16_t intial_value) {
+    Kalman(double process_noise, double sensor_noise, double estimated_error, double intial_value) {
       /* The variables are x for the filtered value, q for the process noise, 
          r for the sensor noise, p for the estimated error and k for the Kalman Gain. 
          The state of the filter is defined by the values of these variables.
@@ -40,7 +40,7 @@ class Kalman {
         this->x = intial_value; //x will hold the iterated filtered value
     }
     
-    uint16_t getFilteredValue(uint16_t measurement) {
+    double getFilteredValue(double measurement) {
       /* Updates and gets the current measurement value */
       //prediction update
       //predicted error covariance = previous + process noise
@@ -56,29 +56,27 @@ class Kalman {
       
       return this->x;
     }
-
     
-    
-    void setParameters(uint16_t process_noise, uint16_t sensor_noise, uint16_t estimated_error) {
+    void setParameters(double process_noise, double sensor_noise, double estimated_error) {
         this->q = process_noise;
         this->r = sensor_noise;
         this->p = estimated_error;
     }
 
-    void setParameters(uint16_t process_noise, uint16_t sensor_noise) {
+    void setParameters(double process_noise, double sensor_noise) {
         this->q = process_noise;
         this->r = sensor_noise;
     }
     
-    uint16_t getProcessNoise() {
+    double getProcessNoise() {
       return this->q;
     }
     
-    uint16_t getSensorNoise() {
+    double getSensorNoise() {
       return this->r;
     }
     
-    uint16_t getEstimatedError() {
+    double getEstimatedError() {
       return this->p;
     }
 };
