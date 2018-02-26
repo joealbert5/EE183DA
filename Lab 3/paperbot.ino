@@ -57,12 +57,12 @@ Servo servo_right;
 int servo_left_ctr = 90;
 int servo_right_ctr = 90;
 
-Kalman Sx(0.125,32,102,0);
+Kalman Sx(0.125,6,1,10);
 uint16_t offsetX = 20;
-Kalman Sy(0.125,32,102,0);
+Kalman Sy(0.125,6,1,10);
 uint16_t offsetY = 0;
 Kalman St(0.125,32,102,0);
-uint16_t offsetT = 20;
+uint16_t offsetT = 0;
 
 // WiFi AP parameters
 char ap_ssid[13];
@@ -115,6 +115,7 @@ void setup() {
 void loop() {
     wsLoop();
     httpLoop();
+    sendCoords(0);
 }
 
 
@@ -153,17 +154,32 @@ void right() {
   drive(0, 0);
 }
 
+uint16_t convertX(uint16_t x){
+  return .0941*x - 3.4884;
+}
+
+uint16_t convertY(uint16_t x){
+  return -1*.0949*x + 27.95;
+}
+
 void sendCoords(uint8_t id){
   char buff [50];
   uint16_t* p = scanXY();
-  uint16_t sensX = *(p + 1);
-  uint16_t sensY = *(p + 2);
+  //float* theta = printMag();
+  double sensX = (double) *(p + 1);
+  double sensY = (double) *(p + 2);
+  //double sensT = (double) *(theta + 1);
   printArr(p, *p);
+  //printArr((uint16_t)theta, *theta);
   uint16_t filX = Sx.getFilteredValue(sensX) + offsetX;
   uint16_t filY = Sy.getFilteredValue(sensY) + offsetY;
+  //uint16_t filT = St.getFilteredValue(sensT) + offsetT;
+  //sprintf (buff, "x: %d y: %d theta: %d", filX, filY, filT);
+  filX = convertX(filX);
+  filY = convertY(filY);
   sprintf (buff, "x: %d y: %d", filX, filY);
   
-  Serial.println(buff);
+  //Serial.println(buff);
   wsSend(id, buff);
 }
 

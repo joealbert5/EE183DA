@@ -12,7 +12,7 @@
 
 uint16_t* scanXY();
 
-void printMag();
+float* printMag();
 
 void printArr(uint16_t arr[], int len);
 
