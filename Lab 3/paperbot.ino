@@ -61,8 +61,11 @@ Kalman Sx(0.125,6,1,10);
 uint16_t offsetX = 20;
 Kalman Sy(0.125,6,1,10);
 uint16_t offsetY = 0;
-Kalman St(0.125,32,102,0);
-uint16_t offsetT = 0;
+Kalman Mx(0.125,32,102,0);
+uint16_t offsetMx = 0;
+Kalman My(0.125,32,102,0);
+uint16_t offsetMy = 0;
+
 
 // WiFi AP parameters
 char ap_ssid[13];
@@ -168,12 +171,14 @@ void sendCoords(uint8_t id){
   //float* theta = printMag();
   double sensX = (double) *(p + 1);
   double sensY = (double) *(p + 2);
-  //double sensT = (double) *(theta + 1);
+  double sensMx = (double) *(theta + 1);
+  double sensMy = (double) *(theta + 2);
   printArr(p, *p);
   //printArr((uint16_t)theta, *theta);
   uint16_t filX = Sx.getFilteredValue(sensX) + offsetX;
   uint16_t filY = Sy.getFilteredValue(sensY) + offsetY;
-  //uint16_t filT = St.getFilteredValue(sensT) + offsetT;
+  //uint16_t filMx = St.getFilteredValue(sensMx) + offsetMx;
+  //uint16_t filMy = St.getFilteredValue(sensMy) + offsetMy;
   //sprintf (buff, "x: %d y: %d theta: %d", filX, filY, filT);
   filX = convertX(filX);
   filY = convertY(filY);
