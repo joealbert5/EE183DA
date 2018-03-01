@@ -67,10 +67,15 @@ float* printMag(){
   // Create 16 bits values from 8 bits data
   
   // Magnetometer
-  int16_t mx=(Mag[1]<<8 | Mag[0]);
-  int16_t my=(Mag[3]<<8 | Mag[2]);
-  int16_t mz=(Mag[5]<<8 | Mag[4]);
-
+  int mxbias = 43.5;
+  int mybias = 11.8;
+  int mzbias = -21.67;
+  
+  int16_t mx=(Mag[1]<<8 | Mag[0]) - mxbias;
+  int16_t my=(Mag[3]<<8 | Mag[2]) - mybias;
+  int16_t mz=(Mag[5]<<8 | Mag[4]) - mzbias;
+  
+  /*
   float heading = atan2(mx, my);
 
   // Once you have your heading, you must then add your 'Declination Angle',
@@ -78,7 +83,7 @@ float* printMag(){
   // Find yours here: http://www.magnetic-declination.com/
   
   // If you cannot find your Declination, comment out these two lines, your compass will be slightly off.
-  float declinationAngle = 0.20944;
+  float declinationAngle = 0.0404;
   heading += declinationAngle;
 
   // Correct for when signs are reversed.
@@ -91,13 +96,14 @@ float* printMag(){
 
   // Convert radians to degrees for readability.
   float headingDegrees = (heading * 180/PI); 
-
+  */
+    
   Serial.print("\rHeading:\t");
   Serial.print(heading);
   Serial.print(" Radians   \t");
   Serial.print(headingDegrees);
   Serial.println(" Degrees   \t");
-  float ret[3] = {3, heading, headingDegrees};
+  float ret[3] = {3, mx, my};
   return ret;
 }
 
