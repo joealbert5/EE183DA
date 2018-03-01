@@ -67,13 +67,17 @@ float* printMag(){
   // Create 16 bits values from 8 bits data
   
   // Magnetometer
-  int mxbias = 43.5;
-  int mybias = 11.8;
-  int mzbias = -21.67;
+  float mxbias = 43.5;
+  float mybias = 11.8;
+  float mzbias = -21.67;
   
-  int16_t mx=(Mag[1]<<8 | Mag[0]) - mxbias;
-  int16_t my=(Mag[3]<<8 | Mag[2]) - mybias;
-  int16_t mz=(Mag[5]<<8 | Mag[4]) - mzbias;
+  int16_t mx=(Mag[1]<<8 | Mag[0]);
+  int16_t my=(Mag[3]<<8 | Mag[2]);
+  int16_t mz=(Mag[5]<<8 | Mag[4]);
+
+  float mxx = ((float)mx)- mxbias;
+  float myy = ((float)my)- mybias; 
+  float mzz = ((float)mz)- mzbias; 
   
   /*
   float heading = atan2(mx, my);
@@ -103,7 +107,7 @@ float* printMag(){
   Serial.print(" Radians   \t");
   Serial.print(headingDegrees);
   Serial.println(" Degrees   \t");
-  float ret[3] = {3, mx, my};
+  float ret[3] = {3, mxx, myy};
   return ret;
 }
 
