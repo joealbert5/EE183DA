@@ -5,17 +5,20 @@
 #ifndef _Kalman_h
 #define _Kalman_h
 
+#include <vector>
+using namespace std;
+
 class Kalman {
   private:
     /* Kalman filter variables */
-    double q; //process noise covariance
-    double r; //measurement noise covariance
-    double x; //value
-    double p; //estimation error covariance
+    double* q; //process noise covariance
+    double* r; //measurement noise covariance
+    double* x; //value
+    double* p; //estimation error covariance
     double k; //kalman gain
     
   public:
-    Kalman(double process_noise, double sensor_noise, double estimated_error, double intial_value) {
+    Kalman(double* process_noise, double* sensor_noise, double* estimated_error, double* intial_value) {
       /* The variables are x for the filtered value, q for the process noise, 
          r for the sensor noise, p for the estimated error and k for the Kalman Gain. 
          The state of the filter is defined by the values of these variables.
@@ -39,44 +42,58 @@ class Kalman {
         this->p = estimated_error;
         this->x = intial_value; //x will hold the iterated filtered value
     }
+
+    vector<double> dxnToBu(char dxn){
+      vector<double> ret;
+      double arr [3] = {0,0,0};
+      switch(dxn){
+                       //{x, y, theta}
+        case 'X': arr[0] = 0; arr[1] = 0; arr[2] = 0;ret.assign(arr, arr + 3); return ret;
+        case 'F': arr[0] = 0; arr[1] = 1; arr[2] = 0; ret.assign(arr, arr + 3); return ret;
+        case 'B': arr[0] = 0; arr[1] = -1; arr[2] = 0; ret.assign(arr, arr + 3); return ret;
+        case 'L': arr[0] = -1; arr[1] = 0; arr[2] = 0; ret.assign(arr, arr + 3); return ret;
+        case 'R': arr[0] = 1; arr[1] = 0; arr[2] = 0; ret.assign(arr, arr + 3); return ret;
+      }
+    }
     
-    double getFilteredValue(double measurement) {
-      /* Updates and gets the current measurement value */
-      //prediction update
-      //predicted error covariance = previous + process noise
-      this->p = this->p + this->q;
-    
-      //measurement update
-      //gain = ratio between how large sensor noise is compared to previous estimated error
-      this->k = this->p / (this->p + this->r);
-      //current filtered value = previous filtered value + gain*(unfiltered - filtered value)
-      this->x = this->x + this->k * (measurement - this->x);
-      //current error = (1 - gain)*previous error
-      this->p = (1 - this->k) * this->p;
-      
+    double* getFilteredValue(double* measurement, char dxn) {
+      vector<double> Bu = dxnToBu(dxn);
+      for (int i = 0; i < 3; i++){
+        /* Updates and gets the current measurement value */
+        //prediction update
+        //predicted error covariance = previous + process noise
+        this->p[i] = this->p[i] + this->q[i];
+        //measurement update
+        //gain = ratio between how large sensor noise is compared to previous estimated error
+        this->k = this->p[i] / (this->p[i] + this->r[i]);
+        //current filtered value = previous filtered value + gain*(unfiltered - filtered value)
+        this->x[i] = this->x[i] + Bu[i] + this->k * (measurement[i] - this->x[i]);
+        //current error = (1 - gain)*previous error
+        this->p[i] = (1 - this->k) * this->p[i];
+      }
       return this->x;
     }
     
-    void setParameters(double process_noise, double sensor_noise, double estimated_error) {
+    void setParameters(double* process_noise, double* sensor_noise, double* estimated_error) {
         this->q = process_noise;
         this->r = sensor_noise;
         this->p = estimated_error;
     }
 
-    void setParameters(double process_noise, double sensor_noise) {
+    void setParameters(double* process_noise, double* sensor_noise) {
         this->q = process_noise;
         this->r = sensor_noise;
     }
     
-    double getProcessNoise() {
+    double* getProcessNoise() {
       return this->q;
     }
     
-    double getSensorNoise() {
+    double* getSensorNoise() {
       return this->r;
     }
     
-    double getEstimatedError() {
+    double* getEstimatedError() {
       return this->p;
     }
 };
