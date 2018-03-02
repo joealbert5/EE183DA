@@ -102,11 +102,6 @@ float* printMag(){
   float headingDegrees = (heading * 180/PI); 
   */
     
-  Serial.print("\rHeading:\t");
-  Serial.print(heading);
-  Serial.print(" Radians   \t");
-  Serial.print(headingDegrees);
-  Serial.println(" Degrees   \t");
   float ret[3] = {3, mxx, myy};
   return ret;
 }
