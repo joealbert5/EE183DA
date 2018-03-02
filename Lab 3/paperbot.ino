@@ -57,15 +57,12 @@ Servo servo_right;
 int servo_left_ctr = 90;
 int servo_right_ctr = 90;
 
-Kalman Sx(0.125,6,1,10);
-uint16_t offsetX = 20;
-Kalman Sy(0.125,6,1,10);
-uint16_t offsetY = 0;
-Kalman Mx(0.125,32,102,0);
-uint16_t offsetMx = 0;
-Kalman My(0.125,32,102,0);
-uint16_t offsetMy = 0;
-
+char dxn = 'X';
+double q_processNoise [3] = {.125,.125,.125};
+double r_sensorNoise [3] = {6,6,6};
+double p_estimateError [3] = {1,1,1};
+double x_initVal [3] = {10,10,0};
+Kalman kalman(q_processNoise,r_sensorNoise,p_estimateError,x_initVal);
 
 // WiFi AP parameters
 char ap_ssid[13];
@@ -149,12 +146,12 @@ void backward() {
 
 void left() {
   DEBUG("left");
-  drive(180, 180);
+  drive(0, 0);
 }
 
 void right() {
   DEBUG("right");
-  drive(0, 0);
+  drive(180, 180);
 }
 
 uint16_t convertX(uint16_t x){
@@ -168,21 +165,19 @@ uint16_t convertY(uint16_t x){
 void sendCoords(uint8_t id){
   char buff [50];
   uint16_t* p = scanXY();
-  //float* theta = printMag();
+  printArr(p, *p);
+  float* theta = printMag();
   double sensX = (double) *(p + 1);
   double sensY = (double) *(p + 2);
-  double sensMx = (double) *(theta + 1);
-  double sensMy = (double) *(theta + 2);
-  printArr(p, *p);
+  double sensT = (double) *(theta + 2);
+  double measurements [3] = {sensX, sensY, sensT};
   //printArr((uint16_t)theta, *theta);
-  uint16_t filX = Sx.getFilteredValue(sensX) + offsetX;
-  uint16_t filY = Sy.getFilteredValue(sensY) + offsetY;
-  //uint16_t filMx = St.getFilteredValue(sensMx) + offsetMx;
-  //uint16_t filMy = St.getFilteredValue(sensMy) + offsetMy;
-  //sprintf (buff, "x: %d y: %d theta: %d", filX, filY, filT);
-  filX = convertX(filX);
-  filY = convertY(filY);
-  sprintf (buff, "x: %d y: %d", filX, filY);
+  double* filteredM = kalman.getFilteredValue(measurements, dxn);
+  uint16_t filX = (uint16_t) *(filteredM + 0);
+  uint16_t filY = (uint16_t) *(filteredM + 1);
+  uint16_t filT = (uint16_t) *(filteredM + 2);
+  sprintf (buff, "x: %d y: %d theta: %d", filX, filY, filT);
+  //sprintf (buff, "x: %d y: %d dxn: %c", filX, filY, dxn);
   
   //Serial.println(buff);
   wsSend(id, buff);
@@ -243,18 +238,22 @@ void webSocketEvent(uint8_t id, WStype_t type, uint8_t * payload, size_t length)
                 }
                 else if(payload[1] == 'F'){ 
                   forward();
+                  dxn = payload[1];
                   sendCoords(id);
                 }
                 else if(payload[1] == 'B') {
                   backward();
+                  dxn = payload[1];
                   sendCoords(id);
                 }
                 else if(payload[1] == 'L') {
                   left();
+                  dxn = payload[1];
                   sendCoords(id);
                 }
                 else if(payload[1] == 'R') {
                   right();
+                  dxn = payload[1];
                   sendCoords(id);
                 }
                 else if(payload[1] == 'U') {
@@ -275,8 +274,10 @@ void webSocketEvent(uint8_t id, WStype_t type, uint8_t * payload, size_t length)
                   sprintf(tx, "Zero @ (%3d, %3d)", servo_left_ctr, servo_right_ctr);
                   wsSend(id, tx);
                 }
-                else 
+                else{ 
+                  dxn = 'X';
                   stop();
+                }
             }
 
             break;

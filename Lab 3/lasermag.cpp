@@ -79,30 +79,32 @@ float* printMag(){
   float myy = ((float)my)- mybias; 
   float mzz = ((float)mz)- mzbias; 
   
-  /*
+  
   float heading = atan2(mx, my);
-
   // Once you have your heading, you must then add your 'Declination Angle',
   // which is the 'Error' of the magnetic field in your location. Mine is 0.0404 
   // Find yours here: http://www.magnetic-declination.com/
   
   // If you cannot find your Declination, comment out these two lines, your compass will be slightly off.
-  float declinationAngle = 0.0404;
-  heading += declinationAngle;
-
+  //float declinationAngle = 0.0404;
+  //heading += declinationAngle;
   // Correct for when signs are reversed.
   if(heading < 0)
     heading += 2*PI;
-
   // Check for wrap due to addition of declination.
   if(heading > 2*PI)
     heading -= 2*PI;
-
   // Convert radians to degrees for readability.
+  
   float headingDegrees = (heading * 180/PI); 
-  */
+  
     
-  float ret[3] = {3, mxx, myy};
+  Serial.print("\rHeading:\t");
+  Serial.print(heading);
+  Serial.print(" Radians   \t");
+  Serial.print(headingDegrees);
+  Serial.print(" Degrees   \t");
+  float ret[3] = {3, heading, headingDegrees};
   return ret;
 }
 
