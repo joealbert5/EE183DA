@@ -9,9 +9,9 @@ umax = 10
 umin = 0
 K = 7
 
-q = .125
+q = .01
 r = 6
-p = 1
+p = 50
 
 def calcMean(data):
 	alldata = parseData(data)
@@ -54,10 +54,18 @@ def rawToUnit(data, t):
 			newData.append(y)
 	return newData
 
-def getFilteredValue(measurement, x, q, r, p):
+def dxnToBu(dxn):
+	if dxn == 'X': return [0,0,0]
+	elif dxn == 'F': return 10
+	elif dxn == 'B': return -10
+	elif dxn == 'L': return -10
+	elif dxn == 'R': return 10
+
+def getFilteredValue(measurement, x, q, r, p, dxn):
       #Updates and gets the current measurement value */
       #prediction update
       #predicted error covariance = previous + process noise
+
       p = p + q;
 
       #measurement update
@@ -65,11 +73,37 @@ def getFilteredValue(measurement, x, q, r, p):
       k = p / (p + r);
 
       #current filtered value = previous filtered value + gain*(unfiltered - filtered value)
-      x = x + k * (measurement - x);
+      x = x + dxnToBu(dxn) + k * (measurement - x);
 
       #current error = (1 - gain)*previous error
       p = (1 - k) * p;
       return x;
+
+def main3():
+
+
+
+def main2():
+	resx = []
+	residx = []
+	resy = []
+	sep = parseData(squarepath)
+	sepx = sep['x']
+	sepy = sep['y']
+	prevx = 16
+	prevy = 14
+	for nx in sepx:
+		x = getFilteredValue(nx, prevx, q, r, p, 'R')
+		#y = getFilteredValue(ny, prevy, q, r, p, 'U')
+		resx.append(int(x))
+		residx.append(int(x) - nx)
+		#resy.append(y)
+		prevx = x
+		#prevy = y
+	print("resx is ")
+	print(resx)
+	print("resid is ")
+	print(residx)
 
 def main():
 	alldata = parseData(squarepath)
@@ -123,7 +157,6 @@ def main():
 	print(ret4)
 	print(ret5)
 	pyplot.show()
-
 
 
 five15 = [95,137, 
@@ -1151,4 +1184,4 @@ squarepath = [207,147,
 191,163, 
 194,166]
 
-main()
+main2()

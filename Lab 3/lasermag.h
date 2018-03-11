@@ -12,6 +12,8 @@
 
 uint16_t* scanXY();
 
+void printArrD(double arr[], int len);
+
 float* printMag();
 
 void printArr(uint16_t arr[], int len);

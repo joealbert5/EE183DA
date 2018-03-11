@@ -41,7 +41,7 @@ uint16_t* scanXY(){
   uint16_t initY1 = sensor2.readRangeSingleMillimeters();
   if (sensor2.timeoutOccurred()) { Serial.print(" TIMEOUT"); }
   uint16_t ret[3] = {3, initX1, initY1};
-  Serial.println(" ");
+  //Serial.println(" ");
   return ret;
 }
 
@@ -80,7 +80,7 @@ float* printMag(){
   float mzz = ((float)mz)- mzbias; 
   
   
-  float heading = atan2(mx, my);
+  float heading = atan2(mxx, myy);
   // Once you have your heading, you must then add your 'Declination Angle',
   // which is the 'Error' of the magnetic field in your location. Mine is 0.0404 
   // Find yours here: http://www.magnetic-declination.com/
@@ -98,14 +98,22 @@ float* printMag(){
   
   float headingDegrees = (heading * 180/PI); 
   
-    
+  /*  
   Serial.print("\rHeading:\t");
   Serial.print(heading);
   Serial.print(" Radians   \t");
   Serial.print(headingDegrees);
-  Serial.print(" Degrees   \t");
-  float ret[3] = {3, heading, headingDegrees};
+  Serial.print(" Degrees   \t");*/
+  float ret[2] = {mxx, myy};
   return ret;
+}
+
+void printArrD(double arr[], int len){
+  for(int i = 0; i < len; i++){
+    Serial.print(*(arr + i));
+    Serial.print(",");
+  }
+  //Serial.println("printArr values");
 }
 
 void printArr(uint16_t arr[], int len){

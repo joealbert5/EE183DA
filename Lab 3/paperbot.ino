@@ -58,10 +58,10 @@ int servo_left_ctr = 90;
 int servo_right_ctr = 90;
 
 char dxn = 'X';
-double q_processNoise [3] = {.125,.125,.125};
-double r_sensorNoise [3] = {6,6,6};
-double p_estimateError [3] = {1,1,1};
-double x_initVal [3] = {10,10,0};
+double q_processNoise [4] = {.125,.125,.125, .125};
+double r_sensorNoise [4] = {6,6,6, 6};
+double p_estimateError [4] = {500,500,500,500};
+double x_initVal [4] = {10,10,0, 0};
 Kalman kalman(q_processNoise,r_sensorNoise,p_estimateError,x_initVal);
 
 // WiFi AP parameters
@@ -165,22 +165,39 @@ uint16_t convertY(uint16_t x){
 void sendCoords(uint8_t id){
   char buff [50];
   uint16_t* p = scanXY();
-  printArr(p, *p);
-  float* theta = printMag();
+  //printArr(p, *p);
   double sensX = (double) *(p + 1);
   double sensY = (double) *(p + 2);
-  double sensT = (double) *(theta + 2);
-  double measurements [3] = {sensX, sensY, sensT};
+  float* theta = printMag();
+  double sensTx = (double) *(theta );
+  double sensTy = (double) *(theta + 1);
+  double measurements [4] = {sensX, sensY, sensTx, sensTy};
+  //printArrD(measurements, 4);
   //printArr((uint16_t)theta, *theta);
   double* filteredM = kalman.getFilteredValue(measurements, dxn);
+  //printArrD(filteredM, 3);
   uint16_t filX = (uint16_t) *(filteredM + 0);
   uint16_t filY = (uint16_t) *(filteredM + 1);
-  uint16_t filT = (uint16_t) *(filteredM + 2);
-  sprintf (buff, "x: %d y: %d theta: %d", filX, filY, filT);
+  uint16_t filTx = (uint16_t) *(filteredM + 2);
+  uint16_t filTy = (uint16_t) *(filteredM + 3);
+  sprintf (buff, "x: %d y: %d mx: %d my: %d", filX, filY, filTx, filTy);
   //sprintf (buff, "x: %d y: %d dxn: %c", filX, filY, dxn);
   
   //Serial.println(buff);
   wsSend(id, buff);
+}
+
+void instruxToDrive(char c){
+  dxn = c;
+  if(c == 'F') 
+    forward();
+  else if(c == 'B')
+    backward();
+  else if(c == 'L')
+    left();
+  else if(c == 'R')
+    right();
+  sendCoords(0);
 }
 
 //
@@ -232,7 +249,15 @@ void webSocketEvent(uint8_t id, WStype_t type, uint8_t * payload, size_t length)
             DEBUG("  got text: ", (char *)payload);
 
             if (payload[0] == '#') {
-                if(payload[1] == 'C') {
+                if(payload[1] == '#'){
+                  char instrux;
+                  for (int i = 2; payload[i] != '@'; i++){
+                    instrux = (char) payload[i];
+                    instruxToDrive(instrux);
+                  }
+                  drive(90,90);
+                }
+                else if(payload[1] == 'C') {
                   LED_ON;
                   wsSend(id, "Hello world!");
                 }
@@ -256,20 +281,33 @@ void webSocketEvent(uint8_t id, WStype_t type, uint8_t * payload, size_t length)
                   dxn = payload[1];
                   sendCoords(id);
                 }
+                //ecode H = UL, I = UR, J=DL, K=DR
                 else if(payload[1] == 'U') {
-                  if(payload[2] == 'L') 
+                  if(payload[2] == 'L') {
                     servo_left_ctr -= 1;
-                  else if(payload[2] == 'R') 
+                    dxn = 'H';
+                    sendCoords(id);
+                  }
+                  else if(payload[2] == 'R') {
                     servo_right_ctr += 1;
+                    dxn = 'I';
+                    sendCoords(id);
+                  }
                   char tx[20] = "Zero @ (xxx, xxx)";
                   sprintf(tx, "Zero @ (%3d, %3d)", servo_left_ctr, servo_right_ctr);
                   wsSend(id, tx);
                 }
                 else if(payload[1] == 'D') {
-                  if(payload[2] == 'L') 
+                  if(payload[2] == 'L') {
                     servo_left_ctr += 1;
-                  else if(payload[2] == 'R') 
+                    dxn = 'J';
+                    sendCoords(id);
+                  }
+                  else if(payload[2] == 'R') {
                     servo_right_ctr -= 1;
+                    dxn = 'K';
+                    sendCoords(id);
+                  }
                   char tx[20] = "Zero @ (xxx, xxx)";
                   sprintf(tx, "Zero @ (%3d, %3d)", servo_left_ctr, servo_right_ctr);
                   wsSend(id, tx);
