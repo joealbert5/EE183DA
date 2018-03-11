@@ -58,7 +58,7 @@ class Kalman {
     
     double* getFilteredValue(double* measurement, char dxn) {
       vector<double> Bu = dxnToBu(dxn);
-      for (int i = 0; i < 3; i++){
+      for (int i = 0; i < 4; i++){
         /* Updates and gets the current measurement value */
         //prediction update
         //predicted error covariance = previous + process noise
