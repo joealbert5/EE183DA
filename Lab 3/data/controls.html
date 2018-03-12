@@ -10,7 +10,7 @@
 
 <body>
   <h1>Yay Robots!</h1>
-
+  <h2>Instructions to send: <input type="test" id='instrux'> <button id='send' onclick="sendIt()">Send</button></h2>
   <table width="100%">
     <tr>
       <td>
@@ -50,6 +50,8 @@
         <div id="wsTx" class="log"></div>
       </td>
   </tr></table>
+
+
 
   <script>
     /* Handle button / slider clicks + touches */
@@ -170,6 +172,13 @@
 
       console.log('Button released'); 
       connection.send('#0');
+    }
+
+    function sendIt(){
+      var instrux = document.getElementById("instrux").value
+      var len = instrux.length
+      console.log("Calculated instructions, sending ##" + instrux + "@");
+      connection.send('##' + instrux + "@");
     }
 
   </script>

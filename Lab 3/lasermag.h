@@ -24,6 +24,8 @@ int16_t* scanXY(float mxbias, float mybias, float mzbias);
 
 uint16_t* testing();
 
+void printArrD(double arr[], int len);
+
 float* printMag();
 
 void printArr(uint16_t arr[], int len);

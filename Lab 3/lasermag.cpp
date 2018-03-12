@@ -265,7 +265,7 @@ float* printMag(){
   float mzz = ((float)mz)- mzbias; 
   
   
-  float heading = atan2(mx, my);
+  float heading = atan2(mxx, myy);
   // Once you have your heading, you must then add your 'Declination Angle',
   // which is the 'Error' of the magnetic field in your location. Mine is 0.0404 
   // Find yours here: http://www.magnetic-declination.com/
@@ -284,8 +284,15 @@ float* printMag(){
   float headingDegrees = (heading * 180/PI); 
      
   float ret[3] = {mxx, myy, mzz};
-  
   return ret;
+}
+
+void printArrD(double arr[], int len){
+  for(int i = 0; i < len; i++){
+    Serial.print(*(arr + i));
+    Serial.print(",");
+  }
+  //Serial.println("printArr values");
 }
 
 void printArr(uint16_t arr[], int len){
