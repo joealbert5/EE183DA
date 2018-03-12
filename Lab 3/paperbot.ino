@@ -49,6 +49,8 @@
 #include "lasermag.h"
 #include "kalman.h"
 
+#define    MPU9250_ADDRESS            0x68
+#define    MAG_ADDRESS                0x0C
 
 const int SERVO_LEFT = D1;
 const int SERVO_RIGHT = D2;
@@ -58,10 +60,10 @@ int servo_left_ctr = 90;
 int servo_right_ctr = 90;
 
 char dxn = 'X';
-double q_processNoise [3] = {.125,.125,.125};
-double r_sensorNoise [3] = {6,6,6};
-double p_estimateError [3] = {1,1,1};
-double x_initVal [3] = {10,10,0};
+double q_processNoise [4] = {.125,.125,.125,.125};
+double r_sensorNoise [4] = {6,6,6,6};
+double p_estimateError [4] = {1000,1 ,1,1};
+double x_initVal [4] = {10,10,0,0};
 Kalman kalman(q_processNoise,r_sensorNoise,p_estimateError,x_initVal);
 
 // WiFi AP parameters
@@ -78,6 +80,16 @@ char* mDNS_name = "paperbot";
 
 String html;
 String css;
+
+float bias[3] = {0,0,0};
+float scale[3] = {0,0,0};
+float mxbias = 0;
+float mybias = 0;
+float mzbias = 0;
+
+// max coords of environment (the box)
+int16_t xmax = 20; 
+int16_t ymax = 30;
 
 void setup() {
     setupPins();
@@ -154,33 +166,153 @@ void right() {
   drive(180, 180);
 }
 
-uint16_t convertX(uint16_t x){
-  return .0941*x - 3.4884;
+int16_t convertX(int16_t x){
+  return .09302*x + 3; // in cm
 }
 
-uint16_t convertY(uint16_t x){
-  return -1*.0949*x + 27.95;
+int16_t convertY(int16_t x){
+  return .10312*x + 2.9; // in cm
+}
+
+float convertDeg(float angle)
+{
+  return angle*180/PI;
+}
+
+int16_t *coordCalc(int16_t x, int16_t y, float angle)
+{
+  double coord[2];
+  if (angle >= 0 && angle < (PI/2))
+  { 
+    coord[0] = x*cos(angle);
+    coord[1] = y*cos(angle);
+  }
+  else if (angle >= (PI/2) && angle < PI)
+  { 
+    coord[0] = y*cos(angle-(PI/2));
+    coord[1] = (ymax-x)*cos(angle-(PI/2));
+  }
+  else if (angle >= PI && angle < (3*PI/2))
+  { 
+    coord[0] = (xmax-x)*cos(angle-PI);
+    coord[1] = (ymax-y)*cos(angle-PI);
+  }
+  else 
+  {
+    coord[0] = (xmax-y)*cos(angle-(3*PI/2));
+    coord[1] = x*cos(angle-(3*PI/2));
+  }
+
+  int16_t ret[2] = {(int16_t) coord[0],(int16_t) coord[1]};
+  
+  return ret;
+}
+
+float headingCalc(int16_t magx, int16_t magy)
+{
+  float heading = atan2(magx, magy);
+  if(heading < 0)
+    heading += 2*PI;
+    
+  return heading;
+/*
+  if (headingD < 7.5)
+    headingD = 0;
+  else if (headingD >= 7.5 && < 22.5)
+    headingD = 15;
+  else if (headingD >= 22.5 && < 37.5)
+    headingD = 30;
+  else if (headingD >= 37.5 && < 52.5)
+    headingD = 45;
+  else if (headingD >= 52.5 && < 67.5)
+    headingD = 60;
+  else if (headingD >= 67.5 && < 82.5)
+    headingD = 75;
+  else
+    headingD = 90;
+    */ 
+}
+
+void calibrate() //function only used to determine magnetometer bias
+{
+   int16_t mag_max[3] = { -32767, -32767, -32767};
+   int16_t mag_min[3] = {32767, 32767, 32767};
+
+   int count = 0;
+
+   while (count < 2000)
+   {
+    uint8_t Mag1[7];
+    I2Cread(MAG_ADDRESS, 0x03, 7, Mag1);
+    int16_t mxb = (Mag1[1] << 8 | Mag1[0]);
+    int16_t myb = (Mag1[3] << 8 | Mag1[2]);
+    int16_t mzb = (Mag1[5] << 8 | Mag1[4]);
+
+    if (mxb > mag_max[0])
+      mag_max[0] = mxb;
+    if (mxb < mag_min[0])
+      mag_min[0] = mxb;
+
+    if (myb > mag_max[1])
+      mag_max[1] = myb;
+    if (myb < mag_min[1])
+      mag_min[1] = myb;
+
+    if (mzb > mag_max[2])
+      mag_max[2] = mzb;
+    if (mzb < mag_min[2])
+      mag_min[2] = mzb;
+
+    count++;    
+   }
+
+   mxbias = ((float) (mag_max[0] + mag_min[0]))/2;
+   mybias = ((float) (mag_max[1] + mag_min[1]))/2;
+   mzbias = ((float) (mag_max[2] + mag_min[2]))/2;  
 }
 
 void sendCoords(uint8_t id){
   char buff [50];
-  uint16_t* p = scanXY();
-  printArr(p, *p);
-  float* theta = printMag();
+  int16_t* p = scanXY(-157,-53,bias[2]);
+  //printArr(p, *p);
   double sensX = (double) *(p + 1);
   double sensY = (double) *(p + 2);
-  double sensT = (double) *(theta + 2);
-  double measurements [3] = {sensX, sensY, sensT};
+  //float* theta = printMag();
+  double sensTx = (double) *(p + 3);
+  double sensTy = (double) *(p + 4);
+  double measurements [4] = {sensX, sensY, sensTx, sensTy};
   //printArr((uint16_t)theta, *theta);
   double* filteredM = kalman.getFilteredValue(measurements, dxn);
-  uint16_t filX = (uint16_t) *(filteredM + 0);
-  uint16_t filY = (uint16_t) *(filteredM + 1);
-  uint16_t filT = (uint16_t) *(filteredM + 2);
-  sprintf (buff, "x: %d y: %d theta: %d", filX, filY, filT);
-  //sprintf (buff, "x: %d y: %d dxn: %c", filX, filY, dxn);
+  int16_t filX = (int16_t) *(filteredM + 0);
+  int16_t filY = (int16_t) *(filteredM + 1);
+  int16_t filTx = (int16_t) *(filteredM + 2);
+  int16_t filTy = (int16_t) *(filteredM + 3);
+  float headingRad = headingCalc(filTx,filTy);
+  float headingDeg = convertDeg(headingRad);
+  // remove coordX and coordY and make it an array
+  int16_t *coord = coordCalc(convertX(filX),convertY(filY),headingRad);
+  //int16_t coordX = coordCalc(convertX(filX),headingRad);
+  //int16_t coordY = coordCalc(convertY(filY),headingRad);
+  //calibrate();
+  //sprintf (buff, "h: %f mx: %d my: %d", headingDeg, filTx, filTy);
+  sprintf (buff, "x: %d y: %d h: %f", *(coord), *(coord + 1), headingDeg);
+  //fsprintf (buff, "x: %d y: %d dxn: %c", filX, filY, dxn);
   
   //Serial.println(buff);
   wsSend(id, buff);
+}
+
+void instruxToDrive(char c){
+  dxn = c;
+  if(c == 'F') 
+    forward();
+  else if(c == 'B')
+    backward();
+  else if(c == 'L')
+    left();
+  else if(c == 'R')
+    right();
+  sendCoords(0);
 }
 
 //
@@ -232,44 +364,61 @@ void webSocketEvent(uint8_t id, WStype_t type, uint8_t * payload, size_t length)
             DEBUG("  got text: ", (char *)payload);
 
             if (payload[0] == '#') {
-                if(payload[1] == 'C') {
+                if(payload[1] == '#'){
+                  char instrux;
+                  for (int i = 2; payload[i] != '@'; i++){
+                    instrux = (char) payload[i];
+                    instruxToDrive(instrux);
+                  }
+                  drive(90,90);
+                }
+                else if(payload[1] == 'C') {
                   LED_ON;
                   wsSend(id, "Hello world!");
                 }
                 else if(payload[1] == 'F'){ 
                   forward();
                   dxn = payload[1];
-                  sendCoords(id);
                 }
                 else if(payload[1] == 'B') {
                   backward();
                   dxn = payload[1];
-                  sendCoords(id);
                 }
                 else if(payload[1] == 'L') {
                   left();
                   dxn = payload[1];
-                  sendCoords(id);
                 }
                 else if(payload[1] == 'R') {
                   right();
                   dxn = payload[1];
-                  sendCoords(id);
                 }
+                //ecode H = UL, I = UR, J=DL, K=DR
                 else if(payload[1] == 'U') {
-                  if(payload[2] == 'L') 
+                  if(payload[2] == 'L') {
                     servo_left_ctr -= 1;
-                  else if(payload[2] == 'R') 
+                    dxn = 'H';
+                    sendCoords(id);
+                  }
+                  else if(payload[2] == 'R') {
                     servo_right_ctr += 1;
+                    dxn = 'I';
+                    sendCoords(id);
+                  }
                   char tx[20] = "Zero @ (xxx, xxx)";
                   sprintf(tx, "Zero @ (%3d, %3d)", servo_left_ctr, servo_right_ctr);
                   wsSend(id, tx);
                 }
                 else if(payload[1] == 'D') {
-                  if(payload[2] == 'L') 
+                  if(payload[2] == 'L') {
                     servo_left_ctr += 1;
-                  else if(payload[2] == 'R') 
+                    dxn = 'J';
+                    sendCoords(id);
+                  }
+                  else if(payload[2] == 'R') {
                     servo_right_ctr -= 1;
+                    dxn = 'K';
+                    sendCoords(id);
+                  }
                   char tx[20] = "Zero @ (xxx, xxx)";
                   sprintf(tx, "Zero @ (%3d, %3d)", servo_left_ctr, servo_right_ctr);
                   wsSend(id, tx);

@@ -2,6 +2,33 @@
 import random as r
 import math
 import matplotlib.pyplot as pyplot
+import copy
+import websocket
+try:
+    import thread
+except ImportError:
+    import _thread as thread
+import time
+
+def on_message(ws, message):
+	ws.send("in arduino" + message)
+	print(message)
+
+def on_error(ws, error):
+    print(error)
+
+def on_close(ws):
+    print("### closed ###")
+
+def on_open(ws):
+    def run(*args):
+        for i in range(3):
+            time.sleep(1)
+            ws.send("Hello %d" % i)
+        time.sleep(1)
+        ws.close()
+        print("thread terminating...")
+    thread.start_new_thread(run, ())
 
 #each point in the graph will be a Node, which has:
 	#a x-coordinate and y-coordinate stored in coord (coord is a list-type)([])
@@ -103,7 +130,7 @@ def bfsFindIfPathExistTo(start, dest):
 			return curr
 	return None
 
-#move in the direction of qrand with a stepsize of dq
+#move in the direction of qrand from qnear with a stepsize of dq
 def moveInc(qnear, qrand, dq, obstacles):
 	qrx = qrand[0]
 	qry = qrand[1]
@@ -111,8 +138,8 @@ def moveInc(qnear, qrand, dq, obstacles):
 	if mag != 0:
 		qrxnorm = qrx/mag
 		qrynorm = qry/mag
-		qnearValx = qnear.coord[0]
-		qnearValy = qnear.coord[1]
+		qnearValx = copy.deepcopy(qnear.coord[0])
+		qnearValy = copy.deepcopy(qnear.coord[1])
 		qnearValx += qrxnorm*dq
 		qnearValy += qrynorm*dq
 		if isValidMove([qnearValx, qnearValy], obstacles):
@@ -121,6 +148,33 @@ def moveInc(qnear, qrand, dq, obstacles):
 			return None
 	else:
 		return None
+
+def pathToMotorCmds(path, initState):
+	fullDxnsSep = []
+	fullDxns = []
+	prevx, prevy, prevt = initState[0], initState[1], 90
+	for curr in path:
+		currX, currY = curr[0].coord[0], curr[0].coord[1]
+		currT = math.atan2(currY - prevy, currX - prevx)*180/3.14159
+		dt = currT - prevt
+		print("dt " + str(dt))
+		print("currT " + str(currT))
+		dz = radius(currX - prevx, currY - prevy)
+		dxns = move(dz, dt, currT)
+		fullDxnsSep.append(dxns)
+		fullDxns += dxns
+		prevx, prevy, prevt = currX, currY, currT
+	print("dt " + str(dt))
+	print("currT " + str(currT))
+	dxns = move(1, 90-currT, prevt)
+	fullDxnsSep.append(dxns)
+	fullDxns += dxns
+	dxnString = ''.join(fullDxns)
+	print(dxnString)
+	#sendInstructions(dxnString)
+	#print(fullDxns)
+	#print(fullDxnsSep)
+	return dxnString
 
 #checks to see if moving to a point will intersect with an obstacle
 def isValidMove(point, obstacles):
@@ -172,11 +226,30 @@ def getDataRRT(head):
 		data['y'].append(curr.coord[1])
 	return data
 
+def move(dz, dt, currT):
+	moveHist = []
+	tn = round(dt/6.0)
+	zn = round(dz/5.1)
+	if dt < 0:
+		for i in range(abs(tn)): moveHist.append('R')
+	elif dz > 0:
+		for i in range(abs(tn)): moveHist.append('L')
+	else:
+		for i in range(abs(tn)): moveHist.append('X')
+	if dz < 0:
+		zn = round(dz/5.5)
+		for i in range(abs(zn)): moveHist.append('B')
+	elif dz > 0:
+		zn = round(dz/5.1)
+		for i in range(abs(zn)): moveHist.append('F')
+	else:
+		for i in range(abs(zn)): moveHist.append('X')
+	return moveHist
+
 #helper function to display graphs
 def graph(x, y, xd, yd, xp, yp, color):
 	pyplot.scatter(x, y, s=8)
 	pyplot.scatter(xd, yd, s=64, c='g')
-	pyplot.scatter(100, 100, s=64, c='g')
 	pyplot.scatter(xp, yp, c=color)
 	pyplot.plot(xp, yp, c='c')
 
@@ -190,12 +263,15 @@ def rrt(init, obstacles):
 	start = Node(init)
 	qnear = Node([0,0])
 	qnew = Node([0,0])
+	qprev = init + [90]
 	for k in range(1, K):
 		qrand = [r.randint(-1*MAX_X,MAX_X), r.randint(-1*MAX_Y,MAX_Y)]
 		qnear = bfsFindNear(start, qrand)	#returns a Node
 		qnew = moveInc(qnear, qrand, 5, obstacles)
+		#qnew = moveInc2(qprev, qnear, qrand, 5, obstacles)
 		if qnew is None:
 			continue
+		#qprev = qnew[1]
 		if not bfsFindAndSetNear(start, qnear, qnew):
 			print("couldn't find qnear")
 	return start
@@ -206,11 +282,11 @@ def rrt(init, obstacles):
 K = 1000
 MAX_X = 250
 MAX_Y = 250
-ERR_RADIUS = 5
-start = [100,100]
-end = [10,10]
+ERR_RADIUS = 4
+start = [0,0]
+end = [130,260]
 #format [(bottom left corner x, y), (width, height)]
-obstacles = [[(50,50), (25, 25)], [(25,25), (10, 10)]]
+obstacles = [[(100,0), (55, 100)], [(100,300), (70, 105)]]
 
 top = rrt(start, obstacles)		#makes RRT graph, returns head node
 goal = Node(end)				#goal node
@@ -225,7 +301,13 @@ if dest != None:
 	x = []
 	y = []
 	c = []
-	res = getDataRRT(top)		#gets xy coordinates for a short path from head to goal node
+	dxnString = pathToMotorCmds(dest[1], start)
+	websocket.enableTrace(True)
+	ws = websocket.WebSocketApp("ws://192.168.4.1:81", on_message = on_message, on_error = on_error, on_close = on_close)
+	ws.on_open = on_open
+	ws.run_forever()
+	ws.on_message(ws, dxnString)
+	#res = getDataRRT(top)		#gets xy coordinates for a short path from head to goal node
 	for node in dest[1]:
 		x.append(node[0].coord[0])	#x coordinates of shortest path graph
 		y.append(node[0].coord[1])	#y coordinates of shortest path graph

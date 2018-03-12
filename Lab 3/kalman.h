@@ -42,23 +42,22 @@ class Kalman {
         this->p = estimated_error;
         this->x = intial_value; //x will hold the iterated filtered value
     }
-
     vector<double> dxnToBu(char dxn){
       vector<double> ret;
       double arr [3] = {0,0,0};
       switch(dxn){
-                       //{x, y, theta}
+                       //{delta-x, delta-y, delta-theta} delta = change per 1/20 seconds
         case 'X': arr[0] = 0; arr[1] = 0; arr[2] = 0;ret.assign(arr, arr + 3); return ret;
-        case 'F': arr[0] = 0; arr[1] = 1; arr[2] = 0; ret.assign(arr, arr + 3); return ret;
-        case 'B': arr[0] = 0; arr[1] = -1; arr[2] = 0; ret.assign(arr, arr + 3); return ret;
-        case 'L': arr[0] = -1; arr[1] = 0; arr[2] = 0; ret.assign(arr, arr + 3); return ret;
-        case 'R': arr[0] = 1; arr[1] = 0; arr[2] = 0; ret.assign(arr, arr + 3); return ret;
+        case 'F': arr[0] = 0; arr[1] = -.7; arr[2] = 0; ret.assign(arr, arr + 3); return ret;
+        case 'B': arr[0] = 0; arr[1] = .7; arr[2] = 0; ret.assign(arr, arr + 3); return ret;
+        case 'L': arr[0] = 0; arr[1] = 0; arr[2] = 4.5; ret.assign(arr, arr + 3); return ret;
+        case 'R': arr[0] = 0; arr[1] = 0; arr[2] = -4.5; ret.assign(arr, arr + 3); return ret;
       }
     }
     
     double* getFilteredValue(double* measurement, char dxn) {
       vector<double> Bu = dxnToBu(dxn);
-      for (int i = 0; i < 3; i++){
+      for (int i = 0; i < 4; i++){
         /* Updates and gets the current measurement value */
         //prediction update
         //predicted error covariance = previous + process noise
