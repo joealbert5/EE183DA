@@ -287,7 +287,7 @@ void sendCoords(uint8_t id){
   // remove coordX and coordY and make it an array
   int16_t conFilX = convertX(filX);
   int16_t conFilY = convertY(filY);
-  coordCalc(conFilX,conFilY,headingRad);
+  //coordCalc(conFilX,conFilY,headingRad);
   //int16_t coordX = coordCalc(convertX(filX),headingRad);
   //int16_t coordY = coordCalc(convertY(filY),headingRad);
   //calibrate();

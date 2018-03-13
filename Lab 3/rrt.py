@@ -3,32 +3,7 @@ import random as r
 import math
 import matplotlib.pyplot as pyplot
 import copy
-import websocket
-try:
-    import thread
-except ImportError:
-    import _thread as thread
-import time
-
-def on_message(ws, message):
-	ws.send("in arduino" + message)
-	print(message)
-
-def on_error(ws, error):
-    print(error)
-
-def on_close(ws):
-    print("### closed ###")
-
-def on_open(ws):
-    def run(*args):
-        for i in range(3):
-            time.sleep(1)
-            ws.send("Hello %d" % i)
-        time.sleep(1)
-        ws.close()
-        print("thread terminating...")
-    thread.start_new_thread(run, ())
+import pyperclip
 
 #each point in the graph will be a Node, which has:
 	#a x-coordinate and y-coordinate stored in coord (coord is a list-type)([])
@@ -127,6 +102,7 @@ def bfsFindIfPathExistTo(start, dest):
 		curry = curr[0].coord[1]
 		i += 20
 		if abs(currx - destx) < ERR_RADIUS and abs(curry - desty) < ERR_RADIUS:
+			curr[1].append((currNode, i - 20))
 			return curr
 	return None
 
@@ -178,11 +154,12 @@ def pathToMotorCmds(path, initState):
 
 #checks to see if moving to a point will intersect with an obstacle
 def isValidMove(point, obstacles):
+	buff = 10
 	for obstacle in obstacles:
 		xo, yo = obstacle[0][0], obstacle[0][1]
 		w, h = obstacle[1][0], obstacle[1][1]
 		xp, yp = point[0], point[1]
-		if (xp >= xo and xp <= xo + w) and (yp >= yo and yp <= yo + h):	#if inside an obstacle
+		if (xp >= xo - buff and xp <= xo + w + buff) and (yp >= yo - buff and yp <= yo + h + buff):	#if inside an obstacle
 			return False
 	return True
 
@@ -226,6 +203,9 @@ def getDataRRT(head):
 		data['y'].append(curr.coord[1])
 	return data
 
+#Calculates movements needed given a change in heading and change in direction
+#each call to Right or Left changes heading by about 6 degrees
+#each call to forward or backward changes direction by about 5.5cm and 5.1cm respectively
 def move(dz, dt, currT):
 	moveHist = []
 	tn = round(dt/6.0)
@@ -267,7 +247,7 @@ def rrt(init, obstacles):
 	for k in range(1, K):
 		qrand = [r.randint(-1*MAX_X,MAX_X), r.randint(-1*MAX_Y,MAX_Y)]
 		qnear = bfsFindNear(start, qrand)	#returns a Node
-		qnew = moveInc(qnear, qrand, 5, obstacles)
+		qnew = moveInc(qnear, qrand, 20, obstacles)
 		#qnew = moveInc2(qprev, qnear, qrand, 5, obstacles)
 		if qnew is None:
 			continue
@@ -302,11 +282,7 @@ if dest != None:
 	y = []
 	c = []
 	dxnString = pathToMotorCmds(dest[1], start)
-	websocket.enableTrace(True)
-	ws = websocket.WebSocketApp("ws://192.168.4.1:81", on_message = on_message, on_error = on_error, on_close = on_close)
-	ws.on_open = on_open
-	ws.run_forever()
-	ws.on_message(ws, dxnString)
+	pyperclip.copy(dxnString)
 	#res = getDataRRT(top)		#gets xy coordinates for a short path from head to goal node
 	for node in dest[1]:
 		x.append(node[0].coord[0])	#x coordinates of shortest path graph
