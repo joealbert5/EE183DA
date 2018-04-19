@@ -9,19 +9,24 @@ uint16_t blocks;
 uint16_t old_blocks;
 const int BUTTON = D0;
 int buttonState = 0;
+int32_t prevArea = 0;
 
 PixySPI_SS pixy(10);
 
 void setup() {
   // put your setup code here, to run once:
+  Serial.begin(115200);
   pinMode(BUTTON, INPUT);
+  Serial.println("pinmocde");
   pixy.init();
+  Serial.println("pixy init");
 }
 
 void loop() {
+  //Serial.println("begin loop");
   buttonState = digitalRead(BUTTON);
-  int32_t prevArea = 0;
   if(buttonState == HIGH){
+    Serial.println("button pressed");
     uint16_t blocks = pixy.getBlocks();
     if (blocks > 0){
       int32_t w = pixy.blocks[0].width;
@@ -38,6 +43,6 @@ void loop() {
     }
     else
       Serial.println("blocks not > 0");
+  delay(200);
   }
-  delay(2000);
 }
