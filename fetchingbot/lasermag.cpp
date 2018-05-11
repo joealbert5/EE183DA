@@ -29,12 +29,12 @@
 #define AK8963_WHO_AM_I  0x00 // should return 0x48
 #define AK8963_INFO      0x01
 #define AK8963_ST1       0x02  // data ready status bit 0
-#define AK8963_XOUT_L   0x03  // data
-#define AK8963_XOUT_H  0x04
-#define AK8963_YOUT_L  0x05
-#define AK8963_YOUT_H  0x06
-#define AK8963_ZOUT_L  0x07
-#define AK8963_ZOUT_H  0x08
+#define AK8963_XOUT_L    0x03  // data
+#define AK8963_XOUT_H    0x04
+#define AK8963_YOUT_L    0x05
+#define AK8963_YOUT_H    0x06
+#define AK8963_ZOUT_L    0x07
+#define AK8963_ZOUT_H    0x08
 #define AK8963_ST2       0x09  // Data overflow bit 3 and data read error status bit 2
 #define AK8963_CNTL      0x0A  // Power down (0000), single-measurement (0001), self-test (1000) and Fuse ROM (1111) modes on bits 3:0
 #define AK8963_ASTC      0x0C  // Self test control
@@ -43,8 +43,8 @@
 #define AK8963_ASAY      0x11  // Fuse ROM y-axis sensitivity adjustment value
 #define AK8963_ASAZ      0x12  // Fuse ROM z-axis sensitivity adjustment value
 
-#define SDA_PORT D5
-#define SCL_PORT D6
+#define SDA_PORT 3
+#define SCL_PORT 1 
 //#define HIGH_ACCURACY
 #define HIGH_SPEED
 //#define LONG_RANGE
@@ -211,9 +211,9 @@ int16_t* scanXY(float mxbias, float mybias, float mzbias){
   float myy = ((float)my)- mybias; 
   float mzz = ((float)mz)- mzbias; 
 
-  int16_t magnetx = (int16_t) (mxx*100);
-  int16_t magnety = (int16_t) (myy*100);
-  int16_t magnetz = (int16_t) (mzz*100);
+  int16_t magnetx = (int16_t) (mxx);
+  int16_t magnety = (int16_t) (myy);
+  int16_t magnetz = (int16_t) (mzz);
 
   int16_t x1 = (int16_t) initX1;
   int16_t x2 = (int16_t) initY1;
@@ -334,8 +334,6 @@ void I2CwriteByte(uint8_t Address, uint8_t Register, uint8_t Data)
 void setupMagAndSensor(){
   pinMode(D3, OUTPUT);
   pinMode(D4, OUTPUT);
-  digitalWrite(D7, LOW);
-  digitalWrite(D8, LOW);
 
   delay(500);
   Wire.begin(SDA_PORT,SCL_PORT);
