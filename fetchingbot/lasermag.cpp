@@ -43,8 +43,8 @@
 #define AK8963_ASAY      0x11  // Fuse ROM y-axis sensitivity adjustment value
 #define AK8963_ASAZ      0x12  // Fuse ROM z-axis sensitivity adjustment value
 
-#define SDA_PORT D5
-#define SCL_PORT D6
+#define SDA_PORT D0
+#define SCL_PORT D8
 //#define HIGH_ACCURACY
 #define HIGH_SPEED
 //#define LONG_RANGE
