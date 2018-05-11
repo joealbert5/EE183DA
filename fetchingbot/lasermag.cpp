@@ -43,8 +43,8 @@
 #define AK8963_ASAY      0x11  // Fuse ROM y-axis sensitivity adjustment value
 #define AK8963_ASAZ      0x12  // Fuse ROM z-axis sensitivity adjustment value
 
-#define SDA_PORT D0
-#define SCL_PORT D8
+#define SDA_PORT 3
+#define SCL_PORT 1 
 //#define HIGH_ACCURACY
 #define HIGH_SPEED
 //#define LONG_RANGE
@@ -211,9 +211,9 @@ int16_t* scanXY(float mxbias, float mybias, float mzbias){
   float myy = ((float)my)- mybias; 
   float mzz = ((float)mz)- mzbias; 
 
-  int16_t magnetx = (int16_t) (mxx*100);
-  int16_t magnety = (int16_t) (myy*100);
-  int16_t magnetz = (int16_t) (mzz*100);
+  int16_t magnetx = (int16_t) (mxx);
+  int16_t magnety = (int16_t) (myy);
+  int16_t magnetz = (int16_t) (mzz);
 
   int16_t x1 = (int16_t) initX1;
   int16_t x2 = (int16_t) initY1;
@@ -334,8 +334,6 @@ void I2CwriteByte(uint8_t Address, uint8_t Register, uint8_t Data)
 void setupMagAndSensor(){
   pinMode(D3, OUTPUT);
   pinMode(D4, OUTPUT);
-  digitalWrite(D7, LOW);
-  digitalWrite(D8, LOW);
 
   delay(500);
   Wire.begin(SDA_PORT,SCL_PORT);
