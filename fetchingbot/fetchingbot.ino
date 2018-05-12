@@ -42,13 +42,18 @@
 #include <WebSocketsServer.h>
 #include <ESP8266mDNS.h>
 
+#define    RANGE_SENSORS
+#define    PIXY_CAMERA
+
 #include <Servo.h>
 #include "debug.h"
 #include "file.h"
 #include "server.h"
 #include "lasermag.h"
 #include "kalman.h"
-//#include "pixycam.h"
+#if defined PIXY_CAMERA
+  #include "pixycam.h"
+#endif
 
 #define    MPU9250_ADDRESS            0x68
 #define    MAG_ADDRESS                0x0C
@@ -91,7 +96,7 @@ int16_t leftSensor = 0;
 int16_t rightSensor = 0;
 
 void setup() {
-  setupPins();
+  setupPins();    //sets up D0, 2 servo motors, serial port
 
   sprintf(ap_ssid, "ESP_%08X", ESP.getChipId());
   Serial.println(ESP.getChipId());
@@ -118,7 +123,9 @@ void setup() {
   setupHTTP();
   setupWS(webSocketEvent);
   setupMagAndSensor();
-//  setupPixy();
+  #if defined PIXY_CAMERA
+    setupPixy();
+  #endif
   //setupMDNS(mDNS_name);
 
   stop();
@@ -129,7 +136,9 @@ void loop() {
   wsLoop();
   httpLoop();
   sendCoords(0);
-//  scanBlocks();
+  #if defined PIXY_CAMERA
+    scanBlocks();
+  #endif
   //obstacleAvoid();
 }
 
