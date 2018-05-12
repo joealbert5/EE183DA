@@ -43,8 +43,8 @@
 #define AK8963_ASAY      0x11  // Fuse ROM y-axis sensitivity adjustment value
 #define AK8963_ASAZ      0x12  // Fuse ROM z-axis sensitivity adjustment value
 
-#define SDA_PORT 3
-#define SCL_PORT 1 
+#define SDA_PORT 3    //gpio3
+#define SCL_PORT 1    //gpio1
 //#define HIGH_ACCURACY
 #define HIGH_SPEED
 //#define LONG_RANGE
@@ -175,12 +175,17 @@ void magcalMPU9250(float * dest1, float * dest2)
 
 int16_t* scanXY(float mxbias, float mybias, float mzbias){
   //Serial.print(sensor.readRangeSingleMillimeters());
-  uint16_t initX1 = sensor.readRangeSingleMillimeters();
-  if (sensor.timeoutOccurred()) { Serial.print(" TIMEOUT"); }
-  
-  //Serial.print(sensor2.readRangeSingleMillimeters());
-  uint16_t initY1 = sensor2.readRangeSingleMillimeters();
-  if (sensor2.timeoutOccurred()) { Serial.print(" TIMEOUT"); }
+  #if defined RANGE_SENSORS
+    uint16_t initX1 = sensor.readRangeSingleMillimeters();
+    if (sensor.timeoutOccurred()) { Serial.print(" TIMEOUT"); }
+    
+    //Serial.print(sensor2.readRangeSingleMillimeters());
+    uint16_t initY1 = sensor2.readRangeSingleMillimeters();
+    if (sensor2.timeoutOccurred()) { Serial.print(" TIMEOUT"); }
+  #else
+    uint16_t initX1 = 69;
+    uint16_t initY1 = 69;
+  #endif
 
 // :::  Magnetometer ::: 
 
@@ -332,11 +337,15 @@ void I2CwriteByte(uint8_t Address, uint8_t Register, uint8_t Data)
 }
 
 void setupMagAndSensor(){
-  pinMode(D3, OUTPUT);
-  pinMode(D4, OUTPUT);
-
+  #if defined RANGE_SENSORS
+    pinMode(D3, OUTPUT);
+    pinMode(D4, OUTPUT);
+  #endif
+  pinMode(1, FUNCTION_3);
+  pinMode(3, FUNCTION_3);
   delay(500);
   Wire.begin(SDA_PORT,SCL_PORT);
+
 
   //Serial.begin (115200);
   
@@ -346,22 +355,24 @@ void setupMagAndSensor(){
   //initAK8963(magCalibration);
   // end of added code
 
-  digitalWrite(D3, HIGH);
-  delay(150);
-  Serial.println("00");
+  #if defined RANGE_SENSORS
+    digitalWrite(D3, HIGH);
+    delay(150);
+    Serial.println("00");
+    
+    sensor.init(true);
+    Serial.println("01");
+    delay(100);
+    sensor.setAddress((uint16_t)22);
   
-  sensor.init(true);
-  Serial.println("01");
-  delay(100);
-  sensor.setAddress((uint16_t)22);
-
-  digitalWrite(D4, HIGH);
-  delay(150);
-  sensor2.init(true);
-  Serial.println("03");
-  delay(100);
-  sensor2.setAddress((uint16_t)25);
-  Serial.println("04");
+    digitalWrite(D4, HIGH);
+    delay(150);
+    sensor2.init(true);
+    Serial.println("03");
+    delay(100);
+    sensor2.setAddress((uint16_t)25);
+    Serial.println("04");
+  #endif
 
   Serial.println("addresses set");
   
@@ -388,25 +399,29 @@ void setupMagAndSensor(){
   Serial.print (count, DEC);
   Serial.println (" device(s).");
 
-  #if defined HIGH_SPEED
-    // reduce timing budget to 20 ms (default is about 33 ms)
-    sensor.setMeasurementTimingBudget(20000);
-    sensor2.setMeasurementTimingBudget(20000);
-  #elif defined HIGH_ACCURACY
-    // increase timing budget to 200 ms
-    sensor.setMeasurementTimingBudget(200000);
-    sensor2.setMeasurementTimingBudget(200000);
-  #endif
+  #if defined RANGE_SENSORS
 
-  #if defined LONG_RANGE
-    // lower the return signal rate limit (default is 0.25 MCPS)
-    sensor.setSignalRateLimit(0.1);
-    sensor2.setSignalRateLimit(0.1);
-    // increase laser pulse periods (defaults are 14 and 10 PCLKs)
-    sensor.setVcselPulsePeriod(VL53L0X::VcselPeriodPreRange, 18);
-    sensor.setVcselPulsePeriod(VL53L0X::VcselPeriodFinalRange, 14);
-    sensor2.setVcselPulsePeriod(VL53L0X::VcselPeriodPreRange, 18);
-    sensor2.setVcselPulsePeriod(VL53L0X::VcselPeriodFinalRange, 14);
+    #if defined HIGH_SPEED
+      // reduce timing budget to 20 ms (default is about 33 ms)
+      sensor.setMeasurementTimingBudget(20000);
+      sensor2.setMeasurementTimingBudget(20000);
+    #elif defined HIGH_ACCURACY
+      // increase timing budget to 200 ms
+      sensor.setMeasurementTimingBudget(200000);
+      sensor2.setMeasurementTimingBudget(200000);
+    #endif
+  
+    #if defined LONG_RANGE
+      // lower the return signal rate limit (default is 0.25 MCPS)
+      sensor.setSignalRateLimit(0.1);
+      sensor2.setSignalRateLimit(0.1);
+      // increase laser pulse periods (defaults are 14 and 10 PCLKs)
+      sensor.setVcselPulsePeriod(VL53L0X::VcselPeriodPreRange, 18);
+      sensor.setVcselPulsePeriod(VL53L0X::VcselPeriodFinalRange, 14);
+      sensor2.setVcselPulsePeriod(VL53L0X::VcselPeriodPreRange, 18);
+      sensor2.setVcselPulsePeriod(VL53L0X::VcselPeriodFinalRange, 14);
+    #endif
+
   #endif
 
   delay(3000);
