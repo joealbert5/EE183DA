@@ -3,8 +3,8 @@
    Based on: http://interactive-matter.eu/blog/2009/12/18/filtering-sensor-data-with-a-kalman-filter/
 */
 
-#ifndef _ballsearch_h
-#define _ballsearch_h
+#ifndef _Ballsearch_h
+#define _Ballsearch_h
 
 #include <vector>
 #include <cmath>
@@ -23,6 +23,11 @@ class Ballsearch {
     double XMAX;
     double YMAX;
     vector<tuple<int,int>> pastPoints;
+    tuple<int,int> start;
+    tuple<int,int> endd;
+    int count;
+    double prevAngle;
+    bool finish;
 
     int _randint(int low, int high){
       int diff = high - low;
@@ -50,6 +55,12 @@ class Ballsearch {
       return _sqrt(x2 + y2);
     }
 
+    tuple<int,int> _subTup(tuple<int,int> tup1, tuple<int,int> tup2){
+      int sub1 = get<0>(tup1) - get<0>(tup2);
+      int sub2 = get<1>(tup1) - get<1>(tup2);
+      return make_tuple(sub1,sub2);
+    }
+
     tuple<int, int> _tuple(int x, int y){return make_tuple(x, y);}
 
   int _getTup(tuple<int, int> tup, int index){
@@ -58,6 +69,12 @@ class Ballsearch {
   }
 
   String _printTup(tuple<int,int> tup){
+    String e1 = String(get<0>(tup));
+    String e2 = String(get<1>(tup));
+    return "(" + e1 + ", " + e2 + ")";
+  }
+
+  String _printTup(tuple<double,double> tup){
     String e1 = String(get<0>(tup));
     String e2 = String(get<1>(tup));
     return "(" + e1 + ", " + e2 + ")";
@@ -145,6 +162,10 @@ class Ballsearch {
         this->YMAX = YMAX;
         this->XMAX = XMAX;
         this->pastPoints.push_back(start);
+        this->start = start;
+        count = 0;
+        prevAngle = 0;
+        finish = false;
     }
 
     void setMaxR(int r){this->maxR = r;}
@@ -158,13 +179,28 @@ class Ballsearch {
     return "(" + e1 + ", " + e2 + ")";
   }
 
+  tuple<double,double> toMove(tuple<int,int> start, tuple<int,int> endd){
+      //TODO: implement this
+      //Serial.print("start is: ");
+      //Serial.println(_printTup(start));
+      //Serial.print("end is: ");
+      //Serial.println(_printTup(endd));
+      tuple<int,int> diff = _subTup(endd, start);
+      double dHeading = _atan2(_getTup(diff, 1), _getTup(diff, 0));
+      double dRadius = _dist(diff);
+      delay(100);
+      return make_tuple(dRadius, dHeading);
+  }
+
   tuple<int,int> movee(tuple<int,int>&start, tuple<int,int>&endd){
     //TODO: implement this
     Serial.print("start is: ");
     Serial.println(_printTup(start));
     Serial.print("end is: ");
     Serial.println(_printTup(endd));
-    delay(1000);
+    delay(100);
+    Serial.print("size is: ");
+    Serial.println(this->pastPoints.size());
     return endd;
   }
 
@@ -173,53 +209,53 @@ class Ballsearch {
     return false;
   }
 
-  int search(String side){
+  tuple<double,double> search(String side){/*
     tuple<int,int> start = _tuple(0,0);
     tuple<int,int> endd;
     int count = 0;
     double prevAngle = 0;
-    bool finish = false;
-    while (!finish){
-      double newAngle = 0;
-      int countToRetry = 0;
-      vector< tuple< tuple<int,int>,double > > samples;
-      while (true){
-        tuple<int,int> unitRand;
-        if (count == 0) unitRand = _randCoordUnit(side);
-        else unitRand = _randCoordUnit("None");
-        //Serial.println(_printTup(unitRand));
-        endd = _tuple(_getTup(start,0) + _getTup(unitRand,0), _getTup(start,1) + _getTup(unitRand,1));
-        //Serial.println(_printTup(endd));
-        tuple<bool, double> res = _isValidRand(endd, unitRand, prevAngle, side, countToRetry >= 1000);
-        if (get<0>(res) && _isNotNearby(endd)){
-          newAngle = get<1>(res);
+    bool finish = false;*/
+    double newAngle = 0;
+    int countToRetry = 0;
+    vector< tuple< tuple<int,int>,double > > samples;
+    while (true){
+      tuple<int,int> unitRand;
+      if (count == 0) unitRand = _randCoordUnit(side);
+      else unitRand = _randCoordUnit("None");
+      //Serial.println(_printTup(unitRand));
+      endd = _tuple(_getTup(start,0) + _getTup(unitRand,0), _getTup(start,1) + _getTup(unitRand,1));
+      //Serial.println(_printTup(endd));
+      tuple<bool, double> res = _isValidRand(endd, unitRand, prevAngle, side, countToRetry >= 1000);
+      if (get<0>(res) && _isNotNearby(endd)){
+        newAngle = get<1>(res);
+        break;
+      }
+      countToRetry++;
+      //Serial.print("countToRetry is ");
+      //Serial.println(countToRetry);
+      delay(10);
+      if (countToRetry > 90 && get<0>(res)){
+        if (countToRetry >= 100 && samples.size() >= 10){
+          tuple< tuple<int,int>,double > bSample = _getOutOfCorner(prevAngle, samples);
+          newAngle = get<1>(bSample);
+          endd = get<0>(bSample);
+          //Serial.println(_printTup(endd));
           break;
         }
-        countToRetry++;
-        //Serial.print("countToRetry is ");
-        //Serial.print(countToRetry);
-        if (countToRetry > 90 && get<0>(res)){
-          if (countToRetry >= 100 && samples.size() >= 10){
-            tuple< tuple<int,int>,double > bSample = _getOutOfCorner(prevAngle, samples);
-            newAngle = get<1>(bSample);
-            endd = get<0>(bSample);
-            //Serial.println(_printTup(endd));
-            break;
-          }
-          //Serial.println(_printTup(endd));
-          samples.push_back(make_tuple(endd, get<1>(res)));
-        }
+        //Serial.println(_printTup(endd));
+        samples.push_back(make_tuple(endd, get<1>(res)));
       }
-      //Serial.println(_printTup(endd));
-      start = movee(start,endd);
-      addToHistory(start);
-      count++;
-      //Serial.print("count is ");
-      //Serial.println(count);
-      prevAngle = newAngle;
-      if (scan()) finish = true;
     }
-    return count;
+    //Serial.println(_printTup(endd));
+    tuple<double,double> moveTo = toMove(start,endd);
+    Serial.println(_printTup(moveTo));
+    start = endd;
+    addToHistory(start);
+    count++;
+    //Serial.print("count is ");
+    //Serial.println(count);
+    prevAngle = newAngle;
+    return moveTo;
   }
 };
 

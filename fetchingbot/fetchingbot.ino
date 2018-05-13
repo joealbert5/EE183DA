@@ -42,7 +42,7 @@
 #include <WebSocketsServer.h>
 #include <ESP8266mDNS.h>
 
-#define    RANGE_SENSORS
+//#define    RANGE_SENSORS    //update in lasermag.cpp too
 #define    PIXY_CAMERA
 
 #include <Servo.h>
@@ -53,6 +53,7 @@
 #include "kalman.h"
 #if defined PIXY_CAMERA
   #include "pixycam.h"
+  #include "ballsearch2.h"
 #endif
 
 #define    MPU9250_ADDRESS            0x68
@@ -64,6 +65,8 @@ Servo servo_left;
 Servo servo_right;
 int servo_left_ctr = 90;
 int servo_right_ctr = 90;
+
+Ballsearch ballsearch(make_tuple(0,0));
 
 char dxn = 'X';
 
@@ -104,15 +107,15 @@ void setup() {
   for (uint8_t t = 4; t > 0; t--) {
     Serial.printf("[SETUP] BOOT WAIT %d...\n", t);
     Serial.flush();
-    LED_ON;
+    //LED_ON;
     delay(500);
-    LED_OFF;
+    //LED_OFF;
     delay(500);
   }
-  LED_ON;
+  //LED_ON;
   //setupSTA(sta_ssid, sta_password);
   setupAP(ap_ssid, ap_password);
-  LED_OFF;
+  //LED_OFF;
 
   setupFile();
   html = loadFile("/controls.html");
@@ -125,6 +128,7 @@ void setup() {
   setupMagAndSensor();
   #if defined PIXY_CAMERA
     setupPixy();
+    
   #endif
   //setupMDNS(mDNS_name);
 
@@ -134,11 +138,18 @@ void setup() {
 void loop() {
   Serial.println("entered loop");
   wsLoop();
+  Serial.println("passed wsloop");
   httpLoop();
+  Serial.println("passed httploop");
   sendCoords(0);
+  Serial.println("passed sendCoords");
   #if defined PIXY_CAMERA
+    Serial.println("entered if defined");
     scanBlocks();
+    Serial.println("passed scanBlocks");
+    
   #endif
+  Serial.println("finished loop");
   //obstacleAvoid();
 }
 
@@ -175,7 +186,7 @@ void drive(int left, int right) {
 void stop() {
   DEBUG("stop");
   drive(servo_left_ctr, servo_right_ctr);
-  LED_OFF;
+  //LED_OFF;
 }
 
 void forward() {
@@ -301,8 +312,9 @@ int16_t findMinMax(int16_t x, int16_t y)
 
 float sendCoords(uint8_t id) {
   char buff [50];
-
+  Serial.println("entered scanXY");
   int16_t* p = scanXY(12, 0, bias[2]);
+  Serial.println("left scanxy");
   //printArr(p, *p);
   double sensX = (double) * (p + 1);
   double sensY = (double) * (p + 2);
@@ -330,6 +342,7 @@ float sendCoords(uint8_t id) {
   */
   float headingRad = headingCalc(filTx, filTy);
   float headingDeg = convertDeg(headingRad);
+  Serial.println("headingDeg: ");
   Serial.print(headingDeg);
   int16_t conFilX = convertX(filX);
   int16_t conFilY = convertY(filY);
@@ -352,7 +365,32 @@ void instruxToDrive(char c) {
     left();
   else if (c == 'R')
     right();
-  sendCoords(0);
+  //sendCoords(0);
+}
+
+String tupToInstrux(tuple<double,double> dirs){
+  String instrux = "";
+  double dRadius = get<0>(dirs);
+  double dHeading = get<1>(dirs)*180/PI;  //degrees
+  double instruxPerRadius = 5.1;
+  double instruxPerDegree = 6.0;
+  int nRad = (int) dRadius/instruxPerRadius;
+  int nDeg = (int) dHeading/instruxPerDegree;
+  if (nDeg > 0){
+    for(int i = 0; i < nDeg; i++){
+      instrux += "L";
+    }
+  }
+  else {
+    for(int i = 0; i < nDeg; i++){
+      instrux += "R";
+    }
+  }
+  for(int i = 0; i < abs(nRad); i++){
+    instrux += "F";
+  }
+  Serial.println(instrux);
+  return instrux;
 }
 
 //
@@ -364,9 +402,9 @@ void setupPins() {
   Serial.begin(115200);
   DEBUG("Started serial.");
 
-  pinMode(LED_PIN, OUTPUT);    //Pin D0 is LED
-  LED_OFF;                     //Turn off LED
-  DEBUG("Setup LED pin.");
+  //pinMode(LED_PIN, OUTPUT);    //Pin D0 is LED
+  //LED_OFF;                     //Turn off LED
+  //DEBUG("Setup LED pin.");
 
   servo_left.attach(SERVO_LEFT);
   servo_right.attach(SERVO_RIGHT);
@@ -419,8 +457,20 @@ void webSocketEvent(uint8_t id, WStype_t type, uint8_t * payload, size_t length)
             instrux = (char) payload[i];
             cmd += instrux;
           }
-          if (cmd == "Beg")
+          if (cmd == "Beg"){
             Serial.println("Beg is: " + cmd);
+            tuple<double,double> toMove = ballsearch.search("L");
+            //Serial.println("out of ballsearch.search");
+            String instructions = tupToInstrux(toMove);
+            //Serial.println("out of tupToInstrux");
+            char instrux;
+            for (int i = 0; i < instructions.length(); i++) {
+              instrux = (char) instructions[i];
+              //Serial.println("looping instruxToDrive");
+              instruxToDrive(instrux);
+            }
+            drive(90, 90);
+          }
           else if (cmd == "Ret")
             Serial.println("Ret is: " + cmd);
           else if (cmd == "App")
@@ -435,7 +485,7 @@ void webSocketEvent(uint8_t id, WStype_t type, uint8_t * payload, size_t length)
           drive(90, 90);
         }
         else if (payload[1] == 'C') {
-          LED_ON;
+          //LED_ON;
           wsSend(id, "Hello world!");
         }
         else if (payload[1] == 'F') {

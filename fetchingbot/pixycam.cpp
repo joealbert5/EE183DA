@@ -8,7 +8,7 @@
 
 uint16_t blocks;
 uint16_t old_blocks;
-const int BUTTON = D0;
+//const int BUTTON = D0;
 int buttonState = 0;
 int32_t prevArea = 0;
 

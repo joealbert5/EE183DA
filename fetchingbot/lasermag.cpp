@@ -43,8 +43,9 @@
 #define AK8963_ASAY      0x11  // Fuse ROM y-axis sensitivity adjustment value
 #define AK8963_ASAZ      0x12  // Fuse ROM z-axis sensitivity adjustment value
 
-#define SDA_PORT 3    //gpio3
-#define SCL_PORT 1    //gpio1
+//#define RANGE_SENSORS
+#define SDA_PORT D5    
+#define SCL_PORT D6    
 //#define HIGH_ACCURACY
 #define HIGH_SPEED
 //#define LONG_RANGE
@@ -175,7 +176,9 @@ void magcalMPU9250(float * dest1, float * dest2)
 
 int16_t* scanXY(float mxbias, float mybias, float mzbias){
   //Serial.print(sensor.readRangeSingleMillimeters());
+  //Serial.println("inside scanxy");
   #if defined RANGE_SENSORS
+    //Serial.println("inside if range_sensors");
     uint16_t initX1 = sensor.readRangeSingleMillimeters();
     if (sensor.timeoutOccurred()) { Serial.print(" TIMEOUT"); }
     
@@ -183,6 +186,7 @@ int16_t* scanXY(float mxbias, float mybias, float mzbias){
     uint16_t initY1 = sensor2.readRangeSingleMillimeters();
     if (sensor2.timeoutOccurred()) { Serial.print(" TIMEOUT"); }
   #else
+    //Serial.println("inside else not range sensors");
     uint16_t initX1 = 69;
     uint16_t initY1 = 69;
   #endif
@@ -224,8 +228,20 @@ int16_t* scanXY(float mxbias, float mybias, float mzbias){
   int16_t x2 = (int16_t) initY1;
   
   
+  //Serial.println("before ret array");
   int16_t ret[6] = {4, x1, x2, magnetx, magnety, magnetz};
   Serial.println(" ");
+  Serial.print(magnetx);
+  Serial.print(" ");
+  Serial.print(magnety);
+  Serial.print(" ");
+  Serial.print(magnetz);
+  Serial.println(" ");
+  Serial.print(x1);
+  Serial.print(" ");
+  Serial.print(x2);
+  //Serial.println(" ");
+  //Serial.println("about to return ret");
   return ret;
 }
 
@@ -341,8 +357,8 @@ void setupMagAndSensor(){
     pinMode(D3, OUTPUT);
     pinMode(D4, OUTPUT);
   #endif
-  pinMode(1, FUNCTION_3);
-  pinMode(3, FUNCTION_3);
+  //pinMode(SDA_PORT, OUTPUT); not needed?
+  //pinMode(SCL_PORT, OUTPUT);
   delay(500);
   Wire.begin(SDA_PORT,SCL_PORT);
 
