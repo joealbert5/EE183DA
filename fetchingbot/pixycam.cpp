@@ -5,18 +5,26 @@
 #include <TPixy.h>
 #include <SPI.h>
 #include "pixycam.h"
+#include "server.h"
 
 uint16_t blocks;
 uint16_t old_blocks;
 //const int BUTTON = D0;
 int buttonState = 0;
 int32_t prevArea = 0;
-const int MIN_AREA_DETECTION = 50;
+const int MIN_AREA_DETECTION = 100;
 
 PixySPI_SS pixy(10);
 
+void printWebApp(String s){
+  char buff [100];
+  s.toCharArray(buff,sizeof(buff));
+  wsSend(0,buff);
+}
+
 bool foundBall(){
   uint16_t blocks = pixy.getBlocks();
+  delay(10);
   int32_t area;
   if (blocks > 0) {
     for(int i = 0; i < blocks; i++){
@@ -25,14 +33,16 @@ bool foundBall(){
       area = w * h;
       if(area > MIN_AREA_DETECTION){
         Serial.println("******FOUND BALL********");
-        delay(30);
+        printWebApp("******FOUND BALL********");
         return true;
       }
     }
     Serial.println("Found blocks but not minimum area");
+    printWebApp("Found blocks but not minimum area");
   }
   else{
     Serial.println("blocks not > 0");
+    printWebApp("blocks not > 0");
   }
     
   delay(30);

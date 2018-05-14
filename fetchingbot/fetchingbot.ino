@@ -68,7 +68,7 @@ int servo_right_ctr = 90;
 
 Ballsearch ballsearch(make_tuple(0,0));
 double q_processNoise [4] = {.125,.125,.125,.125};
-double r_sensorNoise [4] = {25,6,6,6};
+double r_sensorNoise [4] = {36,6,6,6};
 double p_estimateError [4] = {100,1000,1,1};
 double x_initVal [4] = {0,0,0,0};
 Kalman kalman(q_processNoise,r_sensorNoise,p_estimateError,x_initVal);
@@ -159,7 +159,7 @@ void loop() {
     //Serial.println("passed scanBlocks");
     
   #endif
-  sendCoords(0, area);
+  //sendCoords(0, area);
   //Serial.println("passed sendCoords");
   //Serial.println("finished loop");
   //obstacleAvoid();
@@ -219,6 +219,10 @@ void left() {
 void right() {
   DEBUG("right");
   drive(180, 180);
+}
+
+void rightSlow(){
+  drive(110, 110);
 }
 
 int16_t convertX(int16_t x) {
@@ -370,6 +374,10 @@ float sendCoords(uint8_t id, int32_t area) {
   return headingDeg;
 }
 
+void wsSendWrapper(uint8_t id, char * buff){
+  wsSend(id, buff);
+}
+
 void instruxToDrive(char c) {
   dxn = c;
   if (c == 'F')
@@ -441,10 +449,18 @@ String tupToInstrux(tuple<double,double> dirs){
 
 bool scan(){
   long t1 = millis();
-  double timeR360 = 1.86*1000;
+  //double timeR360 = 1.6*1000;
+  double timeR360 = 2.4*1000;
   while(!foundBall()){
-    right();
-    delay(10);
+    int32_t area = scanBlocks();
+    double areaA[4] = {area,0,0,0};
+    area = (kalman.getFilteredValue(areaA, 'X'))[0];
+    char buff [50];
+    sprintf (buff, "area: %d", area);
+    //sprintf (buff, "x: %d y: %d h: %f", -1, -1, headingDeg);
+    wsSend(0, buff);
+    //sendCoords(0, area);
+    rightSlow();
     if (millis() - t1 > timeR360)
       return false;
   }
@@ -517,7 +533,7 @@ void webSocketEvent(uint8_t id, WStype_t type, uint8_t * payload, size_t length)
           }
           if (cmd == "Beg"){
             Serial.println("Beg is: " + cmd);
-            ballsearch.setMaxR(10);
+            ballsearch.setMaxR(30);
             while(!scan()){
               tuple<double,double> toMove = ballsearch.search("L");
               //Serial.println("out of ballsearch.search");
@@ -525,8 +541,10 @@ void webSocketEvent(uint8_t id, WStype_t type, uint8_t * payload, size_t length)
               drive(90, 90);
             }
           }
-          else if (cmd == "Ret")
+          else if (cmd == "Ret"){
             Serial.println("Ret is: " + cmd);
+            scan();
+          }
           else if (cmd == "App")
             Serial.println("App is: " + cmd);
           else if (cmd == "Dep")
@@ -563,12 +581,12 @@ void webSocketEvent(uint8_t id, WStype_t type, uint8_t * payload, size_t length)
           if (payload[2] == 'L') {
             servo_left_ctr -= 1;
             dxn = 'H';
-            sendCoords(id);
+            //sendCoords(id);
           }
           else if (payload[2] == 'R') {
             servo_right_ctr += 1;
             dxn = 'I';
-            sendCoords(id);
+            //sendCoords(id);
           }
           char tx[20] = "Zero @ (xxx, xxx)";
           sprintf(tx, "Zero @ (%3d, %3d)", servo_left_ctr, servo_right_ctr);
@@ -578,12 +596,12 @@ void webSocketEvent(uint8_t id, WStype_t type, uint8_t * payload, size_t length)
           if (payload[2] == 'L') {
             servo_left_ctr += 1;
             dxn = 'J';
-            sendCoords(id);
+            //sendCoords(id);
           }
           else if (payload[2] == 'R') {
             servo_right_ctr -= 1;
             dxn = 'K';
-            sendCoords(id);
+            //sendCoords(id);
           }
           char tx[20] = "Zero @ (xxx, xxx)";
           sprintf(tx, "Zero @ (%3d, %3d)", servo_left_ctr, servo_right_ctr);

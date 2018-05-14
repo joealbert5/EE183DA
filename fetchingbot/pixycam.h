@@ -7,5 +7,7 @@ int32_t scanBlocks();
 
 bool foundBall();
 
+void printWebApp(String s);
+
 #endif
 
