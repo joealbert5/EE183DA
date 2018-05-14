@@ -54,11 +54,12 @@ class Kalman {
         case 'R': arr[0] = 0; arr[1] = 0; arr[2] = -4.5; ret.assign(arr, arr + 3); return ret;
       }
     }
-    
+
+    /*
     double* getFilteredValue(double* measurement, char dxn) {
       vector<double> Bu = dxnToBu(dxn);
       for (int i = 0; i < 4; i++){
-        /* Updates and gets the current measurement value */
+        // Updates and gets the current measurement value 
         //prediction update
         //predicted error covariance = previous + process noise
         this->p[i] = this->p[i] + this->q[i];
@@ -67,6 +68,26 @@ class Kalman {
         this->k = this->p[i] / (this->p[i] + this->r[i]);
         //current filtered value = previous filtered value + gain*(unfiltered - filtered value)
         this->x[i] = this->x[i] + Bu[i] + this->k * (measurement[i] - this->x[i]);
+        //current error = (1 - gain)*previous error
+        this->p[i] = (1 - this->k) * this->p[i];
+      }
+      return this->x;
+    }*/
+
+    double* getFilteredValue(double* measurement, char dxn) {
+      vector<double> Bu = dxnToBu(dxn);
+      for (int i = 0; i < 1; i++){
+        // Updates and gets the current measurement value 
+        //prediction update
+        //predicted error covariance = previous + process noise
+        this->p[i] = this->p[i] + this->q[i];
+        //measurement update
+        //gain = ratio between how large sensor noise is compared to previous estimated error
+        this->k = this->p[i] / (this->p[i] + this->r[i]);
+        //current filtered value = previous filtered value + gain*(unfiltered - filtered value)
+        this->x[i] = this->x[i] + Bu[i] + this->k * (measurement[i] - this->x[i]);
+        Serial.print("this x is: ");
+        Serial.println(this->x[i]);
         //current error = (1 - gain)*previous error
         this->p[i] = (1 - this->k) * this->p[i];
       }

@@ -12,6 +12,7 @@
 #include <cstdlib>  //rand() % 100 + 1  -> in range 1 to 100
 //rand() % 30 + 1985 -> in range 1985 to 2014
 #include <tuple>
+#include <time.h>
 //#include <iostream>
 
 using namespace std;
@@ -30,6 +31,7 @@ class Ballsearch {
     bool finish;
 
     int _randint(int low, int high){
+      srand(millis());
       int diff = high - low;
       int r = rand() % diff + low;
       return r;
@@ -233,7 +235,7 @@ class Ballsearch {
       countToRetry++;
       //Serial.print("countToRetry is ");
       //Serial.println(countToRetry);
-      delay(10);
+      //delay(10);
       if (countToRetry > 90 && get<0>(res)){
         if (countToRetry >= 100 && samples.size() >= 10){
           tuple< tuple<int,int>,double > bSample = _getOutOfCorner(prevAngle, samples);

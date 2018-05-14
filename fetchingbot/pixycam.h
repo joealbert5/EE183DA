@@ -3,7 +3,9 @@
 
 void setupPixy();
 
-void scanBlocks();
+int32_t scanBlocks();
+
+bool foundBall();
 
 #endif
 

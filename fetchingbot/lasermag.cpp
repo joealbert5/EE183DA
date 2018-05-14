@@ -193,53 +193,58 @@ int16_t* scanXY(float mxbias, float mybias, float mzbias){
 
 // :::  Magnetometer ::: 
 
-  // Request first magnetometer single measurement
-  I2CwriteByte(MAG_ADDRESS,0x0A,0x01);
-  
-  // Read register Status 1 and wait for the DRDY: Data Ready
-  
-  uint8_t ST1;
-  do
-  {
-    I2Cread(MAG_ADDRESS,0x02,1,&ST1);
-  }
-  while (!(ST1&0x01));
+  #if defined RANGE_SENSORS
 
-  // Read magnetometer data  
-  uint8_t Mag[7];  
-  I2Cread(MAG_ADDRESS,0x03,7,Mag);
-
-  // Create 16 bits values from 8 bits data
+    // Request first magnetometer single measurement
+    I2CwriteByte(MAG_ADDRESS,0x0A,0x01);
+    
+    // Read register Status 1 and wait for the DRDY: Data Ready
+    
+    uint8_t ST1;
+    do
+    {
+      I2Cread(MAG_ADDRESS,0x02,1,&ST1);
+    }
+    while (!(ST1&0x01));
   
-  // Magnetometer
-  int16_t mx=(Mag[1]<<8 | Mag[0]);
-  int16_t my=(Mag[3]<<8 | Mag[2]);
-  int16_t mz=(Mag[5]<<8 | Mag[4]);
-
-  float mxx = ((float)mx)- mxbias;
-  float myy = ((float)my)- mybias; 
-  float mzz = ((float)mz)- mzbias; 
-
-  int16_t magnetx = (int16_t) (mxx);
-  int16_t magnety = (int16_t) (myy);
-  int16_t magnetz = (int16_t) (mzz);
-
-  int16_t x1 = (int16_t) initX1;
-  int16_t x2 = (int16_t) initY1;
+    // Read magnetometer data  
+    uint8_t Mag[7];  
+    I2Cread(MAG_ADDRESS,0x03,7,Mag);
   
+    // Create 16 bits values from 8 bits data
+    
+    // Magnetometer
+    int16_t mx=(Mag[1]<<8 | Mag[0]);
+    int16_t my=(Mag[3]<<8 | Mag[2]);
+    int16_t mz=(Mag[5]<<8 | Mag[4]);
   
-  //Serial.println("before ret array");
-  int16_t ret[6] = {4, x1, x2, magnetx, magnety, magnetz};
-  Serial.println(" ");
-  Serial.print(magnetx);
-  Serial.print(" ");
-  Serial.print(magnety);
-  Serial.print(" ");
-  Serial.print(magnetz);
-  Serial.println(" ");
-  Serial.print(x1);
-  Serial.print(" ");
-  Serial.print(x2);
+    float mxx = ((float)mx)- mxbias;
+    float myy = ((float)my)- mybias; 
+    float mzz = ((float)mz)- mzbias; 
+  
+    int16_t magnetx = (int16_t) (mxx);
+    int16_t magnety = (int16_t) (myy);
+    int16_t magnetz = (int16_t) (mzz);
+  
+    int16_t x1 = (int16_t) initX1;
+    int16_t x2 = (int16_t) initY1;
+    
+    
+    //Serial.println("before ret array");
+    int16_t ret[6] = {4, x1, x2, magnetx, magnety, magnetz};
+    Serial.println(" ");
+    Serial.print(magnetx);
+    Serial.print(" ");
+    Serial.print(magnety);
+    Serial.print(" ");
+    Serial.print(magnetz);
+    Serial.println(" ");
+    Serial.print(x1);
+    Serial.print(" ");
+    Serial.print(x2);
+  #else
+    int16_t ret[6] = {4, 1, 1, 1, 1, 1};
+  #endif
   //Serial.println(" ");
   //Serial.println("about to return ret");
   return ret;
