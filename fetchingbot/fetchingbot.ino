@@ -54,6 +54,7 @@
 #if defined PIXY_CAMERA
   #include "pixycam.h"
   #include "ballsearch2.h"
+  #include "ballapproach.h"
 #endif
 
 #define    MPU9250_ADDRESS            0x68
@@ -159,7 +160,7 @@ void loop() {
     //Serial.println("passed scanBlocks");
     
   #endif
-  //sendCoords(0, area);
+  sendCoords(0, area);
   //Serial.println("passed sendCoords");
   //Serial.println("finished loop");
   //obstacleAvoid();
@@ -367,8 +368,8 @@ float sendCoords(uint8_t id, int32_t area) {
   int16_t area16 = (int16_t) area;
   leftSensor = conFilX;
   rightSensor = conFilY;
-  sprintf (buff, "x: %d y: %d h: %f a: %d", conFilX, conFilY, headingDeg, area16);
-  //sprintf (buff, "x: %d y: %d h: %f", -1, -1, headingDeg);
+  //sprintf (buff, "x: %d y: %d h: %f a: %d", conFilX, conFilY, headingDeg, area16);
+  sprintf (buff, "a: %d", area16);
   wsSend(id, buff);
 
   return headingDeg;
@@ -447,14 +448,19 @@ String tupToInstrux(tuple<double,double> dirs){
   return instrux;
 }
 
+int32_t getArea(){
+  int32_t area = scanBlocks();
+  double areaA[4] = {area,0,0,0};
+  area = (kalman.getFilteredValue(areaA, 'X'))[0];
+  return area;
+}
+
 bool scan(){
   long t1 = millis();
   //double timeR360 = 1.6*1000;
   double timeR360 = 2.4*1000;
   while(!foundBall()){
-    int32_t area = scanBlocks();
-    double areaA[4] = {area,0,0,0};
-    area = (kalman.getFilteredValue(areaA, 'X'))[0];
+    int32_t area = getArea();
     char buff [50];
     sprintf (buff, "area: %d", area);
     //sprintf (buff, "x: %d y: %d h: %f", -1, -1, headingDeg);
@@ -465,6 +471,85 @@ bool scan(){
       return false;
   }
   return foundBall();
+}
+
+void track(){
+  int X_ERROR_ERROR = 20;
+  int Y_ERROR_ERROR = 10;
+  long motorX_adjust_millis = 200;
+  long motorY_adjust_millis = 200;
+  Block ball = foundBall2();
+  printWebApp("passed foundBall2()");
+  Ballapproach bApproach(ball, servo_left, servo_right);
+  printWebApp("passed bApproach");
+  int32_t area = getArea();
+  bApproach.setArea(area);
+  printWebApp("set the area, now tracking");
+  if(area){
+      int32_t x_error = bApproach.getX() - CENTER_X;
+      int32_t y_error = bApproach.getY() - CENTER_Y;
+      Serial.print("x_error: ");
+      Serial.println(x_error);
+      Serial.print("y_error: ");
+      Serial.println(y_error);
+      //first center x
+      while(abs(x_error) > 20 && abs(y_error) > 10){
+        while(abs(x_error) > 20){
+          if(x_error < 0){
+            //object is on left side of screen
+            long t1 = millis();
+            while(millis() - t1 < motorX_adjust_millis)
+              bApproach.right();
+            bApproach.stopApp();
+            motorX_adjust_millis /= 2;
+          }
+          if(x_error > 0){
+            //object is on right side of screen
+            long t1 = millis();
+            while(millis() - t1 < motorX_adjust_millis)
+              bApproach.left();
+            bApproach.stopApp();
+            motorX_adjust_millis /= 2;
+          }
+          bApproach.updateBlock(foundBall2());
+          int32_t x_error = bApproach.getX() - CENTER_X;
+        }
+        //now center y
+        while(abs(y_error) > 10){
+          if(y_error < 0){
+            //object is on above the screen
+            long t1 = millis();
+            while(millis() - t1 < motorY_adjust_millis)
+              bApproach.forward();
+            bApproach.stopApp();
+            motorY_adjust_millis /= 2;
+          }
+          if(y_error > 0){
+            //object is on right side of screen
+            long t1 = millis();
+            while(millis() - t1 < motorY_adjust_millis)
+              bApproach.backward();
+            bApproach.stopApp();
+            motorY_adjust_millis /= 2;
+          }
+          bApproach.updateBlock(foundBall2());
+          int32_t y_error = bApproach.getY() - CENTER_Y;
+        }
+        bApproach.updateBlock(foundBall2());
+        x_error = bApproach.getX() - CENTER_X;
+        y_error = bApproach.getY() - CENTER_Y;
+        if(motorX_adjust_millis < 150)
+          motorX_adjust_millis += 50;
+        if(motorY_adjust_millis < 150)
+          motorY_adjust_millis += 50;
+    }
+    Serial.println("done tracking");
+    return;
+  }
+  /*else{
+    Serial.println("can't find ball");
+  }*/
+  return;
 }
 
 //
@@ -545,8 +630,10 @@ void webSocketEvent(uint8_t id, WStype_t type, uint8_t * payload, size_t length)
             Serial.println("Ret is: " + cmd);
             scan();
           }
-          else if (cmd == "App")
+          else if (cmd == "App"){
             Serial.println("App is: " + cmd);
+            track();
+          }
           else if (cmd == "Dep")
             Serial.println("Dep is: " + cmd);
           else if (cmd == "Gra")

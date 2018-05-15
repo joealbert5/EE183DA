@@ -22,6 +22,8 @@ void printWebApp(String s){
   wsSend(0,buff);
 }
 
+
+
 bool foundBall(){
   uint16_t blocks = pixy.getBlocks();
   delay(10);
@@ -47,6 +49,35 @@ bool foundBall(){
     
   delay(30);
   return false;
+}
+
+Block foundBall2(){
+  delay(10);
+  int32_t area;
+  int count = 0;
+  while (count < 10){
+    uint16_t blocks = pixy.getBlocks();
+    if (blocks > 0) {
+      for(int i = 0; i < blocks; i++){
+        int32_t w = pixy.blocks[i].width;
+        int32_t h = pixy.blocks[i].height;
+        area = w * h;
+        if(area > MIN_AREA_DETECTION){
+          Serial.println("******FOUND BALL********");
+          printWebApp("******FOUND BALL********");
+          return pixy.blocks[i];
+        }
+      }
+      Serial.println("Found blocks but not minimum area");
+      printWebApp("Found blocks but not minimum area");
+    }
+    count++;
+  }
+  Serial.println("blocks not > 0, counted 10 times");
+  printWebApp("blocks not > 0, counted 10 times");
+  uint16_t blocks = pixy.getBlocks();
+  delay(30);
+  return pixy.blocks[0];
 }
 
 void setupPixy()
