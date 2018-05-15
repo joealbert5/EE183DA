@@ -160,7 +160,8 @@ void loop() {
     //Serial.println("passed scanBlocks");
     
   #endif
-  sendCoords(0, area);
+  //printWebApp(String(area));
+  //sendCoords(0, area);
   //Serial.println("passed sendCoords");
   //Serial.println("finished loop");
   //obstacleAvoid();
@@ -476,8 +477,8 @@ bool scan(){
 void track(){
   int X_ERROR_ERROR = 20;
   int Y_ERROR_ERROR = 10;
-  long motorX_adjust_millis = 200;
-  long motorY_adjust_millis = 200;
+  long motorX_adjust_millis = 130;
+  long motorY_adjust_millis = 130;
   Block ball = foundBall2();
   printWebApp("passed foundBall2()");
   Ballapproach bApproach(ball, servo_left, servo_right);
@@ -490,6 +491,8 @@ void track(){
       int32_t y_error = bApproach.getY() - CENTER_Y;
       Serial.print("x_error: ");
       Serial.println(x_error);
+      Serial.print("x: ");
+      Serial.println(bApproach.getX());
       Serial.print("y_error: ");
       Serial.println(y_error);
       //first center x
@@ -499,20 +502,22 @@ void track(){
             //object is on left side of screen
             long t1 = millis();
             while(millis() - t1 < motorX_adjust_millis)
-              bApproach.right();
+              bApproach.left();
             bApproach.stopApp();
-            motorX_adjust_millis /= 2;
+            if (motorX_adjust_millis > 50)
+              motorX_adjust_millis /= 1.3;
           }
-          if(x_error > 0){
+          if(x_error >= 0){
             //object is on right side of screen
             long t1 = millis();
             while(millis() - t1 < motorX_adjust_millis)
-              bApproach.left();
+              bApproach.right();
             bApproach.stopApp();
-            motorX_adjust_millis /= 2;
+            if (motorX_adjust_millis > 50)
+              motorX_adjust_millis /= 1.3;
           }
           bApproach.updateBlock(foundBall2());
-          int32_t x_error = bApproach.getX() - CENTER_X;
+          x_error = bApproach.getX() - CENTER_X;
         }
         //now center y
         while(abs(y_error) > 10){
@@ -522,7 +527,8 @@ void track(){
             while(millis() - t1 < motorY_adjust_millis)
               bApproach.forward();
             bApproach.stopApp();
-            motorY_adjust_millis /= 2;
+            if (motorY_adjust_millis > 50)
+              motorY_adjust_millis /= 1.3;
           }
           if(y_error > 0){
             //object is on right side of screen
@@ -530,18 +536,28 @@ void track(){
             while(millis() - t1 < motorY_adjust_millis)
               bApproach.backward();
             bApproach.stopApp();
-            motorY_adjust_millis /= 2;
+            if (motorY_adjust_millis > 50)
+              motorY_adjust_millis /= 1.3;
           }
           bApproach.updateBlock(foundBall2());
-          int32_t y_error = bApproach.getY() - CENTER_Y;
+          y_error = bApproach.getY() - CENTER_Y;
         }
         bApproach.updateBlock(foundBall2());
         x_error = bApproach.getX() - CENTER_X;
         y_error = bApproach.getY() - CENTER_Y;
-        if(motorX_adjust_millis < 150)
-          motorX_adjust_millis += 50;
-        if(motorY_adjust_millis < 150)
-          motorY_adjust_millis += 50;
+        Serial.println("adjusted x and y");
+        Serial.print("x_error: ");
+        Serial.println(x_error);
+        Serial.print("y_error: ");
+        Serial.println(y_error);
+        Serial.print("end loop motorX_adjust_millis is ");
+        Serial.println(motorX_adjust_millis);
+        Serial.print("end loop motorX_adjust_millis is ");
+        Serial.println(motorX_adjust_millis);
+        if(motorX_adjust_millis < 50)
+          motorX_adjust_millis += 100;
+        if(motorY_adjust_millis < 50)
+          motorY_adjust_millis += 100;
     }
     Serial.println("done tracking");
     return;

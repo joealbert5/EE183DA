@@ -57,22 +57,19 @@ class Ballapproach {
     }
 
     void forward() {
-      //DEBUG("forward");
-      drive(110, 20);
+      drive(110, 70);
     }
 
     void backward() {
       DEBUG("backward");
-      drive(20, 110);
+      drive(70, 110);
     }
 
     void left() {
-      DEBUG("left");
       drive(20, 20);
     }
 
     void right() {
-      DEBUG("right");
       drive(110, 110);
     }
 

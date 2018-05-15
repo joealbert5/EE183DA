@@ -34,16 +34,16 @@ bool foundBall(){
       int32_t h = pixy.blocks[i].height;
       area = w * h;
       if(area > MIN_AREA_DETECTION){
-        Serial.println("******FOUND BALL********");
+        //Serial.println("******FOUND BALL********");
         printWebApp("******FOUND BALL********");
         return true;
       }
     }
-    Serial.println("Found blocks but not minimum area");
+    //Serial.println("Found blocks but not minimum area");
     printWebApp("Found blocks but not minimum area");
   }
   else{
-    Serial.println("blocks not > 0");
+    //Serial.println("blocks not > 0");
     printWebApp("blocks not > 0");
   }
     
@@ -63,17 +63,17 @@ Block foundBall2(){
         int32_t h = pixy.blocks[i].height;
         area = w * h;
         if(area > MIN_AREA_DETECTION){
-          Serial.println("******FOUND BALL********");
+          //Serial.println("******FOUND BALL********");
           printWebApp("******FOUND BALL********");
           return pixy.blocks[i];
         }
       }
-      Serial.println("Found blocks but not minimum area");
+      //Serial.println("Found blocks but not minimum area");
       printWebApp("Found blocks but not minimum area");
     }
     count++;
   }
-  Serial.println("blocks not > 0, counted 10 times");
+  //Serial.println("blocks not > 0, counted 10 times");
   printWebApp("blocks not > 0, counted 10 times");
   uint16_t blocks = pixy.getBlocks();
   delay(30);
@@ -94,13 +94,13 @@ int32_t scanBlocks()
     int32_t w = pixy.blocks[0].width;
     int32_t h = pixy.blocks[0].height;
     area = w * h;
-    int32_t dA = area - prevArea;
+    int32_t dA = area - prevArea;/*
     Serial.print("prevArea = ");
     Serial.print(prevArea);
     Serial.print(", area = ");
     Serial.print(area);
     Serial.print(", dA = ");
-    Serial.println(dA);
+    Serial.println(dA);*/
     prevArea = area;
   }
   else{
