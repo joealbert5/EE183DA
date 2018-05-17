@@ -5,3 +5,5 @@ number of blocks detected,nBlocks: ,int
 tracking x error,x_error: ,int
 tracking y error,y_error: ,int
 scanItertime,scanIterTime: ,long
+left motor speed,leftSpeed: ,int
+right motor speed,rightSpeed: ,int

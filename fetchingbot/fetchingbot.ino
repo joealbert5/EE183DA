@@ -581,6 +581,50 @@ void track(){
   return;
 }
 
+void track2(){
+  int X_ERROR_ERROR = 20;
+  int Y_ERROR_ERROR = 10;
+  Block ball = foundBall2();
+  printWebApp("passed foundBall2()");
+  Ballapproach bApproach(ball, servo_left, servo_right);
+  printWebApp("passed bApproach");
+  int32_t area = getArea();
+  bApproach.setArea(area);
+  printWebApp("set the area, now tracking");
+  if(area){
+      int32_t x_error = bApproach.getX() - CENTER_X;
+      int32_t y_error = bApproach.getY() - CENTER_Y;
+      Serial.print("x_error: ");
+      Serial.println(x_error);
+      Serial.print("y_error: ");
+      Serial.println(y_error);
+      while(((abs(x_error) > 20) || (abs(y_error) > 10)) && area){
+        ball = foundBall2();
+        bApproach.update2(ball);
+        bApproach.setArea(getArea());
+        x_error = bApproach.getX() - CENTER_X;
+        y_error = bApproach.getY() - CENTER_Y;
+        Serial.print("x_error: ");
+        Serial.println(x_error);
+        Serial.print("y_error: ");
+        Serial.println(y_error);
+      }
+      x_error = bApproach.getX() - CENTER_X;
+      y_error = bApproach.getY() - CENTER_Y;
+      Serial.println("final x and y errors");
+      Serial.print("x_error: ");
+      Serial.println(x_error);
+      Serial.print("y_error: ");
+      Serial.println(y_error);
+      String s = "finished loop " + String(x_error);
+      printWebApp(s);
+  }
+  /*else{
+    Serial.println("can't find ball");
+  }*/
+  return;
+}
+
 //
 // Setup //
 //
@@ -661,7 +705,7 @@ void webSocketEvent(uint8_t id, WStype_t type, uint8_t * payload, size_t length)
           }
           else if (cmd == "App"){
             Serial.println("App is: " + cmd);
-            track();
+            track2();
           }
           else if (cmd == "Dep")
             Serial.println("Dep is: " + cmd);
