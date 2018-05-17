@@ -86,7 +86,7 @@ class Kalman {
         this->k = this->p[i] / (this->p[i] + this->r[i]);
         //current filtered value = previous filtered value + gain*(unfiltered - filtered value)
         this->x[i] = this->x[i] + Bu[i] + this->k * (measurement[i] - this->x[i]);
-        Serial.print("this x is: ");
+        Serial.print("areaF: ");
         Serial.println(this->x[i]);
         //current error = (1 - gain)*previous error
         this->p[i] = (1 - this->k) * this->p[i];

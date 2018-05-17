@@ -22,20 +22,22 @@ void printWebApp(String s){
   wsSend(0,buff);
 }
 
-
-
 bool foundBall(){
   uint16_t blocks = pixy.getBlocks();
-  delay(10);
   int32_t area;
+  char buff [100];
   if (blocks > 0) {
     for(int i = 0; i < blocks; i++){
       int32_t w = pixy.blocks[i].width;
       int32_t h = pixy.blocks[i].height;
       area = w * h;
+      sprintf (buff, "found ball scan: (%d, %d)", i, area);
+      Serial.println(buff);
       if(area > MIN_AREA_DETECTION){
         //Serial.println("******FOUND BALL********");
-        printWebApp("******FOUND BALL********");
+        sprintf (buff, "found ball exit scan: (%d, %d)", i, area);
+        Serial.println(buff);
+        printWebApp("***FOUND BALL***");
         return true;
       }
     }
@@ -46,25 +48,28 @@ bool foundBall(){
     //Serial.println("blocks not > 0");
     printWebApp("blocks not > 0");
   }
-    
-  delay(30);
   return false;
 }
 
 Block foundBall2(){
-  delay(10);
   int32_t area;
   int count = 0;
-  while (count < 10){
+  while (count < 20){
     uint16_t blocks = pixy.getBlocks();
     if (blocks > 0) {
+      Serial.print("nBlocks: ");
+      Serial.println(blocks);
+      delay(10);
       for(int i = 0; i < blocks; i++){
         int32_t w = pixy.blocks[i].width;
         int32_t h = pixy.blocks[i].height;
         area = w * h;
         if(area > MIN_AREA_DETECTION){
           //Serial.println("******FOUND BALL********");
-          printWebApp("******FOUND BALL********");
+          char buff [50];
+          sprintf (buff, "found ball: (%d, %d)", i, area);
+          Serial.println(buff);
+          printWebApp("***FOUND BALL***");
           return pixy.blocks[i];
         }
       }

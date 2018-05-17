@@ -1,0 +1,1892 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2018.05.17 01:08:06 =~=~=~=~=~=~=~=~=~=~=~=
+areaF: 245.35
+ 
+areaF: 238.75
+ 
+areaF: 255.13
+ 
+areaF: 242.13
+ 
+areaF: 240.92
+ 
+areaF: 240.76
+ 
+areaF: 230.13
+ 
+areaF: 222.11
+ 
+areaF: 224.05
+ 
+areaF: 235.78
+ 
+areaF: 228.98
+ 
+areaF: 238.19
+ 
+areaF: 253.86
+ 
+areaF: 253.98
+ 
+areaF: 247.69
+ 
+areaF: 255.55
+ 
+areaF: 247.33
+ 
+areaF: 255.15
+ 
+areaF: 269.85
+ 
+areaF: 276.72
+ 
+areaF: 281.49
+ 
+areaF: 272.25
+ 
+areaF: 283.28
+ 
+areaF: 272.22
+ 
+areaF: 272.20
+ 
+areaF: 268.65
+ 
+areaF: 257.74
+ 
+areaF: 247.63
+ 
+areaF: 238.61
+ 
+areaF: 231.82
+ 
+areaF: 224.28
+ 
+areaF: 216.94
+ 
+areaF: 214.94
+ 
+areaF: 229.08
+ 
+areaF: 235.99
+ 
+areaF: 230.22
+ 
+areaF: 222.54
+ 
+areaF: 217.81
+ 
+areaF: 213.59
+ 
+areaF: 213.39
+ 
+areaF: 212.33
+ 
+areaF: 212.09
+ 
+areaF: 223.01
+ 
+areaF: 232.56
+ 
+areaF: 228.01
+ 
+areaF: 220.11
+ 
+areaF: 219.42
+ 
+areaF: 217.17
+ 
+areaF: 221.91
+ 
+areaF: 212.30
+ 
+areaF: 206.45
+ 
+areaF: 199.78
+ 
+areaF: 208.49
+ 
+areaF: 205.49
+ 
+areaF: 201.46
+ 
+areaF: 198.11
+ 
+areaF: 215.10
+ 
+areaF: 229.40
+ 
+areaF: 220.56
+ 
+areaF: 217.10
+ 
+areaF: 207.54
+ 
+areaF: 217.63
+ 
+areaF: 211.13
+ 
+areaF: 204.20
+ 
+areaF: 197.72
+ 
+areaF: 206.55
+ 
+areaF: 201.43
+ 
+areaF: 196.20
+ 
+areaF: 195.27
+ 
+areaF: 188.56
+ 
+areaF: 186.01
+ 
+areaF: 199.17
+ 
+areaF: 206.66
+ 
+areaF: 214.17
+ 
+areaF: 224.23
+ 
+areaF: 231.43
+ 
+areaF: 224.48
+ 
+areaF: 217.13
+ 
+areaF: 223.59
+ 
+areaF: 219.60
+ 
+areaF: 228.09
+ 
+areaF: 240.68
+ 
+areaF: 230.00
+ 
+areaF: 220.61
+ 
+areaF: 223.44
+ 
+areaF: 221.64
+ 
+areaF: 227.21
+ 
+areaF: 216.61
+ 
+areaF: 217.95
+ 
+areaF: 211.20
+ 
+areaF: 206.84
+ 
+areaF: 203.19
+ 
+areaF: 207.30
+ 
+areaF: 211.92
+ 
+areaF: 227.83
+ 
+areaF: 222.00
+ 
+areaF: 221.20
+ 
+areaF: 218.96
+ 
+areaF: 228.40
+ 
+areaF: 231.81
+ 
+areaF: 244.98
+ 
+areaF: 236.46
+ 
+areaF: 246.73
+ 
+areaF: 253.44
+ 
+areaF: 253.59
+ 
+areaF: 263.79
+ 
+areaF: 259.00
+ 
+areaF: 266.15
+ 
+areaF: 266.49
+ 
+areaF: 258.45
+ 
+areaF: 258.31
+ 
+areaF: 268.25
+ 
+areaF: 273.72
+ 
+areaF: 263.73
+ 
+areaF: 263.23
+ 
+areaF: 278.38
+ 
+areaF: 272.86
+ 
+areaF: 287.46
+ 
+areaF: 300.31
+ 
+areaF: 313.33
+ 
+areaF: 315.49
+ 
+areaF: 327.65
+ 
+areaF: 324.46
+ 
+areaF: 313.91
+ 
+areaF: 314.83
+ 
+areaF: 324.28
+ 
+areaF: 330.27
+ 
+areaF: 326.02
+ 
+areaF: 331.17
+ 
+areaF: 316.80
+ 
+areaF: 314.24
+ 
+areaF: 321.89
+ 
+areaF: 322.35
+ 
+areaF: 336.87
+ 
+areaF: 339.22
+ 
+areaF: 347.27
+ 
+areaF: 359.45
+ 
+areaF: 360.85
+ 
+areaF: 362.18
+ 
+areaF: 371.66
+ 
+areaF: 380.61
+ 
+areaF: 373.42
+ 
+areaF: 356.69
+ 
+areaF: 361.91
+ 
+On connection #0
+  got text: #!Ret@
+Ret is: Ret
+found ball scan: (0, 576)
+found ball exit scan: (0, 576)
+areaF: 348.65
+ 
+areaF: 345.86
+ 
+areaF: 336.37
+ 
+areaF: 339.10
+ 
+areaF: 351.74
+ 
+areaF: 339.85
+ 
+areaF: 328.42
+ 
+areaF: 328.96
+ 
+areaF: 319.76
+ 
+areaF: 317.94
+ 
+areaF: 305.70
+ 
+areaF: 308.29
+ 
+areaF: 295.80
+ 
+areaF: 284.48
+ 
+areaF: 281.82
+ 
+areaF: 276.51
+ 
+areaF: 270.36
+ 
+areaF: 274.12
+ 
+areaF: 283.26
+ 
+areaF: 279.64
+ 
+areaF: 281.50
+ 
+areaF: 279.12
+ 
+areaF: 269.45
+ 
+areaF: 262.95
+ 
+areaF: 255.35
+ 
+areaF: 266.37
+ 
+areaF: 258.34
+ 
+areaF: 251.11
+ 
+areaF: 251.16
+ 
+areaF: 256.13
+ 
+On connection #0
+  got text: #LT
+left
+areaF: 261.56
+ 
+areaF: 268.56
+ 
+areaF: 265.10
+ 
+areaF: 257.48
+ 
+blocks not > 0
+areaF: 242.75
+ 
+blocks not > 0
+areaF: 228.86
+ 
+On connection #0
+  got text: #0
+stop
+blocks not > 0
+areaF: 215.77
+ 
+blocks not > 0
+areaF: 203.42
+ 
+blocks not > 0
+areaF: 191.78
+ 
+blocks not > 0
+areaF: 180.81
+ 
+blocks not > 0
+areaF: 170.47
+ 
+blocks not > 0
+areaF: 160.71
+ 
+blocks not > 0
+areaF: 151.52
+ 
+blocks not > 0
+areaF: 142.85
+ 
+blocks not > 0
+areaF: 134.68
+ 
+blocks not > 0
+areaF: 126.97
+ 
+blocks not > 0
+areaF: 119.71
+ 
+blocks not > 0
+areaF: 112.86
+ 
+On connection #0
+  got text: #LT
+left
+blocks not > 0
+areaF: 106.40
+ 
+blocks not > 0
+areaF: 100.31
+ 
+blocks not > 0
+areaF: 94.57
+ 
+blocks not > 0
+areaF: 89.16
+ 
+blocks not > 0
+areaF: 84.06
+ 
+On connection #0
+  got text: #0
+stop
+blocks not > 0
+areaF: 79.25
+ 
+blocks not > 0
+areaF: 74.72
+ 
+blocks not > 0
+areaF: 70.44
+ 
+blocks not > 0
+areaF: 66.41
+ 
+blocks not > 0
+areaF: 62.61
+ 
+blocks not > 0
+areaF: 59.03
+ 
+blocks not > 0
+areaF: 55.65
+ 
+blocks not > 0
+areaF: 52.47
+ 
+blocks not > 0
+areaF: 49.47
+ 
+blocks not > 0
+areaF: 46.64
+ 
+blocks not > 0
+areaF: 43.97
+ 
+blocks not > 0
+areaF: 41.45
+ 
+blocks not > 0
+areaF: 39.08
+ 
+blocks not > 0
+areaF: 36.84
+ 
+blocks not > 0
+areaF: 34.74
+ 
+blocks not > 0
+areaF: 32.75
+ 
+blocks not > 0
+areaF: 30.87
+ 
+blocks not > 0
+areaF: 29.11
+ 
+blocks not > 0
+areaF: 27.44
+ 
+blocks not > 0
+areaF: 25.87
+ 
+blocks not > 0
+areaF: 24.39
+ 
+blocks not > 0
+areaF: 23.00
+ 
+blocks not > 0
+areaF: 21.68
+ 
+blocks not > 0
+areaF: 20.44
+ 
+blocks not > 0
+areaF: 19.27
+ 
+blocks not > 0
+areaF: 18.17
+ 
+blocks not > 0
+areaF: 17.13
+ 
+blocks not > 0
+areaF: 16.15
+ 
+blocks not > 0
+areaF: 15.22
+ 
+blocks not > 0
+areaF: 14.35
+ 
+blocks not > 0
+areaF: 13.53
+ 
+blocks not > 0
+areaF: 12.76
+ 
+blocks not > 0
+areaF: 12.03
+ 
+blocks not > 0
+areaF: 11.34
+ 
+blocks not > 0
+areaF: 10.69
+ 
+blocks not > 0
+areaF: 10.08
+ 
+blocks not > 0
+areaF: 9.50
+ 
+blocks not > 0
+areaF: 8.96
+ 
+blocks not > 0
+areaF: 8.45
+ 
+blocks not > 0
+areaF: 7.96
+ 
+blocks not > 0
+areaF: 7.51
+ 
+blocks not > 0
+areaF: 7.08
+ 
+blocks not > 0
+areaF: 6.67
+ 
+blocks not > 0
+areaF: 6.29
+ 
+blocks not > 0
+areaF: 5.93
+ 
+blocks not > 0
+areaF: 5.59
+ 
+blocks not > 0
+areaF: 5.27
+ 
+blocks not > 0
+areaF: 4.97
+ 
+blocks not > 0
+areaF: 4.69
+ 
+blocks not > 0
+areaF: 4.42
+ 
+blocks not > 0
+areaF: 4.17
+ 
+blocks not > 0
+areaF: 3.93
+ 
+blocks not > 0
+areaF: 3.70
+ 
+blocks not > 0
+areaF: 3.49
+ 
+blocks not > 0
+areaF: 3.29
+ 
+blocks not > 0
+areaF: 3.10
+ 
+blocks not > 0
+areaF: 2.92
+ 
+blocks not > 0
+areaF: 2.76
+ 
+blocks not > 0
+areaF: 2.60
+ 
+blocks not > 0
+areaF: 2.45
+ 
+blocks not > 0
+areaF: 2.31
+ 
+blocks not > 0
+areaF: 2.18
+ 
+blocks not > 0
+areaF: 2.05
+ 
+blocks not > 0
+areaF: 1.94
+ 
+blocks not > 0
+areaF: 1.83
+ 
+blocks not > 0
+areaF: 1.72
+ 
+blocks not > 0
+areaF: 1.62
+ 
+blocks not > 0
+areaF: 1.53
+ 
+blocks not > 0
+areaF: 1.44
+ 
+blocks not > 0
+areaF: 1.36
+ 
+blocks not > 0
+areaF: 1.28
+ 
+blocks not > 0
+areaF: 1.21
+ 
+blocks not > 0
+areaF: 1.14
+ 
+blocks not > 0
+areaF: 1.07
+ 
+blocks not > 0
+areaF: 1.01
+ 
+blocks not > 0
+areaF: 0.95
+ 
+blocks not > 0
+areaF: 0.90
+ 
+blocks not > 0
+areaF: 0.85
+ 
+blocks not > 0
+areaF: 0.80
+ 
+blocks not > 0
+areaF: 0.75
+ 
+blocks not > 0
+areaF: 0.71
+ 
+blocks not > 0
+areaF: 0.67
+ 
+blocks not > 0
+areaF: 0.63
+ 
+blocks not > 0
+areaF: 0.60
+ 
+blocks not > 0
+areaF: 0.56
+ 
+blocks not > 0
+areaF: 0.53
+ 
+blocks not > 0
+areaF: 0.50
+ 
+blocks not > 0
+areaF: 0.47
+ 
+On connection #0
+  got text: #!Ret@
+Ret is: Ret
+scanIterTime: 0
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 0
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 0
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 2
+found ball scan: (0, 36)
+scanIterTime: 3
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+found ball scan: (0, 45)
+scanIterTime: 3
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+found ball scan: (0, 171)
+found ball exit scan: (0, 171)
+scanIterTime: 7
+blocks not > 0
+areaF: 0.44
+ 
+blocks not > 0
+areaF: 0.42
+ 
+blocks not > 0
+areaF: 0.39
+ 
+blocks not > 0
+areaF: 0.37
+ 
+blocks not > 0
+areaF: 0.35
+ 
+blocks not > 0
+areaF: 0.33
+ 
+blocks not > 0
+areaF: 0.31
+ 
+areaF: 1.84
+ 
+areaF: 13.75
+ 
+areaF: 66.06
+ 
+areaF: 95.23
+ 
+areaF: 143.00
+ 
+On connection #0
+  got text: #!App@
+App is: App
+nBlocks: 1
+found ball: (0, 900)
+areaF: 191.57
+x_error: -49
+y_error: -93
+ 
+nBlocks: 1
+found ball: (0, 186)
+nBlocks: 1
+found ball: (0, 336)
+nBlocks: 1
+found ball: (0, 1080)
+nBlocks: 2
+found ball: (0, 342)
+nBlocks: 1
+found ball: (0, 638)
+nBlocks: 1
+nBlocks: 1
+found ball: (0, 672)
+nBlocks: 1
+found ball: (0, 1520)
+nBlocks: 1
+found ball: (0, 330)
+nBlocks: 3
+found ball: (0, 675)
+nBlocks: 1
+found ball: (0, 1292)
+adjusted x and y
+x_error: 82
+y_error: -50
+ 
+nBlocks: 1
+found ball: (0, 812)
+nBlocks: 2
+nBlocks: 1
+nBlocks: 1
+found ball: (0, 3240)
+nBlocks: 2
+nBlocks: 1
+found ball: (0, 399)
+nBlocks: 1
+found ball: (0, 1014)
+nBlocks: 2
+found ball: (0, 1161)
+nBlocks: 1
+found ball: (0, 1274)
+nBlocks: 2
+found ball: (0, 357)
+nBlocks: 2
+found ball: (0, 250)
+nBlocks: 2
+nBlocks: 2
+found ball: (0, 156)
+nBlocks: 5
+found ball: (1, 375)
+adjusted x and y
+x_error: -83
+y_error: -17
+ 
+nBlocks: 4
+found ball: (0, 210)
+nBlocks: 2
+found ball: (0, 540)
+nBlocks: 3
+found ball: (0, 2322)
+nBlocks: 1
+found ball: (0, 2223)
+adjusted x and y
+x_error: 9
+y_error: -21
+ 
+nBlocks: 2
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+nBlocks: 1
+nBlocks: 5
+found ball: (0, 620)
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+adjusted x and y
+x_error: -24
+y_error: 12
+ 
+nBlocks: 1
+found ball: (0, 450)
+nBlocks: 2
+found ball: (0, 124)
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+nBlocks: 2
+found ball: (0, 1536)
+nBlocks: 3
+found ball: (0, 896)
+nBlocks: 3
+found ball: (0, 595)
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+nBlocks: 2
+found ball: (0, 1118)
+nBlocks: 1
+found ball: (0, 4648)
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+nBlocks: 2
+found ball: (0, 2470)
+adjusted x and y
+x_error: 19
+y_error: 4
+done tracking
+blocks not > 0
+areaF: 180.61
+ 
+blocks not > 0
+areaF: 170.28
+ 
+blocks not > 0
+areaF: 160.53
+ 
+blocks not > 0
+areaF: 151.35
+ 
+areaF: 164.32
+ 
+areaF: 404.43
+ 
+areaF: 525.24
+ 
+areaF: 621.75
+ 
+areaF: 629.09
+ 
+areaF: 643.90
+ 
+areaF: 642.94
+ 
+areaF: 796.79
+ 
+areaF: 874.56
+ 
+areaF: 857.25
+ 
+areaF: 950.09
+ 
+areaF: 968.63
+ 
+areaF: 962.64
+ 
+areaF: 1026.51
+ 
+areaF: 1020.42
+ 
+areaF: 1034.87
+ 
+areaF: 1204.29
+ 
+areaF: 1219.49
+ 
+areaF: 1277.42
+ 
+areaF: 1292.45
+ 
+areaF: 1354.10
+ 
+areaF: 1354.89
+ 
+areaF: 1416.52
+ 
+areaF: 1487.21
+ 
+areaF: 1442.97
+ 
+areaF: 1494.29
+ 
+areaF: 1485.64
+ 
+areaF: 1453.73
+ 
+areaF: 1493.91
+ 
+areaF: 1453.01
+ 
+areaF: 1503.76
+ 
+areaF: 1536.67
+ 
+areaF: 1484.74
+ 
+areaF: 1471.31
+ 
+areaF: 1535.31
+ 
+areaF: 1524.65
+ 
+areaF: 1477.47
+ 
+areaF: 1430.70
+ 
+areaF: 1382.03
+ 
+areaF: 1477.00
+ 
+areaF: 1656.54
+ 
+areaF: 1647.64
+ 
+areaF: 1616.88
+ 
+areaF: 1607.91
+ 
+areaF: 1597.61
+ 
+areaF: 1548.26
+ 
+areaF: 1546.18
+ 
+areaF: 1591.60
+ 
+areaF: 1552.72
+ 
+areaF: 1599.36
+ 
+areaF: 1541.50
+ 
+areaF: 1491.75
+ 
+areaF: 1551.04
+ 
+areaF: 1573.87
+ 
+areaF: 1537.89
+ 
+areaF: 1539.15
+ 
+areaF: 1758.45
+ 
+areaF: 1745.95
+ 
+areaF: 1884.07
+ 
+areaF: 1926.06
+ 
+areaF: 2012.22
+ 
+areaF: 2053.29
+ 
+areaF: 2025.53
+ 
+areaF: 2058.79
+ 
+areaF: 2252.88
+ 
+areaF: 2271.25
+ 
+areaF: 2235.82
+ 
+areaF: 2240.64
+ 
+areaF: 2530.97
+ 
+areaF: 2697.41
+ 
+areaF: 2752.37
+ 
+areaF: 2902.25
+ 
+areaF: 2853.26
+ 
+areaF: 3019.97
+ 
+areaF: 3102.59
+ 
+areaF: 3205.54
+ 
+areaF: 3338.54
+ 
+areaF: 3243.82
+ 
+areaF: 3140.32
+ 
+areaF: 3104.83
+ 
+areaF: 3329.98
+ 
+areaF: 3492.02
+ 
+areaF: 3510.90
+ 
+areaF: 3450.14
+ 
+areaF: 3545.68
+ 
+areaF: 3493.86
+ 
+areaF: 3584.73
+ 
+areaF: 3520.21
+ 
+areaF: 3466.98
+ 
+areaF: 3527.58
+ 
+areaF: 3483.94
+ 
+a
