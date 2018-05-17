@@ -42,20 +42,13 @@
 #include <WebSocketsServer.h>
 #include <ESP8266mDNS.h>
 
-//#define    RANGE_SENSORS    //update in lasermag.cpp too
-#define    PIXY_CAMERA
-
 #include <Servo.h>
 #include "debug.h"
 #include "file.h"
 #include "server.h"
 #include "lasermag.h"
 #include "kalman.h"
-#if defined PIXY_CAMERA
-  #include "pixycam.h"
-  #include "ballsearch2.h"
-  #include "ballapproach.h"
-#endif
+#include "pixycam.h"
 
 #define    MPU9250_ADDRESS            0x68
 #define    MAG_ADDRESS                0x0C
@@ -66,16 +59,6 @@ Servo servo_left;
 Servo servo_right;
 int servo_left_ctr = 90;
 int servo_right_ctr = 90;
-
-#if defined PIXY_CAMERA
-  Ballsearch ballsearch(make_tuple(0,0));
-#endif
-double q_processNoise [4] = {.125,.125,.125,.125};
-double r_sensorNoise [4] = {36,6,6,6};
-double p_estimateError [4] = {100,1000,1,1};
-double x_initVal [4] = {0,0,0,0};
-Kalman kalman(q_processNoise,r_sensorNoise,p_estimateError,x_initVal);
-
 
 char dxn = 'X';
 
@@ -107,10 +90,8 @@ int16_t ymax = 90;
 int16_t leftSensor = 0;
 int16_t rightSensor = 0;
 
-float sendCoords(uint8_t id, int32_t area = 0);
-
 void setup() {
-  setupPins();    //sets up D0, 2 servo motors, serial port
+  setupPins();
 
   sprintf(ap_ssid, "ESP_%08X", ESP.getChipId());
   Serial.println(ESP.getChipId());
@@ -118,15 +99,15 @@ void setup() {
   for (uint8_t t = 4; t > 0; t--) {
     Serial.printf("[SETUP] BOOT WAIT %d...\n", t);
     Serial.flush();
-    //LED_ON;
+    LED_ON;
     delay(500);
-    //LED_OFF;
+    LED_OFF;
     delay(500);
   }
-  //LED_ON;
+  LED_ON;
   //setupSTA(sta_ssid, sta_password);
   setupAP(ap_ssid, ap_password);
-  //LED_OFF;
+  LED_OFF;
 
   setupFile();
   html = loadFile("/controls.html");
@@ -137,35 +118,18 @@ void setup() {
   setupHTTP();
   setupWS(webSocketEvent);
   setupMagAndSensor();
-  #if defined PIXY_CAMERA
-    setupPixy();
-    
-  #endif
+  setupPixy();
   //setupMDNS(mDNS_name);
 
   stop();
 }
 
 void loop() {
-  //Serial.println("entered loop");
+  Serial.println("entered loop");
   wsLoop();
-  //Serial.println("passed wsloop");
   httpLoop();
-  //Serial.println("passed httploop");
-  int32_t area = 0;
-  #if defined PIXY_CAMERA
-    //Serial.println("entered if defined");
-    area = scanBlocks();
-    double areaA[4] = {area,0,0,0};
-    area = (kalman.getFilteredValue(areaA, 'X'))[0];
-    
-    //Serial.println("passed scanBlocks");
-    
-  #endif
-  //printWebApp(String(area));
-  sendCoords(0, area);
-  //Serial.println("passed sendCoords");
-  //Serial.println("finished loop");
+  sendCoords(0);
+  scanBlocks();
   //obstacleAvoid();
 }
 
@@ -202,11 +166,11 @@ void drive(int left, int right) {
 void stop() {
   DEBUG("stop");
   drive(servo_left_ctr, servo_right_ctr);
-  //LED_OFF;
+  LED_OFF;
 }
 
 void forward() {
-  //DEBUG("forward");
+  DEBUG("forward");
   drive(180, 0);
 }
 
@@ -223,10 +187,6 @@ void left() {
 void right() {
   DEBUG("right");
   drive(180, 180);
-}
-
-void rightSlow(){
-  drive(110, 110);
 }
 
 int16_t convertX(int16_t x) {
@@ -330,11 +290,10 @@ int16_t findMinMax(int16_t x, int16_t y)
     minY = y;
 }
 
-float sendCoords(uint8_t id, int32_t area) {
+float sendCoords(uint8_t id) {
   char buff [50];
-  Serial.println(" ");
+
   int16_t* p = scanXY(12, 0, bias[2]);
-  //Serial.println("left scanxy");
   //printArr(p, *p);
   double sensX = (double) * (p + 1);
   double sensY = (double) * (p + 2);
@@ -362,24 +321,16 @@ float sendCoords(uint8_t id, int32_t area) {
   */
   float headingRad = headingCalc(filTx, filTy);
   float headingDeg = convertDeg(headingRad);
-  #if defined LASER_SENSORS
-    Serial.println("headingDeg: ");
-    Serial.print(headingDeg);
-  #endif
+  Serial.print(headingDeg);
   int16_t conFilX = convertX(filX);
   int16_t conFilY = convertY(filY);
-  int16_t area16 = (int16_t) area;
   leftSensor = conFilX;
   rightSensor = conFilY;
-  sprintf (buff, "x: %d y: %d h: %f a: %d", conFilX, conFilY, headingDeg, area16);
-  //sprintf (buff, "a: %d", area16);
+  sprintf (buff, "x: %d y: %d h: %f", conFilX, conFilY, headingDeg);
+  //sprintf (buff, "x: %d y: %d h: %f", -1, -1, headingDeg);
   wsSend(id, buff);
 
   return headingDeg;
-}
-
-void wsSendWrapper(uint8_t id, char * buff){
-  wsSend(id, buff);
 }
 
 void instruxToDrive(char c) {
@@ -392,237 +343,7 @@ void instruxToDrive(char c) {
     left();
   else if (c == 'R')
     right();
-  //sendCoords(0);
-}
-
-String tupToInstrux(tuple<double,double> dirs){
-  String instrux = "";
-  double dRadius = get<0>(dirs);
-  double dHeading = get<1>(dirs)*180/PI;  //degrees
-  double instruxPerRadius = 5.1;
-  double instruxPerDegree = 6.0;
-  double inchesPerSecF = 7.789;
-  //double degreesPerSecR = 193;
-  //double degreesPerSecL = 236;
-  double degreesPerSecR = 193;
-  double degreesPerSecL = 236;
-  double timeFmillis = dRadius/inchesPerSecF*1000;
-  double timeLmillis = dHeading/degreesPerSecL*1000;
-  double timeRmillis = dHeading/degreesPerSecR*1000;
-  int nRad = (int) dRadius/instruxPerRadius;
-  int nDeg = (int) dHeading/instruxPerDegree;
-  delay(200);
-  Serial.println(dHeading);
-  Serial.print("timeFmillis: ");
-  Serial.println(timeFmillis);
-  Serial.print("timeRmillis: ");
-  Serial.println(timeRmillis);
-  Serial.print("timeLmillis: ");
-  Serial.println(timeLmillis);
-  if (dHeading > 0){
-    long t1 = millis();
-    while(true){
-      left();
-      delay(10);
-      instrux += "L";
-      if (millis() - t1 > timeLmillis)
-        break;
-    }
-  }
-  else if (dHeading < 0){
-    long t2 = millis();
-    while(true){
-      right();
-      delay(10);
-      instrux += "R";
-      if (millis() - t2 > abs(timeRmillis))
-        break;
-    }
-  }
-  long t3 = millis();
-  while(true){
-    forward();
-    delay(10);
-    instrux += "F";
-    if (millis() - t3 > timeFmillis)
-      break;
-  }
-  Serial.println(instrux);
-  return instrux;
-}
-
-int32_t getArea(){
-  int32_t area = scanBlocks();
-  double areaA[4] = {area,0,0,0};
-  area = (kalman.getFilteredValue(areaA, 'X'))[0];
-  return area;
-}
-
-bool scan(){
-  long t1 = millis();
-  int count = 0;
-  //double timeR360 = 1.6*1000;
-  double timeR360 = 2.4*1000;
-  bool found = foundBall();
-  while(!found){
-    long t2 = millis();
-    rightSlow();
-    if (millis() - t1 > timeR360)
-      return false;
-    found = foundBall();
-    Serial.print("scanIterTime: ");
-    Serial.println(millis() - t2);
-    count++;
-  }
-  return true;
-}
-
-void track(){
-  int X_ERROR_ERROR = 20;
-  int Y_ERROR_ERROR = 10;
-  long motorX_adjust_millis = 200;
-  long motorY_adjust_millis = 200;
-  Block ball = foundBall2();
-  printWebApp("passed foundBall2()");
-  Ballapproach bApproach(ball, servo_left, servo_right);
-  printWebApp("passed bApproach");
-  int32_t area = getArea();
-  bApproach.setArea(area);
-  printWebApp("set the area, now tracking");
-  if(area){
-      int32_t x_error = bApproach.getX() - CENTER_X;
-      int32_t y_error = bApproach.getY() - CENTER_Y;
-      Serial.print("x_error: ");
-      Serial.println(x_error);
-      Serial.print("y_error: ");
-      Serial.println(y_error);
-      //first center x
-      while((abs(x_error) > 20) || (abs(y_error) > 10)){
-        Serial.println(" ");
-        while(abs(x_error) > 20){
-          if(x_error < 0){
-            //object is on right side of screen
-            long t1 = millis();
-            while(millis() - t1 < motorX_adjust_millis)
-              bApproach.right();
-            bApproach.stopApp();
-            if (motorX_adjust_millis > 50)
-              motorX_adjust_millis /= 1.13;
-            else
-              break;
-          }
-          if(x_error > 0){
-            //object is on left side of screen
-            long t1 = millis();
-            while(millis() - t1 < motorX_adjust_millis)
-              bApproach.left();
-            bApproach.stopApp();
-            if (motorX_adjust_millis > 50)
-              motorX_adjust_millis /= 1.13;
-            else
-              break;
-          }
-          ball = foundBall2();
-          bApproach.updateBlock(ball);
-          x_error = bApproach.getX() - CENTER_X;
-          printWebApp(String(x_error));
-        }
-        //now center y
-        while(abs(y_error) > 10){
-          if(y_error < 0){
-            //object is on above the screen
-            long t1 = millis();
-            while(millis() - t1 < motorY_adjust_millis)
-              bApproach.forward();
-            bApproach.stopApp();
-            if (motorY_adjust_millis > 50)
-              motorY_adjust_millis /= 1.13;
-            else
-              break;
-          }
-          if(y_error > 0){
-            //object is on right side of screen
-            long t1 = millis();
-            while(millis() - t1 < motorY_adjust_millis)
-              bApproach.backward();
-            bApproach.stopApp();
-            if (motorY_adjust_millis > 50)
-              motorY_adjust_millis /= 1.13;
-            else
-              break;
-          }
-          ball = foundBall2();
-          bApproach.updateBlock(ball);
-          y_error = bApproach.getY() - CENTER_Y;
-        }
-        
-        ball = foundBall2();
-        bApproach.updateBlock(ball);
-        x_error = bApproach.getX() - CENTER_X;
-        y_error = bApproach.getY() - CENTER_Y;
-        Serial.println("adjusted x and y");
-        Serial.print("x_error: ");
-        Serial.println(x_error);
-        Serial.print("y_error: ");
-        Serial.println(y_error);
-        String s = "finished loop " + String(x_error);
-        printWebApp(s);
-        if(motorX_adjust_millis < 50)
-          motorX_adjust_millis += 100;
-        if(motorY_adjust_millis < 50)
-          motorY_adjust_millis += 100;
-    }
-    Serial.println("done tracking");
-    return;
-  }
-  /*else{
-    Serial.println("can't find ball");
-  }*/
-  return;
-}
-
-void track2(){
-  int X_ERROR_ERROR = 20;
-  int Y_ERROR_ERROR = 10;
-  Block ball = foundBall2();
-  printWebApp("passed foundBall2()");
-  Ballapproach bApproach(ball, servo_left, servo_right);
-  printWebApp("passed bApproach");
-  int32_t area = getArea();
-  bApproach.setArea(area);
-  printWebApp("set the area, now tracking");
-  if(area){
-      int32_t x_error = bApproach.getX() - CENTER_X;
-      int32_t y_error = bApproach.getY() - CENTER_Y;
-      Serial.print("x_error: ");
-      Serial.println(x_error);
-      Serial.print("y_error: ");
-      Serial.println(y_error);
-      while(((abs(x_error) > 20) || (abs(y_error) > 10)) && area){
-        ball = foundBall2();
-        bApproach.update2(ball);
-        bApproach.setArea(getArea());
-        x_error = bApproach.getX() - CENTER_X;
-        y_error = bApproach.getY() - CENTER_Y;
-        Serial.print("x_error: ");
-        Serial.println(x_error);
-        Serial.print("y_error: ");
-        Serial.println(y_error);
-      }
-      x_error = bApproach.getX() - CENTER_X;
-      y_error = bApproach.getY() - CENTER_Y;
-      Serial.println("final x and y errors");
-      Serial.print("x_error: ");
-      Serial.println(x_error);
-      Serial.print("y_error: ");
-      Serial.println(y_error);
-      String s = "finished loop " + String(x_error);
-      printWebApp(s);
-  }
-  /*else{
-    Serial.println("can't find ball");
-  }*/
-  return;
+  sendCoords(0);
 }
 
 //
@@ -634,9 +355,9 @@ void setupPins() {
   Serial.begin(115200);
   DEBUG("Started serial.");
 
-  //pinMode(LED_PIN, OUTPUT);    //Pin D0 is LED
-  //LED_OFF;                     //Turn off LED
-  //DEBUG("Setup LED pin.");
+  pinMode(LED_PIN, OUTPUT);    //Pin D0 is LED
+  LED_OFF;                     //Turn off LED
+  DEBUG("Setup LED pin.");
 
   servo_left.attach(SERVO_LEFT);
   servo_right.attach(SERVO_RIGHT);
@@ -689,24 +410,12 @@ void webSocketEvent(uint8_t id, WStype_t type, uint8_t * payload, size_t length)
             instrux = (char) payload[i];
             cmd += instrux;
           }
-          if (cmd == "Beg"){
+          if (cmd == "Beg")
             Serial.println("Beg is: " + cmd);
-            ballsearch.setMaxR(30);
-            while(!scan()){
-              tuple<double,double> toMove = ballsearch.search("L");
-              //Serial.println("out of ballsearch.search");
-              String instructions = tupToInstrux(toMove);
-              drive(90, 90);
-            }
-          }
-          else if (cmd == "Ret"){
+          else if (cmd == "Ret")
             Serial.println("Ret is: " + cmd);
-            scan();
-          }
-          else if (cmd == "App"){
+          else if (cmd == "App")
             Serial.println("App is: " + cmd);
-            track2();
-          }
           else if (cmd == "Dep")
             Serial.println("Dep is: " + cmd);
           else if (cmd == "Gra")
@@ -717,7 +426,7 @@ void webSocketEvent(uint8_t id, WStype_t type, uint8_t * payload, size_t length)
           drive(90, 90);
         }
         else if (payload[1] == 'C') {
-          //LED_ON;
+          LED_ON;
           wsSend(id, "Hello world!");
         }
         else if (payload[1] == 'F') {
@@ -741,12 +450,12 @@ void webSocketEvent(uint8_t id, WStype_t type, uint8_t * payload, size_t length)
           if (payload[2] == 'L') {
             servo_left_ctr -= 1;
             dxn = 'H';
-            //sendCoords(id);
+            sendCoords(id);
           }
           else if (payload[2] == 'R') {
             servo_right_ctr += 1;
             dxn = 'I';
-            //sendCoords(id);
+            sendCoords(id);
           }
           char tx[20] = "Zero @ (xxx, xxx)";
           sprintf(tx, "Zero @ (%3d, %3d)", servo_left_ctr, servo_right_ctr);
@@ -756,12 +465,12 @@ void webSocketEvent(uint8_t id, WStype_t type, uint8_t * payload, size_t length)
           if (payload[2] == 'L') {
             servo_left_ctr += 1;
             dxn = 'J';
-            //sendCoords(id);
+            sendCoords(id);
           }
           else if (payload[2] == 'R') {
             servo_right_ctr -= 1;
             dxn = 'K';
-            //sendCoords(id);
+            sendCoords(id);
           }
           char tx[20] = "Zero @ (xxx, xxx)";
           sprintf(tx, "Zero @ (%3d, %3d)", servo_left_ctr, servo_right_ctr);

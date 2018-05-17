@@ -29,12 +29,12 @@
 #define AK8963_WHO_AM_I  0x00 // should return 0x48
 #define AK8963_INFO      0x01
 #define AK8963_ST1       0x02  // data ready status bit 0
-#define AK8963_XOUT_L   0x03  // data
-#define AK8963_XOUT_H  0x04
-#define AK8963_YOUT_L  0x05
-#define AK8963_YOUT_H  0x06
-#define AK8963_ZOUT_L  0x07
-#define AK8963_ZOUT_H  0x08
+#define AK8963_XOUT_L    0x03  // data
+#define AK8963_XOUT_H    0x04
+#define AK8963_YOUT_L    0x05
+#define AK8963_YOUT_H    0x06
+#define AK8963_ZOUT_L    0x07
+#define AK8963_ZOUT_H    0x08
 #define AK8963_ST2       0x09  // Data overflow bit 3 and data read error status bit 2
 #define AK8963_CNTL      0x0A  // Power down (0000), single-measurement (0001), self-test (1000) and Fuse ROM (1111) modes on bits 3:0
 #define AK8963_ASTC      0x0C  // Self test control
@@ -43,9 +43,8 @@
 #define AK8963_ASAY      0x11  // Fuse ROM y-axis sensitivity adjustment value
 #define AK8963_ASAZ      0x12  // Fuse ROM z-axis sensitivity adjustment value
 
-//#define RANGE_SENSORS
-#define SDA_PORT 2    
-#define SCL_PORT 0    
+#define SDA_PORT 3
+#define SCL_PORT 1 
 //#define HIGH_ACCURACY
 #define HIGH_SPEED
 //#define LONG_RANGE
@@ -176,77 +175,52 @@ void magcalMPU9250(float * dest1, float * dest2)
 
 int16_t* scanXY(float mxbias, float mybias, float mzbias){
   //Serial.print(sensor.readRangeSingleMillimeters());
-  //Serial.println("inside scanxy");
-  #if defined RANGE_SENSORS
-    //Serial.println("inside if range_sensors");
-    uint16_t initX1 = sensor.readRangeSingleMillimeters();
-    if (sensor.timeoutOccurred()) { Serial.print(" TIMEOUT"); }
-    
-    //Serial.print(sensor2.readRangeSingleMillimeters());
-    uint16_t initY1 = sensor2.readRangeSingleMillimeters();
-    if (sensor2.timeoutOccurred()) { Serial.print(" TIMEOUT"); }
-  #else
-    //Serial.println("inside else not range sensors");
-    uint16_t initX1 = 69;
-    uint16_t initY1 = 69;
-  #endif
+  uint16_t initX1 = sensor.readRangeSingleMillimeters();
+  if (sensor.timeoutOccurred()) { Serial.print(" TIMEOUT"); }
+  
+  //Serial.print(sensor2.readRangeSingleMillimeters());
+  uint16_t initY1 = sensor2.readRangeSingleMillimeters();
+  if (sensor2.timeoutOccurred()) { Serial.print(" TIMEOUT"); }
 
 // :::  Magnetometer ::: 
 
-  #if defined RANGE_SENSORS
+  // Request first magnetometer single measurement
+  I2CwriteByte(MAG_ADDRESS,0x0A,0x01);
+  
+  // Read register Status 1 and wait for the DRDY: Data Ready
+  
+  uint8_t ST1;
+  do
+  {
+    I2Cread(MAG_ADDRESS,0x02,1,&ST1);
+  }
+  while (!(ST1&0x01));
 
-    // Request first magnetometer single measurement
-    I2CwriteByte(MAG_ADDRESS,0x0A,0x01);
-    
-    // Read register Status 1 and wait for the DRDY: Data Ready
-    
-    uint8_t ST1;
-    do
-    {
-      I2Cread(MAG_ADDRESS,0x02,1,&ST1);
-    }
-    while (!(ST1&0x01));
+  // Read magnetometer data  
+  uint8_t Mag[7];  
+  I2Cread(MAG_ADDRESS,0x03,7,Mag);
+
+  // Create 16 bits values from 8 bits data
   
-    // Read magnetometer data  
-    uint8_t Mag[7];  
-    I2Cread(MAG_ADDRESS,0x03,7,Mag);
+  // Magnetometer
+  int16_t mx=(Mag[1]<<8 | Mag[0]);
+  int16_t my=(Mag[3]<<8 | Mag[2]);
+  int16_t mz=(Mag[5]<<8 | Mag[4]);
+
+  float mxx = ((float)mx)- mxbias;
+  float myy = ((float)my)- mybias; 
+  float mzz = ((float)mz)- mzbias; 
+
+  int16_t magnetx = (int16_t) (mxx);
+  int16_t magnety = (int16_t) (myy);
+  int16_t magnetz = (int16_t) (mzz);
+
+  int16_t x1 = (int16_t) initX1;
+  int16_t x2 = (int16_t) initY1;
   
-    // Create 16 bits values from 8 bits data
-    
-    // Magnetometer
-    int16_t mx=(Mag[1]<<8 | Mag[0]);
-    int16_t my=(Mag[3]<<8 | Mag[2]);
-    int16_t mz=(Mag[5]<<8 | Mag[4]);
   
-    float mxx = ((float)mx)- mxbias;
-    float myy = ((float)my)- mybias; 
-    float mzz = ((float)mz)- mzbias; 
-  
-    int16_t magnetx = (int16_t) (mxx);
-    int16_t magnety = (int16_t) (myy);
-    int16_t magnetz = (int16_t) (mzz);
-  
-    int16_t x1 = (int16_t) initX1;
-    int16_t x2 = (int16_t) initY1;
-    
-    
-    //Serial.println("before ret array");
-    int16_t ret[6] = {4, x1, x2, magnetx, magnety, magnetz};
-    Serial.println(" ");
-    Serial.print(magnetx);
-    Serial.print(" ");
-    Serial.print(magnety);
-    Serial.print(" ");
-    Serial.print(magnetz);
-    Serial.println(" ");
-    Serial.print(x1);
-    Serial.print(" ");
-    Serial.print(x2);
-  #else
-    int16_t ret[6] = {4, 1, 1, 1, 1, 1};
-  #endif
-  //Serial.println(" ");
-  //Serial.println("about to return ret");
+  int16_t ret[6] = {4, x1, x2, magnetx, magnety, magnetz};
+  Serial.println(" ");
   return ret;
 }
 
@@ -358,15 +332,11 @@ void I2CwriteByte(uint8_t Address, uint8_t Register, uint8_t Data)
 }
 
 void setupMagAndSensor(){
-  #if defined RANGE_SENSORS
-    pinMode(D0, OUTPUT);
-    pinMode(D8, OUTPUT);
-  #endif
-  //pinMode(SDA_PORT, OUTPUT); not needed?
-  //pinMode(SCL_PORT, OUTPUT);
+  pinMode(D3, OUTPUT);
+  pinMode(D4, OUTPUT);
+
   delay(500);
   Wire.begin(SDA_PORT,SCL_PORT);
-
 
   //Serial.begin (115200);
   
@@ -376,24 +346,22 @@ void setupMagAndSensor(){
   //initAK8963(magCalibration);
   // end of added code
 
-  #if defined RANGE_SENSORS
-    digitalWrite(D3, HIGH);
-    delay(150);
-    Serial.println("00");
-    
-    sensor.init(true);
-    Serial.println("01");
-    delay(100);
-    sensor.setAddress((uint16_t)22);
+  digitalWrite(D3, HIGH);
+  delay(150);
+  Serial.println("00");
   
-    digitalWrite(D4, HIGH);
-    delay(150);
-    sensor2.init(true);
-    Serial.println("03");
-    delay(100);
-    sensor2.setAddress((uint16_t)25);
-    Serial.println("04");
-  #endif
+  sensor.init(true);
+  Serial.println("01");
+  delay(100);
+  sensor.setAddress((uint16_t)22);
+
+  digitalWrite(D4, HIGH);
+  delay(150);
+  sensor2.init(true);
+  Serial.println("03");
+  delay(100);
+  sensor2.setAddress((uint16_t)25);
+  Serial.println("04");
 
   Serial.println("addresses set");
   
@@ -420,29 +388,25 @@ void setupMagAndSensor(){
   Serial.print (count, DEC);
   Serial.println (" device(s).");
 
-  #if defined RANGE_SENSORS
+  #if defined HIGH_SPEED
+    // reduce timing budget to 20 ms (default is about 33 ms)
+    sensor.setMeasurementTimingBudget(20000);
+    sensor2.setMeasurementTimingBudget(20000);
+  #elif defined HIGH_ACCURACY
+    // increase timing budget to 200 ms
+    sensor.setMeasurementTimingBudget(200000);
+    sensor2.setMeasurementTimingBudget(200000);
+  #endif
 
-    #if defined HIGH_SPEED
-      // reduce timing budget to 20 ms (default is about 33 ms)
-      sensor.setMeasurementTimingBudget(20000);
-      sensor2.setMeasurementTimingBudget(20000);
-    #elif defined HIGH_ACCURACY
-      // increase timing budget to 200 ms
-      sensor.setMeasurementTimingBudget(200000);
-      sensor2.setMeasurementTimingBudget(200000);
-    #endif
-  
-    #if defined LONG_RANGE
-      // lower the return signal rate limit (default is 0.25 MCPS)
-      sensor.setSignalRateLimit(0.1);
-      sensor2.setSignalRateLimit(0.1);
-      // increase laser pulse periods (defaults are 14 and 10 PCLKs)
-      sensor.setVcselPulsePeriod(VL53L0X::VcselPeriodPreRange, 18);
-      sensor.setVcselPulsePeriod(VL53L0X::VcselPeriodFinalRange, 14);
-      sensor2.setVcselPulsePeriod(VL53L0X::VcselPeriodPreRange, 18);
-      sensor2.setVcselPulsePeriod(VL53L0X::VcselPeriodFinalRange, 14);
-    #endif
-
+  #if defined LONG_RANGE
+    // lower the return signal rate limit (default is 0.25 MCPS)
+    sensor.setSignalRateLimit(0.1);
+    sensor2.setSignalRateLimit(0.1);
+    // increase laser pulse periods (defaults are 14 and 10 PCLKs)
+    sensor.setVcselPulsePeriod(VL53L0X::VcselPeriodPreRange, 18);
+    sensor.setVcselPulsePeriod(VL53L0X::VcselPeriodFinalRange, 14);
+    sensor2.setVcselPulsePeriod(VL53L0X::VcselPeriodPreRange, 18);
+    sensor2.setVcselPulsePeriod(VL53L0X::VcselPeriodFinalRange, 14);
   #endif
 
   delay(3000);
