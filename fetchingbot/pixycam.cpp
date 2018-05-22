@@ -21,7 +21,7 @@ void printWebApp(String s){
   wsSend(0,buff);
 }
 
-bool foundBall(){
+bool foundBall(int32_t sig){
   uint16_t blocks = pixy.getBlocks();
   int32_t area;
   char buff [100];
@@ -32,7 +32,7 @@ bool foundBall(){
       area = w * h;
       sprintf (buff, "found ball scan: (%d, %d)", i, area);
       Serial.println(buff);
-      if(area > MIN_AREA_DETECTION){
+      if(area > MIN_AREA_DETECTION && pixy.blocks[i].signature == sig){
         //Serial.println("******FOUND BALL********");
         sprintf (buff, "found ball exit scan: (%d, %d)", i, area);
         Serial.println(buff);
@@ -50,7 +50,7 @@ bool foundBall(){
   return false;
 }
 
-Block foundBall2(){
+Block foundBall2(int32_t sig){
   int32_t area;
   int count = 0;
   while (count < 20){
@@ -63,7 +63,7 @@ Block foundBall2(){
         int32_t w = pixy.blocks[i].width;
         int32_t h = pixy.blocks[i].height;
         area = w * h;
-        if(area > MIN_AREA_DETECTION){
+        if(area > MIN_AREA_DETECTION && pixy.blocks[i].signature == sig){
           //Serial.println("******FOUND BALL********");
           char buff [50];
           sprintf (buff, "found ball: (%d, %d)", i, area);

@@ -7,3 +7,7 @@ tracking y error,y_error: ,int
 scanItertime,scanIterTime: ,long
 left motor speed,leftSpeed: ,int
 right motor speed,rightSpeed: ,int
+start heading for scan2,startHeading: ,long
+current heading during scan2,currHeading: ,long
+"search, diff heading",dHeading: ,long
+how long to go forward,timeFmillis: ,long

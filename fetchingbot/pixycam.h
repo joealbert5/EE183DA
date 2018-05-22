@@ -7,9 +7,9 @@ void setupPixy();
 
 int32_t scanBlocks();
 
-bool foundBall();
+bool foundBall(int32_t sig = 2);
 
-Block foundBall2();
+Block foundBall2(int32_t sig = 2);
 
 void printWebApp(String s);
 

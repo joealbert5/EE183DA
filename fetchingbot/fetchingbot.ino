@@ -137,6 +137,7 @@ void setup() {
   setupHTTP();
   setupWS(webSocketEvent);
   setupMagAndSensor();
+  
   #if defined PIXY_CAMERA
     setupPixy();
     
@@ -227,6 +228,10 @@ void right() {
 
 void rightSlow(){
   drive(110, 110);
+}
+
+void leftSlow(){
+  drive(70, 70);
 }
 
 int16_t convertX(int16_t x) {
@@ -345,26 +350,11 @@ float sendCoords(uint8_t id, int32_t area) {
   int16_t filTx = (int16_t) sensTx;
   int16_t filTy = (int16_t) sensTy;
   findMinMax(sensTx, sensTy);
-  /*
-  Serial.print("Max x: ");
-  Serial.print(maxX);
-  Serial.print(" Min x: ");
-  Serial.print(minX);
-  Serial.print(" Max y: ");
-  Serial.print(maxY);
-  Serial.print(" Min y: ");
-  Serial.print(minY);
- 
-  Serial.print("x: ");
-  Serial.print(sensTx);
-  Serial.print(" y: ");
-  Serial.print(sensTy);
-  */
   float headingRad = headingCalc(filTx, filTy);
   float headingDeg = convertDeg(headingRad);
   #if defined LASER_SENSORS
-    Serial.println("headingDeg: ");
-    Serial.print(headingDeg);
+    Serial.print("headingDeg: ");
+    Serial.println(headingDeg);
   #endif
   int16_t conFilX = convertX(filX);
   int16_t conFilY = convertY(filY);
@@ -399,51 +389,32 @@ String tupToInstrux(tuple<double,double> dirs){
   String instrux = "";
   double dRadius = get<0>(dirs);
   double dHeading = get<1>(dirs)*180/PI;  //degrees
-  double instruxPerRadius = 5.1;
-  double instruxPerDegree = 6.0;
   double inchesPerSecF = 7.789;
-  //double degreesPerSecR = 193;
-  //double degreesPerSecL = 236;
-  double degreesPerSecR = 193;
-  double degreesPerSecL = 236;
   double timeFmillis = dRadius/inchesPerSecF*1000;
-  double timeLmillis = dHeading/degreesPerSecL*1000;
-  double timeRmillis = dHeading/degreesPerSecR*1000;
-  int nRad = (int) dRadius/instruxPerRadius;
-  int nDeg = (int) dHeading/instruxPerDegree;
-  delay(200);
+  Serial.print("dHeading: ");
   Serial.println(dHeading);
   Serial.print("timeFmillis: ");
   Serial.println(timeFmillis);
-  Serial.print("timeRmillis: ");
-  Serial.println(timeRmillis);
-  Serial.print("timeLmillis: ");
-  Serial.println(timeLmillis);
+  float initHeading = getHeading();
+  float targetHeading = initHeading + (float) dHeading;
+  float HEADING_ERROR = 3;
   if (dHeading > 0){
-    long t1 = millis();
     while(true){
       left();
-      delay(10);
-      instrux += "L";
-      if (millis() - t1 > timeLmillis)
+      if (abs(targetHeading - getHeading()) < HEADING_ERROR)
         break;
     }
   }
   else if (dHeading < 0){
-    long t2 = millis();
     while(true){
       right();
-      delay(10);
-      instrux += "R";
-      if (millis() - t2 > abs(timeRmillis))
+      if (abs(targetHeading - getHeading()) < HEADING_ERROR)
         break;
     }
   }
   long t3 = millis();
   while(true){
     forward();
-    delay(10);
-    instrux += "F";
     if (millis() - t3 > timeFmillis)
       break;
   }
@@ -477,10 +448,11 @@ bool scan(){
   return true;
 }
 
-void track2(){
+void track2(int32_t sig = 2);
+void track2(int32_t sig){
   int X_ERROR_ERROR = 20;
   int Y_ERROR_ERROR = 10;
-  Block ball = foundBall2();
+  Block ball = foundBall2(sig);
   printWebApp("passed foundBall2()");
   Ballapproach bApproach(ball, servo_left, servo_right);
   printWebApp("passed bApproach");
@@ -495,7 +467,7 @@ void track2(){
       Serial.print("y_error: ");
       Serial.println(y_error);
       while(((abs(x_error) > 20) || (abs(y_error) > 10)) && area){
-        ball = foundBall2();
+        ball = foundBall2(sig);
         bApproach.update2(ball);
         bApproach.setArea(getArea());
         x_error = bApproach.getX() - CENTER_X;
@@ -519,6 +491,142 @@ void track2(){
     Serial.println("can't find ball");
   }*/
   return;
+}
+
+float getHeading(){
+  char buff [50];
+  Serial.println(" ");
+  int16_t* p = scanXY(12, 0, bias[2]);
+  double sensX = (double) * (p + 1);
+  double sensY = (double) * (p + 2);
+  double sensTx = (double) * (p + 3);
+  double sensTy = (double) * (p + 4);
+  int16_t filTx = (int16_t) sensTx;
+  int16_t filTy = (int16_t) sensTy;
+  findMinMax(sensTx, sensTy);
+  float headingRad = headingCalc(filTx, filTy);
+  float headingDeg = convertDeg(headingRad);
+  #if defined LASER_SENSORS
+    Serial.println("headingDeg: ");
+    Serial.print(headingDeg);
+  #endif
+  return headingDeg;
+}
+
+bool scan2(){
+  long t1 = millis();
+  int count = 0;
+  bool found = foundBall();
+  float startHeading = getHeading();
+  Serial.print("startHeading: ");
+  Serial.println(startHeading);
+  float SPINERROR = 5;   //5 degrees
+  float currHeading;
+  while(!found){
+    rightSlow();
+    currHeading = getHeading();
+    if (millis() - t1 > 1000 && abs(currHeading - startHeading) < SPINERROR)
+      return false;
+    found = foundBall();
+    Serial.print("currHeading: ");
+    Serial.println(currHeading);
+    count++;
+  }
+  return true;
+}
+
+bool sweep(float range, int32_t sig){
+  long t1 = millis();
+  int count = 0;
+  bool found = foundBall(sig);
+  float startHeading = getHeading();
+  float sweepLeft = startHeading + range;
+  float sweepRight = startHeading - range;
+  Serial.print("startHeading: ");
+  Serial.println(startHeading);
+  float SPINERROR = 5;   //5 degrees
+  float currHeading;
+  while(!found){
+    leftSlow();
+    currHeading = getHeading();
+    found = foundBall(sig);
+    if(found)
+      return true;
+    if (abs(currHeading - sweepLeft) < SPINERROR){
+      break;
+    }
+    Serial.print("currHeading: ");
+    Serial.println(currHeading);
+    count++;
+  }
+  while(!found){
+    rightSlow();
+    currHeading = getHeading();
+    found = foundBall(sig);
+    if(found)
+      return true;
+    if (abs(currHeading - sweepRight) < SPINERROR){
+      break;
+    }
+    Serial.print("currHeading: ");
+    Serial.println(currHeading);
+    count++;
+  }
+  while(!found){
+    leftSlow();
+    currHeading = getHeading();
+    found = foundBall(sig);
+    if(found)
+      return true;
+    if (abs(currHeading - startHeading) < SPINERROR){
+      break;
+    }
+    Serial.print("currHeading: ");
+    Serial.println(currHeading);
+    count++;
+  }
+  return false;
+}
+
+void returnToBase(){
+  float initHeading = ballsearch.getInitHeading();
+  float targetHeading;
+  float currHeading;
+  float SPINERROR = 3;
+  int32_t HOME_BASE_SIGNITURE = 3;
+  double inchesPerSecF = 7.789;
+  double timeFmillis;
+  float SWEEP_DEGREES = 60;
+  bool found;
+  if(initHeading - 180 < 0)
+    targetHeading = initHeading + 180;
+  else
+    targetHeading = initHeading - 180;
+  while(true){
+    right();
+    currHeading = getHeading();
+    if (abs(currHeading - targetHeading) < SPINERROR)
+      break;
+  }
+  //go forward some
+  //check +90° then -90° then back to original heading, checking for home base
+  //if found, approach(home_base)
+  //else
+    //loop back to go forward some
+  found = sweep(SWEEP_DEGREES, HOME_BASE_SIGNITURE);
+  while(!found){
+    timeFmillis = ballsearch.getMaxR()/inchesPerSecF*1000;
+    long t3 = millis();
+    while(true){
+      forward();
+      if (millis() - t3 > timeFmillis)
+        break;
+    }
+    //scan
+    found = sweep(SWEEP_DEGREES, HOME_BASE_SIGNITURE);
+  }
+  //found homebase, approach it
+  track2(HOME_BASE_SIGNITURE);
 }
 
 //
@@ -588,7 +696,8 @@ void webSocketEvent(uint8_t id, WStype_t type, uint8_t * payload, size_t length)
           if (cmd == "Beg"){
             Serial.println("Beg is: " + cmd);
             ballsearch.setMaxR(30);
-            while(!scan()){
+            ballsearch.setInitHeading(getHeading());
+            while(!scan2()){
               tuple<double,double> toMove = ballsearch.search("L");
               //Serial.println("out of ballsearch.search");
               String instructions = tupToInstrux(toMove);
@@ -597,14 +706,16 @@ void webSocketEvent(uint8_t id, WStype_t type, uint8_t * payload, size_t length)
           }
           else if (cmd == "Ret"){
             Serial.println("Ret is: " + cmd);
-            scan();
+            returnToBase();
           }
           else if (cmd == "App"){
             Serial.println("App is: " + cmd);
             track2();
           }
-          else if (cmd == "Dep")
+          else if (cmd == "Dep"){
             Serial.println("Dep is: " + cmd);
+            scan2();
+          }
           else if (cmd == "Gra")
             Serial.println("Gra is: " + cmd);
           else if (cmd == "Can")

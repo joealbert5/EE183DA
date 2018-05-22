@@ -242,6 +242,7 @@ int16_t* scanXY(float mxbias, float mybias, float mzbias){
     Serial.print(x1);
     Serial.print(" ");
     Serial.print(x2);
+    Serial.println(" ");
   #else
     int16_t ret[6] = {4, 1, 1, 1, 1, 1};
   #endif

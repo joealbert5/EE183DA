@@ -29,6 +29,7 @@ class Ballsearch {
     int count;
     double prevAngle;
     bool finish;
+    float initHeading;
 
     int _randint(int low, int high){
       srand(millis());
@@ -174,6 +175,9 @@ class Ballsearch {
     void setXMAX(int x){this->XMAX = x;}
     void setYMAX(int x){this->YMAX = x;}
     void addToHistory(tuple<int,int> t){this->pastPoints.push_back(t);}
+    void setInitHeading(float x){this->initHeading = x;}
+    float getInitHeading(){return this->initHeading;}
+    int getMaxR(){return this->maxR;}
 
   String printTup(tuple<int,int> tup){
     String e1 = String(get<0>(tup));
@@ -211,12 +215,7 @@ class Ballsearch {
     return false;
   }
 
-  tuple<double,double> search(String side){/*
-    tuple<int,int> start = _tuple(0,0);
-    tuple<int,int> endd;
-    int count = 0;
-    double prevAngle = 0;
-    bool finish = false;*/
+  tuple<double,double> search(String side){
     double newAngle = 0;
     int countToRetry = 0;
     vector< tuple< tuple<int,int>,double > > samples;
