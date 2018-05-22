@@ -13,9 +13,6 @@ with open('debugging_definitions_csv.csv', 'r') as f:
 		keys.append(row[1])
 print(keys)
 
-#keys.remove('nBlocks: ')
-#keys.remove('areaF: ')
-
 def appError():
 	x_errors = []
 	y_errors = []
@@ -63,14 +60,9 @@ def motorSpeeds():
 	print(np.full(len(x_errors), 10))
 	plt.title('Motor speeds debugging data')
 	plt.xlabel('Number of iterations')
-	plt.ylabel('speed (microseconds)')
+	plt.ylabel('Spin rate (range [0,180])')
 	plt.plot(np.arange(0,len(x_errors)), x_errors, c='r', label='left speeds')
 	plt.plot(np.arange(0,len(x_errors)), y_errors, c='b', label='right speeds')
-	'''plt.plot(np.arange(0,len(x_errors)), np.full(len(x_errors), 10), 'b--', label='y_slack')
-	plt.plot(np.arange(0,len(x_errors)), np.full(len(x_errors), -10), 'b--')
-	plt.plot(np.arange(0,len(x_errors)), np.full(len(y_errors), 20), 'r--', label='x_slack')
-	plt.plot(np.arange(0,len(x_errors)), np.full(len(y_errors), -20), 'r--')
-	'''#plt.plot(np.arange(0,len(x_errors)), np.full(len(y_errors), 0), 'g--', label='zero error')
 	plt.legend()
 	plt.show()
 

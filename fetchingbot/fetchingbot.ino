@@ -42,7 +42,7 @@
 #include <WebSocketsServer.h>
 #include <ESP8266mDNS.h>
 
-//#define    RANGE_SENSORS    //update in lasermag.cpp too
+#define    RANGE_SENSORS    //update in lasermag.cpp too
 #define    PIXY_CAMERA
 
 #include <Servo.h>
@@ -475,110 +475,6 @@ bool scan(){
     count++;
   }
   return true;
-}
-
-void track(){
-  int X_ERROR_ERROR = 20;
-  int Y_ERROR_ERROR = 10;
-  long motorX_adjust_millis = 200;
-  long motorY_adjust_millis = 200;
-  Block ball = foundBall2();
-  printWebApp("passed foundBall2()");
-  Ballapproach bApproach(ball, servo_left, servo_right);
-  printWebApp("passed bApproach");
-  int32_t area = getArea();
-  bApproach.setArea(area);
-  printWebApp("set the area, now tracking");
-  if(area){
-      int32_t x_error = bApproach.getX() - CENTER_X;
-      int32_t y_error = bApproach.getY() - CENTER_Y;
-      Serial.print("x_error: ");
-      Serial.println(x_error);
-      Serial.print("y_error: ");
-      Serial.println(y_error);
-      //first center x
-      while((abs(x_error) > 20) || (abs(y_error) > 10)){
-        Serial.println(" ");
-        while(abs(x_error) > 20){
-          if(x_error < 0){
-            //object is on right side of screen
-            long t1 = millis();
-            while(millis() - t1 < motorX_adjust_millis)
-              bApproach.right();
-            bApproach.stopApp();
-            if (motorX_adjust_millis > 50)
-              motorX_adjust_millis /= 1.13;
-            else
-              break;
-          }
-          if(x_error > 0){
-            //object is on left side of screen
-            long t1 = millis();
-            while(millis() - t1 < motorX_adjust_millis)
-              bApproach.left();
-            bApproach.stopApp();
-            if (motorX_adjust_millis > 50)
-              motorX_adjust_millis /= 1.13;
-            else
-              break;
-          }
-          ball = foundBall2();
-          bApproach.updateBlock(ball);
-          x_error = bApproach.getX() - CENTER_X;
-          printWebApp(String(x_error));
-        }
-        //now center y
-        while(abs(y_error) > 10){
-          if(y_error < 0){
-            //object is on above the screen
-            long t1 = millis();
-            while(millis() - t1 < motorY_adjust_millis)
-              bApproach.forward();
-            bApproach.stopApp();
-            if (motorY_adjust_millis > 50)
-              motorY_adjust_millis /= 1.13;
-            else
-              break;
-          }
-          if(y_error > 0){
-            //object is on right side of screen
-            long t1 = millis();
-            while(millis() - t1 < motorY_adjust_millis)
-              bApproach.backward();
-            bApproach.stopApp();
-            if (motorY_adjust_millis > 50)
-              motorY_adjust_millis /= 1.13;
-            else
-              break;
-          }
-          ball = foundBall2();
-          bApproach.updateBlock(ball);
-          y_error = bApproach.getY() - CENTER_Y;
-        }
-        
-        ball = foundBall2();
-        bApproach.updateBlock(ball);
-        x_error = bApproach.getX() - CENTER_X;
-        y_error = bApproach.getY() - CENTER_Y;
-        Serial.println("adjusted x and y");
-        Serial.print("x_error: ");
-        Serial.println(x_error);
-        Serial.print("y_error: ");
-        Serial.println(y_error);
-        String s = "finished loop " + String(x_error);
-        printWebApp(s);
-        if(motorX_adjust_millis < 50)
-          motorX_adjust_millis += 100;
-        if(motorY_adjust_millis < 50)
-          motorY_adjust_millis += 100;
-    }
-    Serial.println("done tracking");
-    return;
-  }
-  /*else{
-    Serial.println("can't find ball");
-  }*/
-  return;
 }
 
 void track2(){

@@ -43,9 +43,9 @@
 #define AK8963_ASAY      0x11  // Fuse ROM y-axis sensitivity adjustment value
 #define AK8963_ASAZ      0x12  // Fuse ROM z-axis sensitivity adjustment value
 
-//#define RANGE_SENSORS
-#define SDA_PORT 2    
-#define SCL_PORT 0    
+#define RANGE_SENSORS
+#define SDA_PORT D5    
+#define SCL_PORT D6    
 //#define HIGH_ACCURACY
 #define HIGH_SPEED
 //#define LONG_RANGE
@@ -359,8 +359,8 @@ void I2CwriteByte(uint8_t Address, uint8_t Register, uint8_t Data)
 
 void setupMagAndSensor(){
   #if defined RANGE_SENSORS
-    pinMode(D0, OUTPUT);
-    pinMode(D8, OUTPUT);
+    pinMode(D3, OUTPUT);
+    pinMode(D4, OUTPUT);
   #endif
   //pinMode(SDA_PORT, OUTPUT); not needed?
   //pinMode(SCL_PORT, OUTPUT);
@@ -391,7 +391,7 @@ void setupMagAndSensor(){
     sensor2.init(true);
     Serial.println("03");
     delay(100);
-    sensor2.setAddress((uint16_t)25);
+//    sensor2.setAddress((uint16_t)25);
     Serial.println("04");
   #endif
 

@@ -3,7 +3,6 @@
 #include <PixySPI_SS.h>
 #include <PixyUART.h>
 #include <TPixy.h>
-#include <SPI.h>
 #include "pixycam.h"
 #include "server.h"
 
@@ -14,7 +13,7 @@ int buttonState = 0;
 int32_t prevArea = 0;
 const int MIN_AREA_DETECTION = 100;
 
-PixySPI_SS pixy(10);
+PixyI2C pixy;
 
 void printWebApp(String s){
   char buff [100];
