@@ -60,10 +60,13 @@
 #define    MPU9250_ADDRESS            0x68
 #define    MAG_ADDRESS                0x0C
 
+const int SERVO_GRAB = D7;
 const int SERVO_LEFT = D1;
 const int SERVO_RIGHT = D2;
+Servo servo_grab;
 Servo servo_left;
 Servo servo_right;
+bool grab = 0;
 int servo_left_ctr = 90;
 int servo_right_ctr = 90;
 
@@ -163,7 +166,6 @@ void loop() {
     //Serial.println("passed scanBlocks");
     
   #endif
-  //printWebApp(String(area));
   sendCoords(0, area);
   //Serial.println("passed sendCoords");
   //Serial.println("finished loop");
@@ -335,10 +337,13 @@ int16_t findMinMax(int16_t x, int16_t y)
     minY = y;
 }
 
+int MX_BIAS = 7;
+int MY_BIAS = -25;
+
 float sendCoords(uint8_t id, int32_t area) {
   char buff [50];
   Serial.println(" ");
-  int16_t* p = scanXY(12, 0, bias[2]);
+  int16_t* p = scanXY(MX_BIAS, MY_BIAS, bias[2]);
   //Serial.println("left scanxy");
   //printArr(p, *p);
   double sensX = (double) * (p + 1);
@@ -350,6 +355,7 @@ float sendCoords(uint8_t id, int32_t area) {
   int16_t filTx = (int16_t) sensTx;
   int16_t filTy = (int16_t) sensTy;
   findMinMax(sensTx, sensTy);
+  printWebApp(String((maxX + minX)/2) + " " + String((maxY + minY)/2));
   float headingRad = headingCalc(filTx, filTy);
   float headingDeg = convertDeg(headingRad);
   #if defined LASER_SENSORS
@@ -361,12 +367,34 @@ float sendCoords(uint8_t id, int32_t area) {
   int16_t area16 = (int16_t) area;
   leftSensor = conFilX;
   rightSensor = conFilY;
+  //sprintf (buff, "x: %d y: %d h: %f a: %d mx: %f my: %f", conFilX, conFilY, headingDeg, area16, (maxX + minX)/2, (maxY + minY)/2);
   sprintf (buff, "x: %d y: %d h: %f a: %d", conFilX, conFilY, headingDeg, area16);
   //sprintf (buff, "a: %d", area16);
   wsSend(id, buff);
 
   return headingDeg;
 }
+
+float getHeading(){
+  char buff [50];
+  Serial.println(" ");
+  int16_t* p = scanXY(MX_BIAS, MY_BIAS, bias[2]);
+  double sensX = (double) * (p + 1);
+  double sensY = (double) * (p + 2);
+  double sensTx = (double) * (p + 3);
+  double sensTy = (double) * (p + 4);
+  int16_t filTx = (int16_t) sensTx;
+  int16_t filTy = (int16_t) sensTy;
+  findMinMax(sensTx, sensTy);
+  float headingRad = headingCalc(filTx, filTy);
+  float headingDeg = convertDeg(headingRad);
+  #if defined LASER_SENSORS
+    Serial.println("headingDeg: ");
+    Serial.print(headingDeg);
+  #endif
+  return headingDeg;
+}
+
 
 void wsSendWrapper(uint8_t id, char * buff){
   wsSend(id, buff);
@@ -397,18 +425,21 @@ String tupToInstrux(tuple<double,double> dirs){
   Serial.println(timeFmillis);
   float initHeading = getHeading();
   float targetHeading = initHeading + (float) dHeading;
-  float HEADING_ERROR = 3;
+  float HEADING_ERROR = 5;
+  float ahe;
   if (dHeading > 0){
     while(true){
       left();
-      if (abs(targetHeading - getHeading()) < HEADING_ERROR)
+      ahe = adjustedHeadingError(targetHeading, getHeading());
+      if (ahe < HEADING_ERROR)
         break;
     }
   }
   else if (dHeading < 0){
     while(true){
       right();
-      if (abs(targetHeading - getHeading()) < HEADING_ERROR)
+      ahe = adjustedHeadingError(targetHeading, getHeading());
+      if (ahe < HEADING_ERROR)
         break;
     }
   }
@@ -493,24 +524,24 @@ void track2(int32_t sig){
   return;
 }
 
-float getHeading(){
-  char buff [50];
-  Serial.println(" ");
-  int16_t* p = scanXY(12, 0, bias[2]);
-  double sensX = (double) * (p + 1);
-  double sensY = (double) * (p + 2);
-  double sensTx = (double) * (p + 3);
-  double sensTy = (double) * (p + 4);
-  int16_t filTx = (int16_t) sensTx;
-  int16_t filTy = (int16_t) sensTy;
-  findMinMax(sensTx, sensTy);
-  float headingRad = headingCalc(filTx, filTy);
-  float headingDeg = convertDeg(headingRad);
-  #if defined LASER_SENSORS
-    Serial.println("headingDeg: ");
-    Serial.print(headingDeg);
-  #endif
-  return headingDeg;
+float adjustedHeadingError(float f1, float f2){
+  float spinerror = abs(f1 - f2);
+  if (spinerror > 300){ //might be 355° and 3°.  should be small difference but is calculated very big
+    if (f1 >= 350){
+      f1 -= 360;
+    }
+    else if (f2 >= 350){
+      f2 -= 360;
+    }
+    Serial.print("ahe: ");
+    Serial.println(abs(f1 - f2));
+    return abs(f1 - f2);
+  }
+  else{
+    Serial.print("ahe: ");
+    Serial.println(abs(f1 - f2));
+    return spinerror;
+  }
 }
 
 bool scan2(){
@@ -520,12 +551,13 @@ bool scan2(){
   float startHeading = getHeading();
   Serial.print("startHeading: ");
   Serial.println(startHeading);
-  float SPINERROR = 5;   //5 degrees
+  float SPINERROR = 10;   //5 degrees
   float currHeading;
   while(!found){
     rightSlow();
     currHeading = getHeading();
-    if (millis() - t1 > 1000 && abs(currHeading - startHeading) < SPINERROR)
+    float ahe = adjustedHeadingError(currHeading, startHeading);
+    if (millis() - t1 > 1000 &&  ahe < SPINERROR)
       return false;
     found = foundBall();
     Serial.print("currHeading: ");
@@ -537,27 +569,44 @@ bool scan2(){
 
 bool sweep(float range, int32_t sig){
   long t1 = millis();
-  int count = 0;
   bool found = foundBall(sig);
   float startHeading = getHeading();
   float sweepLeft = startHeading + range;
   float sweepRight = startHeading - range;
   Serial.print("startHeading: ");
   Serial.println(startHeading);
-  float SPINERROR = 5;   //5 degrees
+  Serial.print("sweepLeft: ");
+  Serial.println(sweepLeft);
+  Serial.print("sweepRight: ");
+  Serial.println(sweepRight);
+  float SPINERROR = 10;   //5 degrees
   float currHeading;
+  float ahe;
+  while(!found){
+    rightSlow();
+    currHeading = getHeading();
+    found = foundBall(sig);
+    if(found)
+      return true;
+    ahe = adjustedHeadingError(currHeading, sweepRight);
+    if (ahe < SPINERROR){
+      break;
+    }
+    Serial.print("currHeading: ");
+    Serial.println(currHeading);
+  }
   while(!found){
     leftSlow();
     currHeading = getHeading();
     found = foundBall(sig);
     if(found)
       return true;
-    if (abs(currHeading - sweepLeft) < SPINERROR){
+    ahe = adjustedHeadingError(currHeading, sweepLeft);
+    if (ahe < SPINERROR){
       break;
     }
     Serial.print("currHeading: ");
     Serial.println(currHeading);
-    count++;
   }
   while(!found){
     rightSlow();
@@ -565,25 +614,12 @@ bool sweep(float range, int32_t sig){
     found = foundBall(sig);
     if(found)
       return true;
-    if (abs(currHeading - sweepRight) < SPINERROR){
+    ahe = adjustedHeadingError(currHeading, startHeading);
+    if (ahe < SPINERROR){
       break;
     }
     Serial.print("currHeading: ");
     Serial.println(currHeading);
-    count++;
-  }
-  while(!found){
-    leftSlow();
-    currHeading = getHeading();
-    found = foundBall(sig);
-    if(found)
-      return true;
-    if (abs(currHeading - startHeading) < SPINERROR){
-      break;
-    }
-    Serial.print("currHeading: ");
-    Serial.println(currHeading);
-    count++;
   }
   return false;
 }
@@ -592,20 +628,32 @@ void returnToBase(){
   float initHeading = ballsearch.getInitHeading();
   float targetHeading;
   float currHeading;
-  float SPINERROR = 3;
+  float SPINERROR = 10;
   int32_t HOME_BASE_SIGNITURE = 3;
   double inchesPerSecF = 7.789;
   double timeFmillis;
-  float SWEEP_DEGREES = 60;
+  float SWEEP_DEGREES = 30;
   bool found;
+  float ahe;
+  Serial.println("return to base");
+  Serial.print("initHeading: ");
+  Serial.println(initHeading);
   if(initHeading - 180 < 0)
     targetHeading = initHeading + 180;
   else
     targetHeading = initHeading - 180;
+  Serial.print("targetHeading: ");
+  Serial.println(targetHeading);
+  long t1 = millis();
   while(true){
-    right();
+    rightSlow();
     currHeading = getHeading();
-    if (abs(currHeading - targetHeading) < SPINERROR)
+    Serial.print("currHeading: ");
+    Serial.println(currHeading);
+    Serial.print("difference: ");
+    Serial.println(currHeading - targetHeading);
+    ahe = adjustedHeadingError(currHeading, targetHeading);
+    if (ahe < SPINERROR)
       break;
   }
   //go forward some
@@ -613,7 +661,9 @@ void returnToBase(){
   //if found, approach(home_base)
   //else
     //loop back to go forward some
+  Serial.println("end turn around");
   found = sweep(SWEEP_DEGREES, HOME_BASE_SIGNITURE);
+  //found = foundBall(HOME_BASE_SIGNITURE);
   while(!found){
     timeFmillis = ballsearch.getMaxR()/inchesPerSecF*1000;
     long t3 = millis();
@@ -627,6 +677,20 @@ void returnToBase(){
   }
   //found homebase, approach it
   track2(HOME_BASE_SIGNITURE);
+}
+
+void grasp()
+{
+  if (grab == 0)
+  {
+    servo_grab.write(170);
+    grab = 1;
+  }
+  else
+  {
+    servo_grab.write(80);
+    grab = 0;
+  }
 }
 
 //
@@ -644,6 +708,7 @@ void setupPins() {
 
   servo_left.attach(SERVO_LEFT);
   servo_right.attach(SERVO_RIGHT);
+  servo_grab.attach(SERVO_GRAB);
   DEBUG("Setup motor pins");
 }
 
@@ -695,7 +760,7 @@ void webSocketEvent(uint8_t id, WStype_t type, uint8_t * payload, size_t length)
           }
           if (cmd == "Beg"){
             Serial.println("Beg is: " + cmd);
-            ballsearch.setMaxR(30);
+            ballsearch.setMaxR(40);
             ballsearch.setInitHeading(getHeading());
             while(!scan2()){
               tuple<double,double> toMove = ballsearch.search("L");
@@ -716,8 +781,10 @@ void webSocketEvent(uint8_t id, WStype_t type, uint8_t * payload, size_t length)
             Serial.println("Dep is: " + cmd);
             scan2();
           }
-          else if (cmd == "Gra")
+          else if (cmd == "Gra"){
             Serial.println("Gra is: " + cmd);
+            grasp();
+          }
           else if (cmd == "Can")
             Serial.println("Can is: " + cmd);
 

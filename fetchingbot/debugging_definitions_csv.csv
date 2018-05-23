@@ -11,3 +11,6 @@ start heading for scan2,startHeading: ,long
 current heading during scan2,currHeading: ,long
 "search, diff heading",dHeading: ,long
 how long to go forward,timeFmillis: ,long
+begin search heading,initHeading: ,long
+where homebase should be,targetHeading: ,long
+adjusted heading error,ahe: ,long

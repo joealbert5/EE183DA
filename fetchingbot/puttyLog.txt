@@ -1,5 +1,5 @@
-=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2018.05.22 00:34:34 =~=~=~=~=~=~=~=~=~=~=~=
-{lll|lB||#pno$on#cpc$`r$pnlbo|lpNo$l`nl osnblrB$p22l oStarted serial.
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2018.05.23 15:50:50 =~=~=~=~=~=~=~=~=~=~=~=
+rl$|l|$b|{##ooloobplrlrlpn$bn|$cnnl$ o$ nrnbl{nbl$ nStarted serial.
 Setup motor pins
 7674797
 [SETUP] BOOT WAIT 4...
@@ -26,2520 +26,964 @@ Done.
 Found 5 device(s).
 Pixy Init
 stop
-blocks not > 0
-areaF: 0.00
- 
- 
--18 -42 -24 
-254 1251 
-blocks not > 0
-areaF: 0.00
- 
- 
--19 -42 -21 
-253 1276 
-blocks not > 0
-areaF: 0.00
- 
- 
--18 -42 -23 
-256 1280 
-blocks not > 0
-areaF: 0.00
- 
- 
--18 -44 -22 
-254 1287 
-blocks not > 0
-areaF: 0.00
- 
- 
--17 -45 -22 
-261 1261 
-blocks not > 0
-areaF: 0.00
- 
- 
--19 -43 -23 
-258 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--17 -43 -23 
-253 1271 
-blocks not > 0
-areaF: 0.00
- 
- 
--17 -42 -24 
-242 1284 
-blocks not > 0
-areaF: 0.00
- 
- 
--18 -41 -23 
-258 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--17 -42 -23 
-255 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--19 -41 -23 
-261 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--19 -45 -21 
-257 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--17 -42 -23 
-259 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--17 -42 -23 
-250 1279 
-blocks not > 0
-areaF: 0.00
- 
- 
--19 -43 -21 
-262 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--16 -42 -23 
-248 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--17 -43 -23 
-260 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--18 -42 -22 
-255 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--16 -43 -24 
-252 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--17 -44 -25 
-242 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--17 -42 -25 
-249 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--16 -45 -23 
-252 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--17 -44 -24 
-246 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--17 -43 -25 
-263 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--18 -44 -24 
-261 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--16 -43 -24 
-259 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--19 -42 -22 
-247 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--18 -43 -22 
-250 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--17 -44 -24 
-250 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--17 -43 -23 
-253 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--17 -43 -23 
-261 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--16 -43 -23 
-250 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--18 -42 -23 
-251 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--18 -43 -24 
-256 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--19 -43 -24 
-254 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--16 -44 -24 
-246 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--20 -42 -23 
-263 8190 
-blocks not > 0
-areaF: 0.00
- 
+areaF: 17.65
  
--18 -43 -22 
-247 1281 
-blocks not > 0
-areaF: 0.00
- 
- 
--20 -42 -24 
-243 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--20 -42 -25 
-262 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--20 -42 -24 
-250 1285 
-blocks not > 0
-areaF: 0.00
- 
- 
--18 -43 -24 
-249 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--19 -41 -24 
-239 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--18 -42 -23 
-238 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--19 -42 -25 
-254 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--19 -39 -23 
-251 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--18 -41 -25 
-244 8190 
-blocks not > 0
-areaF: 0.00
  
- 
--18 -42 -23 
-251 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--21 -42 -24 
-251 1290 
-blocks not > 0
-areaF: 0.00
- 
- 
--17 -43 -21 
-251 8190 
+4 -35 -14 
+434 601 
 blocks not > 0
-areaF: 0.00
+areaF: 10.15
  
  
--17 -43 -23 
-253 1287 
+11 -40 -19 
+429 558 
 blocks not > 0
-areaF: 0.00
+areaF: 7.11
  
  
--18 -42 -23 
-252 8190 
+10 -38 -17 
+429 726 
 blocks not > 0
-areaF: 0.00
+areaF: 5.45
  
  
--19 -40 -23 
-262 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--17 -42 -24 
-247 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--20 -42 -23 
-249 8190 
-blocks not > 0
-areaF: 0.00
+8 -39 -18 
+429 748 
+areaF: 9.19
  
  
--18 -41 -22 
-257 8190 
+10 -40 -18 
+450 587 
 blocks not > 0
-areaF: 0.00
+areaF: 7.69
  
  
--19 -42 -25 
-243 8190 
-blocks not > 0
-areaF: 0.00
+11 -38 -16 
+419 708 
+areaF: 12.30
  
  
--18 -42 -23 
-255 8190 
+10 -39 -18 
+430 730 
 blocks not > 0
-areaF: 0.00
+areaF: 10.73
  
  
--18 -40 -25 
-249 8190 
-blocks not > 0
-areaF: 0.00
+9 -37 -17 
+432 634 
+areaF: 13.54
  
  
--17 -42 -23 
-262 1288 
+10 -39 -18 
+407 709 
 blocks not > 0
-areaF: 0.00
+areaF: 12.10
  
  
--18 -41 -23 
-256 8190 
-blocks not > 0
-areaF: 0.00
+9 -40 -16 
+424 617 
+areaF: 13.28
  
  
--18 -42 -21 
-266 8190 
-blocks not > 0
-areaF: 0.00
+11 -38 -16 
+406 709 
+areaF: 15.02
  
  
--20 -42 -21 
-252 8190 
-blocks not > 0
-areaF: 0.00
+11 -39 -19 
+408 8191 
+areaF: 16.78
  
  
--17 -45 -24 
-251 8190 
+9 -40 -17 
+457 658 
 blocks not > 0
-areaF: 0.00
+areaF: 15.37
  
  
--15 -42 -23 
-259 8190 
-blocks not > 0
-areaF: 0.00
+11 -37 -17 
+435 723 
+areaF: 20.32
  
  
--17 -43 -22 
-258 8190 
-blocks not > 0
-areaF: 0.00
+9 -38 -16 
+406 628 
+areaF: 22.77
  
  
--18 -42 -24 
-248 8190 
+10 -37 -17 
+441 638 
 blocks not > 0
-areaF: 0.00
+areaF: 21.07
  
  
--17 -42 -23 
-261 8190 
+9 -39 -18 
+458 674 
 blocks not > 0
-areaF: 0.00
+areaF: 19.54
  
  
--18 -44 -22 
-261 8190 
-blocks not > 0
-areaF: 0.00
+10 -37 -20 
+409 651 
+areaF: 21.69
  
  
--17 -42 -23 
-258 8190 
-blocks not > 0
-areaF: 0.00
+11 -40 -15 
+404 8191 
+areaF: 22.40
  
  
--18 -43 -20 
-261 8190 
-blocks not > 0
-areaF: 0.00
+12 -38 -17 
+415 573 
+areaF: 23.59
  
  
--20 -43 -24 
-254 1291 
+10 -37 -17 
+423 593 
 blocks not > 0
-areaF: 0.00
+areaF: 22.03
  
  
--18 -43 -23 
-250 8190 
-blocks not > 0
-areaF: 0.00
+11 -39 -17 
+407 757 
+areaF: 23.72
  
  
--19 -41 -21 
-250 8190 
-blocks not > 0
-areaF: 0.00
+11 -38 -16 
+425 673 
+areaF: 26.83
  
  
--16 -41 -22 
-254 8190 
+11 -39 -16 
+450 718 
 blocks not > 0
-areaF: 0.00
+areaF: 25.12
  
  
--15 -43 -23 
-256 8190 
-blocks not > 0
-areaF: 0.00
+12 -38 -18 
+441 645 
+areaF: 25.55
  
  
--18 -44 -23 
-254 8190 
-blocks not > 0
-areaF: 0.00
+10 -38 -18 
+403 609 
+areaF: 29.43
  
  
--17 -42 -24 
-253 8190 
-blocks not > 0
-areaF: 0.00
+11 -39 -18 
+447 667 
+areaF: 29.10
  
  
--19 -41 -25 
-244 8190 
-blocks not > 0
-areaF: 0.00
+10 -37 -17 
+414 607 
+areaF: 28.85
  
  
--19 -41 -22 
-256 8190 
-blocks not > 0
-areaF: 0.00
+12 -40 -18 
+418 627 
+areaF: 29.52
  
  
--18 -41 -23 
-251 8190 
+9 -38 -17 
+439 620 
 blocks not > 0
-areaF: 0.00
+areaF: 27.75
  
  
--17 -42 -25 
-240 8190 
-blocks not > 0
-areaF: 0.00
+10 -38 -18 
+433 667 
+areaF: 28.24
  
  
--18 -42 -23 
-238 8190 
-blocks not > 0
-areaF: 0.00
+10 -38 -19 
+433 618 
+areaF: 28.46
  
  
--19 -41 -24 
-248 8190 
+10 -35 -17 
+454 612 
 blocks not > 0
-areaF: 0.00
+areaF: 26.78
  
  
--18 -40 -24 
-251 8190 
-blocks not > 0
-areaF: 0.00
+12 -39 -17 
+409 616 
+areaF: 27.68
  
  
--19 -41 -21 
-252 1288 
-blocks not > 0
-areaF: 0.00
+10 -37 -18 
+422 617 
+areaF: 27.28
  
  
--18 -41 -24 
-247 8190 
+11 -39 -18 
+419 8191 
 blocks not > 0
-areaF: 0.00
+areaF: 25.68
  
  
--18 -42 -24 
-251 8190 
+11 -39 -18 
+436 593 
 blocks not > 0
-areaF: 0.00
+areaF: 24.18
  
  
--19 -42 -23 
-249 8190 
+15 -38 -20 
+440 693 
 blocks not > 0
-areaF: 0.00
+areaF: 22.77
  
  
--17 -41 -26 
-244 8190 
+11 -38 -17 
+433 683 
 blocks not > 0
-areaF: 0.00
+areaF: 21.44
  
  
--16 -43 -24 
-260 8190 
-blocks not > 0
-areaF: 0.00
+10 -39 -17 
+448 8191 
+areaF: 21.36
  
  
--19 -41 -21 
-245 8190 
-blocks not > 0
-areaF: 0.00
+11 -38 -17 
+389 638 
+areaF: 21.51
  
  
--16 -41 -23 
-251 8190 
-blocks not > 0
-areaF: 0.00
+12 -38 -17 
+433 653 
+areaF: 22.35
  
  
--18 -43 -22 
-254 8190 
+11 -38 -19 
+422 731 
 blocks not > 0
-areaF: 0.00
+areaF: 21.06
  
  
--18 -41 -23 
-242 8190 
-blocks not > 0
-areaF: 0.00
+12 -39 -16 
+406 718 
+areaF: 21.23
  
  
--18 -45 -25 
-243 8190 
-blocks not > 0
-areaF: 0.00
+9 -39 -19 
+412 630 
+areaF: 22.31
  
  
--18 -42 -23 
-248 8190 
-blocks not > 0
-areaF: 0.00
+12 -38 -16 
+406 708 
+areaF: 24.48
  
  
--18 -44 -22 
-248 8190 
-blocks not > 0
-areaF: 0.00
+11 -39 -16 
+422 613 
+areaF: 24.28
  
  
--16 -42 -21 
-245 8190 
-blocks not > 0
-areaF: 0.00
+11 -39 -19 
+452 653 
+areaF: 25.19
  
  
--16 -41 -22 
-255 8190 
+12 -40 -18 
+449 636 
 blocks not > 0
-areaF: 0.00
+areaF: 23.74
  
  
--19 -41 -21 
-248 8190 
-blocks not > 0
-areaF: 0.00
+9 -38 -18 
+435 8191 
+areaF: 24.21
  
  
--18 -42 -24 
-235 8190 
-blocks not > 0
-areaF: 0.00
+11 -38 -17 
+425 8191 
+areaF: 25.12
  
  
--17 -42 -24 
-244 8190 
-blocks not > 0
-areaF: 0.00
+10 -40 -16 
+436 604 
+areaF: 25.06
  
  
--16 -42 -22 
-248 8190 
+11 -37 -19 
+410 535 
 blocks not > 0
-areaF: 0.00
+areaF: 23.62
  
  
--17 -41 -23 
-241 8190 
+10 -38 -16 
+464 614 
 blocks not > 0
-areaF: 0.00
+areaF: 22.26
  
  
--17 -43 -23 
-241 8190 
+12 -38 -17 
+449 558 
 blocks not > 0
-areaF: 0.00
+areaF: 20.99
  
  
--17 -42 -23 
-258 8190 
-blocks not > 0
-areaF: 0.00
+10 -37 -16 
+435 683 
+areaF: 21.16
  
  
--17 -42 -23 
-251 8190 
-blocks not > 0
-areaF: 0.00
+10 -40 -18 
+429 609 
+areaF: 22.01
  
  
--18 -44 -23 
-243 8190 
+9 -40 -16 
+414 8191 
 blocks not > 0
-areaF: 0.00
+areaF: 20.75
  
  
--17 -44 -25 
-234 8190 
+11 -38 -17 
+416 8191 
 blocks not > 0
-areaF: 0.00
+areaF: 19.56
  
  
--16 -42 -25 
-241 8190 
+12 -39 -18 
+430 533 
 blocks not > 0
-areaF: 0.00
+areaF: 18.44
  
  
--17 -42 -23 
-235 8190 
-blocks not > 0
-areaF: 0.00
+13 -39 -19 
+453 591 
+areaF: 18.76
  
  
--17 -43 -21 
-239 8190 
-blocks not > 0
-areaF: 0.00
+11 -40 -18 
+414 382 
+areaF: 20.43
  
  
--17 -44 -24 
-244 8190 
-blocks not > 0
-areaF: 0.00
+11 -39 -18 
+424 604 
+areaF: 20.64
  
  
--16 -43 -21 
-248 8190 
-blocks not > 0
-areaF: 0.00
+10 -40 -18 
+424 577 
+areaF: 21.75
  
  
--17 -46 -24 
-240 8190 
-blocks not > 0
-areaF: 0.00
+12 -39 -18 
+411 706 
+areaF: 23.02
  
  
--17 -43 -23 
-241 8190 
-blocks not > 0
-areaF: 0.00
+14 -38 -18 
+408 554 
+areaF: 25.14
  
  
--15 -42 -23 
-235 8190 
-blocks not > 0
-areaF: 0.00
+12 -39 -19 
+429 550 
+areaF: 25.42
  
  
--17 -42 -25 
-256 8190 
-blocks not > 0
-areaF: 0.00
+11 -40 -17 
+419 8191 
+areaF: 25.56
  
  
--20 -44 -25 
-252 8190 
-blocks not > 0
-areaF: 0.00
+11 -39 -18 
+408 537 
+areaF: 25.24
  
  
--17 -43 -25 
-235 8190 
-blocks not > 0
-areaF: 0.00
+13 -37 -19 
+434 570 
+areaF: 27.01
  
  
--15 -42 -26 
-243 8190 
-blocks not > 0
-areaF: 0.00
+13 -38 -16 
+416 656 
+areaF: 27.86
  
  
--17 -41 -23 
-244 8190 
-blocks not > 0
-areaF: 0.00
+11 -38 -16 
+423 687 
+areaF: 29.13
  
  
--16 -42 -24 
-227 8190 
-blocks not > 0
-areaF: 0.00
+10 -38 -17 
+415 550 
+areaF: 31.58
  
  
--17 -41 -23 
-245 8190 
-blocks not > 0
-areaF: 0.00
+11 -39 -15 
+444 8191 
+areaF: 31.15
  
  
--16 -43 -24 
-243 8190 
-blocks not > 0
-areaF: 0.00
+10 -35 -17 
+436 8191 
+areaF: 32.23
  
  
--19 -42 -24 
-237 8190 
-blocks not > 0
-areaF: 0.00
+11 -36 -17 
+453 602 
+areaF: 32.90
  
  
--16 -44 -24 
-242 8190 
-blocks not > 0
-areaF: 0.00
+12 -36 -16 
+436 695 
+areaF: 32.74
  
  
--17 -43 -22 
-248 8190 
-blocks not > 0
-areaF: 0.00
+12 -37 -16 
+414 8191 
+areaF: 32.24
  
  
--17 -43 -24 
-241 8190 
+11 -38 -18 
+430 630 
 blocks not > 0
-areaF: 0.00
+areaF: 30.39
  
  
--15 -42 -24 
-240 8190 
-blocks not > 0
-areaF: 0.00
+11 -38 -18 
+438 635 
+areaF: 31.06
  
  
--17 -43 -24 
-249 8190 
-blocks not > 0
-areaF: 0.00
+11 -37 -15 
+435 8191 
+areaF: 32.37
  
  
--17 -43 -23 
-243 8190 
-blocks not > 0
-areaF: 0.00
+10 -38 -14 
+441 619 
+areaF: 32.35
  
  
--17 -45 -23 
-240 8190 
-blocks not > 0
-areaF: 0.00
+12 -36 -18 
+410 8191 
+areaF: 32.50
  
  
--18 -42 -23 
-244 8190 
-blocks not > 0
-areaF: 0.00
+12 -37 -16 
+430 546 
+areaF: 35.05
  
  
--15 -44 -25 
-244 8190 
+12 -37 -16 
+404 736 
 blocks not > 0
-areaF: 0.00
+areaF: 33.04
  
  
--17 -41 -23 
-242 8190 
-blocks not > 0
-areaF: 0.00
+12 -35 -14 
+424 455 
+areaF: 32.52
  
  
--16 -44 -23 
-244 8190 
-blocks not > 0
-areaF: 0.00
+13 -35 -18 
+445 433 
+areaF: 32.04
  
  
--15 -45 -26 
-253 8190 
-blocks not > 0
-areaF: 0.00
+11 -36 -18 
+415 616 
+areaF: 35.41
  
  
--17 -41 -23 
-254 8190 
+12 -38 -17 
+422 8191 
 blocks not > 0
-areaF: 0.00
+areaF: 33.38
  
  
--16 -44 -23 
-243 8190 
-blocks not > 0
-areaF: 0.00
+13 -39 -16 
+422 539 
+areaF: 33.88
  
  
--18 -45 -22 
-250 8190 
-blocks not > 0
-areaF: 0.00
+10 -37 -15 
+429 8191 
+areaF: 34.74
  
  
--18 -42 -22 
-237 8190 
-blocks not > 0
-areaF: 0.00
+11 -34 -15 
+409 591 
+areaF: 35.16
  
  
--17 -46 -22 
-246 8190 
-blocks not > 0
-areaF: 0.00
+12 -39 -18 
+410 627 
+areaF: 34.98
  
  
--17 -40 -23 
-239 8190 
+13 -40 -17 
+416 687 
 blocks not > 0
-areaF: 0.00
+areaF: 32.98
  
  
--18 -42 -23 
-238 8190 
+12 -37 -19 
+427 642 
 blocks not > 0
-areaF: 0.00
+areaF: 31.09
  
  
--17 -42 -24 
-238 8190 
-blocks not > 0
-areaF: 0.00
+13 -37 -18 
+426 8191 
+areaF: 31.03
  
  
--16 -43 -25 
-236 8190 
-blocks not > 0
-areaF: 0.00
+12 -39 -16 
+443 8191 
+areaF: 30.85
  
  
--15 -44 -25 
-253 8190 
+9 -38 -16 
+420 562 
 blocks not > 0
-areaF: 0.00
+areaF: 29.09
  
  
--16 -43 -24 
-229 8190 
+10 -37 -19 
+409 699 
 blocks not > 0
-areaF: 0.00
+areaF: 27.42
  
  
--15 -42 -24 
-243 8190 
+11 -39 -19 
+433 8191 
 blocks not > 0
-areaF: 0.00
+areaF: 25.85
  
  
--16 -42 -21 
-245 8190 
+11 -38 -17 
+427 583 
 blocks not > 0
-areaF: 0.00
+areaF: 24.38
  
  
--17 -42 -21 
-236 8190 
-blocks not > 0
-areaF: 0.00
+14 -39 -17 
+423 8191 
+areaF: 25.96
  
  
--14 -42 -24 
-241 8190 
+12 -40 -18 
+414 632 
 blocks not > 0
-areaF: 0.00
+areaF: 24.47
  
  
--16 -40 -22 
-255 8190 
-blocks not > 0
-areaF: 0.00
+11 -39 -19 
+409 700 
+areaF: 24.27
  
  
--16 -45 -22 
-238 8190 
+12 -38 -17 
+426 8191 
 blocks not > 0
-areaF: 0.00
+areaF: 22.88
  
  
--15 -41 -22 
-245 8190 
-blocks not > 0
-areaF: 0.00
+11 -37 -19 
+429 578 
+areaF: 23.40
  
  
--14 -42 -21 
-235 8190 
+11 -40 -18 
+429 521 
 blocks not > 0
-areaF: 0.00
+areaF: 22.07
  
  
--15 -41 -21 
-241 8190 
+9 -38 -18 
+429 660 
 blocks not > 0
-areaF: 0.00
+areaF: 20.80
  
  
--17 -40 -23 
-252 8190 
+10 -39 -18 
+414 8191 
 blocks not > 0
-areaF: 0.00
+areaF: 19.61
  
  
--16 -44 -23 
-245 8190 
+12 -38 -17 
+418 475 
 blocks not > 0
-areaF: 0.00
+areaF: 18.49
  
  
--16 -42 -24 
-244 8190 
+12 -40 -19 
+436 769 
 blocks not > 0
-areaF: 0.00
+areaF: 17.43
  
  
--18 -43 -23 
-243 8190 
-blocks not > 0
-areaF: 0.00
+12 -37 -17 
+431 591 
+areaF: 18.27
  
  
--16 -43 -22 
-251 8190 
+11 -39 -19 
+442 8191 
 blocks not > 0
-areaF: 0.00
+areaF: 17.22
  
  
--16 -43 -23 
-241 8190 
+12 -38 -17 
+409 505 
 blocks not > 0
-areaF: 0.00
+areaF: 16.24
  
  
--16 -45 -23 
-243 8190 
+14 -39 -17 
+424 642 
 blocks not > 0
-areaF: 0.00
+areaF: 15.31
  
  
--16 -45 -23 
-244 8190 
+12 -37 -17 
+407 8191 
 blocks not > 0
-areaF: 0.00
+areaF: 14.43
  
  
--17 -42 -21 
-232 8190 
+11 -38 -15 
+425 572 
 blocks not > 0
-areaF: 0.00
+areaF: 13.61
  
  
--17 -44 -22 
-239 8190 
+11 -38 -17 
+428 526 
 blocks not > 0
-areaF: 0.00
+areaF: 12.83
  
  
--16 -41 -25 
-245 8190 
-blocks not > 0
-areaF: 0.00
+11 -38 -18 
+419 675 
+areaF: 13.64
  
  
--17 -43 -24 
-233 8190 
+11 -35 -19 
+425 8191 
 blocks not > 0
-areaF: 0.00
+areaF: 12.86
  
  
--18 -43 -24 
-243 8190 
-blocks not > 0
-areaF: 0.00
+13 -37 -17 
+455 8191 
+areaF: 15.90
  
  
--16 -42 -24 
-247 8190 
+12 -38 -18 
+414 8191 
 blocks not > 0
-areaF: 0.00
+areaF: 14.99
  
  
--17 -43 -23 
-245 8190 
+10 -38 -17 
+414 493 
 blocks not > 0
-areaF: 0.00
+areaF: 14.13
  
  
--18 -44 -23 
-249 8190 
+13 -38 -17 
+411 244 
 blocks not > 0
-areaF: 0.00
+areaF: 13.32
  
  
--16 -44 -24 
-242 8190 
+10 -37 -17 
+410 226 
 blocks not > 0
-areaF: 0.00
+areaF: 12.56
  
  
--17 -41 -23 
-239 8190 
+11 -38 -17 
+437 178 
 blocks not > 0
-areaF: 0.00
+areaF: 11.84
  
  
--16 -44 -23 
-245 8190 
+12 -40 -16 
+392 148 
 blocks not > 0
-areaF: 0.00
+areaF: 11.16
  
  
--15 -44 -22 
-239 8190 
+10 -36 -16 
+423 148 
 blocks not > 0
-areaF: 0.00
+areaF: 10.53
  
  
--17 -44 -24 
-241 8190 
+13 -38 -17 
+440 146 
 blocks not > 0
-areaF: 0.00
+areaF: 9.92
  
  
--15 -42 -25 
-239 8190 
+13 -38 -17 
+435 141 
 blocks not > 0
-areaF: 0.00
+areaF: 9.36
  
  
--19 -43 -23 
-244 8190 
+12 -40 -17 
+435 129 
 blocks not > 0
-areaF: 0.00
+areaF: 8.82
  
  
--18 -42 -23 
-244 8190 
+10 -38 -16 
+434 124 
 blocks not > 0
-areaF: 0.00
+areaF: 8.32
  
  
--16 -41 -22 
-230 8190 
+11 -40 -15 
+408 122 
 blocks not > 0
-areaF: 0.00
+areaF: 7.84
  
  
--16 -45 -24 
-244 8190 
+13 -39 -17 
+450 119 
 blocks not > 0
-areaF: 0.00
+areaF: 7.39
  
  
--16 -44 -24 
-236 8190 
+11 -37 -17 
+443 124 
 blocks not > 0
-areaF: 0.00
+areaF: 6.97
  
  
--16 -43 -22 
-239 8190 
+11 -38 -16 
+420 131 
 blocks not > 0
-areaF: 0.00
+areaF: 6.57
  
  
--14 -41 -23 
-238 8190 
+12 -37 -21 
+405 127 
 blocks not > 0
-areaF: 0.00
+areaF: 6.19
  
  
--15 -42 -23 
-244 8190 
+11 -39 -17 
+419 127 
 blocks not > 0
-areaF: 0.00
+areaF: 5.84
  
  
--15 -42 -24 
-251 8190 
+13 -39 -18 
+431 124 
 blocks not > 0
-areaF: 0.00
+areaF: 5.51
  
  
--17 -44 -24 
-245 8190 
+12 -41 -18 
+407 127 
 blocks not > 0
-areaF: 0.00
+areaF: 5.19
  
  
--16 -43 -23 
-234 8190 
+12 -38 -17 
+410 123 
 blocks not > 0
-areaF: 0.00
+areaF: 4.89
  
  
--16 -44 -22 
-226 8190 
+9 -41 -20 
+410 126 
 blocks not > 0
-areaF: 0.00
+areaF: 4.61
  
  
--16 -42 -23 
-232 8190 
+10 -40 -19 
+384 124 
 blocks not > 0
-areaF: 0.00
+areaF: 4.35
  
  
--15 -43 -23 
-243 8190 
+11 -41 -18 
+404 121 
 blocks not > 0
-areaF: 0.00
+areaF: 4.10
  
  
--14 -43 -23 
-244 8190 
+10 -40 -17 
+413 127 
 blocks not > 0
-areaF: 0.00
+areaF: 3.87
  
  
--15 -43 -24 
-228 8190 
+10 -40 -16 
+430 120 
 blocks not > 0
-areaF: 0.00
+areaF: 3.64
  
  
--14 -42 -22 
-247 8190 
+12 -39 -16 
+401 118 
 blocks not > 0
-areaF: 0.00
+areaF: 3.44
  
  
--15 -42 -22 
-238 8190 
+12 -38 -19 
+410 127 
 blocks not > 0
-areaF: 0.00
+areaF: 3.24
  
  
--14 -41 -23 
-240 8190 
+10 -38 -18 
+424 124 
 blocks not > 0
-areaF: 0.00
+areaF: 3.05
  
  
--15 -42 -22 
-247 8190 
+10 -39 -20 
+431 123 
 blocks not > 0
-areaF: 0.00
+areaF: 2.88
  
  
--17 -47 -23 
-240 8190 
+10 -40 -18 
+432 125 
 blocks not > 0
-areaF: 0.00
+areaF: 2.71
  
  
--15 -44 -24 
-240 8190 
+10 -37 -19 
+429 124 
 blocks not > 0
-areaF: 0.00
+areaF: 2.56
  
  
--16 -44 -23 
-239 8190 
+11 -38 -17 
+417 122 
 blocks not > 0
-areaF: 0.00
+areaF: 2.41
  
  
--15 -41 -21 
-243 8190 
+12 -39 -19 
+418 122 
 blocks not > 0
-areaF: 0.00
+areaF: 2.27
  
  
--15 -41 -23 
-239 8190 
+9 -37 -19 
+403 121 
 blocks not > 0
-areaF: 0.00
+areaF: 2.14
  
  
--18 -44 -21 
-247 8190 
+9 -39 -17 
+409 124 
 blocks not > 0
-areaF: 0.00
+areaF: 2.02
  
  
--17 -43 -21 
-234 8190 
+12 -38 -19 
+418 120 
 blocks not > 0
-areaF: 0.00
+areaF: 1.91
  
  
--15 -43 -23 
-232 8190 
+11 -39 -15 
+379 115 
 blocks not > 0
-areaF: 0.00
+areaF: 1.80
  
  
--17 -42 -23 
-239 8190 
+13 -40 -19 
+420 113 
 blocks not > 0
-areaF: 0.00
+areaF: 1.69
  
  
--16 -41 -24 
-237 8190 
+11 -40 -17 
+396 119 
 blocks not > 0
-areaF: 0.00
+areaF: 1.60
  
  
--14 -42 -22 
-248 8190 
+11 -38 -16 
+417 137 
 blocks not > 0
-areaF: 0.00
+areaF: 1.51
  
  
--16 -43 -20 
-238 8190 
+11 -40 -20 
+427 188 
 blocks not > 0
-areaF: 0.00
+areaF: 1.42
  
  
--16 -42 -22 
-233 8190 
+11 -40 -18 
+428 189 
 Web socket connected, id = 0
 blocks not > 0
-areaF: 0.00
+areaF: 1.34
  
  
--16 -43 -21 
-263 8190 
+11 -40 -17 
+426 204 
 blocks not > 0
-areaF: 0.00
+areaF: 1.26
  
  
--17 -44 -24 
-248 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--17 -44 -25 
-228 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--17 -43 -24 
-240 8190 
+10 -40 -16 
+412 234 
 On connection #0
-  got text: Connect Tue May 22 2018 00:35:03 GMT-0700 (PDT)
-blocks not > 0
-areaF: 0.00
+  got text: Connect Wed May 23 2018 15:51:12 GMT-0700 (PDT)
+areaF: 2.56
  
  
--17 -45 -23 
-245 8190 
-On connection #0
-  got text: #0
-stop
-blocks not > 0
-areaF: 0.00
- 
- 
--18 -41 -25 
-241 8190 
-On connection #0
-  got text: #LT
-left
-blocks not > 0
-areaF: 0.00
- 
- 
--17 -43 -24 
-223 8190 
-On connection #0
-  got text: #0
-stop
-blocks not > 0
-areaF: 0.00
- 
- 
--13 -43 -23 
-226 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--13 -47 -24 
-213 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--13 -44 -23 
-213 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--14 -45 -23 
-222 8190 
-On connection #0
-  got text: #LT
-left
-blocks not > 0
-areaF: 0.00
- 
- 
--13 -47 -26 
-215 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--14 -43 -25 
-200 261 
-blocks not > 0
-areaF: 0.00
- 
- 
--11 -45 -25 
-213 249 
-blocks not > 0
-areaF: 0.00
- 
- 
--8 -47 -24 
-204 223 
-On connection #0
-  got text: #0
-stop
-blocks not > 0
-areaF: 0.00
- 
- 
--6 -47 -24 
-203 194 
-blocks not > 0
-areaF: 0.00
- 
- 
--5 -48 -27 
-209 186 
-blocks not > 0
-areaF: 0.00
- 
- 
--4 -45 -25 
-207 190 
-blocks not > 0
-areaF: 0.00
- 
- 
--5 -46 -25 
-208 195 
-blocks not > 0
-areaF: 0.00
- 
- 
--4 -47 -26 
-214 193 
-blocks not > 0
-areaF: 0.00
- 
- 
--5 -46 -25 
-200 204 
+12 -39 -18 
+401 392 
 On connection #0
   got text: #RT
 right
 blocks not > 0
-areaF: 0.00
+areaF: 2.42
  
  
--4 -47 -25 
-221 221 
-blocks not > 0
-areaF: 0.00
- 
- 
--5 -46 -23 
-214 252 
-blocks not > 0
-areaF: 0.00
- 
- 
--12 -44 -23 
-220 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--18 -42 -25 
-237 1052 
-blocks not > 0
-areaF: 0.00
- 
- 
--23 -38 -20 
-215 849 
-blocks not > 0
-areaF: 0.00
- 
- 
--27 -35 -21 
-233 732 
-blocks not > 0
-areaF: 0.00
- 
- 
--27 -27 -21 
-207 681 
-blocks not > 0
-areaF: 0.00
- 
- 
--29 -23 -22 
-187 672 
-blocks not > 0
-areaF: 0.00
- 
- 
--28 -16 -18 
-205 744 
+14 -39 -17 
+431 597 
 On connection #0
   got text: #0
 stop
 blocks not > 0
-areaF: 0.00
+areaF: 2.28
  
  
--26 -9 -19 
-178 750 
+9 -37 -17 
+451 675 
+areaF: 3.52
+ 
+ 
+11 -36 -19 
+458 700 
+areaF: 4.69
+ 
+ 
+10 -37 -16 
+441 712 
 blocks not > 0
-areaF: 0.00
+areaF: 4.42
  
  
--20 -6 -18 
-177 710 
-blocks not > 0
-areaF: 0.00
- 
- 
--22 -4 -19 
-179 736 
-blocks not > 0
-areaF: 0.00
- 
- 
--20 -7 -18 
-180 747 
-blocks not > 0
-areaF: 0.00
- 
- 
--22 -6 -20 
-177 752 
-blocks not > 0
-areaF: 0.00
- 
- 
--25 -7 -20 
-175 742 
-blocks not > 0
-areaF: 0.00
- 
- 
--23 -7 -19 
-178 747 
+8 -38 -17 
+426 669 
 On connection #0
-  got text: #LT
-left
-blocks not > 0
-areaF: 0.00
- 
- 
--21 -3 -20 
-176 773 
-blocks not > 0
-areaF: 0.00
- 
- 
--20 -8 -17 
-190 719 
-blocks not > 0
-areaF: 0.00
- 
- 
--26 -12 -19 
-201 672 
-blocks not > 0
-areaF: 0.00
- 
- 
--30 -18 -22 
-188 709 
-blocks not > 0
-areaF: 0.00
- 
- 
--28 -25 -19 
-229 764 
-blocks not > 0
-areaF: 0.00
- 
- 
--26 -32 -23 
-212 887 
-blocks not > 0
-areaF: 0.00
- 
- 
--24 -36 -23 
-219 1090 
-On connection #0
-  got text: #0
-stop
-blocks not > 0
-areaF: 0.00
- 
- 
--20 -40 -20 
-243 8190 
-On connection #0
-  got text: #LT
-left
-blocks not > 0
-areaF: 0.00
- 
- 
--20 -45 -24 
-219 8190 
-On connection #0
-  got text: #0
-stop
-blocks not > 0
-areaF: 0.00
- 
- 
--16 -44 -25 
-225 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--20 -43 -24 
-216 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--18 -42 -24 
-209 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--18 -43 -25 
-221 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--18 -43 -24 
-228 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--18 -44 -24 
-217 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--16 -44 -25 
-221 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--17 -43 -24 
-234 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--19 -43 -26 
-214 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--19 -43 -24 
-223 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--18 -44 -22 
-227 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--18 -43 -26 
-220 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--19 -43 -25 
-217 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--18 -41 -25 
-220 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--20 -43 -23 
-222 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--17 -43 -25 
-227 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--17 -43 -25 
-214 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--18 -43 -23 
-231 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--17 -41 -24 
-219 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--20 -43 -23 
-227 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--17 -43 -23 
-230 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--15 -45 -24 
-219 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--17 -41 -22 
-210 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--18 -42 -22 
-227 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--18 -42 -20 
-210 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--17 -44 -23 
-225 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--17 -43 -23 
-216 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--14 -43 -22 
-223 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--18 -43 -22 
-221 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--18 -42 -23 
-215 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--17 -42 -24 
-218 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--16 -41 -23 
-215 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--19 -44 -24 
-222 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--18 -45 -24 
-225 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--17 -42 -24 
-221 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--16 -44 -24 
-225 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--19 -43 -24 
-219 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--17 -43 -23 
-212 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--19 -40 -23 
-224 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--15 -44 -24 
-227 8190 
-On connection #0
-  got text: #!Ret@
-Ret is: Ret
- 
- 
--15 -43 -24 
-222 8190 
-startHeading: 199.23
- 
- 
--17 -40 -22 
-218 8190 
-currHeading: 203.03
- 
- 
--20 -42 -22 
-213 8190 
-currHeading: 205.46
- 
- 
--20 -41 -24 
-225 1257 
-currHeading: 206.00
- 
- 
--19 -42 -22 
-232 1223 
-currHeading: 204.34
- 
- 
--20 -41 -22 
-235 1185 
-currHeading: 206.00
- 
- 
--20 -40 -21 
-242 1102 
-currHeading: 206.57
- 
- 
--23 -40 -23 
-225 1068 
-currHeading: 209.90
- 
- 
--21 -41 -21 
-235 1017 
-currHeading: 207.12
- 
- 
--23 -38 -22 
-213 974 
-currHeading: 211.18
- 
- 
--23 -39 -23 
-221 952 
-currHeading: 210.53
- 
- 
--24 -38 -21 
-221 919 
-currHeading: 212.28
- 
- 
--25 -37 -24 
-222 887 
-currHeading: 214.05
- 
- 
--25 -36 -22 
-215 846 
-currHeading: 214.78
- 
- 
--27 -37 -22 
-224 803 
-currHeading: 216.12
- 
- 
--26 -34 -22 
-242 779 
-currHeading: 217.41
- 
- 
--28 -33 -19 
-257 757 
-currHeading: 220.31
- 
- 
--27 -31 -20 
-261 709 
-currHeading: 221.05
- 
- 
--28 -29 -19 
-256 690 
-currHeading: 223.99
- 
- 
--31 -29 -18 
-253 679 
-currHeading: 226.91
- 
- 
--30 -26 -19 
-253 667 
-currHeading: 229.09
- 
- 
--31 -25 -16 
-240 648 
-currHeading: 231.12
- 
- 
--31 -23 -18 
-225 656 
-currHeading: 233.43
- 
- 
--29 -19 -17 
-218 648 
-currHeading: 236.77
- 
- 
--30 -17 -16 
-192 650 
-currHeading: 240.46
- 
- 
--29 -15 -17 
-214 658 
-currHeading: 242.65
- 
- 
--28 -14 -14 
-217 667 
-currHeading: 243.43
- 
- 
--26 -11 -17 
-215 669 
-currHeading: 247.07
- 
- 
--28 -9 -15 
-215 691 
-currHeading: 252.18
- 
- 
--25 -9 -16 
-204 716 
-currHeading: 250.20
- 
- 
--25 -5 -15 
-195 724 
-currHeading: 258.69
- 
- 
--23 -4 -15 
-191 759 
-currHeading: 260.13
- 
- 
--21 -5 -15 
-195 749 
-currHeading: 256.61
- 
- 
--21 -3 -17 
-196 628 
-currHeading: 261.87
- 
- 
--17 -1 -15 
-196 396 
-currHeading: 266.63
- 
- 
--17 0 -17 
-179 334 
-currHeading: 270.00
- 
- 
--13 -1 -15 
-190 282 
-currHeading: 265.60
- 
- 
--15 0 -16 
-184 253 
-currHeading: 270.00
- 
- 
--15 2 -13 
-176 235 
-currHeading: 277.59
- 
- 
--13 0 -17 
-174 221 
-currHeading: 270.00
- 
- 
--11 3 -15 
-173 210 
-currHeading: 285.26
- 
- 
--9 3 -16 
-164 193 
-currHeading: 288.43
- 
- 
--10 1 -15 
-174 177 
-currHeading: 275.71
- 
- 
--7 4 -14 
-171 163 
-currHeading: 299.74
- 
- 
--5 2 -17 
-178 167 
-currHeading: 291.80
- 
- 
--4 5 -16 
-174 180 
-currHeading: 321.34
- 
- 
--2 4 -19 
-181 250 
-currHeading: 333.43
- 
- 
-1 3 -16 
-187 8190 
-currHeading: 18.43
- 
- 
-4 5 -18 
-196 8190 
-currHeading: 38.66
- 
- 
-5 3 -19 
-203 8190 
-currHeading: 59.04
- 
- 
-4 3 -17 
-208 8190 
-currHeading: 53.13
- 
- 
-9 2 -19 
-193 8190 
-currHeading: 77.47
- 
- 
-9 1 -18 
-201 828 
-currHeading: 83.66
- 
- 
-10 0 -21 
-197 573 
-currHeading: 90.00
- 
- 
-10 0 -17 
-192 588 
-currHeading: 90.00
- 
- 
-12 -2 -18 
-193 393 
-currHeading: 99.46
- 
- 
-13 -2 -17 
-186 390 
-currHeading: 98.75
- 
- 
-17 -4 -17 
-193 330 
-currHeading: 103.24
- 
- 
-20 -3 -20 
-178 277 
-currHeading: 98.53
- 
- 
-18 -8 -17 
-179 264 
-currHeading: 113.96
- 
- 
-22 -11 -17 
-186 278 
-currHeading: 116.57
- 
- 
-24 -12 -18 
-174 292 
-currHeading: 116.57
- 
- 
-23 -11 -20 
-167 302 
-currHeading: 115.56
- 
- 
-25 -13 -22 
-187 334 
-currHeading: 117.47
- 
- 
-25 -13 -18 
-177 371 
-currHeading: 117.47
- 
- 
-25 -15 -20 
-191 788 
-currHeading: 120.96
- 
- 
-27 -20 -19 
-181 961 
-currHeading: 126.53
- 
- 
-25 -22 -20 
-171 821 
-currHeading: 131.35
- 
- 
-29 -25 -20 
-185 583 
-currHeading: 130.76
- 
- 
-26 -28 -19 
-186 212 
-currHeading: 137.12
- 
- 
-27 -31 -22 
-183 178 
-currHeading: 138.95
- 
- 
-25 -32 -22 
-180 172 
-currHeading: 142.00
- 
- 
-26 -33 -21 
-169 183 
-currHeading: 141.77
- 
- 
-23 -35 -21 
-176 8191 
-currHeading: 146.69
- 
- 
-23 -34 -22 
-181 8191 
-currHeading: 145.92
- 
- 
-22 -37 -21 
-175 8191 
-currHeading: 149.26
- 
- 
-24 -37 -21 
-184 8191 
-currHeading: 147.03
- 
- 
-22 -39 -23 
-183 8191 
-currHeading: 150.57
- 
- 
-20 -41 -21 
-188 8191 
-currHeading: 154.00
- 
- 
-20 -43 -23 
-180 467 
-currHeading: 155.06
- 
- 
-16 -42 -21 
-181 540 
-currHeading: 159.15
- 
- 
-13 -43 -22 
-182 592 
-currHeading: 163.18
- 
- 
-13 -44 -22 
-181 559 
-currHeading: 163.54
- 
- 
-11 -45 -24 
-177 545 
-currHeading: 166.26
- 
- 
-11 -47 -24 
-175 527 
-currHeading: 166.83
- 
- 
-7 -46 -21 
-178 508 
-currHeading: 171.35
- 
- 
-4 -47 -23 
-183 495 
-currHeading: 175.14
- 
- 
-4 -47 -25 
-178 475 
-currHeading: 175.14
- 
- 
-3 -50 -25 
-172 469 
-currHeading: 176.57
- 
- 
--1 -46 -25 
-168 462 
-currHeading: 181.25
- 
- 
--1 -48 -22 
-170 465 
-currHeading: 181.19
- 
- 
--3 -50 -25 
-174 460 
-currHeading: 183.43
- 
- 
--6 -46 -24 
-183 411 
-currHeading: 187.43
- 
- 
--10 -46 -24 
-187 8190 
-currHeading: 192.26
- 
- 
--10 -46 -22 
-190 8190 
-currHeading: 192.26
- 
- 
--11 -44 -23 
-192 8190 
-currHeading: 194.04
- 
- 
--16 -42 -23 
-197 8190 
-blocks not > 0
-areaF: 0.00
- 
- 
--17 -43 -25 
-214 1211 
-blocks not > 0
-areaF: 0.00
- 
- 
--20 -41 -22 
-220 1167 
-blocks not > 0
-areaF: 0.00
- 
- 
--18 -40 -22 
-225 1155 
-blocks not > 0
-areaF: 0.00
- 
- 
--20 -38 -22 
-234 1143 
-blocks not > 0
-areaF: 0.00
- 
- 
--20 -42 -24 
-218 1144 
-blocks not > 0
-areaF: 0.00
- 
- 
--19 -41 -22 
-224 1158 
-blocks not > 0
-areaF: 0.00
- 
- 
--19 -43 -23 
-228 1184 
-blocks not > 0
-areaF: 0.00
- 
- 
--21 -40 -21 
-220 1185 
-blocks not > 0
-areaF: 0.00
- 
- 
--20 -41 -20 
-218 1153 
-blocks not > 0
-areaF: 0.00
- 
- 
--20 -43 -22 
-232 1168 
-blocks not > 0
-areaF: 0.00
- 
- 
--20 -42 -22 
-224 1162 
-blocks not > 0
-areaF: 0.00
- 
- 
--21 -40 -24 
-231 1151 
-blocks not > 0
-areaF: 0.00
- 
- 
--21 -41 -22 
-232 1156 
-blocks not > 0
-areaF: 0.00
- 
- 
--19 -41 -23 
-222 1161 
-blocks not > 0
-areaF: 0.00
- 
- 
--21 -40 -25 
-235 1176 
-blocks not > 0
-areaF: 0.00
- 
- 
--22 -41 -25 
-242 1159 
-blocks not > 0
-areaF: 0.00
- 
- 
--21 -43 -23 
-223 1177 
-blocks not > 0
-areaF: 0.00
- 
- 
--20 -39 -23 
-227 1134 
-blocks not > 0
-areaF: 0.00
- 
- 
--20 -40 -23 
-222 1151 
-blocks not > 0
-areaF: 0.00
- 
- 
--21 -42 -23 
-234 1141 
-blocks not > 0
-areaF: 0.00
- 
- 
--18 -41 -25 
-233 1111 
-blocks not > 0
-areaF: 0.00
- 
- 
--19 -41 -24 
-226 1124 
-blocks not > 0
-areaF: 0.00
- 
- 
--20 -41 -24 
-227 1138 
-blocks not > 0
-areaF: 0.00
- 
- 
--21 -41 -22 
-231 1125 
-blocks not > 0
-areaF: 0.00
- 
- 
--20 -41 -24 
-221 1135 
-blocks not > 0
-areaF: 0.00
- 
- 
--20 -41 -23 
-236 1108 
-blocks not > 0
-areaF: 0.00
- 
- 
--21 -39 -23 
-217 1129 
-blocks not > 0
-areaF: 0.00
- 
- 
--22 -41 -24 
-226 1142 
-blocks not > 0
-areaF: 0.00
- 
- 
--19 -41 -24 
-231 1128 
-blocks not > 0
-areaF: 0.00
- 
- 
--21 -42 -25 
-228 1129 
-blocks not > 0
-areaF: 0.00
- 
- 
--20 -43 -27 
-222 1146 
-blocks not > 0
-areaF: 0.00
- 
- 
--20 -43 -24 
-223 1121 
-blocks not > 0
-ar
+  got text: #RT
+right

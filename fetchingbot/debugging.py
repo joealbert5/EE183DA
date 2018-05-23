@@ -69,6 +69,7 @@ def motorSpeeds():
 def scan2Testing():
 	x_errors = []
 	y_errors = []
+	z = []
 
 	f = open('puttyLog.txt', 'r')
 	for line in f:
@@ -78,13 +79,18 @@ def scan2Testing():
 					x_errors.append(float(line[len(keys[9]):-1]))
 				if key == keys[10]:
 					y_errors.append(float(line[len(keys[10]):-1]))
+				if key == keys[14]:
+					z.append(float(line[len(keys[14]):-1]))
 
 	print(x_errors)
 	print(y_errors)
-	plt.title('Scan2 spinning debugging data')
+	plt.title('Return home base spin 180° debugging data')
 	plt.xlabel('Number of iterations')
 	plt.ylabel('Heading (degrees)')
 	plt.scatter(np.arange(0,len(x_errors)), x_errors, c='r', label='Initial reading')
+	plt.plot(np.arange(0,len(y_errors)), np.full(len(y_errors), z[0]), c='g', label='target heading')
+	plt.plot(np.arange(0,len(y_errors)), np.full(len(y_errors), z[0] + 7), 'g--', label='target heading slack')
+	plt.plot(np.arange(0,len(y_errors)), np.full(len(y_errors), z[0] - 7), 'g--', label='target heading slack')
 	plt.plot(np.arange(0,len(y_errors)), y_errors, c='b', label='End reading')
 	plt.legend()
 	plt.show()
@@ -103,6 +109,8 @@ keys.remove('nBlocks: ')
 keys.remove('areaF: ')
 keys.remove('scanIterTime: ')
 printKeys(keys)'''
-keys2 = ["startHeading: ", "currHeading: ", "found ball: "]
+keys2 = ["startHeading: ", "currHeading: ", "found ball: ", 
+	"return to base", "end turn around", "initHeading: ", "targetHeading: ",
+	"difference: "]
 printKeys(keys2)
 scan2Testing()
