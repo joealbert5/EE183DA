@@ -526,7 +526,7 @@ void track2(int32_t sig){
 
 float adjustedHeadingError(float f1, float f2){
   float spinerror = abs(f1 - f2);
-  if (spinerror > 300){ //might be 355° and 3°.  should be small difference but is calculated very big
+  if (spinerror > 350){ //might be 355° and 3°.  should be small difference but is calculated very big
     if (f1 >= 350){
       f1 -= 360;
     }
@@ -567,12 +567,23 @@ bool scan2(){
   return true;
 }
 
+float adjustHeading(float f){
+  float adjusted = f;
+  if (f < 0)
+    adjusted = f + 360;
+  if (f > 360)
+    adjusted = f - 360;
+  Serial.print("adjusted: ");
+  Serial.println(adjusted);
+  return adjusted;
+}
+
 bool sweep(float range, int32_t sig){
   long t1 = millis();
   bool found = foundBall(sig);
   float startHeading = getHeading();
-  float sweepLeft = startHeading + range;
-  float sweepRight = startHeading - range;
+  float sweepLeft = adjustHeading(startHeading + range);
+  float sweepRight = adjustHeading(startHeading - range);
   Serial.print("startHeading: ");
   Serial.println(startHeading);
   Serial.print("sweepLeft: ");

@@ -14,3 +14,6 @@ how long to go forward,timeFmillis: ,long
 begin search heading,initHeading: ,long
 where homebase should be,targetHeading: ,long
 adjusted heading error,ahe: ,long
+sweep right heading,sweepRight: ,long
+sweep left heading,sweepLeft: ,long
+adjustHeading function,adjusted: ,long
