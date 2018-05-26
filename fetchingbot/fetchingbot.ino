@@ -340,12 +340,11 @@ int16_t findMinMax(int16_t x, int16_t y)
 int MX_BIAS = 7;
 int MY_BIAS = -25;
 
-float sendCoords(uint8_t id, int32_t area) {
+float getHeading(bool sendToWebApp = false, uint8_t id = 0, int32_t area = 0);
+float getHeading(bool sendToWebApp, uint8_t id, int32_t area){
   char buff [50];
   Serial.println(" ");
   int16_t* p = scanXY(MX_BIAS, MY_BIAS, bias[2]);
-  //Serial.println("left scanxy");
-  //printArr(p, *p);
   double sensX = (double) * (p + 1);
   double sensY = (double) * (p + 2);
   double sensTx = (double) * (p + 3);
@@ -355,44 +354,35 @@ float sendCoords(uint8_t id, int32_t area) {
   int16_t filTx = (int16_t) sensTx;
   int16_t filTy = (int16_t) sensTy;
   findMinMax(sensTx, sensTy);
-  printWebApp(String((maxX + minX)/2) + " " + String((maxY + minY)/2));
+  //<<<<<<<<auto update biases
+  int newXbias = (maxX + minX)/2;
+  int newYbias = (maxY + minY)/2;
+  MX_BIAS -= newXbias;  //might have to be += instead of -=
+  MY_BIAS -= newYbias;  //this might have to only be called when call spins 360°, such as in scan2(), not totally sure
+  printWebApp(String(newXbias) + " " + String(newYbias));
+  //>>>>>>>end autoupdate
   float headingRad = headingCalc(filTx, filTy);
   float headingDeg = convertDeg(headingRad);
   #if defined LASER_SENSORS
     Serial.print("headingDeg: ");
     Serial.println(headingDeg);
   #endif
-  int16_t conFilX = convertX(filX);
-  int16_t conFilY = convertY(filY);
-  int16_t area16 = (int16_t) area;
-  leftSensor = conFilX;
-  rightSensor = conFilY;
-  //sprintf (buff, "x: %d y: %d h: %f a: %d mx: %f my: %f", conFilX, conFilY, headingDeg, area16, (maxX + minX)/2, (maxY + minY)/2);
-  sprintf (buff, "x: %d y: %d h: %f a: %d", conFilX, conFilY, headingDeg, area16);
-  //sprintf (buff, "a: %d", area16);
-  wsSend(id, buff);
-
+  if (sendToWebApp){
+    int16_t conFilX = convertX(filX);
+    int16_t conFilY = convertY(filY);
+    int16_t area16 = (int16_t) area;
+    leftSensor = conFilX;
+    rightSensor = conFilY;
+    //sprintf (buff, "x: %d y: %d h: %f a: %d mx: %f my: %f", conFilX, conFilY, headingDeg, area16, (maxX + minX)/2, (maxY + minY)/2);
+    sprintf (buff, "x: %d y: %d h: %f a: %d", conFilX, conFilY, headingDeg, area16);
+    //sprintf (buff, "a: %d", area16);
+    wsSend(id, buff);
+  }
   return headingDeg;
 }
 
-float getHeading(){
-  char buff [50];
-  Serial.println(" ");
-  int16_t* p = scanXY(MX_BIAS, MY_BIAS, bias[2]);
-  double sensX = (double) * (p + 1);
-  double sensY = (double) * (p + 2);
-  double sensTx = (double) * (p + 3);
-  double sensTy = (double) * (p + 4);
-  int16_t filTx = (int16_t) sensTx;
-  int16_t filTy = (int16_t) sensTy;
-  findMinMax(sensTx, sensTy);
-  float headingRad = headingCalc(filTx, filTy);
-  float headingDeg = convertDeg(headingRad);
-  #if defined LASER_SENSORS
-    Serial.println("headingDeg: ");
-    Serial.print(headingDeg);
-  #endif
-  return headingDeg;
+float sendCoords(uint8_t id, int32_t area) {
+  return getHeading(true, id, area);
 }
 
 
