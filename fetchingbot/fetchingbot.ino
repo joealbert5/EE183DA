@@ -52,9 +52,9 @@
 #include "lasermag.h"
 #include "kalman.h"
 #if defined PIXY_CAMERA
-#include "pixycam.h"
-#include "ballsearch2.h"
-#include "ballapproach.h"
+  #include "pixycam.h"
+  #include "ballsearch2.h"
+  #include "ballapproach.h"
 #endif
 
 #define    MPU9250_ADDRESS            0x68
@@ -71,13 +71,13 @@ int servo_left_ctr = 90;
 int servo_right_ctr = 90;
 
 #if defined PIXY_CAMERA
-Ballsearch ballsearch(make_tuple(0, 0));
+  Ballsearch ballsearch(make_tuple(0,0));
 #endif
-double q_processNoise [4] = {.125, .125, .125, .125};
-double r_sensorNoise [4] = {36, 6, 6, 6};
-double p_estimateError [4] = {100, 1000, 1, 1};
-double x_initVal [4] = {0, 0, 0, 0};
-Kalman kalman(q_processNoise, r_sensorNoise, p_estimateError, x_initVal);
+double q_processNoise [4] = {.125,.125,.125,.125};
+double r_sensorNoise [4] = {36,6,6,6};
+double p_estimateError [4] = {100,1000,1,1};
+double x_initVal [4] = {0,0,0,0};
+Kalman kalman(q_processNoise,r_sensorNoise,p_estimateError,x_initVal);
 
 
 char dxn = 'X';
@@ -111,7 +111,7 @@ int16_t leftSensor = 0;
 int16_t rightSensor = 0;
 
 float sendCoords(uint8_t id, int32_t area = 0);
-float getHeading(bool sendToWebApp = false, uint8_t id = 0, int32_t area = 0);
+float getHeading(bool sendToWebApp = false, uint8_t id = 0, int32_t area = 0, bool calibrate = false);
 
 void setup() {
   setupPins();    //sets up D0, 2 servo motors, serial port
@@ -141,11 +141,11 @@ void setup() {
   setupHTTP();
   setupWS(webSocketEvent);
   setupMagAndSensor();
-
-#if defined PIXY_CAMERA
-  setupPixy();
-
-#endif
+  
+  #if defined PIXY_CAMERA
+    setupPixy();
+    
+  #endif
   //setupMDNS(mDNS_name);
 
   stop();
@@ -158,15 +158,15 @@ void loop() {
   httpLoop();
   //Serial.println("passed httploop");
   int32_t area = 0;
-#if defined PIXY_CAMERA
-  //Serial.println("entered if defined");
-  area = scanBlocks();
-  double areaA[4] = {area, 0, 0, 0};
-  area = (kalman.getFilteredValue(areaA, 'X'))[0];
-
-  //Serial.println("passed scanBlocks");
-
-#endif
+  #if defined PIXY_CAMERA
+    //Serial.println("entered if defined");
+    area = scanBlocks();
+    double areaA[4] = {area,0,0,0};
+    area = (kalman.getFilteredValue(areaA, 'X'))[0];
+    
+    //Serial.println("passed scanBlocks");
+    
+  #endif
   sendCoords(0, area);
   //Serial.println("passed sendCoords");
   //Serial.println("finished loop");
@@ -252,11 +252,11 @@ void right() {
   drive(180, 180);
 }
 
-void rightSlow() {
+void rightSlow(){
   drive(110, 110);
 }
 
-void leftSlow() {
+void leftSlow(){
   drive(70, 70);
 }
 
@@ -354,7 +354,7 @@ int16_t findMinMax(int16_t x, int16_t y)
     maxX = x;
   if (x < minX)
     minX = x;
-
+  
   if (y > maxY)
     maxY = y;
   if (y < minY)
@@ -364,7 +364,7 @@ int16_t findMinMax(int16_t x, int16_t y)
 int MX_BIAS = 7;
 int MY_BIAS = -25;
 
-float getHeading(bool sendToWebApp, uint8_t id, int32_t area) {
+float getHeading(bool sendToWebApp, uint8_t id, int32_t area, bool calibrate){
   char buff [50];
   Serial.println(" ");
   int16_t* p = scanXY(MX_BIAS, MY_BIAS, bias[2]);
@@ -377,21 +377,21 @@ float getHeading(bool sendToWebApp, uint8_t id, int32_t area) {
   int16_t filTx = (int16_t) sensTx;
   int16_t filTy = (int16_t) sensTy;
   findMinMax(sensTx, sensTy);
-  /*
   //<<<<<<<<auto update biases
-  int newXbias = (maxX + minX) / 2;
-  int newYbias = (maxY + minY) / 2;
-  MX_BIAS -= newXbias;  //might have to be += instead of -=
-  MY_BIAS -= newYbias;  //this might have to only be called when call spins 360°, such as in scan2(), not totally sure
+  int newXbias = (maxX + minX)/2;
+  int newYbias = (maxY + minY)/2;
+  if (calibrate){
+    MX_BIAS += newXbias;  //might have to be += instead of -=
+    MY_BIAS += newYbias;  //this might have to only be called when call spins 360°, such as in scan2(), not totally sure
+  }
   printWebApp(String(newXbias) + " " + String(newYbias));
-  ///>>>>>>>end autoupdate
-  */
+  //>>>>>>>end autoupdate
   float headingRad = headingCalc(filTx, filTy);
   float headingDeg = convertDeg(headingRad);
-#if defined LASER_SENSORS
-  Serial.print("headingDeg: ");
-  Serial.println(headingDeg);
-#endif
+  #if defined LASER_SENSORS
+    Serial.print("headingDeg: ");
+    Serial.println(headingDeg);
+  #endif
   int16_t conFilX = convertX(filX);
   int16_t conFilY = convertY(filY);
   int16_t area16 = (int16_t) area;
@@ -410,8 +410,7 @@ float sendCoords(uint8_t id, int32_t area) {
   return getHeading(true, id, area);
 }
 
-
-void wsSendWrapper(uint8_t id, char * buff) {
+void wsSendWrapper(uint8_t id, char * buff){
   wsSend(id, buff);
 }
 
@@ -428,12 +427,12 @@ void instruxToDrive(char c) {
   //sendCoords(0);
 }
 
-String tupToInstrux(tuple<double, double> dirs) {
+String tupToInstrux(tuple<double,double> dirs){
   String instrux = "";
   double dRadius = get<0>(dirs);
-  double dHeading = get<1>(dirs) * 180 / PI; //degrees
+  double dHeading = get<1>(dirs)*180/PI;  //degrees
   double inchesPerSecF = 7.789;
-  double timeFmillis = dRadius / inchesPerSecF * 1000;
+  double timeFmillis = dRadius/inchesPerSecF*1000;
   Serial.print("dHeading: ");
   Serial.println(dHeading);
   Serial.print("timeFmillis: ");
@@ -509,47 +508,47 @@ void track2(int32_t sig) {
   int32_t area = getArea();
   bApproach.setArea(area);
   printWebApp("set the area, now tracking");
-  if (area) {
-    int32_t x_error = bApproach.getX() - CENTER_X;
-    int32_t y_error = bApproach.getY() - CENTER_Y;
-    Serial.print("x_error: ");
-    Serial.println(x_error);
-    Serial.print("y_error: ");
-    Serial.println(y_error);
-    while (((abs(x_error) > 20) || (abs(y_error) > 10)) && area) {
-      ball = foundBall2(sig);
-      bApproach.update2(ball);
-      bApproach.setArea(getArea());
-      x_error = bApproach.getX() - CENTER_X;
-      y_error = bApproach.getY() - CENTER_Y;
+  if(area){
+      int32_t x_error = bApproach.getX() - CENTER_X;
+      int32_t y_error = bApproach.getY() - CENTER_Y;
       Serial.print("x_error: ");
       Serial.println(x_error);
       Serial.print("y_error: ");
       Serial.println(y_error);
-    }
-    x_error = bApproach.getX() - CENTER_X;
-    y_error = bApproach.getY() - CENTER_Y;
-    Serial.println("final x and y errors");
-    Serial.print("x_error: ");
-    Serial.println(x_error);
-    Serial.print("y_error: ");
-    Serial.println(y_error);
-    String s = "finished loop " + String(x_error);
-    printWebApp(s);
+      while(((abs(x_error) > 20) || (abs(y_error) > 10)) && area){
+        ball = foundBall2(sig);
+        bApproach.update2(ball);
+        bApproach.setArea(getArea());
+        x_error = bApproach.getX() - CENTER_X;
+        y_error = bApproach.getY() - CENTER_Y;
+        Serial.print("x_error: ");
+        Serial.println(x_error);
+        Serial.print("y_error: ");
+        Serial.println(y_error);
+      }
+      x_error = bApproach.getX() - CENTER_X;
+      y_error = bApproach.getY() - CENTER_Y;
+      Serial.println("final x and y errors");
+      Serial.print("x_error: ");
+      Serial.println(x_error);
+      Serial.print("y_error: ");
+      Serial.println(y_error);
+      String s = "finished loop " + String(x_error);
+      printWebApp(s);
   }
   /*else{
     Serial.println("can't find ball");
-    }*/
+  }*/
   return;
 }
 
-float adjustedHeadingError(float f1, float f2) {
+float adjustedHeadingError(float f1, float f2){
   float spinerror = abs(f1 - f2);
-  if (spinerror > 350) { //might be 355° and 3°.  should be small difference but is calculated very big
-    if (f1 >= 350) {
+  if (spinerror > 350){ //might be 355° and 3°.  should be small difference but is calculated very big
+    if (f1 >= 350){
       f1 -= 360;
     }
-    else if (f2 >= 350) {
+    else if (f2 >= 350){
       f2 -= 360;
     }
     Serial.print("ahe: ");
@@ -563,18 +562,18 @@ float adjustedHeadingError(float f1, float f2) {
   }
 }
 
-bool scan2() {
+bool scan2(){
   long t1 = millis();
   int count = 0;
   bool found = foundBall();
-  float startHeading = getHeading();
+  float startHeading = getHeading(false, 0,0, true);
   Serial.print("startHeading: ");
   Serial.println(startHeading);
   float SPINERROR = 10;   //5 degrees
   float currHeading;
-  while (!found) {
+  while(!found){
     rightSlow();
-    currHeading = getHeading();
+    currHeading = getHeading(false, 0,0, true);
     float ahe = adjustedHeadingError(currHeading, startHeading);
     if (millis() - t1 > 1000 &&  ahe < SPINERROR)
       return false;
@@ -612,14 +611,14 @@ bool sweep(float range, int32_t sig) {
   float SPINERROR = 10;   //5 degrees
   float currHeading;
   float ahe;
-  while (!found) {
+  while(!found){
     rightSlow();
     currHeading = getHeading();
     found = foundBall(sig);
-    if (found)
+    if(found)
       return true;
     ahe = adjustedHeadingError(currHeading, sweepRight);
-    if (ahe < SPINERROR) {
+    if (ahe < SPINERROR){
       break;
     }
     Serial.print("currHeading: ");
@@ -800,31 +799,24 @@ void webSocketEvent(uint8_t id, WStype_t type, uint8_t * payload, size_t length)
               String instructions = tupToInstrux(toMove);
               drive(90, 90);
             }
+            track2();
+            //grasp();
           }
-          else if (cmd == "Ret") {
+          else if (cmd == "Ret"){
             Serial.println("Ret is: " + cmd);
             returnToBase();
           }
-          else if (cmd == "App") {
+          else if (cmd == "App"){
             Serial.println("App is: " + cmd);
             track2();
           }
-          else if (cmd == "Dep") {
+          else if (cmd == "Dep"){
             Serial.println("Dep is: " + cmd);
             scan2();
           }
-          else if (cmd == "Gra") {
+          else if (cmd == "Gra"){
             Serial.println("Gra is: " + cmd);
-            //grasp();
-            turnon = !turnon;
-            while (turnon == 1)
-            {
-              if (obstacleCheck() == 1)
-                obstacleAvoid();
-              else
-                forward();
-            }
-            
+            grasp();
           }
           else if (cmd == "Can")
             Serial.println("Can is: " + cmd);

@@ -1,0 +1,26 @@
+to set up debugger:
+
+initial procedure: 
+1) install python3.x or 2.7
+2) add python to environmental variables (https://stackoverflow.com/questions/3701646/how-to-add-to-the-pythonpath-in-windows-7?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa)
+(this allows you to use the "python" keyword in command line)
+3) install pip
+4) add pip to environmental variables (google it, similar process as above)
+5) open command prompt
+5.1) type in "pip install matplotlib" then enter
+5.2) type in "pip install numpy" then enter
+
+Now everything is set up, this is how to run the debugger
+1) open command prompt
+2) type in "cd FULL/PATH/TO/FETCHINGBOT/FOLDER/fetchingbot" then enter (replace caps lock stuff with the actual path)
+2.5) if fetchingbot folder is not in C drive (for example, D drive), then type in "D:" then enter
+3) type in "debugger.py"
+from here, graphs should pop up.  if you change code, be sure to "X" out all graphs before trying to run the debugger again.  if you made errors in your code, the command prompt will tell you where
+3.5) if you have python 2.7, and the debugger isn't compiling, you have to change all the print() statements from print(blah blah) to print blah blah (remove the first "(" and last ")")
+
+to collect data:
+1) open putty
+2) open serial monitor from putty
+3) do whatever testing on the fetchingbot
+4) when done, "X" out of putty
+5) run the debugger

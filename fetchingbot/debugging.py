@@ -9,9 +9,9 @@ keys = []
 with open('debugging_definitions_csv.csv', 'r') as f:
 	reader = csv.reader(f)
 	for row in reader:
-		print row
+		print(row)
 		keys.append(row[1])
-print keys
+print(keys)
 
 def appError():
 	x_errors = []
@@ -26,9 +26,9 @@ def appError():
 				if key == keys[5]:
 					y_errors.append(int(line[len(keys[5]):-1]))
 
-	print np.arange(0,len(x_errors))
-	print x_errors
-	print np.full(len(x_errors), 10)
+	print(np.arange(0,len(x_errors)))
+	print(x_errors)
+	print(np.full(len(x_errors), 10))
 	plt.title('Approach debugging data')
 	plt.xlabel('Number of iterations')
 	plt.ylabel('Error (coordinate reading - center target)')
@@ -55,9 +55,9 @@ def motorSpeeds():
 				if key == keys[8]:
 					y_errors.append(int(line[len(keys[8]):-1]))
 
-	print np.arange(0,len(x_errors))
-	print x_errors
-	print np.full(len(x_errors), 10)
+	print(np.arange(0,len(x_errors)))
+	print(x_errors)
+	print(np.full(len(x_errors), 10))
 	plt.title('Motor speeds debugging data')
 	plt.xlabel('Number of iterations')
 	plt.ylabel('Spin rate (range [0,180])')
@@ -82,9 +82,9 @@ def scan2Testing():
 				if key == keys[14]:
 					z.append(float(line[len(keys[14]):-1]))
 
-	print x_errors
-	print y_errors
-	plt.title('Return home base spin 180 debugging data')
+	print(x_errors)
+	print(y_errors)
+	plt.title('Return home base spin 180° debugging data')
 	plt.xlabel('Number of iterations')
 	plt.ylabel('Heading (degrees)')
 	plt.scatter(np.arange(0,len(x_errors)), x_errors, c='r', label='Initial reading')
@@ -117,11 +117,11 @@ def sweepTesting():
 				if key == keys[9]:
 					a.append(float(line[len(keys[9]):-1]))	#sweep left
 
-	print a 
-	print w 
-	print x_errors
-	print y_errors
-	print z
+	print(a)
+	print(w)
+	print(x_errors)
+	print(y_errors)
+	print(z)
 	plt.title('sweep debugging data')
 	plt.xlabel('Number of iterations')
 	plt.ylabel('Heading (degrees)')
@@ -138,7 +138,7 @@ def printKeys(keys):
 	for line in f:
 		for key in keys:
 			if key in line:
-				print line
+				print(line)
 
 #motorSpeeds()
 #appError()
@@ -150,7 +150,7 @@ printKeys(keys)'''
 '''keys2 = ["startHeading: ", "currHeading: ", "found ball: ", 
 	"return to base", "end turn around", "initHeading: ", "targetHeading: ",
 	"difference: "]'''
-print len(keys)
+print(len(keys))
 keys3 = [keys[14], keys[15], keys[16], keys[17], keys[9], keys[18]]
 printKeys(keys3)
 sweepTesting()
