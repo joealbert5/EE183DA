@@ -340,8 +340,8 @@ int16_t findMinMax(int16_t x, int16_t y)
 int MX_BIAS = 7;
 int MY_BIAS = -25;
 
-float getHeading(bool sendToWebApp = false, uint8_t id = 0, int32_t area = 0);
-float getHeading(bool sendToWebApp, uint8_t id, int32_t area){
+float getHeading(bool sendToWebApp = false, uint8_t id = 0, int32_t area = 0, bool calibrate = false);
+float getHeading(bool sendToWebApp, uint8_t id, int32_t area, bool calibrate){
   char buff [50];
   Serial.println(" ");
   int16_t* p = scanXY(MX_BIAS, MY_BIAS, bias[2]);
@@ -357,8 +357,10 @@ float getHeading(bool sendToWebApp, uint8_t id, int32_t area){
   //<<<<<<<<auto update biases
   int newXbias = (maxX + minX)/2;
   int newYbias = (maxY + minY)/2;
-  MX_BIAS -= newXbias;  //might have to be += instead of -=
-  MY_BIAS -= newYbias;  //this might have to only be called when call spins 360°, such as in scan2(), not totally sure
+  if (calibrate){
+    MX_BIAS += newXbias;  //might have to be += instead of -=
+    MY_BIAS += newYbias;  //this might have to only be called when call spins 360°, such as in scan2(), not totally sure
+  }
   printWebApp(String(newXbias) + " " + String(newYbias));
   //>>>>>>>end autoupdate
   float headingRad = headingCalc(filTx, filTy);
@@ -538,14 +540,14 @@ bool scan2(){
   long t1 = millis();
   int count = 0;
   bool found = foundBall();
-  float startHeading = getHeading();
+  float startHeading = getHeading(false, 0,0, true);
   Serial.print("startHeading: ");
   Serial.println(startHeading);
   float SPINERROR = 10;   //5 degrees
   float currHeading;
   while(!found){
     rightSlow();
-    currHeading = getHeading();
+    currHeading = getHeading(false, 0,0, true);
     float ahe = adjustedHeadingError(currHeading, startHeading);
     if (millis() - t1 > 1000 &&  ahe < SPINERROR)
       return false;
@@ -769,6 +771,8 @@ void webSocketEvent(uint8_t id, WStype_t type, uint8_t * payload, size_t length)
               String instructions = tupToInstrux(toMove);
               drive(90, 90);
             }
+            track2();
+            //grasp();
           }
           else if (cmd == "Ret"){
             Serial.println("Ret is: " + cmd);
