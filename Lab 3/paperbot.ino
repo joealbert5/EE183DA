@@ -62,7 +62,7 @@ int servo_right_ctr = 90;
 char dxn = 'X';
 double q_processNoise [4] = {.125,.125,.125,.125};
 double r_sensorNoise [4] = {6,6,6,6};
-double p_estimateError [4] = {1000,1 ,1,1};
+double p_estimateError [4] = {1000,1000,1,1};
 double x_initVal [4] = {10,10,0,0};
 Kalman kalman(q_processNoise,r_sensorNoise,p_estimateError,x_initVal);
 
@@ -88,8 +88,8 @@ float mybias = 0;
 float mzbias = 0;
 
 // max coords of environment (the box)
-int16_t xmax = 20; 
-int16_t ymax = 30;
+int16_t xmax = 55; 
+int16_t ymax = 90;
 
 void setup() {
     setupPins();
@@ -179,33 +179,28 @@ float convertDeg(float angle)
   return angle*180/PI;
 }
 
-int16_t *coordCalc(int16_t x, int16_t y, float angle)
+void coordCalc(int16_t &x, int16_t &y, float angle)
 {
-  double coord[2];
   if (angle >= 0 && angle < (PI/2))
   { 
-    coord[0] = x*cos(angle);
-    coord[1] = y*cos(angle);
+    x = x*cos(angle);
+    y = y*cos(angle);
   }
   else if (angle >= (PI/2) && angle < PI)
   { 
-    coord[0] = y*cos(angle-(PI/2));
-    coord[1] = (ymax-x)*cos(angle-(PI/2));
+    x = y*cos(angle-(PI/2));
+    y = (ymax-x)*cos(angle-(PI/2));
   }
   else if (angle >= PI && angle < (3*PI/2))
   { 
-    coord[0] = (xmax-x)*cos(angle-PI);
-    coord[1] = (ymax-y)*cos(angle-PI);
+    x = (xmax-x)*cos(angle-PI);
+    y = (ymax-y)*cos(angle-PI);
   }
   else 
   {
-    coord[0] = (xmax-y)*cos(angle-(3*PI/2));
-    coord[1] = x*cos(angle-(3*PI/2));
+    x = (xmax-y)*cos(angle-(3*PI/2));
+    y = x*cos(angle-(3*PI/2));
   }
-
-  int16_t ret[2] = {(int16_t) coord[0],(int16_t) coord[1]};
-  
-  return ret;
 }
 
 float headingCalc(int16_t magx, int16_t magy)
@@ -290,12 +285,14 @@ void sendCoords(uint8_t id){
   float headingRad = headingCalc(filTx,filTy);
   float headingDeg = convertDeg(headingRad);
   // remove coordX and coordY and make it an array
-  int16_t *coord = coordCalc(convertX(filX),convertY(filY),headingRad);
+  int16_t conFilX = convertX(filX);
+  int16_t conFilY = convertY(filY);
+  //coordCalc(conFilX,conFilY,headingRad);
   //int16_t coordX = coordCalc(convertX(filX),headingRad);
   //int16_t coordY = coordCalc(convertY(filY),headingRad);
   //calibrate();
   //sprintf (buff, "h: %f mx: %d my: %d", headingDeg, filTx, filTy);
-  sprintf (buff, "x: %d y: %d h: %f", *(coord), *(coord + 1), headingDeg);
+  sprintf (buff, "x: %d y: %d h: %f", conFilX, conFilY, headingDeg);
   //fsprintf (buff, "x: %d y: %d dxn: %c", filX, filY, dxn);
   
   //Serial.println(buff);

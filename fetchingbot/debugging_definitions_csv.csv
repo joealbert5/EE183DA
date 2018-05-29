@@ -1,0 +1,19 @@
+key,serial monitor key,value
+area of object detected,areaF: ,double
+number of blocks detected,nBlocks: ,int
+"found ball, number and area",found ball: ,"(block#, area)"
+tracking x error,x_error: ,int
+tracking y error,y_error: ,int
+scanItertime,scanIterTime: ,long
+left motor speed,leftSpeed: ,int
+right motor speed,rightSpeed: ,int
+start heading for scan2,startHeading: ,long
+current heading during scan2,currHeading: ,long
+"search, diff heading",dHeading: ,long
+how long to go forward,timeFmillis: ,long
+begin search heading,initHeading: ,long
+where homebase should be,targetHeading: ,long
+adjusted heading error,ahe: ,long
+sweep right heading,sweepRight: ,long
+sweep left heading,sweepLeft: ,long
+adjustHeading function,adjusted: ,long
