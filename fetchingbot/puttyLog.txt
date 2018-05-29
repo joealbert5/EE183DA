@@ -1,0 +1,1464 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2018.05.29 01:03:04 =~=~=~=~=~=~=~=~=~=~=~=
+rll|#nlc|{b#noloobp#l r$polco|l#oo$l n$`orn#lsn#$b`oStarted serial.
+Setup motor pins
+7674797
+[SETUP] BOOT WAIT 4...
+[SETUP] BOOT WAIT 3...
+[SETUP] BOOT WAIT 2...
+[SETUP] BOOT WAIT 1...
+AP IP address: 
+192.168.4.1
+Prepare file system
+File open success
+File open success
+00
+01
+03
+04
+addresses set
+I2C scanner. Scanning ...
+Found address: 12 (0xC)
+Found address: 22 (0x16)
+Found address: 41 (0x29)
+Found address: 84 (0x54)
+Found address: 104 (0x68)
+Done.
+Found 5 device(s).
+Pixy Init
+stop
+blocks not > 0
+areaF: 0.00
+ 
+ 
+-18 16 4 
+8190 527 
+areaF: 42.07
+ 
+ 
+-18 15 3 
+8190 526 
+areaF: 35.75
+ 
+ 
+-18 17 3 
+8190 528 
+areaF: 31.15
+ 
+ 
+-18 16 4 
+8190 523 
+blocks not > 0
+areaF: 25.20
+ 
+ 
+-18 18 3 
+8190 524 
+blocks not > 0
+areaF: 21.10
+ 
+ 
+-18 14 2 
+8190 527 
+blocks not > 0
+areaF: 18.09
+ 
+ 
+-19 16 3 
+8190 520 
+blocks not > 0
+areaF: 15.78
+ 
+ 
+-18 17 3 
+8190 530 
+blocks not > 0
+areaF: 13.95
+ 
+ 
+-17 17 2 
+8190 526 
+blocks not > 0
+areaF: 12.47
+ 
+ 
+-17 16 2 
+8190 528 
+areaF: 12.42
+ 
+ 
+-17 16 4 
+8190 525 
+areaF: 15.36
+ 
+ 
+-19 18 4 
+8190 527 
+blocks not > 0
+areaF: 14.01
+ 
+ 
+-19 17 3 
+8190 522 
+areaF: 15.35
+ 
+ 
+-19 16 3 
+8190 526 
+areaF: 16.04
+ 
+ 
+-19 16 5 
+8190 523 
+areaF: 16.89
+ 
+ 
+-16 17 4 
+8190 516 
+areaF: 19.51
+ 
+ 
+-17 19 4 
+8190 520 
+blocks not > 0
+areaF: 18.10
+ 
+ 
+-17 16 4 
+8190 521 
+blocks not > 0
+areaF: 16.82
+ 
+ 
+-19 16 4 
+8190 533 
+blocks not > 0
+areaF: 15.66
+ 
+ 
+-21 18 4 
+8190 527 
+blocks not > 0
+areaF: 14.60
+ 
+ 
+-18 16 3 
+8190 535 
+areaF: 17.35
+ 
+ 
+-17 20 4 
+8190 529 
+blocks not > 0
+areaF: 16.22
+ 
+ 
+-17 16 2 
+8190 528 
+blocks not > 0
+areaF: 15.17
+ 
+ 
+-18 18 2 
+8190 516 
+areaF: 16.11
+ 
+ 
+-18 18 6 
+8190 535 
+blocks not > 0
+areaF: 15.10
+ 
+ 
+-19 19 4 
+8190 518 
+blocks not > 0
+areaF: 14.16
+ 
+ 
+-19 17 4 
+8190 531 
+blocks not > 0
+areaF: 13.29
+ 
+ 
+-17 18 3 
+8190 524 
+areaF: 13.34
+ 
+ 
+-17 16 3 
+8190 529 
+areaF: 13.13
+ 
+ 
+-17 17 4 
+8190 525 
+areaF: 13.79
+ 
+ 
+-16 18 3 
+8190 529 
+blocks not > 0
+areaF: 12.96
+ 
+ 
+-18 19 5 
+8190 530 
+blocks not > 0
+areaF: 12.19
+ 
+ 
+-18 17 2 
+8190 533 
+blocks not > 0
+areaF: 11.47
+ 
+ 
+-18 17 4 
+8190 519 
+areaF: 12.74
+ 
+ 
+-16 20 6 
+8190 527 
+blocks not > 0
+areaF: 11.99
+ 
+ 
+-16 17 5 
+8190 530 
+areaF: 12.69
+ 
+ 
+-17 17 2 
+8190 532 
+areaF: 14.76
+ 
+ 
+-19 17 3 
+8190 522 
+blocks not > 0
+areaF: 13.90
+ 
+ 
+-18 20 4 
+8190 523 
+areaF: 13.79
+ 
+ 
+-19 20 3 
+8190 524 
+blocks not > 0
+areaF: 12.99
+ 
+ 
+-16 19 3 
+8190 528 
+areaF: 13.97
+ 
+ 
+-17 18 4 
+8190 524 
+blocks not > 0
+areaF: 13.16
+ 
+ 
+-18 19 6 
+8190 528 
+areaF: 13.56
+ 
+ 
+-17 19 4 
+8190 525 
+blocks not > 0
+areaF: 12.78
+ 
+ 
+-17 20 4 
+8190 526 
+blocks not > 0
+areaF: 12.04
+ 
+ 
+-18 18 4 
+8190 526 
+areaF: 12.38
+ 
+ 
+-18 19 4 
+8190 523 
+areaF: 14.78
+ 
+ 
+-19 17 3 
+8190 527 
+blocks not > 0
+areaF: 13.93
+ 
+ 
+-20 18 4 
+8190 525 
+blocks not > 0
+areaF: 13.13
+ 
+ 
+-17 18 4 
+8190 538 
+blocks not > 0
+areaF: 12.37
+ 
+ 
+-16 18 4 
+8190 531 
+blocks not > 0
+areaF: 11.66
+ 
+ 
+-17 16 5 
+8190 519 
+areaF: 14.78
+ 
+ 
+-16 19 7 
+8190 524 
+areaF: 17.15
+ 
+ 
+-14 17 5 
+8190 529 
+blocks not > 0
+areaF: 16.17
+ 
+ 
+-21 17 2 
+8190 521 
+blocks not > 0
+areaF: 15.24
+ 
+ 
+-18 18 2 
+8190 538 
+blocks not > 0
+areaF: 14.36
+ 
+ 
+-19 15 3 
+8190 539 
+areaF: 15.38
+ 
+ 
+-21 16 4 
+8190 531 
+blocks not > 0
+areaF: 14.49
+ 
+ 
+-19 16 3 
+8190 528 
+blocks not > 0
+areaF: 13.66
+ 
+ 
+-18 18 2 
+8190 532 
+blocks not > 0
+areaF: 12.88
+ 
+ 
+-17 17 4 
+8190 540 
+areaF: 13.00
+ 
+ 
+-17 19 3 
+8190 528 
+blocks not > 0
+areaF: 12.26
+ 
+ 
+-20 14 4 
+8190 521 
+Web socket connected, id = 0
+areaF: 12.59
+ 
+ 
+-17 17 4 
+8190 521 
+blocks not > 0
+areaF: 11.87
+ 
+ 
+-18 16 3 
+8190 525 
+blocks not > 0
+areaF: 11.19
+ 
+ 
+-19 17 3 
+8190 524 
+On connection #0
+  got text: Connect Tue May 29 2018 01:03:18 GMT-0700 (PDT)
+areaF: 12.15
+ 
+ 
+-20 17 2 
+8190 535 
+areaF: 12.60
+ 
+ 
+-20 18 3 
+8190 524 
+areaF: 13.94
+ 
+ 
+-19 16 3 
+8190 534 
+blocks not > 0
+areaF: 13.14
+ 
+ 
+-20 16 4 
+8190 527 
+blocks not > 0
+areaF: 12.39
+ 
+ 
+-19 15 1 
+8190 533 
+blocks not > 0
+areaF: 11.68
+ 
+ 
+-19 17 3 
+8190 533 
+blocks not > 0
+areaF: 11.01
+ 
+ 
+-19 16 3 
+8190 539 
+areaF: 11.52
+ 
+ 
+-21 16 4 
+8190 522 
+blocks not > 0
+areaF: 10.87
+ 
+ 
+-19 18 3 
+8190 533 
+blocks not > 0
+areaF: 10.24
+ 
+ 
+-21 17 5 
+8190 521 
+blocks not > 0
+areaF: 9.66
+ 
+ 
+-17 17 3 
+8190 533 
+blocks not > 0
+areaF: 9.10
+ 
+ 
+-18 16 4 
+8190 531 
+areaF: 10.30
+ 
+ 
+-20 18 3 
+8190 528 
+areaF: 10.40
+ 
+ 
+-19 16 2 
+8190 524 
+blocks not > 0
+areaF: 9.80
+ 
+ 
+-20 17 4 
+8190 531 
+blocks not > 0
+areaF: 9.24
+ 
+ 
+-20 15 2 
+8190 528 
+blocks not > 0
+areaF: 8.71
+ 
+ 
+-21 18 4 
+8190 532 
+areaF: 9.36
+ 
+ 
+-18 17 2 
+8190 550 
+blocks not > 0
+areaF: 8.82
+ 
+ 
+-20 17 3 
+8190 539 
+areaF: 13.47
+ 
+ 
+-21 18 3 
+8190 529 
+areaF: 14.41
+ 
+ 
+-21 16 2 
+8190 538 
+areaF: 14.50
+ 
+ 
+-19 17 5 
+8190 538 
+areaF: 15.05
+ 
+ 
+-20 17 2 
+8190 529 
+areaF: 14.87
+ 
+ 
+-21 17 4 
+8190 523 
+blocks not > 0
+areaF: 14.02
+ 
+ 
+-18 18 3 
+8190 529 
+areaF: 14.94
+ 
+ 
+-20 16 3 
+8190 536 
+blocks not > 0
+areaF: 14.08
+ 
+ 
+-17 16 3 
+8190 525 
+areaF: 14.31
+ 
+ 
+-19 17 3 
+8190 524 
+blocks not > 0
+areaF: 13.49
+ 
+ 
+-18 17 4 
+8190 536 
+blocks not > 0
+areaF: 12.72
+ 
+ 
+-19 17 5 
+8190 540 
+areaF: 12.56
+ 
+ 
+-19 18 4 
+8190 523 
+areaF: 12.53
+ 
+ 
+-19 17 2 
+8190 519 
+blocks not > 0
+areaF: 11.81
+ 
+ 
+-21 17 3 
+8190 528 
+areaF: 11.71
+ 
+ 
+-20 17 1 
+8190 536 
+areaF: 11.84
+ 
+ 
+-20 18 2 
+8190 532 
+areaF: 13.74
+ 
+ 
+-19 19 3 
+8190 537 
+areaF: 15.81
+ 
+ 
+-19 18 2 
+8190 539 
+areaF: 15.59
+ 
+ 
+-20 20 3 
+8190 527 
+areaF: 15.73
+ 
+ 
+-20 18 3 
+8190 548 
+areaF: 17.98
+ 
+ 
+-19 17 5 
+8190 539 
+blocks not > 0
+areaF: 16.95
+ 
+ 
+-17 17 4 
+8190 530 
+On connection #0
+  got text: #RT
+right
+blocks not > 0
+areaF: 15.98
+ 
+ 
+-18 17 3 
+8190 532 
+blocks not > 0
+areaF: 15.07
+ 
+ 
+-19 18 5 
+8190 517 
+blocks not > 0
+areaF: 14.20
+ 
+ 
+-14 17 4 
+573 541 
+areaF: 19.05
+ 
+ 
+-9 18 2 
+540 497 
+areaF: 42.80
+ 
+ 
+-1 18 2 
+745 280 
+areaF: 66.44
+ 
+ 
+6 16 2 
+709 241 
+blocks not > 0
+areaF: 62.64
+ 
+ 
+12 13 1 
+366 429 
+blocks not > 0
+areaF: 59.05
+ 
+ 
+17 7 2 
+223 455 
+blocks not > 0
+areaF: 55.67
+ 
+ 
+21 -1 -2 
+294 363 
+blocks not > 0
+areaF: 52.49
+ 
+ 
+22 -5 -2 
+472 470 
+blocks not > 0
+areaF: 49.49
+ 
+ 
+21 -12 -4 
+8191 340 
+blocks not > 0
+areaF: 46.65
+ 
+ 
+20 -20 -2 
+8191 351 
+blocks not > 0
+areaF: 43.98
+ 
+ 
+16 -25 -4 
+467 332 
+blocks not > 0
+areaF: 41.47
+ 
+ 
+14 -27 -4 
+420 255 
+blocks not > 0
+areaF: 39.10
+ 
+ 
+11 -30 -5 
+398 608 
+On connection #0
+  got text: #0
+stop
+blocks not > 0
+areaF: 36.86
+ 
+ 
+4 -33 -4 
+421 357 
+blocks not > 0
+areaF: 34.75
+ 
+ 
+-1 -36 -4 
+658 292 
+blocks not > 0
+areaF: 32.76
+ 
+ 
+0 -35 -4 
+694 287 
+blocks not > 0
+areaF: 30.89
+ 
+ 
+-1 -37 -3 
+692 288 
+blocks not > 0
+areaF: 29.12
+ 
+ 
+-3 -36 -5 
+460 300 
+blocks not > 0
+areaF: 27.45
+ 
+ 
+-1 -36 -3 
+376 304 
+blocks not > 0
+areaF: 25.88
+ 
+ 
+-2 -35 -4 
+386 295 
+areaF: 25.95
+ 
+ 
+0 -36 -4 
+401 298 
+blocks not > 0
+areaF: 24.46
+ 
+ 
+-3 -37 -3 
+399 278 
+blocks not > 0
+areaF: 23.06
+ 
+ 
+0 -36 -4 
+383 282 
+blocks not > 0
+areaF: 21.74
+ 
+ 
+-1 -36 -5 
+389 280 
+blocks not > 0
+areaF: 20.50
+ 
+ 
+-2 -36 -6 
+364 295 
+areaF: 21.04
+ 
+ 
+-1 -38 -6 
+408 300 
+blocks not > 0
+areaF: 19.84
+ 
+ 
+-1 -37 -4 
+564 289 
+blocks not > 0
+areaF: 18.70
+ 
+ 
+-2 -37 -4 
+624 288 
+blocks not > 0
+areaF: 17.63
+ 
+ 
+0 -37 -3 
+649 294 
+blocks not > 0
+areaF: 16.62
+ 
+ 
+0 -37 -6 
+709 272 
+blocks not > 0
+areaF: 15.67
+ 
+ 
+0 -35 -3 
+690 284 
+blocks not > 0
+areaF: 14.78
+ 
+ 
+-2 -35 -5 
+711 278 
+blocks not > 0
+areaF: 13.93
+ 
+ 
+-3 -38 -4 
+716 269 
+blocks not > 0
+areaF: 13.13
+ 
+ 
+-3 -38 -4 
+721 271 
+blocks not > 0
+areaF: 12.38
+ 
+ 
+-1 -36 -3 
+721 268 
+blocks not > 0
+areaF: 11.67
+ 
+ 
+-1 -34 -4 
+694 271 
+blocks not > 0
+areaF: 11.01
+ 
+ 
+-3 -36 -4 
+695 277 
+blocks not > 0
+areaF: 10.38
+ 
+ 
+-3 -35 -3 
+721 267 
+blocks not > 0
+areaF: 9.78
+ 
+ 
+0 -37 -5 
+722 285 
+blocks not > 0
+areaF: 9.22
+ 
+ 
+-1 -33 -3 
+749 281 
+blocks not > 0
+areaF: 8.70
+ 
+ 
+-2 -35 -4 
+723 282 
+blocks not > 0
+areaF: 8.20
+ 
+ 
+-1 -37 -5 
+700 272 
+blocks not > 0
+areaF: 7.73
+ 
+ 
+-3 -38 -5 
+703 276 
+blocks not > 0
+areaF: 7.29
+ 
+ 
+0 -38 -2 
+724 286 
+blocks not > 0
+areaF: 6.87
+ 
+ 
+-2 -35 -3 
+719 286 
+blocks not > 0
+areaF: 6.48
+ 
+ 
+-4 -36 -4 
+707 290 
+blocks not > 0
+areaF: 6.11
+ 
+ 
+0 -36 -4 
+684 291 
+blocks not > 0
+areaF: 5.76
+ 
+ 
+-2 -36 -3 
+701 297 
+blocks not > 0
+areaF: 5.43
+ 
+ 
+-2 -36 -4 
+700 293 
+blocks not > 0
+areaF: 5.12
+ 
+ 
+-2 -35 -6 
+682 293 
+blocks not > 0
+areaF: 4.82
+ 
+ 
+-2 -35 -4 
+679 280 
+blocks not > 0
+areaF: 4.55
+ 
+ 
+0 -36 -4 
+666 283 
+On connection #0
+  got text: #LT
+left
+blocks not > 0
+areaF: 4.29
+ 
+ 
+-1 -36 -4 
+689 321 
+blocks not > 0
+areaF: 4.04
+ 
+ 
+-1 -35 -5 
+446 536 
+blocks not > 0
+areaF: 3.81
+ 
+ 
+4 -35 -5 
+372 630 
+blocks not > 0
+areaF: 3.59
+ 
+ 
+11 -30 -2 
+436 326 
+blocks not > 0
+areaF: 3.39
+ 
+ 
+13 -24 -4 
+8191 375 
+blocks not > 0
+areaF: 3.19
+ 
+ 
+19 -17 -5 
+8191 8191 
+blocks not > 0
+areaF: 3.01
+ 
+ 
+20 -12 -3 
+452 353 
+blocks not > 0
+areaF: 2.84
+ 
+ 
+21 -5 -1 
+393 428 
+blocks not > 0
+areaF: 2.68
+ 
+ 
+15 1 0 
+214 466 
+blocks not > 0
+areaF: 2.52
+ 
+ 
+12 9 1 
+216 403 
+blocks not > 0
+areaF: 2.38
+ 
+ 
+6 13 0 
+306 408 
+blocks not > 0
+areaF: 2.24
+ 
+ 
+0 15 -1 
+545 329 
+blocks not > 0
+areaF: 2.11
+ 
+ 
+-8 17 0 
+572 454 
+blocks not > 0
+areaF: 1.99
+ 
+ 
+-13 18 0 
+8190 518 
+blocks not > 0
+areaF: 1.88
+ 
+ 
+-19 18 0 
+8190 849 
+blocks not > 0
+areaF: 1.77
+ 
+ 
+-25 14 -1 
+8190 8190 
+blocks not > 0
+areaF: 1.67
+ 
+ 
+-32 8 -2 
+1109 1217 
+blocks not > 0
+areaF: 1.57
+ 
+ 
+-36 2 -1 
+868 1003 
+blocks not > 0
+areaF: 1.48
+ 
+ 
+-40 -6 0 
+401 825 
+blocks not > 0
+areaF: 1.40
+ 
+ 
+-40 -14 -3 
+367 417 
+blocks not > 0
+areaF: 1.32
+ 
+ 
+-36 -23 -1 
+431 348 
+blocks not > 0
+areaF: 1.24
+ 
+ 
+-32 -26 -4 
+464 362 
+blocks not > 0
+areaF: 1.17
+ 
+ 
+-25 -34 -4 
+302 408 
+blocks not > 0
+areaF: 1.11
+ 
+ 
+-15 -34 -2 
+420 314 
+blocks not > 0
+areaF: 1.04
+ 
+ 
+-7 -38 -5 
+712 300 
+blocks not > 0
+areaF: 0.98
+ 
+ 
+-1 -36 -3 
+384 670 
+blocks not > 0
+areaF: 0.93
+ 
+ 
+9 -32 -2 
+453 336 
+blocks not > 0
+areaF: 0.87
+ 
+ 
+13 -26 -4 
+383 401 
+blocks not > 0
+areaF: 0.82
+ 
+ 
+18 -17 -2 
+8191 8191 
+blocks not > 0
+areaF: 0.78
+ 
+ 
+22 -11 -2 
+427 345 
+blocks not > 0
+areaF: 0.73
+ 
+ 
+17 -5 0 
+668 426 
+blocks not > 0
+areaF: 0.69
+ 
+ 
+16 4 -1 
+576 475 
+blocks not > 0
+areaF: 0.65
+ 
+ 
+11 10 -1 
+332 495 
+blocks not > 0
+areaF: 0.61
+ 
+ 
+4 14 0 
+433 352 
+blocks not > 0
+areaF: 0.58
+ 
+ 
+-6 19 -1 
+565 398 
+blocks not > 0
+areaF: 0.55
+ 
+ 
+-12 18 -1 
+8190 532 
+blocks not > 0
+areaF: 0.51
+ 
+ 
+-21 15 -2 
+8190 8190 
+blocks not > 0
+areaF: 0.48
+ 
+ 
+-29 12 -2 
+1250 8190 
+blocks not > 0
+areaF: 0.46
+ 
+ 
+-36 5 0 
+1007 1093 
+blocks not > 0
+areaF: 0.43
+ 
+ 
+-39 -2 -2 
+489 926 
+blocks not > 0
+areaF: 0.41
+ 
+ 
+-39 -10 -1 
+368 501 
+blocks not > 0
+areaF: 0.38
+ 
+ 
+-38 -18 -3 
+403 355 
+blocks not > 0
+areaF: 0.36
+ 
+ 
+-32 -26 -4 
+526 354 
+blocks not > 0
+areaF: 0.34
+ 
+ 
+-25 -32 -5 
+309 397 
+blocks not > 0
+areaF: 0.32
+ 
+ 
+-17 -34 -4 
+376 303 
+blocks not > 0
+areaF: 0.30
+ 
+ 
+-9 -37 -4 
+715 286 
+blocks not > 0
+areaF: 0.29
+ 
+ 
+1 -33 -5 
+369 656 
+blocks not > 0
+areaF: 0.27
+ 
+ 
+7 -30 -3 
+439 350 
+blocks not > 0
+areaF: 0.25
+ 
+ 
+14 -24 -4 
+8191 368 
+blocks not > 0
+areaF: 0.24
+ 
+ 
+19 -17 -5 
+8191 418 
+blocks not > 0
+areaF: 0.23
+ 
+ 
+22 -8 -2 
+410 402 
+blocks not > 0
+areaF: 0.21
+ 
+ 
+20 0 -1 
+774 409 
+blocks not > 0
+areaF: 0.20
+ 
+ 
+15 6 -1 
+408 458 
+blocks not > 0
+areaF: 0.19
+ 
+ 
+7 12 1 
+321 461 
+areaF: 1.78
+ 
+ 
+1 15 -1 
+543 331 
+blocks not > 0
+areaF: 1.68
+ 
+ 
+-6 17 0 
+588 465 
+blocks not > 0
+areaF: 1.58
+ 
+ 
+-14 19 -3 
+8190 551 
+blocks not > 0
+areaF: 1.49
+ 
+ 
+-22 15 -2 
+8190 8190 
+On connection #0
+  got text: #0
+stop
+blocks not > 0
+areaF: 1.41
+ 
+ 
+-30 10 0 
+1219 8190 
+areaF: 171.60
+ 
+ 
+-34 5 0 
+1057 1174 
+areaF: 450.94
+ 
+ 
+-37 3 0 
+1027 1170 
+areaF: 738.22
+ 
+ 
+-38 2 -2 
+1026 1117 
+areaF: 1015.08
+ 
+ 
+-38 1 -1 
+1014 1192 
+areaF: 1287.76
+ 
+ 
+-38 1 -1 
+1025 1179 
+areaF: 1547.18
+ 
+ 
+-38 3 -2 
+1022 1170 
+areaF: 1781.35
+ 
+ 
+-38 2 -2 
+1000 1160 
+areaF: 1842.38
+ 
+ 
+-37 3 -2 
+1027 1148 
+areaF: 2023.96
+ 
+ 
+-38 2 -1 
+1011 1163 
+areaF: 2233.14
+ 
+ 
+-37 2 0 
+993 1194 
+areaF: 2438.48
+ 
+ 
+-38 1 -2 
+1034 1176 
+areaF: 2626.23
+ 
+ 
+-38 2 -2 
+1026 1188 
+areaF: 2810.11
+ 
+ 
+-37 1 -1 
+996 1151 
+areaF: 2976.60
+ 
+ 
+-38 3 -1 
+1021 1192 
+areaF: 2965.58
+ 
+ 
+-39 2 -1 
+1019 1132 
+areaF: 3120.88
+ 
+ 
+-38 1 -1 
+1014 1139 
+areaF: 3265.01
+ 
+ 
+-36 3 -2 
+1046 1094 
+areaF: 3403.19
+ 
+ 
+-38 2 -2 
+1025 1133 
+areaF: 3541.58
+ 
+ 
+-37 2 -3 
+1019 1155 
+areaF: 3672.05
+ 
+ 
+-38 2 -1 
+1014 1144 
+areaF: 3795.06
+ 
+ 
+-39 2 0 
+1015 1103 
+areaF: 3911.03
+ 
+ 
+-38 2 0 
+1010 1187 
+areaF: 4027.41
+ 
+ 
+-39 2 0 
+1035 1144 
+areaF: 4121.96
+ 
+ 
+-37 0 -2 
+1025 1186 
+areaF: 4208.82
+ 
+ 
+-37 3 -1 
+1027 1156 
+areaF: 4292.99
+ 
+ 
+-37 -1 1 
+1007 1179 
+areaF: 4370.06
+ 
+ 
+-38 2 -1 
+1033 1141 
+areaF: 4450.79
+ 
+ 
+-37 2 -2 
+1023 1158 
+areaF: 4510.76
+ 
+ 
+-39 1 -1 
+1003 1229 
+areaF: 4575.37
+ 
+ 
+-39 1 -1 
+1037 1188 
+areaF: 4604.01
+ 
+ 
+-40 4 -1 
+1034 1138 
+areaF: 4650.76
+ 

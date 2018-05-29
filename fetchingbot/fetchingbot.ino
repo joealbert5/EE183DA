@@ -361,8 +361,8 @@ int16_t findMinMax(int16_t x, int16_t y)
     minY = y;
 }
 
-int MX_BIAS = 7;
-int MY_BIAS = -25;
+int MX_BIAS = 37;
+int MY_BIAS = -16;
 
 float getHeading(bool sendToWebApp, uint8_t id, int32_t area, bool calibrate){
   char buff [50];
@@ -573,7 +573,8 @@ bool scan2(){
   float currHeading;
   while(!found){
     rightSlow();
-    currHeading = getHeading(false, 0,0, true);
+    //currHeading = getHeading(false, 0,0, true);
+    currHeading = getHeading();
     float ahe = adjustedHeadingError(currHeading, startHeading);
     if (millis() - t1 > 1000 &&  ahe < SPINERROR)
       return false;
