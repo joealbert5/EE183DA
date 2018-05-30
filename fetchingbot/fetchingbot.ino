@@ -146,6 +146,9 @@ void setup() {
     setupPixy();
     
   #endif
+  //servo_grab.write(80);
+  //grab = 1;
+  //grasp();
   //setupMDNS(mDNS_name);
 
   stop();
@@ -168,6 +171,7 @@ void loop() {
     
   #endif
   sendCoords(0, area);
+  printWebApp("grab is " + String(grab));
   //Serial.println("passed sendCoords");
   //Serial.println("finished loop");
   //obstacleAvoid();
@@ -381,8 +385,10 @@ float getHeading(bool sendToWebApp, uint8_t id, int32_t area, bool calibrate){
   int newXbias = (maxX + minX)/2;
   int newYbias = (maxY + minY)/2;
   if (calibrate){
-    MX_BIAS += newXbias;  //might have to be += instead of -=
-    MY_BIAS += newYbias;  //this might have to only be called when call spins 360°, such as in scan2(), not totally sure
+    if (abs(newXbias) > 5)
+      MX_BIAS += newXbias;
+    if (abs(newYbias) > 5)
+      MY_BIAS += newYbias;  //this might have to only be called when call spins 360°, such as in scan2(), not totally sure
   }
   printWebApp(String(newXbias) + " " + String(newYbias));
   //>>>>>>>end autoupdate
@@ -437,14 +443,19 @@ String tupToInstrux(tuple<double,double> dirs){
   Serial.println(dHeading);
   Serial.print("timeFmillis: ");
   Serial.println(timeFmillis);
-  float initHeading = getHeading();
+  float initHeading = getHeading(false, 0,0, true);
   float targetHeading = initHeading + (float) dHeading;
-  float HEADING_ERROR = 5;
+  float HEADING_ERROR = 15;
+  float currHeading;
   float ahe;
   if (dHeading > 0) {
     while (true) {
       left();
-      ahe = adjustedHeadingError(targetHeading, getHeading());
+      Serial.println("looping inside tupToInstrux");
+      currHeading = getHeading(false, 0,0, true);
+      Serial.print("currHeading: ");
+      Serial.println(currHeading);
+      ahe = adjustedHeadingError(targetHeading, currHeading);
       if (ahe < HEADING_ERROR)
         break;
     }
@@ -452,7 +463,11 @@ String tupToInstrux(tuple<double,double> dirs){
   else if (dHeading < 0) {
     while (true) {
       right();
-      ahe = adjustedHeadingError(targetHeading, getHeading());
+      Serial.println("looping inside tupToInstrux");
+      currHeading = getHeading(false, 0,0, true);
+      Serial.print("currHeading: ");
+      Serial.println(currHeading);
+      ahe = adjustedHeadingError(targetHeading, currHeading);
       if (ahe < HEADING_ERROR)
         break;
     }
@@ -569,12 +584,13 @@ bool scan2(){
   float startHeading = getHeading(false, 0,0, true);
   Serial.print("startHeading: ");
   Serial.println(startHeading);
-  float SPINERROR = 10;   //5 degrees
+  float SPINERROR = 15;   //5 degrees
   float currHeading;
   while(!found){
+    Serial.println("looping in scan2()");
     rightSlow();
-    //currHeading = getHeading(false, 0,0, true);
-    currHeading = getHeading();
+    currHeading = getHeading(false, 0,0, true);
+    //currHeading = getHeading();
     float ahe = adjustedHeadingError(currHeading, startHeading);
     if (millis() - t1 > 1000 &&  ahe < SPINERROR)
       return false;
@@ -609,7 +625,7 @@ bool sweep(float range, int32_t sig) {
   Serial.println(sweepLeft);
   Serial.print("sweepRight: ");
   Serial.println(sweepRight);
-  float SPINERROR = 10;   //5 degrees
+  float SPINERROR = 15;   //5 degrees
   float currHeading;
   float ahe;
   while(!found){
@@ -713,12 +729,12 @@ void grasp()
 {
   if (grab == 0)
   {
-    servo_grab.write(170);
+    servo_grab.write(80);
     grab = 1;
   }
   else
   {
-    servo_grab.write(80);
+    servo_grab.write(170);
     grab = 0;
   }
 }
@@ -801,7 +817,7 @@ void webSocketEvent(uint8_t id, WStype_t type, uint8_t * payload, size_t length)
               drive(90, 90);
             }
             track2();
-            //grasp();
+            grasp();
           }
           else if (cmd == "Ret"){
             Serial.println("Ret is: " + cmd);

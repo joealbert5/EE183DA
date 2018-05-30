@@ -1,5 +1,5 @@
-=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2018.05.29 01:03:04 =~=~=~=~=~=~=~=~=~=~=~=
-rll|#nlc|{b#noloobp#l r$polco|l#oo$l n$`orn#lsn#$b`oStarted serial.
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2018.05.30 16:45:26 =~=~=~=~=~=~=~=~=~=~=~=
+sll$|lp|r>BNN$NNbpcl`slpod"n|lp|oll nnl`o{{"$rncld oStarted serial.
 Setup motor pins
 7674797
 [SETUP] BOOT WAIT 4...
@@ -30,1435 +30,4231 @@ blocks not > 0
 areaF: 0.00
  
  
--18 16 4 
-8190 527 
-areaF: 42.07
- 
- 
--18 15 3 
-8190 526 
-areaF: 35.75
- 
- 
--18 17 3 
-8190 528 
-areaF: 31.15
- 
- 
--18 16 4 
-8190 523 
+17 -31 -19 
+8191 253 
 blocks not > 0
-areaF: 25.20
+areaF: 0.00
  
  
--18 18 3 
-8190 524 
+15 -33 -18 
+8191 252 
 blocks not > 0
-areaF: 21.10
+areaF: 0.00
  
  
--18 14 2 
-8190 527 
+16 -32 -19 
+413 233 
 blocks not > 0
-areaF: 18.09
+areaF: 0.00
  
  
--19 16 3 
-8190 520 
+14 -33 -19 
+8191 238 
 blocks not > 0
-areaF: 15.78
+areaF: 0.00
  
  
--18 17 3 
-8190 530 
+16 -32 -20 
+8191 234 
 blocks not > 0
-areaF: 13.95
+areaF: 0.00
  
  
--17 17 2 
-8190 526 
+16 -33 -20 
+8191 240 
 blocks not > 0
-areaF: 12.47
+areaF: 0.00
  
  
--17 16 2 
-8190 528 
-areaF: 12.42
- 
- 
--17 16 4 
-8190 525 
-areaF: 15.36
- 
- 
--19 18 4 
-8190 527 
+14 -32 -18 
+480 240 
 blocks not > 0
-areaF: 14.01
+areaF: 0.00
  
  
--19 17 3 
-8190 522 
-areaF: 15.35
- 
- 
--19 16 3 
-8190 526 
-areaF: 16.04
- 
- 
--19 16 5 
-8190 523 
-areaF: 16.89
- 
- 
--16 17 4 
-8190 516 
-areaF: 19.51
- 
- 
--17 19 4 
-8190 520 
+13 -32 -19 
+8191 229 
 blocks not > 0
-areaF: 18.10
+areaF: 0.00
  
  
--17 16 4 
-8190 521 
+15 -33 -20 
+8191 249 
 blocks not > 0
-areaF: 16.82
+areaF: 0.00
  
  
--19 16 4 
-8190 533 
+15 -33 -19 
+8191 243 
 blocks not > 0
-areaF: 15.66
+areaF: 0.00
  
  
--21 18 4 
-8190 527 
+15 -33 -19 
+8191 235 
 blocks not > 0
-areaF: 14.60
+areaF: 0.00
  
  
--18 16 3 
-8190 535 
-areaF: 17.35
- 
- 
--17 20 4 
-8190 529 
+13 -34 -19 
+8191 242 
 blocks not > 0
-areaF: 16.22
+areaF: 0.00
  
  
--17 16 2 
-8190 528 
+15 -32 -18 
+8190 241 
 blocks not > 0
-areaF: 15.17
+areaF: 0.00
  
  
--18 18 2 
-8190 516 
-areaF: 16.11
- 
- 
--18 18 6 
-8190 535 
+16 -33 -21 
+8191 243 
 blocks not > 0
-areaF: 15.10
+areaF: 0.00
  
  
--19 19 4 
-8190 518 
+15 -33 -19 
+8191 243 
 blocks not > 0
-areaF: 14.16
+areaF: 0.00
  
  
--19 17 4 
-8190 531 
+15 -34 -20 
+8191 254 
 blocks not > 0
-areaF: 13.29
+areaF: 0.00
  
  
--17 18 3 
-8190 524 
-areaF: 13.34
- 
- 
--17 16 3 
-8190 529 
-areaF: 13.13
- 
- 
--17 17 4 
-8190 525 
-areaF: 13.79
- 
- 
--16 18 3 
-8190 529 
+15 -33 -21 
+8191 229 
 blocks not > 0
-areaF: 12.96
+areaF: 0.00
  
  
--18 19 5 
-8190 530 
+14 -31 -19 
+8191 252 
 blocks not > 0
-areaF: 12.19
+areaF: 0.00
  
  
--18 17 2 
-8190 533 
+14 -32 -22 
+8191 244 
 blocks not > 0
-areaF: 11.47
+areaF: 0.00
  
  
--18 17 4 
-8190 519 
-areaF: 12.74
- 
- 
--16 20 6 
-8190 527 
+15 -32 -20 
+8191 241 
 blocks not > 0
-areaF: 11.99
+areaF: 0.00
  
  
--16 17 5 
-8190 530 
-areaF: 12.69
- 
- 
--17 17 2 
-8190 532 
-areaF: 14.76
- 
- 
--19 17 3 
-8190 522 
+15 -33 -20 
+8191 230 
 blocks not > 0
-areaF: 13.90
+areaF: 0.00
  
  
--18 20 4 
-8190 523 
-areaF: 13.79
- 
- 
--19 20 3 
-8190 524 
+16 -29 -22 
+8191 233 
 blocks not > 0
-areaF: 12.99
+areaF: 0.00
  
  
--16 19 3 
-8190 528 
-areaF: 13.97
- 
- 
--17 18 4 
-8190 524 
+16 -30 -19 
+615 241 
 blocks not > 0
-areaF: 13.16
+areaF: 0.00
  
  
--18 19 6 
-8190 528 
-areaF: 13.56
- 
- 
--17 19 4 
-8190 525 
+17 -30 -20 
+8191 220 
 blocks not > 0
-areaF: 12.78
+areaF: 0.00
  
  
--17 20 4 
-8190 526 
+17 -33 -19 
+252 232 
 blocks not > 0
-areaF: 12.04
+areaF: 0.00
  
  
--18 18 4 
-8190 526 
-areaF: 12.38
- 
- 
--18 19 4 
-8190 523 
-areaF: 14.78
- 
- 
--19 17 3 
-8190 527 
+15 -31 -18 
+8190 236 
 blocks not > 0
-areaF: 13.93
+areaF: 0.00
  
  
--20 18 4 
-8190 525 
+13 -33 -17 
+374 237 
 blocks not > 0
-areaF: 13.13
+areaF: 0.00
  
  
--17 18 4 
-8190 538 
+14 -33 -21 
+8191 226 
 blocks not > 0
-areaF: 12.37
+areaF: 0.00
  
  
--16 18 4 
-8190 531 
+15 -33 -19 
+8191 240 
 blocks not > 0
-areaF: 11.66
+areaF: 0.00
  
  
--17 16 5 
-8190 519 
-areaF: 14.78
- 
- 
--16 19 7 
-8190 524 
-areaF: 17.15
- 
- 
--14 17 5 
-8190 529 
+14 -30 -20 
+8191 247 
 blocks not > 0
-areaF: 16.17
+areaF: 0.00
  
  
--21 17 2 
-8190 521 
+17 -32 -19 
+322 232 
 blocks not > 0
-areaF: 15.24
+areaF: 0.00
  
  
--18 18 2 
-8190 538 
+16 -32 -19 
+147 246 
 blocks not > 0
-areaF: 14.36
+areaF: 0.00
  
  
--19 15 3 
-8190 539 
-areaF: 15.38
- 
- 
--21 16 4 
-8190 531 
+16 -32 -19 
+8191 224 
 blocks not > 0
-areaF: 14.49
+areaF: 0.00
  
  
--19 16 3 
-8190 528 
+17 -30 -18 
+8191 224 
 blocks not > 0
-areaF: 13.66
+areaF: 0.00
  
  
--18 18 2 
-8190 532 
+18 -31 -18 
+8191 246 
 blocks not > 0
-areaF: 12.88
+areaF: 0.00
  
  
--17 17 4 
-8190 540 
-areaF: 13.00
- 
- 
--17 19 3 
-8190 528 
+18 -29 -17 
+8191 220 
 blocks not > 0
-areaF: 12.26
+areaF: 0.00
  
  
--20 14 4 
-8190 521 
+17 -31 -20 
+8191 242 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+15 -32 -21 
+8191 213 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+16 -32 -18 
+8191 226 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -30 -20 
+8191 221 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+19 -28 -20 
+8191 217 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+16 -32 -17 
+8191 230 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+14 -32 -20 
+8191 242 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+15 -31 -18 
+8191 241 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+16 -31 -20 
+8191 231 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+16 -30 -18 
+8191 244 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+15 -32 -19 
+8191 238 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -29 -18 
+8191 227 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+16 -34 -20 
+8191 236 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -30 -20 
+8191 231 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -29 -21 
+422 244 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+16 -33 -18 
+8191 243 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -32 -20 
+8191 238 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -31 -17 
+8191 237 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -33 -19 
+8191 216 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -32 -21 
+406 238 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+16 -31 -19 
+8191 227 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -31 -20 
+8191 229 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+16 -31 -21 
+8191 229 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+16 -32 -20 
+8190 228 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+19 -31 -19 
+8191 228 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+18 -32 -20 
+8191 235 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+16 -31 -21 
+8191 232 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -32 -21 
+386 233 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+18 -31 -19 
+8191 228 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -31 -19 
+8191 236 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -32 -17 
+8191 221 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+15 -30 -20 
+182 238 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+18 -28 -17 
+8191 223 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+16 -29 -18 
+8191 232 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+15 -31 -17 
+8191 219 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+19 -31 -19 
+8191 224 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -28 -19 
+8191 228 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -31 -21 
+8191 221 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+18 -31 -18 
+8191 216 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+18 -30 -18 
+8191 239 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+18 -31 -18 
+8191 228 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+19 -30 -18 
+8191 231 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+21 -30 -18 
+8191 220 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+20 -30 -17 
+8191 225 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+16 -31 -16 
+302 231 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+18 -31 -17 
+8191 227 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -29 -19 
+8190 226 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+18 -30 -16 
+8191 231 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+18 -31 -17 
+8191 229 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+16 -30 -19 
+8191 223 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -32 -18 
+8191 227 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+18 -30 -21 
+8191 231 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+16 -29 -19 
+485 254 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -30 -19 
+8191 237 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+16 -31 -20 
+8191 239 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -33 -18 
+8191 228 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+18 -31 -19 
+8191 244 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -32 -19 
+8191 225 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+16 -31 -20 
+8191 212 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+18 -32 -20 
+8191 228 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+18 -32 -18 
+8191 239 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+15 -32 -19 
+8191 232 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+19 -33 -17 
+8191 226 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+18 -32 -17 
+8191 214 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -31 -16 
+8191 236 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+16 -31 -18 
+8191 236 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+18 -31 -18 
+8191 227 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -31 -18 
+317 228 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -32 -19 
+8191 235 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -32 -18 
+8191 231 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+16 -29 -19 
+8191 232 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+18 -30 -18 
+8191 217 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+16 -30 -17 
+8191 237 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -29 -17 
+8191 230 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+20 -34 -20 
+8191 230 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+18 -31 -18 
+8191 233 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+19 -31 -19 
+8191 235 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+16 -30 -18 
+8191 221 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -30 -16 
+8191 235 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -32 -22 
+8191 234 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -31 -18 
+8191 232 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+15 -32 -16 
+8191 221 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -31 -16 
+8191 224 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+19 -28 -17 
+8191 221 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+18 -31 -18 
+8191 221 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -30 -20 
+8191 217 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+16 -31 -18 
+8191 245 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -32 -17 
+527 230 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+18 -31 -18 
+8191 231 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+18 -31 -19 
+8191 231 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -31 -20 
+8191 234 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+18 -31 -18 
+8191 227 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+18 -32 -19 
+8191 239 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -32 -20 
+8191 226 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+20 -32 -18 
+8191 243 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -31 -18 
+8191 236 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+18 -31 -19 
+8191 231 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+16 -31 -18 
+347 227 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -30 -20 
+8191 222 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -32 -18 
+8191 225 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+16 -32 -19 
+407 220 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+16 -30 -20 
+8191 233 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+20 -31 -18 
+8191 213 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+18 -28 -22 
+8191 231 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -32 -18 
+8191 216 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+16 -31 -18 
+8191 223 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+18 -29 -18 
+8191 230 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+16 -30 -19 
+8191 228 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+19 -30 -20 
+8191 237 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -32 -20 
+8191 243 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+19 -31 -18 
+8191 228 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+19 -31 -19 
+8190 237 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -30 -19 
+8191 223 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -32 -19 
+8191 233 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -31 -17 
+8191 230 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -33 -18 
+8191 226 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+19 -31 -21 
+8191 227 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+19 -30 -19 
+596 221 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+16 -31 -19 
+8191 228 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+18 -32 -18 
+8191 233 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+16 -30 -19 
+8191 228 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+18 -30 -19 
+8191 223 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -30 -21 
+8191 234 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+18 -31 -20 
+8191 234 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -30 -21 
+242 226 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+18 -31 -19 
+8191 235 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -31 -20 
+8191 220 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -29 -20 
+8191 229 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+19 -30 -18 
+8191 224 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+19 -32 -18 
+8191 221 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+16 -30 -17 
+8191 224 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+19 -30 -17 
+8190 239 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+21 -31 -19 
+8191 221 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+19 -31 -18 
+8191 223 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+19 -30 -16 
+8191 235 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+20 -29 -19 
+8191 219 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+18 -30 -19 
+8191 219 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -30 -18 
+8191 225 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -27 -21 
+8191 224 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+18 -31 -18 
+8191 231 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+17 -29 -20 
+8191 234 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+18 -29 -18 
+8191 232 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+19 -28 -18 
+8191 220 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+16 -30 -19 
+8191 230 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+19 -27 -18 
+8191 219 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+18 -28 -20 
+8191 233 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+18 -29 -18 
+8190 227 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+16 -31 -17 
+8191 212 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+20 -30 -20 
+8191 227 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+19 -30 -17 
+8191 228 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+19 -32 -18 
+8191 224 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+19 -32 -20 
+8191 225 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+18 -29 -18 
+8191 222 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+16 -30 -17 
+8191 228 
 Web socket connected, id = 0
-areaF: 12.59
- 
- 
--17 17 4 
-8190 521 
 blocks not > 0
-areaF: 11.87
+areaF: 0.00
  
  
--18 16 3 
-8190 525 
+18 -32 -19 
+8190 234 
 blocks not > 0
-areaF: 11.19
+areaF: 0.00
  
  
--19 17 3 
-8190 524 
+16 -31 -18 
+8191 234 
 On connection #0
-  got text: Connect Tue May 29 2018 01:03:18 GMT-0700 (PDT)
-areaF: 12.15
- 
- 
--20 17 2 
-8190 535 
-areaF: 12.60
- 
- 
--20 18 3 
-8190 524 
-areaF: 13.94
- 
- 
--19 16 3 
-8190 534 
+  got text: Connect Wed May 30 2018 16:45:53 GMT-0700 (PDT)
 blocks not > 0
-areaF: 13.14
+areaF: 0.00
  
  
--20 16 4 
-8190 527 
+18 -32 -18 
+8191 231 
 blocks not > 0
-areaF: 12.39
+areaF: 0.00
  
  
--19 15 1 
-8190 533 
+19 -32 -19 
+8191 230 
 blocks not > 0
-areaF: 11.68
+areaF: 0.00
  
  
--19 17 3 
-8190 533 
+17 -32 -19 
+8190 226 
 blocks not > 0
-areaF: 11.01
+areaF: 0.00
  
  
--19 16 3 
-8190 539 
-areaF: 11.52
- 
- 
--21 16 4 
-8190 522 
+18 -31 -18 
+8191 228 
 blocks not > 0
-areaF: 10.87
+areaF: 0.00
  
  
--19 18 3 
-8190 533 
+17 -32 -17 
+8191 231 
 blocks not > 0
-areaF: 10.24
+areaF: 0.00
  
  
--21 17 5 
-8190 521 
+19 -31 -21 
+317 229 
 blocks not > 0
-areaF: 9.66
+areaF: 0.00
  
  
--17 17 3 
-8190 533 
+18 -29 -17 
+126 232 
 blocks not > 0
-areaF: 9.10
+areaF: 0.00
  
  
--18 16 4 
-8190 531 
-areaF: 10.30
- 
- 
--20 18 3 
-8190 528 
-areaF: 10.40
- 
- 
--19 16 2 
-8190 524 
+17 -31 -19 
+8191 236 
 blocks not > 0
-areaF: 9.80
+areaF: 0.00
  
  
--20 17 4 
-8190 531 
+18 -30 -18 
+8191 225 
 blocks not > 0
-areaF: 9.24
+areaF: 0.00
  
  
--20 15 2 
-8190 528 
+17 -30 -20 
+8191 221 
 blocks not > 0
-areaF: 8.71
+areaF: 0.00
  
  
--21 18 4 
-8190 532 
-areaF: 9.36
- 
- 
--18 17 2 
-8190 550 
+19 -31 -19 
+8191 226 
 blocks not > 0
-areaF: 8.82
+areaF: 0.00
  
  
--20 17 3 
-8190 539 
-areaF: 13.47
- 
- 
--21 18 3 
-8190 529 
-areaF: 14.41
- 
- 
--21 16 2 
-8190 538 
-areaF: 14.50
- 
- 
--19 17 5 
-8190 538 
-areaF: 15.05
- 
- 
--20 17 2 
-8190 529 
-areaF: 14.87
- 
- 
--21 17 4 
-8190 523 
+19 -32 -18 
+8191 240 
 blocks not > 0
-areaF: 14.02
+areaF: 0.00
  
  
--18 18 3 
-8190 529 
-areaF: 14.94
- 
- 
--20 16 3 
-8190 536 
+19 -30 -17 
+8191 233 
 blocks not > 0
-areaF: 14.08
+areaF: 0.00
  
  
--17 16 3 
-8190 525 
-areaF: 14.31
- 
- 
--19 17 3 
-8190 524 
+19 -30 -19 
+8191 225 
 blocks not > 0
-areaF: 13.49
+areaF: 0.00
  
  
--18 17 4 
-8190 536 
+18 -29 -19 
+8191 223 
 blocks not > 0
-areaF: 12.72
+areaF: 0.00
  
  
--19 17 5 
-8190 540 
-areaF: 12.56
- 
- 
--19 18 4 
-8190 523 
-areaF: 12.53
- 
- 
--19 17 2 
-8190 519 
+19 -28 -20 
+8191 219 
 blocks not > 0
-areaF: 11.81
+areaF: 0.00
  
  
--21 17 3 
-8190 528 
-areaF: 11.71
- 
- 
--20 17 1 
-8190 536 
-areaF: 11.84
- 
- 
--20 18 2 
-8190 532 
-areaF: 13.74
- 
- 
--19 19 3 
-8190 537 
-areaF: 15.81
- 
- 
--19 18 2 
-8190 539 
-areaF: 15.59
- 
- 
--20 20 3 
-8190 527 
-areaF: 15.73
- 
- 
--20 18 3 
-8190 548 
-areaF: 17.98
- 
- 
--19 17 5 
-8190 539 
+18 -32 -19 
+8191 236 
 blocks not > 0
-areaF: 16.95
+areaF: 0.00
  
  
--17 17 4 
-8190 530 
+22 -31 -19 
+8191 232 
+blocks not > 0
+areaF: 0.00
+ 
+ 
+19 -29 -18 
+8191 238 
 On connection #0
-  got text: #RT
+  got text: #!Beg@
+Beg is: Beg
+ 
+ 
+19 -31 -17 
+8191 222 
+ 
+ 
+19 -29 -16 
+8191 223 
+startHeading: 146.77
+looping in scan2()
+ 
+ 
+3 -1 -19 
+8191 242 
+ahe: 38.33
+currHeading: 108.43
+looping in scan2()
+ 
+ 
+-11 19 -19 
+8191 219 
+ahe: 183.16
+currHeading: 329.93
+looping in scan2()
+ 
+ 
+-12 23 -16 
+564 232 
+ahe: 185.68
+currHeading: 332.45
+looping in scan2()
+ 
+ 
+-12 24 -19 
+8191 248 
+ahe: 186.67
+currHeading: 333.43
+looping in scan2()
+ 
+ 
+-12 24 -17 
+8191 218 
+ahe: 186.67
+currHeading: 333.43
+looping in scan2()
+ 
+ 
+-15 19 -19 
+8191 233 
+ahe: 174.94
+currHeading: 321.71
+looping in scan2()
+ 
+ 
+-11 18 -20 
+8191 232 
+ahe: 181.80
+currHeading: 328.57
+looping in scan2()
+ 
+ 
+-14 20 -19 
+8191 234 
+ahe: 178.24
+currHeading: 325.01
+looping in scan2()
+ 
+ 
+-16 22 -17 
+8191 242 
+ahe: 177.20
+currHeading: 323.97
+looping in scan2()
+ 
+ 
+-14 22 -19 
+8191 245 
+ahe: 180.76
+currHeading: 327.53
+looping in scan2()
+ 
+ 
+-15 21 -19 
+385 259 
+ahe: 177.69
+currHeading: 324.46
+looping in scan2()
+ 
+ 
+-15 19 -17 
+613 276 
+ahe: 174.94
+currHeading: 321.71
+looping in scan2()
+ 
+ 
+-18 19 -18 
+8191 281 
+ahe: 169.78
+currHeading: 316.55
+looping in scan2()
+ 
+ 
+-19 17 -18 
+8191 300 
+ahe: 165.05
+currHeading: 311.82
+looping in scan2()
+ 
+ 
+-20 17 -19 
+8191 315 
+ahe: 163.60
+currHeading: 310.36
+looping in scan2()
+ 
+ 
+-21 16 -19 
+8191 306 
+ahe: 160.54
+currHeading: 307.30
+looping in scan2()
+ 
+ 
+-21 18 -18 
+556 307 
+ahe: 163.83
+currHeading: 310.60
+looping in scan2()
+ 
+ 
+-21 15 -19 
+537 299 
+ahe: 158.77
+currHeading: 305.54
+looping in scan2()
+ 
+ 
+-22 17 -17 
+576 321 
+ahe: 160.93
+currHeading: 307.69
+looping in scan2()
+ 
+ 
+-24 14 -18 
+593 299 
+ahe: 153.49
+currHeading: 300.26
+looping in scan2()
+ 
+ 
+-24 16 -19 
+615 303 
+ahe: 156.92
+currHeading: 303.69
+looping in scan2()
+ 
+ 
+-26 16 -16 
+637 295 
+ahe: 154.84
+currHeading: 301.61
+looping in scan2()
+ 
+ 
+-27 17 -18 
+663 295 
+ahe: 155.43
+currHeading: 302.20
+looping in scan2()
+ 
+ 
+-27 16 -17 
+664 293 
+ahe: 153.88
+currHeading: 300.65
+looping in scan2()
+ 
+ 
+-28 15 -17 
+664 272 
+ahe: 151.41
+currHeading: 298.18
+looping in scan2()
+ 
+ 
+-30 15 -16 
+660 274 
+ahe: 149.80
+currHeading: 296.57
+looping in scan2()
+ 
+ 
+-28 16 -17 
+671 271 
+ahe: 152.98
+currHeading: 299.74
+looping in scan2()
+ 
+ 
+-28 14 -17 
+675 265 
+ahe: 149.80
+currHeading: 296.57
+looping in scan2()
+ 
+ 
+-29 14 -18 
+668 265 
+ahe: 149.00
+currHeading: 295.77
+looping in scan2()
+ 
+ 
+-31 16 -18 
+683 260 
+ahe: 150.53
+currHeading: 297.30
+looping in scan2()
+ 
+ 
+-31 16 -18 
+675 253 
+ahe: 150.53
+currHeading: 297.30
+looping in scan2()
+ 
+ 
+-30 16 -18 
+700 244 
+ahe: 151.30
+currHeading: 298.07
+looping in scan2()
+ 
+ 
+-32 16 -15 
+698 242 
+ahe: 149.80
+currHeading: 296.57
+looping in scan2()
+ 
+ 
+-32 14 -18 
+694 232 
+ahe: 146.86
+currHeading: 293.63
+looping in scan2()
+ 
+ 
+-33 16 -20 
+683 228 
+ahe: 149.10
+currHeading: 295.87
+looping in scan2()
+ 
+ 
+-35 15 -17 
+697 233 
+ahe: 146.43
+currHeading: 293.20
+looping in scan2()
+ 
+ 
+-27 15 -18 
+646 231 
+ahe: 152.29
+currHeading: 299.05
+looping in scan2()
+ 
+ 
+-25 14 -17 
+666 226 
+ahe: 152.48
+currHeading: 299.25
+looping in scan2()
+ 
+ 
+-22 16 -17 
+619 227 
+ahe: 159.26
+currHeading: 306.03
+looping in scan2()
+ 
+ 
+-17 15 -16 
+598 250 
+ahe: 164.66
+currHeading: 311.42
+looping in scan2()
+ 
+ 
+-13 15 -17 
+612 245 
+ahe: 172.32
+currHeading: 319.09
+looping in scan2()
+ 
+ 
+-9 18 -17 
+835 228 
+ahe: 186.67
+currHeading: 333.43
+looping in scan2()
+ 
+ 
+-3 18 -14 
+932 230 
+ahe: 203.77
+currHeading: 350.54
+looping in scan2()
+ 
+ 
+3 19 -17 
+943 223 
+ahe: 137.80
+currHeading: 8.97
+looping in scan2()
+ 
+ 
+3 20 -14 
+975 223 
+ahe: 138.24
+currHeading: 8.53
+looping in scan2()
+ 
+ 
+9 23 -13 
+881 217 
+ahe: 125.40
+currHeading: 21.37
+looping in scan2()
+ 
+ 
+15 23 -16 
+747 220 
+ahe: 113.66
+currHeading: 33.11
+looping in scan2()
+ 
+ 
+19 24 -14 
+8191 212 
+ahe: 108.40
+currHeading: 38.37
+looping in scan2()
+ 
+ 
+22 27 -17 
+8191 234 
+ahe: 107.59
+currHeading: 39.17
+looping in scan2()
+ 
+ 
+31 26 -14 
+332 237 
+ahe: 96.76
+currHeading: 50.01
+looping in scan2()
+ 
+ 
+28 31 -13 
+484 257 
+ahe: 104.68
+currHeading: 42.09
+looping in scan2()
+ 
+ 
+29 31 -16 
+438 251 
+ahe: 103.68
+currHeading: 43.09
+looping in scan2()
+ 
+ 
+24 33 -17 
+414 233 
+ahe: 110.74
+currHeading: 36.03
+looping in scan2()
+ 
+ 
+25 35 -13 
+372 230 
+ahe: 111.23
+currHeading: 35.54
+looping in scan2()
+ 
+ 
+26 37 -15 
+349 238 
+ahe: 111.67
+currHeading: 35.10
+looping in scan2()
+ 
+ 
+24 39 -15 
+365 237 
+ahe: 115.16
+currHeading: 31.61
+looping in scan2()
+ 
+ 
+25 42 -13 
+368 247 
+ahe: 116.01
+currHeading: 30.76
+looping in scan2()
+ 
+ 
+27 41 -15 
+391 264 
+ahe: 113.40
+currHeading: 33.37
+looping in scan2()
+ 
+ 
+26 46 -13 
+8191 266 
+ahe: 117.29
+currHeading: 29.48
+looping in scan2()
+ 
+ 
+23 41 -14 
+515 276 
+ahe: 117.48
+currHeading: 29.29
+looping in scan2()
+ 
+ 
+28 39 -13 
+586 315 
+ahe: 111.09
+currHeading: 35.68
+looping in scan2()
+ 
+ 
+30 35 -15 
+613 356 
+ahe: 106.17
+currHeading: 40.60
+looping in scan2()
+ 
+ 
+32 31 -14 
+601 327 
+ahe: 100.86
+currHeading: 45.91
+looping in scan2()
+ 
+ 
+34 29 -15 
+578 273 
+ahe: 97.23
+currHeading: 49.54
+looping in scan2()
+ 
+ 
+36 24 -16 
+549 239 
+ahe: 90.46
+currHeading: 56.31
+looping in scan2()
+ 
+ 
+39 20 -15 
+515 231 
+ahe: 83.92
+currHeading: 62.85
+looping in scan2()
+ 
+ 
+41 13 -15 
+479 216 
+ahe: 74.36
+currHeading: 72.41
+looping in scan2()
+ 
+ 
+46 7 -16 
+405 211 
+ahe: 65.42
+currHeading: 81.35
+looping in scan2()
+ 
+ 
+51 4 -16 
+8190 221 
+ahe: 61.25
+currHeading: 85.52
+looping in scan2()
+ 
+ 
+46 -4 -16 
+8190 212 
+ahe: 51.80
+currHeading: 94.97
+looping in scan2()
+ 
+ 
+42 -9 -15 
+8190 211 
+ahe: 44.67
+currHeading: 102.09
+looping in scan2()
+ 
+ 
+37 -15 -17 
+0 201 
+ahe: 34.70
+currHeading: 112.07
+looping in scan2()
+ 
+ 
+35 -25 -17 
+8191 199 
+ahe: 21.23
+currHeading: 125.54
+looping in scan2()
+ 
+ 
+27 -32 -15 
+8191 199 
+ahe: 6.92
+(39.60, -2.36)
+dHeading: -135.00
+timeFmillis: 5083.83
+ 
+ 
+23 -38 -16 
+8190 195 
 right
-blocks not > 0
-areaF: 15.98
+looping inside tupToInstrux
  
  
--18 17 3 
-8190 532 
-blocks not > 0
-areaF: 15.07
+23 -57 -19 
+8191 214 
+currHeading: 158.03
+ahe: 144.21
+right
+looping inside tupToInstrux
  
  
--19 18 5 
-8190 517 
-blocks not > 0
-areaF: 14.20
+16 -61 -20 
+8191 229 
+currHeading: 165.30
+ahe: 151.49
+right
+looping inside tupToInstrux
  
  
--14 17 4 
-573 541 
-areaF: 19.05
+8 -58 -20 
+344 211 
+currHeading: 172.15
+ahe: 158.33
+right
+looping inside tupToInstrux
  
  
--9 18 2 
-540 497 
-areaF: 42.80
+-3 -54 -18 
+8191 225 
+currHeading: 183.18
+ahe: 169.36
+right
+looping inside tupToInstrux
  
  
--1 18 2 
-745 280 
-areaF: 66.44
+-11 -49 -17 
+8191 222 
+currHeading: 192.65
+ahe: 178.84
+right
+looping inside tupToInstrux
  
  
-6 16 2 
-709 241 
-blocks not > 0
-areaF: 62.64
+-25 -47 -17 
+8191 254 
+currHeading: 208.01
+ahe: 194.19
+right
+looping inside tupToInstrux
  
  
-12 13 1 
-366 429 
-blocks not > 0
-areaF: 59.05
+-35 -43 -18 
+8191 305 
+currHeading: 219.14
+ahe: 205.33
+right
+looping inside tupToInstrux
  
  
-17 7 2 
-223 455 
-blocks not > 0
-areaF: 55.67
+-48 -39 -20 
+625 311 
+currHeading: 230.91
+ahe: 217.09
+right
+looping inside tupToInstrux
  
  
-21 -1 -2 
-294 363 
-blocks not > 0
-areaF: 52.49
+-52 -31 -17 
+647 280 
+currHeading: 239.20
+ahe: 225.38
+right
+looping inside tupToInstrux
  
  
-22 -5 -2 
-472 470 
-blocks not > 0
-areaF: 49.49
+-55 -24 -18 
+669 243 
+currHeading: 246.43
+ahe: 232.61
+right
+looping inside tupToInstrux
  
  
-21 -12 -4 
-8191 340 
-blocks not > 0
-areaF: 46.65
+-59 -18 -18 
+698 211 
+currHeading: 253.03
+ahe: 239.22
+right
+looping inside tupToInstrux
  
  
-20 -20 -2 
-8191 351 
-blocks not > 0
-areaF: 43.98
+-68 -11 -16 
+8191 236 
+currHeading: 260.81
+ahe: 247.00
+right
+looping inside tupToInstrux
  
  
-16 -25 -4 
-467 332 
-blocks not > 0
-areaF: 41.47
+-63 -3 -15 
+726 239 
+currHeading: 267.27
+ahe: 253.46
+right
+looping inside tupToInstrux
  
  
-14 -27 -4 
-420 255 
-blocks not > 0
-areaF: 39.10
+-56 6 -19 
+916 244 
+currHeading: 276.12
+ahe: 262.30
+right
+looping inside tupToInstrux
  
  
-11 -30 -5 
-398 608 
-On connection #0
-  got text: #0
-stop
-blocks not > 0
-areaF: 36.86
+-53 12 -14 
+920 223 
+currHeading: 282.76
+ahe: 268.94
+right
+looping inside tupToInstrux
  
  
-4 -33 -4 
-421 357 
-blocks not > 0
-areaF: 34.75
+-48 20 -16 
+811 223 
+currHeading: 292.62
+ahe: 278.80
+right
+looping inside tupToInstrux
  
  
--1 -36 -4 
-658 292 
-blocks not > 0
-areaF: 32.76
+-43 34 -14 
+324 247 
+currHeading: 308.33
+ahe: 294.52
+right
+looping inside tupToInstrux
  
  
-0 -35 -4 
-694 287 
-blocks not > 0
-areaF: 30.89
+-36 45 -14 
+433 245 
+currHeading: 321.34
+ahe: 307.53
+right
+looping inside tupToInstrux
  
  
--1 -37 -3 
-692 288 
-blocks not > 0
-areaF: 29.12
+-30 54 -13 
+380 232 
+currHeading: 330.95
+ahe: 317.13
+right
+looping inside tupToInstrux
  
  
--3 -36 -5 
-460 300 
-blocks not > 0
-areaF: 27.45
+-23 60 -15 
+323 263 
+currHeading: 339.03
+ahe: 325.21
+right
+looping inside tupToInstrux
  
  
--1 -36 -3 
-376 304 
-blocks not > 0
-areaF: 25.88
+-15 61 -15 
+330 259 
+currHeading: 346.18
+ahe: 332.37
+right
+looping inside tupToInstrux
  
  
--2 -35 -4 
-386 295 
-areaF: 25.95
+-7 66 -13 
+508 298 
+currHeading: 353.95
+ahe: 340.13
+right
+looping inside tupToInstrux
  
  
-0 -36 -4 
-401 298 
-blocks not > 0
-areaF: 24.46
+4 67 -11 
+599 350 
+currHeading: 3.42
+ahe: 10.40
  
  
--3 -37 -3 
-399 278 
-blocks not > 0
-areaF: 23.06
+14 72 -10 
+596 329 
  
  
-0 -36 -4 
-383 282 
-blocks not > 0
-areaF: 21.74
+17 74 -10 
+559 285 
  
  
--1 -36 -5 
-389 280 
-blocks not > 0
-areaF: 20.50
+18 77 -10 
+543 217 
  
  
--2 -36 -6 
-364 295 
-areaF: 21.04
+23 78 -11 
+495 217 
  
  
--1 -38 -6 
-408 300 
-blocks not > 0
-areaF: 19.84
+27 80 -8 
+442 223 
  
  
--1 -37 -4 
-564 289 
-blocks not > 0
-areaF: 18.70
+29 82 -8 
+361 218 
  
  
--2 -37 -4 
-624 288 
-blocks not > 0
-areaF: 17.63
+33 82 -7 
+351 214 
  
  
-0 -37 -3 
-649 294 
-blocks not > 0
-areaF: 16.62
+33 83 -9 
+363 213 
  
  
-0 -37 -6 
-709 272 
-blocks not > 0
-areaF: 15.67
+34 86 -10 
+369 204 
  
  
-0 -35 -3 
-690 284 
-blocks not > 0
-areaF: 14.78
+37 86 -11 
+701 216 
  
  
--2 -35 -5 
-711 278 
-blocks not > 0
-areaF: 13.93
+35 85 -12 
+8190 219 
  
  
--3 -38 -4 
-716 269 
-blocks not > 0
-areaF: 13.13
+38 87 -11 
+8190 218 
  
  
--3 -38 -4 
-721 271 
-blocks not > 0
-areaF: 12.38
+36 87 -9 
+8190 203 
  
  
--1 -36 -3 
-721 268 
-blocks not > 0
-areaF: 11.67
+39 87 -11 
+8190 210 
  
  
--1 -34 -4 
-694 271 
-blocks not > 0
-areaF: 11.01
+38 88 -11 
+8190 210 
  
  
--3 -36 -4 
-695 277 
-blocks not > 0
-areaF: 10.38
+41 87 -11 
+8190 204 
  
  
--3 -35 -3 
-721 267 
-blocks not > 0
-areaF: 9.78
+41 89 -11 
+8190 214 
  
  
-0 -37 -5 
-722 285 
-blocks not > 0
-areaF: 9.22
+40 86 -9 
+8190 209 
  
  
--1 -33 -3 
-749 281 
-blocks not > 0
-areaF: 8.70
+40 86 -12 
+8190 211 
  
  
--2 -35 -4 
-723 282 
-blocks not > 0
-areaF: 8.20
+41 86 -14 
+8190 202 
  
  
--1 -37 -5 
-700 272 
-blocks not > 0
-areaF: 7.73
+39 84 -13 
+8190 190 
  
  
--3 -38 -5 
-703 276 
-blocks not > 0
-areaF: 7.29
+40 84 -15 
+8190 202 
  
  
-0 -38 -2 
-724 286 
-blocks not > 0
-areaF: 6.87
+36 87 -16 
+8190 208 
  
  
--2 -35 -3 
-719 286 
-blocks not > 0
-areaF: 6.48
+39 88 -15 
+8190 214 
  
  
--4 -36 -4 
-707 290 
-blocks not > 0
-areaF: 6.11
+37 88 -17 
+8190 198 
  
  
-0 -36 -4 
-684 291 
-blocks not > 0
-areaF: 5.76
+39 87 -15 
+8190 210 
  
  
--2 -36 -3 
-701 297 
-blocks not > 0
-areaF: 5.43
+40 88 -16 
+8190 203 
  
  
--2 -36 -4 
-700 293 
-blocks not > 0
-areaF: 5.12
+39 88 -15 
+8190 236 
  
  
--2 -35 -6 
-682 293 
-blocks not > 0
-areaF: 4.82
+39 86 -15 
+8190 211 
  
  
--2 -35 -4 
-679 280 
-blocks not > 0
-areaF: 4.55
+41 87 -16 
+8190 193 
  
  
-0 -36 -4 
-666 283 
-On connection #0
-  got text: #LT
-left
-blocks not > 0
-areaF: 4.29
+38 85 -15 
+8190 8191 
  
  
--1 -36 -4 
-689 321 
-blocks not > 0
-areaF: 4.04
+40 86 -16 
+8190 8191 
  
  
--1 -35 -5 
-446 536 
-blocks not > 0
-areaF: 3.81
+40 85 -16 
+8190 8191 
  
  
-4 -35 -5 
-372 630 
-blocks not > 0
-areaF: 3.59
+42 85 -17 
+8190 8191 
  
  
-11 -30 -2 
-436 326 
-blocks not > 0
-areaF: 3.39
+41 85 -16 
+8190 8191 
  
  
-13 -24 -4 
-8191 375 
-blocks not > 0
-areaF: 3.19
+41 88 -16 
+8190 8191 
  
  
-19 -17 -5 
+40 86 -17 
 8191 8191 
-blocks not > 0
-areaF: 3.01
  
  
-20 -12 -3 
-452 353 
-blocks not > 0
-areaF: 2.84
+44 85 -17 
+8190 8191 
  
  
-21 -5 -1 
-393 428 
-blocks not > 0
-areaF: 2.68
+45 84 -17 
+8190 8191 
  
  
-15 1 0 
-214 466 
-blocks not > 0
-areaF: 2.52
+45 84 -16 
+8190 8191 
  
  
-12 9 1 
-216 403 
-blocks not > 0
-areaF: 2.38
+46 83 -17 
+8190 8191 
  
  
-6 13 0 
-306 408 
-blocks not > 0
-areaF: 2.24
- 
- 
-0 15 -1 
-545 329 
-blocks not > 0
-areaF: 2.11
- 
- 
--8 17 0 
-572 454 
-blocks not > 0
-areaF: 1.99
- 
- 
--13 18 0 
-8190 518 
-blocks not > 0
-areaF: 1.88
- 
- 
--19 18 0 
-8190 849 
-blocks not > 0
-areaF: 1.77
- 
- 
--25 14 -1 
-8190 8190 
-blocks not > 0
-areaF: 1.67
- 
- 
--32 8 -2 
-1109 1217 
-blocks not > 0
-areaF: 1.57
- 
- 
--36 2 -1 
-868 1003 
-blocks not > 0
-areaF: 1.48
- 
- 
--40 -6 0 
-401 825 
-blocks not > 0
-areaF: 1.40
- 
- 
--40 -14 -3 
-367 417 
-blocks not > 0
-areaF: 1.32
- 
- 
--36 -23 -1 
-431 348 
-blocks not > 0
-areaF: 1.24
- 
- 
--32 -26 -4 
-464 362 
-blocks not > 0
-areaF: 1.17
- 
- 
--25 -34 -4 
-302 408 
-blocks not > 0
-areaF: 1.11
- 
- 
--15 -34 -2 
-420 314 
-blocks not > 0
-areaF: 1.04
- 
- 
--7 -38 -5 
-712 300 
-blocks not > 0
-areaF: 0.98
- 
- 
--1 -36 -3 
-384 670 
-blocks not > 0
-areaF: 0.93
- 
- 
-9 -32 -2 
-453 336 
-blocks not > 0
-areaF: 0.87
- 
- 
-13 -26 -4 
-383 401 
-blocks not > 0
-areaF: 0.82
- 
- 
-18 -17 -2 
+46 81 -16 
 8191 8191 
-blocks not > 0
-areaF: 0.78
  
  
-22 -11 -2 
-427 345 
-blocks not > 0
-areaF: 0.73
+49 84 -15 
+8191 8191 
  
  
-17 -5 0 
-668 426 
-blocks not > 0
-areaF: 0.69
+48 82 -17 
+8190 8191 
  
  
-16 4 -1 
-576 475 
-blocks not > 0
-areaF: 0.65
- 
- 
-11 10 -1 
-332 495 
-blocks not > 0
-areaF: 0.61
- 
- 
-4 14 0 
-433 352 
-blocks not > 0
-areaF: 0.58
- 
- 
--6 19 -1 
-565 398 
-blocks not > 0
-areaF: 0.55
- 
- 
--12 18 -1 
-8190 532 
-blocks not > 0
-areaF: 0.51
- 
- 
--21 15 -2 
+47 82 -18 
 8190 8190 
-blocks not > 0
-areaF: 0.48
  
  
--29 12 -2 
-1250 8190 
-blocks not > 0
-areaF: 0.46
+46 84 -17 
+8190 8191 
  
  
--36 5 0 
-1007 1093 
-blocks not > 0
-areaF: 0.43
+48 82 -17 
+8190 8191 
  
  
--39 -2 -2 
-489 926 
-blocks not > 0
-areaF: 0.41
+45 84 -18 
+8190 8191 
  
  
--39 -10 -1 
-368 501 
-blocks not > 0
-areaF: 0.38
+43 86 -17 
+8190 8191 
  
  
--38 -18 -3 
-403 355 
-blocks not > 0
-areaF: 0.36
+44 85 -17 
+8190 8191 
  
  
--32 -26 -4 
-526 354 
-blocks not > 0
-areaF: 0.34
+45 85 -18 
+8190 8191 
  
  
--25 -32 -5 
-309 397 
-blocks not > 0
-areaF: 0.32
+39 83 -16 
+8190 8191 
  
  
--17 -34 -4 
-376 303 
-blocks not > 0
-areaF: 0.30
+40 85 -16 
+8190 8191 
  
  
--9 -37 -4 
-715 286 
-blocks not > 0
-areaF: 0.29
- 
- 
-1 -33 -5 
-369 656 
-blocks not > 0
-areaF: 0.27
- 
- 
-7 -30 -3 
-439 350 
-blocks not > 0
-areaF: 0.25
- 
- 
-14 -24 -4 
-8191 368 
-blocks not > 0
-areaF: 0.24
- 
- 
-19 -17 -5 
-8191 418 
-blocks not > 0
-areaF: 0.23
- 
- 
-22 -8 -2 
-410 402 
-blocks not > 0
-areaF: 0.21
- 
- 
-20 0 -1 
-774 409 
-blocks not > 0
-areaF: 0.20
- 
- 
-15 6 -1 
-408 458 
-blocks not > 0
-areaF: 0.19
- 
- 
-7 12 1 
-321 461 
-areaF: 1.78
- 
- 
-1 15 -1 
-543 331 
-blocks not > 0
-areaF: 1.68
- 
- 
--6 17 0 
-588 465 
-blocks not > 0
-areaF: 1.58
- 
- 
--14 19 -3 
-8190 551 
-blocks not > 0
-areaF: 1.49
- 
- 
--22 15 -2 
+38 85 -16 
 8190 8190 
-On connection #0
-  got text: #0
-stop
-blocks not > 0
-areaF: 1.41
  
  
--30 10 0 
-1219 8190 
-areaF: 171.60
+37 86 -15 
+8190 8190 
  
  
--34 5 0 
-1057 1174 
-areaF: 450.94
+37 84 -14 
+8190 8190 
  
  
--37 3 0 
-1027 1170 
-areaF: 738.22
+36 85 -15 
+8190 8190 
  
  
--38 2 -2 
-1026 1117 
-areaF: 1015.08
+37 87 -15 
+8190 8190 
  
  
--38 1 -1 
-1014 1192 
-areaF: 1287.76
+34 86 -14 
+8190 8190 
  
  
--38 1 -1 
-1025 1179 
-areaF: 1547.18
+34 86 -16 
+8190 8191 
  
  
--38 3 -2 
-1022 1170 
-areaF: 1781.35
+36 86 -15 
+8190 8191 
  
  
--38 2 -2 
-1000 1160 
-areaF: 1842.38
+36 87 -14 
+8190 846 
  
  
--37 3 -2 
-1027 1148 
-areaF: 2023.96
+37 86 -13 
+8190 8191 
  
  
--38 2 -1 
-1011 1163 
-areaF: 2233.14
+34 89 -15 
+8190 463 
  
  
--37 2 0 
-993 1194 
-areaF: 2438.48
+35 89 -15 
+8190 8191 
  
  
--38 1 -2 
-1034 1176 
-areaF: 2626.23
+34 86 -16 
+8190 8191 
  
  
--38 2 -2 
-1026 1188 
-areaF: 2810.11
+34 86 -15 
+8190 8190 
  
  
--37 1 -1 
-996 1151 
-areaF: 2976.60
+36 88 -15 
+8190 8190 
  
  
--38 3 -1 
-1021 1192 
-areaF: 2965.58
+34 87 -13 
+8190 8190 
  
  
--39 2 -1 
-1019 1132 
-areaF: 3120.88
+35 87 -13 
+8190 8191 
  
  
--38 1 -1 
-1014 1139 
-areaF: 3265.01
+35 86 -13 
+8190 8191 
  
  
--36 3 -2 
-1046 1094 
-areaF: 3403.19
+34 87 -12 
+8190 8190 
  
  
--38 2 -2 
-1025 1133 
-areaF: 3541.58
+33 88 -12 
+8190 8191 
  
  
--37 2 -3 
-1019 1155 
-areaF: 3672.05
+34 86 -15 
+8190 8190 
  
  
--38 2 -1 
-1014 1144 
-areaF: 3795.06
+33 88 -15 
+8190 8191 
  
  
--39 2 0 
-1015 1103 
-areaF: 3911.03
+32 85 -14 
+8190 8191 
  
  
--38 2 0 
-1010 1187 
-areaF: 4027.41
+33 87 -14 
+8190 8190 
  
  
--39 2 0 
-1035 1144 
-areaF: 4121.96
+34 88 -14 
+8190 8190 
  
  
--37 0 -2 
-1025 1186 
-areaF: 4208.82
+32 88 -13 
+8190 8191 
  
  
--37 3 -1 
-1027 1156 
-areaF: 4292.99
+34 86 -15 
+8190 8190 
  
  
--37 -1 1 
-1007 1179 
-areaF: 4370.06
+33 86 -12 
+8190 8190 
  
  
--38 2 -1 
-1033 1141 
-areaF: 4450.79
+33 87 -15 
+8190 8190 
  
  
--37 2 -2 
-1023 1158 
-areaF: 4510.76
+31 89 -15 
+8190 8190 
  
  
--39 1 -1 
-1003 1229 
-areaF: 4575.37
+33 86 -13 
+8191 8190 
  
  
--39 1 -1 
-1037 1188 
-areaF: 4604.01
+34 88 -13 
+8190 8190 
  
  
--40 4 -1 
-1034 1138 
-areaF: 4650.76
+33 88 -13 
+8190 8190 
+ 
+ 
+31 88 -13 
+8190 8190 
+ 
+ 
+31 85 -14 
+8190 8190 
+ 
+ 
+32 88 -14 
+8190 8190 
+ 
+ 
+32 86 -13 
+8191 8190 
+ 
+ 
+32 88 -12 
+8190 8191 
+ 
+ 
+31 88 -13 
+270 8190 
+ 
+ 
+32 87 -13 
+8190 8190 
+ 
+ 
+32 85 -15 
+8190 8190 
+ 
+ 
+31 86 -12 
+8190 8190 
+ 
+ 
+32 86 -13 
+8190 8191 
+ 
+ 
+32 86 -13 
+8190 8190 
+ 
+ 
+30 86 -13 
+8190 8190 
+ 
+ 
+31 85 -13 
+868 8190 
+ 
+ 
+33 87 -12 
+8190 8190 
+ 
+ 
+31 87 -14 
+259 8190 
+ 
+ 
+29 85 -13 
+8190 8190 
+ 
+ 
+31 86 -13 
+55 8190 
+ 
+ 
+31 86 -13 
+8190 8190 
+ 
+ 
+32 86 -13 
+8190 8191 
+ 
+ 
+32 87 -14 
+8190 8190 
+ 
+ 
+31 87 -14 
+238 8191 
+ 
+ 
+29 86 -14 
+192 8190 
+ 
+ 
+31 86 -14 
+8190 8190 
+
+ 
+ 
+32 88 -14 
+8190 8190 
+startHeading: 19.98
+looping in scan2()
+ 
+ 
+38 73 -12 
+8190 8190 
+ahe: 7.52
+currHeading: 27.50
+looping in scan2()
+ 
+ 
+46 57 -12 
+8190 8190 
+ahe: 18.92
+currHeading: 38.90
+looping in scan2()
+ 
+ 
+54 45 -12 
+454 8191 
+ahe: 30.21
+currHeading: 50.19
+looping in scan2()
+ 
+ 
+60 28 -12 
+414 8190 
+ahe: 45.00
+currHeading: 64.98
+looping in scan2()
+ 
+ 
+62 18 -13 
+8190 8191 
+ahe: 53.83
+currHeading: 73.81
+looping in scan2()
+ 
+ 
+63 4 -13 
+263 8191 
+ahe: 66.38
+currHeading: 86.37
+looping in scan2()
+ 
+ 
+62 -11 -13 
+8190 242 
+ahe: 80.08
+currHeading: 100.06
+looping in scan2()
+ 
+ 
+63 -25 -12 
+8190 245 
+ahe: 91.66
+currHeading: 111.64
+looping in scan2()
+ 
+ 
+65 -38 -13 
+8190 216 
+ahe: 100.33
+currHeading: 120.31
+looping in scan2()
+ 
+ 
+65 -51 -13 
+8190 207 
+ahe: 108.14
+currHeading: 128.12
+looping in scan2()
+ 
+ 
+67 -64 -15 
+8190 209 
+ahe: 113.71
+currHeading: 133.69
+looping in scan2()
+ 
+ 
+67 -78 -15 
+8190 227 
+ahe: 119.36
+currHeading: 139.34
+looping in scan2()
+ 
+ 
+69 -77 -13 
+8190 214 
+ahe: 118.15
+currHeading: 138.14
+looping in scan2()
+ 
+ 
+70 -82 -14 
+8190 206 
+ahe: 119.53
+currHeading: 139.51
+looping in scan2()
+ 
+ 
+71 -77 -13 
+8190 200 
+ahe: 117.34
+currHeading: 137.32
+looping in scan2()
+ 
+ 
+72 -80 -15 
+8190 222 
+ahe: 118.03
+currHeading: 138.01
+looping in scan2()
+ 
+ 
+76 -81 -13 
+8190 210 
+ahe: 116.84
+currHeading: 136.82
+looping in scan2()
+ 
+ 
+75 -81 -16 
+221 210 
+ahe: 117.22
+currHeading: 137.20
+looping in scan2()
+ 
+ 
+77 -81 -15 
+8191 217 
+ahe: 116.47
+currHeading: 136.45
+looping in scan2()
+ 
+ 
+79 -82 -15 
+8190 203 
+ahe: 116.08
+currHeading: 136.07
+looping in scan2()
+ 
+ 
+79 -82 -17 
+8191 190 
+ahe: 116.08
+currHeading: 136.07
+looping in scan2()
+ 
+ 
+81 -81 -15 
+8191 201 
+ahe: 115.02
+currHeading: 135.00
+looping in scan2()
+ 
+ 
+76 -85 -16 
+8191 211 
+ahe: 118.22
+currHeading: 138.20
+looping in scan2()
+ 
+ 
+72 -85 -17 
+8190 210 
+ahe: 119.75
+currHeading: 139.73
+looping in scan2()
+ 
+ 
+66 -87 -17 
+61 223 
+ahe: 122.83
+currHeading: 142.82
+looping in scan2()
+ 
+ 
+62 -86 -15 
+8190 218 
+ahe: 124.23
+currHeading: 144.21
+looping in scan2()
+ 
+ 
+59 -88 -17 
+8190 214 
+ahe: 126.18
+currHeading: 146.16
+looping in scan2()
+ 
+ 
+52 -90 -17 
+8191 209 
+ahe: 130.00
+currHeading: 149.98
+looping in scan2()
+ 
+ 
+48 -94 -19 
+8191 200 
+ahe: 132.97
+currHeading: 152.95
+looping in scan2()
+ 
+ 
+45 -94 -19 
+8190 206 
+ahe: 134.44
+currHeading: 154.42
+looping in scan2()
+ 
+ 
+40 -97 -19 
+8190 199 
+ahe: 137.61
+currHeading: 157.59
+looping in scan2()
+ 
+ 
+33 -100 -21 
+8190 215 
+ahe: 141.75
+currHeading: 161.74
+looping in scan2()
+ 
+ 
+28 -103 -20 
+8191 217 
+ahe: 144.81
+currHeading: 164.79
+looping in scan2()
+ 
+ 
+23 -98 -19 
+8190 217 
+ahe: 146.81
+currHeading: 166.79
+looping in scan2()
+ 
+ 
+17 -94 -21 
+342 221 
+ahe: 149.77
+currHeading: 169.75
+looping in scan2()
+ 
+ 
+11 -89 -19 
+8191 222 
+ahe: 152.97
+currHeading: 172.95
+looping in scan2()
+ 
+ 
+4 -84 -21 
+8191 213 
+ahe: 157.29
+currHeading: 177.27
+looping in scan2()
+ 
+ 
+-2 -78 -17 
+8191 221 
+ahe: 161.49
+currHeading: 181.47
+looping in scan2()
+ 
+ 
+-8 -72 -21 
+8191 232 
+ahe: 166.36
+currHeading: 186.34
+looping in scan2()
+ 
+ 
+-17 -68 -21 
+8191 227 
+ahe: 174.05
+currHeading: 194.04
+looping in scan2()
+ 
+ 
+-23 -63 -19 
+8191 227 
+ahe: 180.07
+currHeading: 200.06
+looping in scan2()
+ 
+ 
+-30 -54 -16 
+8190 210 
+ahe: 189.07
+currHeading: 209.05
+looping in scan2()
+ 
+ 
+-37 -50 -20 
+8191 211 
+ahe: 196.52
+currHeading: 216.50
+looping in scan2()
+ 
+ 
+-47 -44 -19 
+342 216 
+ahe: 206.91
+currHeading: 226.89
+looping in scan2()
+ 
+ 
+-53 -39 -19 
+8190 247 
+ahe: 213.67
+currHeading: 233.65
+looping in scan2()
+ 
+ 
+-62 -34 -17 
+423 277 
+ahe: 221.28
+currHeading: 241.26
+looping in scan2()
+ 
+ 
+-68 -27 -17 
+471 282 
+ahe: 228.36
+currHeading: 248.34
+looping in scan2()
+ 
+ 
+-76 -21 -20 
+394 286 
+ahe: 234.57
+currHeading: 254.55
+looping in scan2()
+ 
+ 
+-77 -14 -15 
+638 279 
+ahe: 239.71
+currHeading: 259.70
+looping in scan2()
+ 
+ 
+-80 -12 -18 
+596 286 
+ahe: 241.49
+currHeading: 261.47
+looping in scan2()
+ 
+ 
+-80 -2 -19 
+684 297 
+ahe: 248.58
+currHeading: 268.57
+looping in scan2()
+ 
+ 
+-80 3 -19 
+678 278 
+ahe: 252.16
+currHeading: 272.15
+looping in scan2()
+ 
+ 
+-83 12 -19 
+712 263 
+ahe: 258.24
+currHeading: 278.23
+looping in scan2()
+ 
+ 
+-87 19 -20 
+719 252 
+ahe: 262.34
+currHeading: 282.32
+looping in scan2()
+ 
+ 
+-86 24 -17 
+739 239 
+ahe: 265.61
+currHeading: 285.59
+looping in scan2()
+ 
+ 
+-88 30 -17 
+748 239 
+ahe: 268.84
+currHeading: 288.82
+looping in scan2()
+ 
+ 
+-89 38 -17 
+713 219 
+ahe: 273.14
+currHeading: 293.12
+looping in scan2()
+ 
+ 
+-91 45 -17 
+745 234 
+ahe: 276.33
+currHeading: 296.31
+looping in scan2()
+ 
+ 
+-94 53 -15 
+638 234 
+ahe: 279.43
+currHeading: 299.42
+looping in scan2()
+ 
+ 
+-89 61 -16 
+563 245 
+ahe: 284.44
+currHeading: 304.43
+looping in scan2()
+ 
+ 
+-87 68 -16 
+588 239 
+ahe: 288.03
+currHeading: 308.01
+looping in scan2()
+ 
+ 
+-83 75 -20 
+883 239 
+ahe: 292.12
+currHeading: 312.10
+looping in scan2()
+ 
+ 
+-76 84 -14 
+951 247 
+ahe: 297.88
+currHeading: 317.86
+looping in scan2()
+ 
+ 
+-70 89 -16 
+972 240 
+ahe: 301.83
+currHeading: 321.81
+looping in scan2()
+ 
+ 
+-67 98 -16 
+990 237 
+ahe: 305.66
+currHeading: 325.64
+looping in scan2()
+ 
+ 
+-60 98 -14 
+963 226 
+ahe: 308.54
+currHeading: 328.52
+looping in scan2()
+ 
+ 
+-57 101 -15 
+923 219 
+ahe: 310.58
+currHeading: 330.56
+looping in scan2()
+ 
+ 
+-52 102 -13 
+762 231 
+ahe: 313.00
+currHeading: 332.99
+looping in scan2()
+ 
+ 
+-48 103 -12 
+354 239 
+ahe: 315.03
+currHeading: 335.01
+looping in scan2()
+ 
+ 
+-42 105 -15 
+8191 234 
+ahe: 318.22
+currHeading: 338.20
+looping in scan2()
+ 
+ 
+-36 105 -13 
+8191 239 
+ahe: 321.09
+currHeading: 341.08
+looping in scan2()
+ 
+ 
+-33 107 -11 
+357 242 
+ahe: 322.88
+currHeading: 342.86
+looping in scan2()
+ 
+ 
+-27 108 -15 
+366 239 
+ahe: 325.98
+currHeading: 345.96
+looping in scan2()
+ 
+ 
+-21 110 -12 
+413 232 
+ahe: 329.21
+currHeading: 349.19
+looping in scan2()
+ 
+ 
+-15 112 -14 
+325 233 
+ahe: 332.39
+currHeading: 352.37
+looping in scan2()
+ 
+ 
+-11 117 -11 
+324 225 
+ahe: 334.65
+currHeading: 354.63
+looping in scan2()
+ 
+ 
+-4 109 -11 
+311 250 
+ahe: 337.92
+currHeading: 357.90
+looping in scan2()
+ 
+ 
+0 104 -11 
+290 259 
+ahe: 19.98
+currHeading: 0.00
+looping in scan2()
+ 
+ 
+7 99 -11 
+341 253 
+ahe: 15.94
+currHeading: 4.04
+looping in scan2()
+ 
+ 
+11 94 -10 
+435 249 
+ahe: 13.31
+(39.60, -2.36)
+dHeading: -135.00
+timeFmillis: 5083.83
+ 
+ 
+20 86 -12 
+523 304 
+right
+looping inside tupToInstrux
+ 
+ 
+26 90 -12 
+602 328 
+currHeading: 16.11
+ahe: 138.02
+right
+looping inside tupToInstrux
+ 
+ 
+35 84 -12 
+620 345 
+currHeading: 22.62
+ahe: 144.53
+right
+looping inside tupToInstrux
+ 
+ 
+40 79 -12 
+601 335 
+currHeading: 26.85
+ahe: 148.76
+right
+looping inside tupToInstrux
+ 
+ 
+48 75 -12 
+532 292 
+currHeading: 32.62
+ahe: 154.53
+right
+looping inside tupToInstrux
+ 
+ 
+57 71 -12 
+521 241 
+currHeading: 38.76
+ahe: 160.67
+right
+looping inside tupToInstrux
+ 
+ 
+66 66 -13 
+502 232 
+currHeading: 45.00
+ahe: 166.91
+right
+looping inside tupToInstrux
+ 
+ 
+76 60 -13 
+483 214 
+currHeading: 51.71
+ahe: 173.62
+right
+looping inside tupToInstrux
+ 
+ 
+84 56 -14 
+285 219 
+currHeading: 56.31
+ahe: 178.22
+right
+looping inside tupToInstrux
+ 
+ 
+89 47 -16 
+8190 218 
+currHeading: 62.16
+ahe: 184.07
+right
+looping inside tupToInstrux
+ 
+ 
+93 42 -14 
+8190 223 
+currHeading: 65.70
+ahe: 187.60
+right
+looping inside tupToInstrux
+ 
+ 
+100 32 -14 
+269 206 
+currHeading: 72.26
+ahe: 194.16
+right
+looping inside tupToInstrux
+ 
+ 
+104 23 -16 
+8191 189 
+currHeading: 77.53
+ahe: 199.44
+right
+looping inside tupToInstrux
+ 
+ 
+108 15 -16 
+8190 211 
+currHeading: 82.09
+ahe: 204.00
+right
+looping inside tupToInstrux
+ 
+ 
+103 2 -15 
+8190 215 
+currHeading: 88.89
+ahe: 210.80
+right
+looping inside tupToInstrux
+ 
+ 
+103 -5 -18 
+8191 204 
+currHeading: 92.78
+ahe: 214.69
+right
+looping inside tupToInstrux
+ 
+ 
+94 -16 -17 
+8190 217 
+currHeading: 99.66
+ahe: 221.57
+right
+looping inside tupToInstrux
+ 
+ 
+90 -26 -19 
+8191 217 
+currHeading: 106.11
+ahe: 228.02
+right
+looping inside tupToInstrux
+ 
+ 
+86 -40 -17 
+8191 220 
+currHeading: 114.94
+ahe: 236.85
+right
+looping inside tupToInstrux
+ 
+ 
+77 -49 -16 
+8191 219 
+currHeading: 122.47
+ahe: 244.38
+right
+looping inside tupToInstrux
+ 
+ 
+69 -61 -19 
+8191 221 
+currHeading: 131.48
+ahe: 253.39
+right
+looping inside tupToInstrux
+ 
+ 
+60 -72 -17 
+8191 217 
+currHeading: 140.19
+ahe: 262.10
+right
+looping inside tupToInstrux
+ 
+ 
+52 -82 -18 
+8191 215 
+currHeading: 147.62
+ahe: 269.53
+right
+looping inside tupToInstrux
+ 
+ 
+45 -91 -18 
+8191 234 
+currHeading: 153.69
+ahe: 275.60
+right
+looping inside tupToInstrux
+ 
+ 
+33 -101 -18 
+8191 270 
+currHeading: 161.91
+ahe: 283.81
+right
+looping inside tupToInstrux
+ 
+ 
+24 -110 -18 
+8191 300 
+currHeading: 167.69
+ahe: 289.60
+right
+looping inside tupToInstrux
+ 
+ 
+13 -110 -19 
+621 301 
+currHeading: 173.26
+ahe: 295.17
+right
+looping inside tupToInstrux
+ 
+ 
+3 -114 -18 
+663 275 
+currHeading: 178.49
+ahe: 300.40
+right
+looping inside tupToInstrux
+ 
+ 
+-10 -114 -19 
+728 236 
+currHeading: 185.01
+ahe: 306.92
+right
+looping inside tupToInstrux
+ 
+ 
+-19 -114 -17 
+741 223 
+currHeading: 189.46
+ahe: 311.37
+right
+looping inside tupToInstrux
+ 
+ 
+-30 -116 -18 
+656 242 
+currHeading: 194.50
+ahe: 316.41
+right
+looping inside tupToInstrux
+ 
+ 
+-44 -116 -15 
+598 252 
+currHeading: 200.77
+ahe: 322.68
+right
+looping inside tupToInstrux
+ 
+ 
+-53 -113 -16 
+904 246 
+currHeading: 205.13
+ahe: 327.04
+right
+looping inside tupToInstrux
+ 
+ 
+-63 -110 -15 
+880 230 
+currHeading: 209.80
+ahe: 331.71
+right
+looping inside tupToInstrux
+ 
+ 
+-74 -109 -13 
+8191 232 
+currHeading: 214.17
+ahe: 336.08
+right
+looping inside tupToInstrux
+ 
+ 
+-83 -103 -17 
+8191 236 
+currHeading: 218.86
+ahe: 340.77
+right
+looping inside tupToInstrux
+ 
+ 
+-95 -101 -13 
+323 239 
+currHeading: 223.25
+ahe: 345.15
+right
+looping inside tupToInstrux
+ 
+ 
+-102 -98 -13 
+246 246 
+currHeading: 226.15
+ahe: 348.05
+right
+looping inside tupToInstrux
+ 
+ 
+-103 -91 -12 
+311 252 
+currHeading: 228.54
+ahe: 350.45
+right
+looping inside tupToInstrux
+ 
+ 
+-103 -84 -13 
+418 265 
+currHeading: 230.80
+ahe: 352.71
+right
+looping inside tupToInstrux
+ 
+ 
+-104 -81 -12 
+464 321 
+currHeading: 232.09
+ahe: 353.99
+right
+looping inside tupToInstrux
+ 
+ 
+-101 -77 -13 
+634 350 
+currHeading: 232.68
+ahe: 354.59
+right
+looping inside tupToInstrux
+ 
+ 
+-96 -74 -13 
+551 318 
+currHeading: 232.37
+ahe: 354.28
+right
+looping inside tupToInstrux
+ 
+ 
+-93 -69 -14 
+512 245 
+currHeading: 233.43
+ahe: 355.34
+right
+looping inside tupToInstrux
+ 
+ 
+-89 -66 -12 
+484 218 
+currHeading: 233.44
+ahe: 355.35
+right
+looping inside tupToInstrux
+ 
+ 
+-86 -66 -13 
+496 212 
+currHeading: 232.50
+ahe: 354.40
+right
+looping inside tupToInstrux
+ 
+ 
+-82 -65 -14 
+578 222 
+currHeading: 231.60
+ahe: 353.50
+right
+looping inside tupToInstrux
+ 
+ 
+-77 -64 -15 
+8190 210 
+currHeading: 230.27
+ahe: 352.18
+right
+looping inside tupToInstrux
+ 
+ 
+-73 -64 -14 
+8190 202 
+currHeading: 228.76
+ahe: 350.67
+right
+looping inside tupToInstrux
+ 
+ 
+-70 -65 -16 
+8191 214 
+currHeading: 227.12
+ahe: 349.03
+right
+looping inside tupToInstrux
+ 
+ 
+-62 -66 -15 
+8191 218 
+currHeading: 223.21
+ahe: 345.12
+right
+looping inside tupToInstrux
+ 
+ 
+-59 -69 -15 
+8191 223 
+currHeading: 220.53
+ahe: 342.44
+right
+looping inside tupToInstrux
+ 
+ 
+-56 -72 -16 
+8190 217 
+currHeading: 217.87
+ahe: 339.78
+right
+looping inside tupToInstrux
+ 
+ 
+-51 -73 -16 
+8191 210 
+currHeading: 214.94
+ahe: 336.85
+right
+looping inside tupToInstrux
+ 
+ 
+-50 -78 -16 
+225 218 
+currHeading: 212.66
+ahe: 334.57
+right
+looping inside tupToInstrux
+ 
+ 
+-49 -83 -18 
+8190 216 
+currHeading: 210.56
+ahe: 332.46
+right
+looping inside tupToInstrux
+ 
+ 
+-47 -88 -18 
+8190 207 
+currHeading: 208.11
+ahe: 330.01
+right
+looping inside tupToInstrux
+ 
+ 
+-49 -90 -17 
+8191 207 
+currHeading: 208.57
+ahe: 330.47
+right
+looping inside tupToInstrux
+ 
+ 
+-46 -95 -19 
+8191 224 
+currHeading: 205.84
+ahe: 327.74
+right
+looping inside tupToInstrux
+ 
+ 
+-49 -100 -17 
+8191 216 
+currHeading: 206.10
+ahe: 328.01
+right
+looping inside tupToInstrux
+ 
+ 
+-53 -101 -20 
+8191 226 
+currHeading: 207.69
+ahe: 329.60
+right
+looping inside tupToInstrux
+ 
+ 
+-54 -107 -17 
+8191 232 
+currHeading: 206.78
+ahe: 328.69
+right
+looping inside tupToInstrux
+ 
+ 
+-56 -108 -17 
+8191 279 
+currHeading: 207.41
+ahe: 329.32
+right
+looping inside tupToInstrux
+ 
+ 
+-59 -111 -18 
+503 317 
+currHeading: 207.99
+ahe: 329.90
+right
+looping inside tupToInstrux
+ 
+ 
+-62 -112 -17 
+641 301 
+currHeading: 208.97
+ahe: 330.88
+right
+looping inside tupToInstrux
+ 
+ 
+-68 -114 -17 
+710 243 
+currHeading: 210.82
+ahe: 332.72
+right
+looping inside tupToInstrux
+ 
+ 
+-73 -115 -16 
+721 221 
+currHeading: 212.41
+ahe: 334.31
+right
+looping inside tupToInstrux
+ 
+ 
+-77 -115 -19 
+659 224 
+currHeading: 213.80
+ahe: 335.71
+right
+looping inside tupToInstrux
+ 
+ 
+-80 -114 -15 
+549 240 
+currHeading: 215.06
+ahe: 336.97
+right
+looping inside tupToInstrux
+ 
+ 
+-85 -113 -16 
+631 250 
+currHeading: 216.95
+ahe: 338.86
+right
+looping inside tupToInstrux
+ 
+ 
+-88 -112 -19 
+839 237 
+currHeading: 218.16
+ahe: 340.07
+right
+looping inside tupToInstrux
+ 
+ 
+-89 -115 -17 
+881 230 
+currHeading: 217.74
+ahe: 339.64
+right
+looping inside tupToInstrux
+ 
+ 
+-95 -111 -15 
+890 220 
+currHeading: 220.56
+ahe: 342.47
+right
+looping inside tupToInstrux
+ 
+ 
+-97 -107 -14 
+757 233 
+currHeading: 222.19
+ahe: 344.10
+right
+looping inside tupToInstrux
+ 
+ 
+-100 -105 -14 
+8191 229 
+currHeading: 223.60
+ahe: 345.51
+right
+looping inside tupToInstrux
+ 
+ 
+-100 -101 -14 
+406 238 
+currHeading: 224.71
+ahe: 346.62
+right
+looping inside tupToInstrux
+ 
+ 
+-102 -101 -12 
+384 231 
+currHeading: 225.28
+ahe: 347.19
+right
+looping inside tupToInstrux
+ 
+ 
+-103 -96 -12 
+255 229 
+currHeading: 227.01
+ahe: 348.92
+right
+looping inside tupToInstrux
+ 
+ 
+-105 -91 -15 
+225 232 
+currHeading: 229.09
+ahe: 350.99
+right
+looping inside tupToInstrux
+ 
+ 
+-104 -88 -14 
+336 256 
+currHeading: 229.76
+ahe: 351.67
+right
+looping inside tupToInstrux
+ 
+ 
+-104 -84 -12 
+409 298 
+currHeading: 231.07
+ahe: 352.98
+right
+looping inside tupToInstrux
+ 
+ 
+-101 -79 -14 
+660 337 
+currHeading: 231.97
+ahe: 353.88
+right
+looping inside tupToInstrux
+ 
+ 
+-100 -74 -13 
+632 353 
+currHeading: 233.50
+ahe: 355.41
+right
+looping inside tupToInstrux
+ 
+ 
+-100 -73 -13 
+527 311 
+currHeading: 233.87
+ahe: 355.78
+right
+looping inside tupToInstrux
+ 
+ 
+-96 -69 -10 
+494 240 
+currHeading: 234.29
+ahe: 356.20
+right
+looping inside tupToInstrux
+ 
+ 
+-90 -68 -11 
+499 237 
+currHeading: 232.93
+ahe: 354.84
+right
+looping inside tupToInstrux
+ 
+ 
+-85 -65 -12 
+462 224 
+currHeading: 232.59
+ahe: 354.50
+right
+looping inside tupToInstrux
+ 
+ 
+-82 -63 -13 
+8190 213 
+currHeading: 232.47
+ahe: 354.37
+right
+looping inside tupToInstrux
+ 
+ 
+-73 -61 -14 
+8191 214 
+currHeading: 230.12
+ahe: 352.03
+right
+looping inside tupToInstrux
+ 
+ 
+-71 -64 -15 
+194 215 
+currHeading: 227.97
+ahe: 349.88
+right
+looping inside tupToInstrux
+ 
+ 
+-63 -67 -14 
+8191 204 
+currHeading: 223.24
+ahe: 345.15
+right
+looping inside tupToInstrux
+ 
+ 
+-61 -69 -17 
+8191 209 
+currHeading: 221.48
+ahe: 343.39
+right
+looping inside tupToInstrux
+ 
+ 
+-56 -71 -15 
+8190 194 
+currHeading: 218.26
+ahe: 340.17
+right
+looping inside tupToInstrux
+ 
+ 
+-54 -73 -15 
+8191 212 
+currHeading: 216.49
+ahe: 338.40
+right
+looping inside tupToInstrux
+ 
+ 
+-49 -76 -17 
+0 223 
+currHeading: 212.81
+ahe: 334.72
+right
+looping inside tupToInstrux
+ 
+ 
+-48 -82 -15 
+8190 199 
+currHeading: 210.34
+ahe: 332.25
+right
+looping inside tupToInstrux
+ 
+ 
+-46 -86 -17 
+8190 216 
+currHeading: 208.14
+ahe: 330.05
+right
+looping inside tupToInstrux
+ 
+ 
+-48 -87 -15 
+8191 214 
+currHeading: 208.89
+ahe: 330.79
+right
+looping inside tupToInstrux
+ 
+ 
+-45 -91 -18 
+8190 215 
+currHeading: 206.31
+ahe: 328.22
+right
+looping inside tupToInstrux
+ 
+ 
+-47 -95 -18 
+8191 233 
+currHeading: 206.32
+ahe: 328.23
+right
+looping inside tupToInstrux
+ 
+ 
+-50 -100 -17 
+8191 221 
+currHeading: 206.57
+ahe: 328.47
+right
+looping inside tupToInstrux
+ 
+ 
+-49 -103 -18 
+8191 233 
+currHeading: 205.44
+ahe: 327.35
+right
+looping inside tupToInstrux
+ 
+ 
+-54 -108 -15 
+8191 250 
+currHeading: 206.57
+ahe: 328.47
+right
+looping inside tupToInstrux
+ 
+ 
+-54 -111 -18 
+361 288 
+currHeading: 205.94
+ahe: 327.85
+right
+looping inside tupToInstrux
+ 
+ 
+-59 -114 -16 
+605 309 
+currHeading: 207.36
+ahe: 329.27
+right
+looping inside tupToInstrux
+ 
+ 
+-63 -117 -18 
+675 288 
+currHeading: 208.30
+ahe: 330.21
+right
+looping inside tupToInstrux
+ 
+ 
+-67 -116 -16 
+712 262 
+currHeading: 210.01
+ahe: 331.92
+right
+looping inside tupToInstrux
+ 
+ 
+-69 -115 -16 
+738 241 
+currHeading: 210.96
+ahe: 332.87
+right
+looping inside tupToInstrux
+ 
+ 
+-73 -115 -18 
+763 216 
+currHeading: 212.41
+ahe: 334.31
+right
+looping inside tupToInstrux
+ 
+ 
+-77 -118 -18 
+684 222 
+currHeading: 213.13
+ahe: 335.03
+right
+looping inside tupToInstrux
+ 
+ 
+-79 -117 -15 
+587 243 
+currHeading: 214.03
+ahe: 335.94
+right
+looping inside tupToInstrux
+ 
+ 
+-81 -118 -18 
+517 236 
+currHeading: 214.47
+ahe: 336.38
+right
+looping inside tupToInstrux
+ 
+ 
+-80 -115 -17 
+796 236 
+currHeading: 214.82
+ahe: 336.73
+right
+looping inside tupToInstrux
+ 
+ 
+-83 -118 -18 
+920 226 
+currHeading: 215.12
+ahe: 337.03
+right
+looping inside tupToInstrux
+ 
+ 
+-88 -106 -13 
+930 221 
+currHeading: 219.70
+ahe: 341.61
+right
+looping inside tupToInstrux
+ 
+ 
+-94 -105 -16 
+840 216 
+currHeading: 221.84
+ahe: 343.74
+right
+looping inside tupToInstrux
+ 
+ 
+-98 -104 -15 
+456 225 
+currHeading: 223.30
+ahe: 345.21
+right
+looping inside tupToInstrux
+ 
+ 
+-97 -102 -12 
+8191 234 
+currHeading: 223.56
+ahe: 345.47
+right
+looping inside tupToInstrux
+ 
+ 
+-100 -98 -13 
+337 237 
+currHeading: 225.58
+ahe: 347.49
+right
+looping inside tupToInstrux
+ 
+ 
+-105 -96 -12 
+218 236 
+currHeading: 227.56
+ahe: 349.47
+right
+looping inside tupToInstrux
+ 
+ 
+-105 -87 -10 
+364 243 
+currHeading: 230.36
+ahe: 352.26
+right
+looping inside tupToInstrux
+ 
+ 
+-104 -73 -12 
+471 283 
+currHeading: 234.93
+ahe: 356.84
+right
+looping inside tupToInstrux
+ 
+ 
+-100 -67 -13 
+572 336 
+currHeading: 236.18
+ahe: 358.09
+right
+looping inside tupToInstrux
+ 
+ 
+-96 -65 -12 
+614 346 
+currHeading: 235.90
+ahe: 357.81
+right
+looping inside tupToInstrux
+ 
+ 
+-93 -62 -13 
+529 327 
+currHeading: 236.31
+ahe: 358.22
+right
+looping inside tupToInstrux
+ 
+ 
+-89 -58 -15 
+490 286 
+currHeading: 236.91
+ahe: 358.82
+right
+looping inside tupToInstrux
+ 
+ 
+-82 -56 -13 
+500 264 
+currHeading: 235.67
+ahe: 357.58
+right
+looping inside tupToInstrux
+ 
+ 
+-79 -56 -12 
+467 251 
+currHeading: 234.67
+ahe: 356.58
+right
+looping inside tupToInstrux
+ 
+ 
+-71 -53 -13 
+402 213 
+currHeading: 233.26
+ahe: 355.17
+right
+looping inside tupToInstrux
+ 
+ 
+-66 -54 -14 
+333 218 
+currHeading: 230.71
+ahe: 352.62
+right
+looping inside tupToInstrux
+ 
+ 
+-61 -55 -13 
+309 220 
+currHeading: 227.96
+ahe: 349.87
+right
+looping inside tupToInstrux
+ 
+ 
+-59 -58 -13 
+328 197 
+currHeading: 225.49
+ahe: 347.40
+right
+looping inside tupToInstrux
+ 
+ 
+-52 -63 -14 
+8191 -1 
+currHeading: 219.54
+ahe: 341.44
+right
+looping inside tupToInstrux
+ 
+ 
+-50 -67 -16 
+8190 201 
+currHeading: 216.73
+ahe: 338.64
+right
+looping inside tupToInstrux
+ 
+ 
+-50 -72 -15 
+8190 219 
+currHeading: 214.78
+ahe: 336.69
+right
+looping inside tupToInstrux
+ 
+ 
+-47 -77 -15 
+8191 211 
+currHeading: 211.40
+ahe: 333.31
+right
+looping inside tupToInstrux
+ 
+ 
+-47 -78 -15 
+8191 202 
+currHeading: 211.07
+ahe: 332.98
+right
+looping inside tupToInstrux
+ 
+ 
+-45 -81 -15 
+8191 211 
+currHeading: 209.05
+ahe: 330.96
+right
+looping inside tupToInstrux
+ 
+ 
+-45 -86 -14 
+8190 205 
+currHeading: 207.62
+ahe: 329.53
+right
+looping inside tupToInstrux
+ 
+ 
+-44 -87 -15 
+8191 214 
+currHeading: 206.83
+ahe: 328.74
+right
+looping inside tupToInstrux
+ 
+ 
+-44 -92 -17 
+8191 206 
+currHeading: 205.56
+ahe: 327.47
+right
+looping inside tupToInstrux
+ 
+ 
+-48 -93 -14 
+175 214 
+currHeading: 207.30
+ahe: 329.21
+right
+looping inside tupToInstrux
+ 
+ 
+-47 -97 -16 
+361 223 
+currHeading: 205.85
+ahe: 327.76
+right
+looping inside tupToInstrux
+ 
+ 
+-47 -98 -17 
+373 212 
+currHeading: 205.62
+ahe: 327.53
+right
+looping inside tupToInstrux
+ 
+ 
+-48 -99 -18 
+8191 240 
+currHeading: 205.87
+ahe: 327.77
+right
+looping inside tupToInstrux
+ 
+ 
+-46 -100 -16 
+8191 204 
+currHeading: 204.70
+ahe: 326.61
+right
+looping inside tupToInstrux
+ 
+ 
+-48 -101 -17 
+8191 219 
+currHeading: 205.42
+ahe: 327.33
+right
+looping inside tupToInstrux
+ 
+ 
+-48 -100 -16 
+8191 219 
+currHeading: 205.64
+ahe: 327.55
+right
+looping inside tupToInstrux
+ 
+ 
+-48 -102 -18 
+8191 220 
+currHeading: 205.20
+ahe: 327.11
+right
+looping inside tupToInstrux
+ 
+ 
+-48 -101 -14 
+8191 219 
+currHeading: 205.42
+ahe: 327.33
+right
+looping inside tupToInstrux
+ 
+ 
+-50 -100 -16 
+8191 217 
+currHeading: 206.57
+ahe: 328.47
+right
+looping inside tupToInstrux
+ 
+ 
+-48 -101 -16 
+323 220 
+currHeading: 205.42
+ahe: 327.33
+right
+looping inside tupToInstrux
+ 
+ 
+-50 -102 -18 
+8191 221 
+currHeading: 206.11
+ahe: 328.02
+right
+looping inside tupToInstrux
+ 
+ 
+-46 -101 -17 
+8191 222 
+currHeading: 204.49
+ahe: 326.39
+right
+looping inside tupToInstrux
+ 
+ 
+-48 -102 -18 
+520 214 
+currHeading: 205.20
+ahe: 327.11
+right
+looping inside tupToInstrux
  

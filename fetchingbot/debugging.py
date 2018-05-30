@@ -76,22 +76,24 @@ def scan2Testing():
 		for key in keys:
 			if key in line:
 				if key == keys[9]:
-					x_errors.append(float(line[len(keys[9]):-1]))
+					x_errors.append(float(line[len(keys[9]):-1]))	#start heading
 				if key == keys[10]:
-					y_errors.append(float(line[len(keys[10]):-1]))
+					y_errors.append(float(line[len(keys[10]):-1]))	#currHeading
 				if key == keys[14]:
-					z.append(float(line[len(keys[14]):-1]))
+					z.append(float(line[len(keys[14]):-1]))			#target heading
 
 	print(x_errors)
 	print(y_errors)
-	plt.title('Return home base spin 180° debugging data')
+	print(z)
+	z = x_errors
+	plt.title('scan2 debugging data')
 	plt.xlabel('Number of iterations')
 	plt.ylabel('Heading (degrees)')
 	plt.scatter(np.arange(0,len(x_errors)), x_errors, c='r', label='Initial reading')
 	plt.plot(np.arange(0,len(y_errors)), np.full(len(y_errors), z[0]), c='g', label='target heading')
-	plt.plot(np.arange(0,len(y_errors)), np.full(len(y_errors), z[0] + 7), 'g--', label='target heading slack')
-	plt.plot(np.arange(0,len(y_errors)), np.full(len(y_errors), z[0] - 7), 'g--', label='target heading slack')
-	plt.plot(np.arange(0,len(y_errors)), y_errors, c='b', label='End reading')
+	plt.plot(np.arange(0,len(y_errors)), np.full(len(y_errors), z[0] + 15), 'g--', label='target heading slack')
+	plt.plot(np.arange(0,len(y_errors)), np.full(len(y_errors), z[0] - 15), 'g--', label='target heading slack')
+	plt.plot(np.arange(0,len(y_errors)), y_errors, c='b', label='currHeading')
 	plt.legend()
 	plt.show()
 
@@ -153,5 +155,5 @@ printKeys(keys)'''
 print(len(keys))
 keys3 = [keys[14], keys[15], keys[16], keys[17], keys[9], keys[18]]
 printKeys(keys3)
-sweepTesting()
+#sweepTesting()
 scan2Testing()
