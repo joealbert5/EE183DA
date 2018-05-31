@@ -17,3 +17,10 @@ adjusted heading error,ahe: ,long
 sweep right heading,sweepRight: ,long
 sweep left heading,sweepLeft: ,long
 adjustHeading function,adjusted: ,long
+magXraw,sensTx: ,double
+magYraw,sensTy: ,double
+get R inside of returnToBase,ballsearch.getMaxR(): ,int
+end spin 180,end turn around,String
+sweep=false,returning false out of sweep,String
+return home base checkpoint1,"done sweeping, now track2",String
+return home base checkpoint2,done return homebase,String

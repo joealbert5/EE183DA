@@ -76,7 +76,7 @@ def scan2Testing():
 		for key in keys:
 			if key in line:
 				if key == keys[9]:
-					x_errors.append(float(line[len(keys[9]):-1]))	#start heading
+					x_errors.append((len(y_errors), float(line[len(keys[9]):-1])))	#start heading
 				if key == keys[10]:
 					y_errors.append(float(line[len(keys[10]):-1]))	#currHeading
 				if key == keys[14]:
@@ -85,15 +85,40 @@ def scan2Testing():
 	print(x_errors)
 	print(y_errors)
 	print(z)
-	z = x_errors
 	plt.title('scan2 debugging data')
 	plt.xlabel('Number of iterations')
 	plt.ylabel('Heading (degrees)')
-	plt.scatter(np.arange(0,len(x_errors)), x_errors, c='r', label='Initial reading')
+	plt.scatter([x[0] for x in x_errors], [x[1] for x in x_errors], c='r', label='Initial reading')
 	plt.plot(np.arange(0,len(y_errors)), np.full(len(y_errors), z[0]), c='g', label='target heading')
 	plt.plot(np.arange(0,len(y_errors)), np.full(len(y_errors), z[0] + 15), 'g--', label='target heading slack')
 	plt.plot(np.arange(0,len(y_errors)), np.full(len(y_errors), z[0] - 15), 'g--', label='target heading slack')
 	plt.plot(np.arange(0,len(y_errors)), y_errors, c='b', label='currHeading')
+	plt.legend()
+	plt.show()
+
+def magCenterTest():
+	x_errors = []
+	y_errors = []
+	z = []
+
+	f = open('puttyLog.txt', 'r')
+	for line in f:
+		for key in keys:
+			if key in line:
+				if key == keys[19]:
+					x_errors.append(float(line[len(keys[19]):-1]))	#sensTx
+				if key == keys[20]:
+					y_errors.append(float(line[len(keys[20]):-1]))	#sensTy
+
+	print(x_errors)
+	print(y_errors)
+	print(z)
+	z = x_errors
+	plt.title('magCenterTest debugging data')
+	plt.xlabel('sensTx')
+	plt.ylabel('sensTy')
+	plt.scatter(x_errors, y_errors, c='r', label='sensor Readings')
+	plt.plot(x_errors, y_errors, c='b')
 	plt.legend()
 	plt.show()
 
@@ -103,6 +128,7 @@ def sweepTesting():
 	x_errors = []
 	y_errors = []
 	z = []
+	end180 = 0,0
 
 	f = open('puttyLog.txt', 'r')
 	for line in f:
@@ -117,21 +143,25 @@ def sweepTesting():
 				if key == keys[17]:
 					z.append(float(line[len(keys[17]):-1]))			#sweep right
 				if key == keys[9]:
-					a.append(float(line[len(keys[9]):-1]))	#sweep left
+					a.append(float(line[len(keys[9]):-1]))	#start heading
+				if key == keys[22]:
+					end180 = (len(w), w[-1])				#(iteration#, heading value) for end 180 spin
 
-	print(a)
 	print(w)
 	print(x_errors)
 	print(y_errors)
 	print(z)
+	print(a)
+	print(end180)
 	plt.title('sweep debugging data')
 	plt.xlabel('Number of iterations')
 	plt.ylabel('Heading (degrees)')
-	plt.plot(np.arange(0,len(x_errors)), np.full(len(x_errors), a[0]), 'y--', label='center of sweep')
-	#plt.plot(np.arange(0,len(x_errors)), np.full(len(x_errors), y_errors[0]), 'r--', label='sweep left')
-	#plt.plot(np.arange(0,len(x_errors)), np.full(len(x_errors), z[0]), 'g--', label='sweep right')
+	plt.plot(np.arange(0,len(x_errors)), np.full(len(x_errors), end180[1]), 'y--', label='center of sweep')
+	plt.plot(np.arange(0,len(x_errors)), np.full(len(x_errors), y_errors[0]), 'r--', label='sweep left')
+	plt.plot(np.arange(0,len(x_errors)), np.full(len(x_errors), z[0]), 'g--', label='sweep right')
 	plt.plot(np.arange(0,len(x_errors)), x_errors, c='b', label='ahe')
 	plt.plot(np.arange(0,len(w)), w, c='y', label='currHeading')
+	plt.scatter(end180[0], end180[1], label='end180marker')
 	plt.legend()
 	plt.show()
 
@@ -153,7 +183,8 @@ printKeys(keys)'''
 	"return to base", "end turn around", "initHeading: ", "targetHeading: ",
 	"difference: "]'''
 print(len(keys))
-keys3 = [keys[14], keys[15], keys[16], keys[17], keys[9], keys[18]]
-printKeys(keys3)
-#sweepTesting()
+keysReturnBase = [keys[21], keys[22], keys[12], keys[23], keys[24], keys[25]]
+printKeys(keysReturnBase)
+magCenterTest()
 scan2Testing()
+sweepTesting()

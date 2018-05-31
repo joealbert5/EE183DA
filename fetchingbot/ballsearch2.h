@@ -20,7 +20,7 @@ using namespace std;
 class Ballsearch {
   private:
     /* Ballsearch variables */
-    double maxR;
+    int maxR;
     double XMAX;
     double YMAX;
     vector<tuple<int,int>> pastPoints;
@@ -99,17 +99,17 @@ class Ballsearch {
     }
 
   tuple<int,int> _randCoordUnit(String side){
-    tuple<int,int> rand = _tuple(0,0);
+    tuple<int,int> rando = _tuple(0,0);
     if (side == "L"){
-      rand = _tuple(_randint(-1*this->XMAX, 0), _randint(-1*this->YMAX, this->YMAX));
+      rando = _tuple(_randint(-1*this->XMAX, 0), _randint(-1*this->YMAX, this->YMAX));
     }
     else if (side == "R"){
-      rand = _tuple(_randint(0, this->XMAX), _randint(-1*this->YMAX, this->YMAX));
+      rando = _tuple(_randint(0, this->XMAX), _randint(-1*this->YMAX, this->YMAX));
     }
     else{
-      rand = _tuple(_randint(-1*this->XMAX, this->XMAX), _randint(-1*this->YMAX, this->YMAX));
+      rando = _tuple(_randint(-1*this->XMAX, this->XMAX), _randint(-1*this->YMAX, this->YMAX));
     }
-    return _unitDxn(rand, this->maxR);
+    return _unitDxn(rando, this->maxR);
     }
 
     tuple<bool, double> _isValidRand(tuple<int,int> endd, tuple<int,int> unitRand, double prevAngle, String side, bool retry){
@@ -160,7 +160,7 @@ class Ballsearch {
   }
     
   public:
-    Ballsearch(tuple<int,int> start, double maxR = 45, double XMAX = 200, double YMAX = 200) {
+    Ballsearch(tuple<int,int> start, int maxR = 45, double XMAX = 200, double YMAX = 200) {
         this->maxR = maxR;
         this->YMAX = YMAX;
         this->XMAX = XMAX;

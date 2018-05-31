@@ -1,5 +1,5 @@
-=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2018.05.30 16:45:26 =~=~=~=~=~=~=~=~=~=~=~=
-sll$|lp|r>BNN$NNbpcl`slpod"n|lp|oll nnl`o{{"$rncld oStarted serial.
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2018.05.31 16:21:15 =~=~=~=~=~=~=~=~=~=~=~=
+{l$$|l#|r"BnolNn"pc$`{lpnlbn|lpNnll nl`Nsobls"l2l oStarted serial.
 Setup motor pins
 7674797
 [SETUP] BOOT WAIT 4...
@@ -30,4231 +30,5717 @@ blocks not > 0
 areaF: 0.00
  
  
-17 -31 -19 
-8191 253 
+20 -22 -12 
+51 8191 
+sensTx: 20.00
+sensTy: -22.00
 blocks not > 0
 areaF: 0.00
  
  
-15 -33 -18 
-8191 252 
+30 -17 -14 
+87 204 
+sensTx: 30.00
+sensTy: -17.00
 blocks not > 0
 areaF: 0.00
  
  
-16 -32 -19 
-413 233 
+29 -16 -13 
+308 261 
+sensTx: 29.00
+sensTy: -16.00
 blocks not > 0
 areaF: 0.00
  
  
-14 -33 -19 
-8191 238 
-blocks not > 0
-areaF: 0.00
+29 -19 -12 
+316 185 
+sensTx: 29.00
+sensTy: -19.00
+areaF: 94.40
  
  
-16 -32 -20 
-8191 234 
-blocks not > 0
-areaF: 0.00
+28 -17 -14 
+330 192 
+sensTx: 28.00
+sensTy: -17.00
+areaF: 139.95
  
  
-16 -33 -20 
-8191 240 
-blocks not > 0
-areaF: 0.00
+28 -18 -14 
+320 192 
+sensTx: 28.00
+sensTy: -18.00
+areaF: 188.45
  
  
-14 -32 -18 
-480 240 
-blocks not > 0
-areaF: 0.00
+28 -19 -13 
+337 139 
+sensTx: 28.00
+sensTy: -19.00
+areaF: 183.80
  
  
-13 -32 -19 
-8191 229 
-blocks not > 0
-areaF: 0.00
+30 -17 -13 
+314 200 
+sensTx: 30.00
+sensTy: -17.00
+areaF: 228.75
  
  
-15 -33 -20 
-8191 249 
-blocks not > 0
-areaF: 0.00
+28 -16 -15 
+322 190 
+sensTx: 28.00
+sensTy: -16.00
+areaF: 214.82
  
  
-15 -33 -19 
-8191 243 
-blocks not > 0
-areaF: 0.00
+30 -16 -13 
+327 220 
+sensTx: 30.00
+sensTy: -16.00
+areaF: 202.45
  
  
-15 -33 -19 
-8191 235 
-blocks not > 0
-areaF: 0.00
+28 -18 -12 
+328 198 
+sensTx: 28.00
+sensTy: -18.00
+areaF: 193.29
  
  
-13 -34 -19 
-8191 242 
-blocks not > 0
-areaF: 0.00
+28 -18 -13 
+328 204 
+sensTx: 28.00
+sensTy: -18.00
+areaF: 182.87
  
  
-15 -32 -18 
-8190 241 
-blocks not > 0
-areaF: 0.00
+27 -17 -15 
+322 178 
+sensTx: 27.00
+sensTy: -17.00
+areaF: 186.32
  
  
-16 -33 -21 
-8191 243 
-blocks not > 0
-areaF: 0.00
+30 -18 -13 
+328 250 
+sensTx: 30.00
+sensTy: -18.00
+areaF: 180.76
  
  
-15 -33 -19 
-8191 243 
-blocks not > 0
-areaF: 0.00
+30 -14 -14 
+322 199 
+sensTx: 30.00
+sensTy: -14.00
+areaF: 186.34
  
  
-15 -34 -20 
-8191 254 
-blocks not > 0
-areaF: 0.00
+29 -15 -14 
+331 194 
+sensTx: 29.00
+sensTy: -15.00
+areaF: 220.69
  
  
-15 -33 -21 
-8191 229 
-blocks not > 0
-areaF: 0.00
+27 -15 -14 
+331 178 
+sensTx: 27.00
+sensTy: -15.00
+areaF: 287.87
  
  
-14 -31 -19 
-8191 252 
-blocks not > 0
-areaF: 0.00
+28 -15 -13 
+330 136 
+sensTx: 28.00
+sensTy: -15.00
+areaF: 288.51
  
  
-14 -32 -22 
-8191 244 
-blocks not > 0
-areaF: 0.00
+30 -15 -12 
+338 203 
+sensTx: 30.00
+sensTy: -15.00
+areaF: 283.51
  
  
-15 -32 -20 
-8191 241 
-blocks not > 0
-areaF: 0.00
+29 -13 -12 
+329 168 
+sensTx: 29.00
+sensTy: -13.00
+areaF: 282.60
  
  
-15 -33 -20 
-8191 230 
-blocks not > 0
-areaF: 0.00
+28 -18 -13 
+332 203 
+sensTx: 28.00
+sensTy: -18.00
+areaF: 303.65
  
  
-16 -29 -22 
-8191 233 
-blocks not > 0
-areaF: 0.00
+30 -17 -15 
+345 301 
+sensTx: 30.00
+sensTy: -17.00
+areaF: 309.94
  
  
-16 -30 -19 
-615 241 
-blocks not > 0
-areaF: 0.00
+30 -19 -15 
+329 156 
+sensTx: 30.00
+sensTy: -19.00
+areaF: 359.45
  
  
-17 -30 -20 
-8191 220 
-blocks not > 0
-areaF: 0.00
+30 -15 -11 
+335 143 
+sensTx: 30.00
+sensTy: -15.00
+areaF: 407.72
  
  
-17 -33 -19 
-252 232 
-blocks not > 0
-areaF: 0.00
+31 -16 -14 
+333 225 
+sensTx: 31.00
+sensTy: -16.00
+areaF: 429.20
  
  
-15 -31 -18 
-8190 236 
-blocks not > 0
-areaF: 0.00
+31 -17 -13 
+318 182 
+sensTx: 31.00
+sensTy: -17.00
+areaF: 505.38
  
  
-13 -33 -17 
-374 237 
-blocks not > 0
-areaF: 0.00
+29 -18 -15 
+333 141 
+sensTx: 29.00
+sensTy: -18.00
+areaF: 518.96
  
  
-14 -33 -21 
-8191 226 
-blocks not > 0
-areaF: 0.00
+30 -18 -12 
+335 258 
+sensTx: 30.00
+sensTy: -18.00
+areaF: 529.40
  
  
-15 -33 -19 
-8191 240 
-blocks not > 0
-areaF: 0.00
+28 -16 -13 
+335 229 
+sensTx: 28.00
+sensTy: -16.00
+areaF: 536.47
  
  
-14 -30 -20 
-8191 247 
-blocks not > 0
-areaF: 0.00
+30 -15 -12 
+332 181 
+sensTx: 30.00
+sensTy: -15.00
+areaF: 528.01
  
  
-17 -32 -19 
-322 232 
-blocks not > 0
-areaF: 0.00
+28 -16 -12 
+335 197 
+sensTx: 28.00
+sensTy: -16.00
+areaF: 538.49
  
  
-16 -32 -19 
-147 246 
-blocks not > 0
-areaF: 0.00
+30 -15 -11 
+333 220 
+sensTx: 30.00
+sensTy: -15.00
+areaF: 529.64
  
  
-16 -32 -19 
-8191 224 
-blocks not > 0
-areaF: 0.00
+28 -15 -13 
+329 210 
+sensTx: 28.00
+sensTy: -15.00
+areaF: 547.34
  
  
-17 -30 -18 
-8191 224 
-blocks not > 0
-areaF: 0.00
+29 -17 -14 
+319 176 
+sensTx: 29.00
+sensTy: -17.00
+areaF: 558.95
  
  
-18 -31 -18 
-8191 246 
-blocks not > 0
-areaF: 0.00
+28 -14 -14 
+340 245 
+sensTx: 28.00
+sensTy: -14.00
+areaF: 528.70
  
  
-18 -29 -17 
-8191 220 
-blocks not > 0
-areaF: 0.00
+30 -17 -12 
+333 255 
+sensTx: 30.00
+sensTy: -17.00
+areaF: 526.66
  
  
-17 -31 -20 
-8191 242 
-blocks not > 0
-areaF: 0.00
+30 -17 -14 
+339 229 
+sensTx: 30.00
+sensTy: -17.00
+areaF: 520.42
  
  
-15 -32 -21 
-8191 213 
-blocks not > 0
-areaF: 0.00
+30 -16 -13 
+330 199 
+sensTx: 30.00
+sensTy: -16.00
+areaF: 500.67
  
  
-16 -32 -18 
-8191 226 
-blocks not > 0
-areaF: 0.00
+27 -17 -14 
+335 252 
+sensTx: 27.00
+sensTy: -17.00
+areaF: 531.15
  
  
-17 -30 -20 
-8191 221 
-blocks not > 0
-areaF: 0.00
+29 -15 -14 
+332 225 
+sensTx: 29.00
+sensTy: -15.00
+areaF: 538.11
  
  
-19 -28 -20 
-8191 217 
-blocks not > 0
-areaF: 0.00
+29 -15 -13 
+334 177 
+sensTx: 29.00
+sensTy: -15.00
+areaF: 521.40
  
  
-16 -32 -17 
-8191 230 
-blocks not > 0
-areaF: 0.00
+28 -15 -13 
+335 241 
+sensTx: 28.00
+sensTy: -15.00
+areaF: 542.29
  
  
-14 -32 -20 
-8191 242 
-blocks not > 0
-areaF: 0.00
+28 -17 -13 
+337 239 
+sensTx: 28.00
+sensTy: -17.00
+areaF: 549.79
  
  
-15 -31 -18 
-8191 241 
-blocks not > 0
-areaF: 0.00
+28 -16 -15 
+343 161 
+sensTx: 28.00
+sensTy: -16.00
+areaF: 526.92
  
  
-16 -31 -20 
-8191 231 
-blocks not > 0
-areaF: 0.00
+31 -15 -13 
+331 223 
+sensTx: 31.00
+sensTy: -15.00
+areaF: 544.76
  
  
-16 -30 -18 
-8191 244 
-blocks not > 0
-areaF: 0.00
+29 -14 -12 
+337 211 
+sensTx: 29.00
+sensTy: -14.00
+areaF: 624.75
  
  
-15 -32 -19 
-8191 238 
-blocks not > 0
-areaF: 0.00
+30 -15 -12 
+335 239 
+sensTx: 30.00
+sensTy: -15.00
+areaF: 661.87
  
  
-17 -29 -18 
-8191 227 
-blocks not > 0
-areaF: 0.00
+28 -15 -11 
+327 228 
+sensTx: 28.00
+sensTy: -15.00
+areaF: 720.31
  
  
-16 -34 -20 
-8191 236 
-blocks not > 0
-areaF: 0.00
+30 -15 -13 
+330 207 
+sensTx: 30.00
+sensTy: -15.00
+areaF: 721.67
  
  
-17 -30 -20 
-8191 231 
-blocks not > 0
-areaF: 0.00
+31 -14 -13 
+330 183 
+sensTx: 31.00
+sensTy: -14.00
+areaF: 739.11
  
  
-17 -29 -21 
-422 244 
-blocks not > 0
-areaF: 0.00
+28 -15 -14 
+339 161 
+sensTx: 28.00
+sensTy: -15.00
+areaF: 708.70
  
  
-16 -33 -18 
-8191 243 
-blocks not > 0
-areaF: 0.00
+29 -15 -12 
+328 243 
+sensTx: 29.00
+sensTy: -15.00
+areaF: 714.75
  
  
-17 -32 -20 
-8191 238 
-blocks not > 0
-areaF: 0.00
+30 -15 -14 
+334 219 
+sensTx: 30.00
+sensTy: -15.00
+areaF: 699.90
  
  
-17 -31 -17 
-8191 237 
-blocks not > 0
-areaF: 0.00
+30 -16 -14 
+338 238 
+sensTx: 30.00
+sensTy: -16.00
+areaF: 768.31
  
  
-17 -33 -19 
-8191 216 
-blocks not > 0
-areaF: 0.00
+29 -16 -14 
+335 229 
+sensTx: 29.00
+sensTy: -16.00
+areaF: 773.46
  
  
-17 -32 -21 
-406 238 
-blocks not > 0
-areaF: 0.00
+29 -17 -13 
+331 205 
+sensTx: 29.00
+sensTy: -17.00
+areaF: 800.21
  
  
-16 -31 -19 
-8191 227 
-blocks not > 0
-areaF: 0.00
+28 -17 -13 
+334 191 
+sensTx: 28.00
+sensTy: -17.00
+areaF: 791.66
  
  
-17 -31 -20 
-8191 229 
-blocks not > 0
-areaF: 0.00
+31 -18 -12 
+335 269 
+sensTx: 31.00
+sensTy: -18.00
+areaF: 770.87
  
  
-16 -31 -21 
-8191 229 
-blocks not > 0
-areaF: 0.00
+27 -16 -13 
+335 175 
+sensTx: 27.00
+sensTy: -16.00
+areaF: 756.89
  
  
-16 -32 -20 
-8190 228 
-blocks not > 0
-areaF: 0.00
+29 -16 -13 
+337 210 
+sensTx: 29.00
+sensTy: -16.00
+areaF: 767.16
  
  
-19 -31 -19 
-8191 228 
-blocks not > 0
-areaF: 0.00
+28 -16 -14 
+329 263 
+sensTx: 28.00
+sensTy: -16.00
+areaF: 763.42
  
  
-18 -32 -20 
-8191 235 
-blocks not > 0
-areaF: 0.00
+29 -16 -13 
+334 204 
+sensTx: 29.00
+sensTy: -16.00
+areaF: 727.42
  
  
-16 -31 -21 
-8191 232 
-blocks not > 0
-areaF: 0.00
+32 -16 -13 
+329 209 
+sensTx: 32.00
+sensTy: -16.00
+areaF: 693.09
  
  
-17 -32 -21 
-386 233 
-blocks not > 0
-areaF: 0.00
+28 -18 -14 
+332 229 
+sensTx: 28.00
+sensTy: -18.00
+areaF: 668.86
  
  
-18 -31 -19 
-8191 228 
-blocks not > 0
-areaF: 0.00
+30 -19 -12 
+336 122 
+sensTx: 30.00
+sensTy: -19.00
+areaF: 666.06
  
  
-17 -31 -19 
-8191 236 
-blocks not > 0
-areaF: 0.00
+29 -16 -14 
+334 230 
+sensTx: 29.00
+sensTy: -16.00
+areaF: 673.62
  
  
-17 -32 -17 
-8191 221 
-blocks not > 0
-areaF: 0.00
+29 -17 -13 
+325 215 
+sensTx: 29.00
+sensTy: -17.00
+areaF: 702.50
  
  
-15 -30 -20 
-182 238 
-blocks not > 0
-areaF: 0.00
+31 -17 -14 
+331 160 
+sensTx: 31.00
+sensTy: -17.00
+areaF: 715.86
  
  
-18 -28 -17 
-8191 223 
-blocks not > 0
-areaF: 0.00
+29 -18 -14 
+341 185 
+sensTx: 29.00
+sensTy: -18.00
+areaF: 720.22
  
  
-16 -29 -18 
-8191 232 
-blocks not > 0
-areaF: 0.00
+30 -16 -14 
+355 178 
+sensTx: 30.00
+sensTy: -16.00
+areaF: 705.44
  
  
-15 -31 -17 
-8191 219 
-blocks not > 0
-areaF: 0.00
+30 -16 -15 
+351 223 
+sensTx: 30.00
+sensTy: -16.00
+areaF: 684.98
  
  
-19 -31 -19 
-8191 224 
-blocks not > 0
-areaF: 0.00
+31 -17 -15 
+341 200 
+sensTx: 31.00
+sensTy: -17.00
+areaF: 689.28
  
  
-17 -28 -19 
-8191 228 
-blocks not > 0
-areaF: 0.00
+30 -16 -15 
+343 207 
+sensTx: 30.00
+sensTy: -16.00
+areaF: 670.66
  
  
-17 -31 -21 
-8191 221 
-blocks not > 0
-areaF: 0.00
+31 -15 -14 
+355 223 
+sensTx: 31.00
+sensTy: -15.00
+areaF: 696.15
  
  
-18 -31 -18 
-8191 216 
-blocks not > 0
-areaF: 0.00
+29 -17 -14 
+345 223 
+sensTx: 29.00
+sensTy: -17.00
+areaF: 698.37
  
  
-18 -30 -18 
-8191 239 
-blocks not > 0
-areaF: 0.00
+29 -16 -15 
+356 200 
+sensTx: 29.00
+sensTy: -16.00
+areaF: 734.29
  
  
-18 -31 -18 
-8191 228 
-blocks not > 0
-areaF: 0.00
+29 -15 -13 
+345 169 
+sensTx: 29.00
+sensTy: -15.00
+areaF: 718.71
  
  
-19 -30 -18 
-8191 231 
-blocks not > 0
-areaF: 0.00
+27 -17 -16 
+341 216 
+sensTx: 27.00
+sensTy: -17.00
+areaF: 736.18
  
  
-21 -30 -18 
-8191 220 
-blocks not > 0
-areaF: 0.00
+30 -18 -15 
+348 283 
+sensTx: 30.00
+sensTy: -18.00
+areaF: 740.52
  
  
-20 -30 -17 
-8191 225 
-blocks not > 0
-areaF: 0.00
+31 -15 -12 
+354 220 
+sensTx: 31.00
+sensTy: -15.00
+areaF: 732.93
  
  
-16 -31 -16 
-302 231 
-blocks not > 0
-areaF: 0.00
+30 -14 -14 
+343 245 
+sensTx: 30.00
+sensTy: -14.00
+areaF: 703.01
  
  
-18 -31 -17 
-8191 227 
-blocks not > 0
-areaF: 0.00
+30 -14 -13 
+343 135 
+sensTx: 30.00
+sensTy: -14.00
+areaF: 712.79
  
  
-17 -29 -19 
-8190 226 
-blocks not > 0
-areaF: 0.00
+31 -15 -12 
+349 205 
+sensTx: 31.00
+sensTy: -15.00
+areaF: 682.42
  
  
-18 -30 -16 
-8191 231 
-blocks not > 0
-areaF: 0.00
+29 -14 -12 
+343 245 
+sensTx: 29.00
+sensTy: -14.00
+areaF: 650.70
  
  
-18 -31 -17 
-8191 229 
-blocks not > 0
-areaF: 0.00
+31 -13 -11 
+355 201 
+sensTx: 31.00
+sensTy: -13.00
+areaF: 624.28
  
  
-16 -30 -19 
-8191 223 
-blocks not > 0
-areaF: 0.00
+32 -14 -14 
+351 213 
+sensTx: 32.00
+sensTy: -14.00
+areaF: 599.37
  
  
-17 -32 -18 
-8191 227 
-blocks not > 0
-areaF: 0.00
+30 -15 -14 
+352 205 
+sensTx: 30.00
+sensTy: -15.00
+areaF: 629.45
  
  
-18 -30 -21 
-8191 231 
-blocks not > 0
-areaF: 0.00
+29 -15 -12 
+355 296 
+sensTx: 29.00
+sensTy: -15.00
+areaF: 631.60
  
  
-16 -29 -19 
-485 254 
-blocks not > 0
-areaF: 0.00
+27 -18 -14 
+351 239 
+sensTx: 27.00
+sensTy: -18.00
+areaF: 629.67
  
  
-17 -30 -19 
-8191 237 
-blocks not > 0
-areaF: 0.00
+28 -18 -12 
+359 288 
+sensTx: 28.00
+sensTy: -18.00
+areaF: 620.82
  
  
-16 -31 -20 
-8191 239 
-blocks not > 0
-areaF: 0.00
+28 -15 -14 
+356 221 
+sensTx: 28.00
+sensTy: -15.00
+areaF: 659.46
  
  
-17 -33 -18 
-8191 228 
-blocks not > 0
-areaF: 0.00
+29 -14 -13 
+353 204 
+sensTx: 29.00
+sensTy: -14.00
+areaF: 690.90
  
  
-18 -31 -19 
-8191 244 
-blocks not > 0
-areaF: 0.00
+32 -16 -15 
+352 119 
+sensTx: 32.00
+sensTy: -16.00
+areaF: 677.46
  
  
-17 -32 -19 
-8191 225 
-blocks not > 0
-areaF: 0.00
+30 -18 -14 
+358 175 
+sensTx: 30.00
+sensTy: -18.00
+areaF: 687.33
  
  
-16 -31 -20 
-8191 212 
-blocks not > 0
-areaF: 0.00
+29 -15 -14 
+339 249 
+sensTx: 29.00
+sensTy: -15.00
+areaF: 740.12
  
  
-18 -32 -20 
-8191 228 
-blocks not > 0
-areaF: 0.00
+30 -15 -14 
+357 239 
+sensTx: 30.00
+sensTy: -15.00
+areaF: 765.52
  
  
-18 -32 -18 
-8191 239 
-blocks not > 0
-areaF: 0.00
+30 -11 -14 
+343 182 
+sensTx: 30.00
+sensTy: -11.00
+areaF: 738.88
  
  
-15 -32 -19 
-8191 232 
-blocks not > 0
-areaF: 0.00
+30 -17 -13 
+349 210 
+sensTx: 30.00
+sensTy: -17.00
+areaF: 723.39
  
  
-19 -33 -17 
-8191 226 
-blocks not > 0
-areaF: 0.00
+29 -14 -12 
+355 236 
+sensTx: 29.00
+sensTy: -14.00
+areaF: 720.90
  
  
-18 -32 -17 
-8191 214 
-blocks not > 0
-areaF: 0.00
+28 -16 -14 
+349 151 
+sensTx: 28.00
+sensTy: -16.00
+areaF: 736.82
  
  
-17 -31 -16 
-8191 236 
-blocks not > 0
-areaF: 0.00
+31 -14 -12 
+346 192 
+sensTx: 31.00
+sensTy: -14.00
+areaF: 769.95
  
  
-16 -31 -18 
-8191 236 
-blocks not > 0
-areaF: 0.00
+29 -15 -14 
+353 221 
+sensTx: 29.00
+sensTy: -15.00
+areaF: 810.01
  
  
-18 -31 -18 
-8191 227 
-blocks not > 0
-areaF: 0.00
+29 -17 -13 
+351 208 
+sensTx: 29.00
+sensTy: -17.00
+areaF: 838.33
  
  
-17 -31 -18 
-317 228 
-blocks not > 0
-areaF: 0.00
+30 -16 -13 
+357 181 
+sensTx: 30.00
+sensTy: -16.00
+areaF: 803.18
  
  
-17 -32 -19 
-8191 235 
-blocks not > 0
-areaF: 0.00
+30 -17 -14 
+353 253 
+sensTx: 30.00
+sensTy: -17.00
+areaF: 804.60
  
  
-17 -32 -18 
-8191 231 
-blocks not > 0
-areaF: 0.00
+30 -14 -13 
+360 195 
+sensTx: 30.00
+sensTy: -14.00
+areaF: 778.70
  
  
-16 -29 -19 
-8191 232 
-blocks not > 0
-areaF: 0.00
+29 -15 -13 
+358 232 
+sensTx: 29.00
+sensTy: -15.00
+areaF: 761.61
  
  
-18 -30 -18 
-8191 217 
-blocks not > 0
-areaF: 0.00
+31 -17 -12 
+350 187 
+sensTx: 31.00
+sensTy: -17.00
+areaF: 738.06
  
  
-16 -30 -17 
-8191 237 
-blocks not > 0
-areaF: 0.00
+29 -13 -14 
+360 236 
+sensTx: 29.00
+sensTy: -13.00
+areaF: 719.64
  
  
-17 -29 -17 
-8191 230 
-blocks not > 0
-areaF: 0.00
+31 -16 -15 
+361 203 
+sensTx: 31.00
+sensTy: -16.00
+areaF: 704.09
  
  
-20 -34 -20 
-8191 230 
-blocks not > 0
-areaF: 0.00
+32 -16 -13 
+361 223 
+sensTx: 32.00
+sensTy: -16.00
+areaF: 739.33
  
  
-18 -31 -18 
-8191 233 
-blocks not > 0
-areaF: 0.00
+30 -13 -16 
+368 232 
+sensTx: 30.00
+sensTy: -13.00
+areaF: 764.78
  
  
-19 -31 -19 
-8191 235 
-blocks not > 0
-areaF: 0.00
+32 -16 -13 
+359 206 
+sensTx: 32.00
+sensTy: -16.00
+areaF: 759.18
  
  
-16 -30 -18 
-8191 221 
-blocks not > 0
-areaF: 0.00
+30 -12 -12 
+362 188 
+sensTx: 30.00
+sensTy: -12.00
+areaF: 787.72
  
  
-17 -30 -16 
-8191 235 
-blocks not > 0
-areaF: 0.00
+29 -13 -14 
+369 251 
+sensTx: 29.00
+sensTy: -13.00
+areaF: 767.20
  
  
-17 -32 -22 
-8191 234 
-blocks not > 0
-areaF: 0.00
+31 -13 -14 
+366 241 
+sensTx: 31.00
+sensTy: -13.00
+areaF: 761.75
  
  
-17 -31 -18 
-8191 232 
-blocks not > 0
-areaF: 0.00
+30 -14 -13 
+364 252 
+sensTx: 30.00
+sensTy: -14.00
+areaF: 747.00
  
  
-15 -32 -16 
-8191 221 
-blocks not > 0
-areaF: 0.00
+31 -12 -13 
+353 195 
+sensTx: 31.00
+sensTy: -12.00
+areaF: 750.32
  
  
-17 -31 -16 
-8191 224 
-blocks not > 0
-areaF: 0.00
+30 -13 -14 
+358 257 
+sensTx: 30.00
+sensTy: -13.00
+areaF: 760.49
  
  
-19 -28 -17 
-8191 221 
-blocks not > 0
-areaF: 0.00
+30 -15 -13 
+354 214 
+sensTx: 30.00
+sensTy: -15.00
+areaF: 814.36
  
  
-18 -31 -18 
-8191 221 
-blocks not > 0
-areaF: 0.00
+30 -15 -11 
+355 214 
+sensTx: 30.00
+sensTy: -15.00
+areaF: 816.40
  
  
-17 -30 -20 
-8191 217 
-blocks not > 0
-areaF: 0.00
+31 -13 -14 
+361 255 
+sensTx: 31.00
+sensTy: -13.00
+areaF: 793.72
  
  
-16 -31 -18 
-8191 245 
-blocks not > 0
-areaF: 0.00
+29 -13 -11 
+357 164 
+sensTx: 29.00
+sensTy: -13.00
+areaF: 773.94
  
  
-17 -32 -17 
-527 230 
-blocks not > 0
-areaF: 0.00
+32 -16 -15 
+368 185 
+sensTx: 32.00
+sensTy: -16.00
+areaF: 754.49
  
  
-18 -31 -18 
-8191 231 
-blocks not > 0
-areaF: 0.00
+30 -15 -12 
+363 175 
+sensTx: 30.00
+sensTy: -15.00
+areaF: 752.17
  
  
-18 -31 -19 
-8191 231 
-blocks not > 0
-areaF: 0.00
+29 -16 -14 
+361 226 
+sensTx: 29.00
+sensTy: -16.00
+areaF: 731.51
  
  
-17 -31 -20 
-8191 234 
-blocks not > 0
-areaF: 0.00
+31 -13 -14 
+360 263 
+sensTx: 31.00
+sensTy: -13.00
+areaF: 745.72
  
  
-18 -31 -18 
-8191 227 
-blocks not > 0
-areaF: 0.00
+29 -13 -14 
+360 207 
+sensTx: 29.00
+sensTy: -13.00
+areaF: 780.87
  
  
-18 -32 -19 
-8191 239 
-blocks not > 0
-areaF: 0.00
+28 -14 -15 
+365 180 
+sensTx: 28.00
+sensTy: -14.00
+areaF: 759.36
  
  
-17 -32 -20 
-8191 226 
-blocks not > 0
-areaF: 0.00
+30 -17 -14 
+365 205 
+sensTx: 30.00
+sensTy: -17.00
+areaF: 764.55
  
  
-20 -32 -18 
-8191 243 
-blocks not > 0
-areaF: 0.00
+31 -16 -16 
+363 267 
+sensTx: 31.00
+sensTy: -16.00
+areaF: 780.31
  
  
-17 -31 -18 
-8191 236 
-blocks not > 0
-areaF: 0.00
+30 -14 -13 
+377 250 
+sensTx: 30.00
+sensTy: -14.00
+areaF: 785.67
  
  
-18 -31 -19 
-8191 231 
-blocks not > 0
-areaF: 0.00
+32 -18 -14 
+366 190 
+sensTx: 32.00
+sensTy: -18.00
+areaF: 799.99
  
  
-16 -31 -18 
-347 227 
-blocks not > 0
-areaF: 0.00
+28 -17 -15 
+363 225 
+sensTx: 28.00
+sensTy: -17.00
+areaF: 808.29
  
  
-17 -30 -20 
-8191 222 
-blocks not > 0
-areaF: 0.00
+29 -17 -14 
+363 196 
+sensTx: 29.00
+sensTy: -17.00
+areaF: 811.48
  
  
-17 -32 -18 
-8191 225 
-blocks not > 0
-areaF: 0.00
+29 -12 -15 
+360 178 
+sensTx: 29.00
+sensTy: -12.00
+areaF: 840.34
  
  
-16 -32 -19 
-407 220 
-blocks not > 0
-areaF: 0.00
+27 -14 -16 
+357 225 
+sensTx: 27.00
+sensTy: -14.00
+areaF: 805.99
  
  
-16 -30 -20 
-8191 233 
-blocks not > 0
-areaF: 0.00
+29 -16 -13 
+354 226 
+sensTx: 29.00
+sensTy: -16.00
+areaF: 825.50
  
  
-20 -31 -18 
-8191 213 
-blocks not > 0
-areaF: 0.00
+29 -15 -13 
+373 243 
+sensTx: 29.00
+sensTy: -15.00
+areaF: 865.81
  
  
-18 -28 -22 
-8191 231 
-blocks not > 0
-areaF: 0.00
+31 -14 -14 
+356 206 
+sensTx: 31.00
+sensTy: -14.00
+areaF: 888.25
  
  
-17 -32 -18 
-8191 216 
-blocks not > 0
-areaF: 0.00
+29 -15 -14 
+370 266 
+sensTx: 29.00
+sensTy: -15.00
+areaF: 859.06
  
  
-16 -31 -18 
-8191 223 
-blocks not > 0
-areaF: 0.00
+33 -17 -15 
+375 204 
+sensTx: 33.00
+sensTy: -17.00
+areaF: 857.28
  
  
-18 -29 -18 
-8191 230 
-blocks not > 0
-areaF: 0.00
+31 -15 -15 
+368 247 
+sensTx: 31.00
+sensTy: -15.00
+areaF: 852.69
  
  
-16 -30 -19 
-8191 228 
-blocks not > 0
-areaF: 0.00
+30 -17 -12 
+378 250 
+sensTx: 30.00
+sensTy: -17.00
+areaF: 834.17
  
  
-19 -30 -20 
-8191 237 
-blocks not > 0
-areaF: 0.00
+29 -15 -14 
+387 251 
+sensTx: 29.00
+sensTy: -15.00
+areaF: 801.03
  
  
-17 -32 -20 
-8191 243 
-blocks not > 0
-areaF: 0.00
+32 -13 -13 
+368 228 
+sensTx: 32.00
+sensTy: -13.00
+areaF: 766.18
  
  
-19 -31 -18 
-8191 228 
-blocks not > 0
-areaF: 0.00
+31 -17 -11 
+372 206 
+sensTx: 31.00
+sensTy: -17.00
+areaF: 808.17
  
  
-19 -31 -19 
-8190 237 
-blocks not > 0
-areaF: 0.00
+30 -15 -13 
+370 259 
+sensTx: 30.00
+sensTy: -15.00
+areaF: 798.89
  
  
-17 -30 -19 
-8191 223 
-blocks not > 0
-areaF: 0.00
+33 -14 -14 
+370 257 
+sensTx: 33.00
+sensTy: -14.00
+areaF: 758.22
  
  
-17 -32 -19 
-8191 233 
-blocks not > 0
-areaF: 0.00
+30 -15 -12 
+368 250 
+sensTx: 30.00
+sensTy: -15.00
+areaF: 737.49
  
  
-17 -31 -17 
-8191 230 
-blocks not > 0
-areaF: 0.00
+32 -16 -14 
+362 204 
+sensTx: 32.00
+sensTy: -16.00
+areaF: 704.74
  
  
-17 -33 -18 
-8191 226 
-blocks not > 0
-areaF: 0.00
+30 -16 -13 
+369 240 
+sensTx: 30.00
+sensTy: -16.00
+areaF: 720.83
  
  
-19 -31 -21 
-8191 227 
-blocks not > 0
-areaF: 0.00
+27 -15 -15 
+360 221 
+sensTx: 27.00
+sensTy: -15.00
+areaF: 685.88
  
  
-19 -30 -19 
-596 221 
-blocks not > 0
-areaF: 0.00
+32 -15 -13 
+367 261 
+sensTx: 32.00
+sensTy: -15.00
+areaF: 672.27
  
  
-16 -31 -19 
-8191 228 
-blocks not > 0
-areaF: 0.00
+33 -14 -14 
+376 235 
+sensTx: 33.00
+sensTy: -14.00
+areaF: 653.32
  
  
-18 -32 -18 
-8191 233 
-blocks not > 0
-areaF: 0.00
+31 -15 -14 
+370 229 
+sensTx: 31.00
+sensTy: -15.00
+areaF: 673.61
  
  
-16 -30 -19 
-8191 228 
-blocks not > 0
-areaF: 0.00
+31 -15 -14 
+374 244 
+sensTx: 31.00
+sensTy: -15.00
+areaF: 673.12
  
  
-18 -30 -19 
-8191 223 
-blocks not > 0
-areaF: 0.00
+30 -17 -14 
+365 227 
+sensTx: 30.00
+sensTy: -17.00
+areaF: 645.48
  
  
-17 -30 -21 
-8191 234 
-blocks not > 0
-areaF: 0.00
+30 -14 -13 
+360 229 
+sensTx: 30.00
+sensTy: -14.00
+areaF: 653.86
  
  
-18 -31 -20 
-8191 234 
-blocks not > 0
-areaF: 0.00
+32 -16 -14 
+378 257 
+sensTx: 32.00
+sensTy: -16.00
+areaF: 657.99
  
  
-17 -30 -21 
-242 226 
-blocks not > 0
-areaF: 0.00
+30 -15 -14 
+369 206 
+sensTx: 30.00
+sensTy: -15.00
+areaF: 647.80
  
  
-18 -31 -19 
-8191 235 
-blocks not > 0
-areaF: 0.00
+30 -14 -13 
+377 239 
+sensTx: 30.00
+sensTy: -14.00
+areaF: 624.87
  
  
-17 -31 -20 
-8191 220 
-blocks not > 0
-areaF: 0.00
+29 -14 -13 
+366 234 
+sensTx: 29.00
+sensTy: -14.00
+areaF: 622.30
  
  
-17 -29 -20 
-8191 229 
-blocks not > 0
-areaF: 0.00
+30 -15 -15 
+369 292 
+sensTx: 30.00
+sensTy: -15.00
+areaF: 621.54
  
  
-19 -30 -18 
-8191 224 
-blocks not > 0
-areaF: 0.00
+30 -14 -14 
+365 270 
+sensTx: 30.00
+sensTy: -14.00
+areaF: 607.27
  
  
-19 -32 -18 
-8191 221 
-blocks not > 0
-areaF: 0.00
+30 -16 -14 
+365 275 
+sensTx: 30.00
+sensTy: -16.00
+areaF: 586.65
  
  
-16 -30 -17 
-8191 224 
-blocks not > 0
-areaF: 0.00
+32 -14 -14 
+372 243 
+sensTx: 32.00
+sensTy: -14.00
+areaF: 568.54
  
  
-19 -30 -17 
-8190 239 
-blocks not > 0
-areaF: 0.00
+32 -14 -12 
+362 218 
+sensTx: 32.00
+sensTy: -14.00
+areaF: 559.24
  
  
-21 -31 -19 
-8191 221 
-blocks not > 0
-areaF: 0.00
+28 -12 -14 
+377 250 
+sensTx: 28.00
+sensTy: -12.00
+areaF: 549.55
  
  
-19 -31 -18 
-8191 223 
-blocks not > 0
-areaF: 0.00
+33 -16 -14 
+373 299 
+sensTx: 33.00
+sensTy: -16.00
+areaF: 557.13
  
  
-19 -30 -16 
-8191 235 
-blocks not > 0
-areaF: 0.00
+29 -14 -12 
+379 250 
+sensTx: 29.00
+sensTy: -14.00
+areaF: 550.14
  
  
-20 -29 -19 
-8191 219 
-blocks not > 0
-areaF: 0.00
+31 -17 -14 
+376 203 
+sensTx: 31.00
+sensTy: -17.00
+areaF: 549.56
  
  
-18 -30 -19 
-8191 219 
-blocks not > 0
-areaF: 0.00
+31 -14 -13 
+368 245 
+sensTx: 31.00
+sensTy: -14.00
+areaF: 571.04
  
  
-17 -30 -18 
-8191 225 
-blocks not > 0
-areaF: 0.00
+31 -15 -14 
+369 291 
+sensTx: 31.00
+sensTy: -15.00
+areaF: 588.95
  
  
-17 -27 -21 
-8191 224 
-blocks not > 0
-areaF: 0.00
+28 -14 -14 
+381 174 
+sensTx: 28.00
+sensTy: -14.00
+areaF: 599.71
  
  
-18 -31 -18 
-8191 231 
-blocks not > 0
-areaF: 0.00
+33 -15 -15 
+358 8191 
+sensTx: 33.00
+sensTy: -15.00
+areaF: 583.25
  
  
-17 -29 -20 
-8191 234 
-blocks not > 0
-areaF: 0.00
+31 -15 -14 
+372 224 
+sensTx: 31.00
+sensTy: -15.00
+areaF: 552.28
  
  
-18 -29 -18 
-8191 232 
-blocks not > 0
-areaF: 0.00
+31 -13 -15 
+366 253 
+sensTx: 31.00
+sensTy: -13.00
+areaF: 595.35
  
  
-19 -28 -18 
-8191 220 
-blocks not > 0
-areaF: 0.00
+31 -12 -13 
+376 227 
+sensTx: 31.00
+sensTy: -12.00
+areaF: 669.42
  
  
-16 -30 -19 
-8191 230 
-blocks not > 0
-areaF: 0.00
+32 -15 -12 
+380 256 
+sensTx: 32.00
+sensTy: -15.00
+areaF: 640.56
  
  
-19 -27 -18 
-8191 219 
-blocks not > 0
-areaF: 0.00
+30 -14 -14 
+364 260 
+sensTx: 30.00
+sensTy: -14.00
+areaF: 634.81
  
  
-18 -28 -20 
-8191 233 
-blocks not > 0
-areaF: 0.00
+31 -16 -14 
+375 240 
+sensTx: 31.00
+sensTy: -16.00
+areaF: 624.52
  
  
-18 -29 -18 
-8190 227 
-blocks not > 0
-areaF: 0.00
+32 -15 -12 
+370 252 
+sensTx: 32.00
+sensTy: -15.00
+areaF: 665.11
  
  
-16 -31 -17 
-8191 212 
-blocks not > 0
-areaF: 0.00
+31 -14 -14 
+378 258 
+sensTx: 31.00
+sensTy: -14.00
+areaF: 695.09
  
  
-20 -30 -20 
-8191 227 
-blocks not > 0
-areaF: 0.00
+29 -15 -14 
+361 221 
+sensTx: 29.00
+sensTy: -15.00
+areaF: 709.79
  
  
-19 -30 -17 
-8191 228 
-blocks not > 0
-areaF: 0.00
+29 -14 -14 
+370 220 
+sensTx: 29.00
+sensTy: -14.00
+areaF: 712.09
  
  
-19 -32 -18 
-8191 224 
-blocks not > 0
-areaF: 0.00
+30 -15 -14 
+379 217 
+sensTx: 30.00
+sensTy: -15.00
+areaF: 681.76
  
  
-19 -32 -20 
-8191 225 
-blocks not > 0
-areaF: 0.00
+31 -14 -14 
+368 237 
+sensTx: 31.00
+sensTy: -14.00
+areaF: 695.85
  
  
-18 -29 -18 
-8191 222 
-blocks not > 0
-areaF: 0.00
+29 -15 -15 
+367 249 
+sensTx: 29.00
+sensTy: -15.00
+areaF: 682.58
+ 
+ 
+31 -15 -13 
+373 277 
+sensTx: 31.00
+sensTy: -15.00
+areaF: 718.19
+ 
+ 
+33 -14 -14 
+370 222 
+sensTx: 33.00
+sensTy: -14.00
+areaF: 732.03
+ 
+ 
+32 -16 -13 
+360 197 
+sensTx: 32.00
+sensTy: -16.00
+areaF: 717.38
+ 
+ 
+32 -14 -15 
+372 227 
+sensTx: 32.00
+sensTy: -14.00
+areaF: 752.60
+ 
+ 
+31 -15 -15 
+372 235 
+sensTx: 31.00
+sensTy: -15.00
+areaF: 783.23
+ 
+ 
+30 -14 -13 
+369 193 
+sensTx: 30.00
+sensTy: -14.00
+areaF: 759.99
+ 
+ 
+31 -15 -15 
+381 195 
+sensTx: 31.00
+sensTy: -15.00
+areaF: 751.52
+ 
+ 
+31 -15 -14 
+374 221 
+sensTx: 31.00
+sensTy: -15.00
+areaF: 715.45
  
  
-16 -30 -17 
-8191 228 
+31 -15 -15 
+360 269 
+sensTx: 31.00
+sensTy: -15.00
 Web socket connected, id = 0
-blocks not > 0
-areaF: 0.00
+areaF: 682.75
  
  
-18 -32 -19 
-8190 234 
-blocks not > 0
-areaF: 0.00
+30 -14 -13 
+369 178 
+sensTx: 30.00
+sensTy: -14.00
+areaF: 649.30
  
  
-16 -31 -18 
-8191 234 
+29 -14 -14 
+383 230 
+sensTx: 29.00
+sensTy: -14.00
 On connection #0
-  got text: Connect Wed May 30 2018 16:45:53 GMT-0700 (PDT)
-blocks not > 0
-areaF: 0.00
+  got text: Connect Thu May 31 2018 16:21:39 GMT-0700 (PDT)
+areaF: 645.79
  
  
-18 -32 -18 
-8191 231 
-blocks not > 0
-areaF: 0.00
+31 -12 -12 
+370 229 
+sensTx: 31.00
+sensTy: -12.00
+areaF: 626.23
  
  
-19 -32 -19 
-8191 230 
-blocks not > 0
-areaF: 0.00
+30 -14 -12 
+371 257 
+sensTx: 30.00
+sensTy: -14.00
+areaF: 608.03
  
  
-17 -32 -19 
-8190 226 
-blocks not > 0
-areaF: 0.00
+30 -15 -14 
+387 233 
+sensTx: 30.00
+sensTy: -15.00
+areaF: 594.52
  
  
-18 -31 -18 
-8191 228 
-blocks not > 0
-areaF: 0.00
+29 -14 -13 
+358 268 
+sensTx: 29.00
+sensTy: -14.00
+areaF: 599.99
  
  
-17 -32 -17 
-8191 231 
-blocks not > 0
-areaF: 0.00
+30 -15 -13 
+372 215 
+sensTx: 30.00
+sensTy: -15.00
+areaF: 613.72
  
  
-19 -31 -21 
-317 229 
-blocks not > 0
-areaF: 0.00
+31 -15 -13 
+373 242 
+sensTx: 31.00
+sensTy: -15.00
+areaF: 590.28
  
  
-18 -29 -17 
-126 232 
-blocks not > 0
-areaF: 0.00
+29 -15 -13 
+380 250 
+sensTx: 29.00
+sensTy: -15.00
+areaF: 624.53
  
  
-17 -31 -19 
-8191 236 
-blocks not > 0
-areaF: 0.00
- 
- 
-18 -30 -18 
-8191 225 
-blocks not > 0
-areaF: 0.00
- 
- 
-17 -30 -20 
-8191 221 
-blocks not > 0
-areaF: 0.00
- 
- 
-19 -31 -19 
-8191 226 
-blocks not > 0
-areaF: 0.00
- 
- 
-19 -32 -18 
-8191 240 
-blocks not > 0
-areaF: 0.00
- 
- 
-19 -30 -17 
-8191 233 
-blocks not > 0
-areaF: 0.00
- 
- 
-19 -30 -19 
-8191 225 
-blocks not > 0
-areaF: 0.00
- 
- 
-18 -29 -19 
-8191 223 
-blocks not > 0
-areaF: 0.00
- 
- 
-19 -28 -20 
-8191 219 
-blocks not > 0
-areaF: 0.00
- 
- 
-18 -32 -19 
-8191 236 
-blocks not > 0
-areaF: 0.00
- 
- 
-22 -31 -19 
-8191 232 
-blocks not > 0
-areaF: 0.00
- 
- 
-19 -29 -18 
-8191 238 
+31 -15 -15 
+379 260 
+sensTx: 31.00
+sensTy: -15.00
 On connection #0
   got text: #!Beg@
 Beg is: Beg
  
  
-19 -31 -17 
-8191 222 
- 
- 
-19 -29 -16 
-8191 223 
-startHeading: 146.77
-looping in scan2()
- 
- 
-3 -1 -19 
-8191 242 
-ahe: 38.33
-currHeading: 108.43
-looping in scan2()
- 
- 
--11 19 -19 
-8191 219 
-ahe: 183.16
-currHeading: 329.93
-looping in scan2()
- 
- 
--12 23 -16 
-564 232 
-ahe: 185.68
-currHeading: 332.45
-looping in scan2()
- 
- 
--12 24 -19 
-8191 248 
-ahe: 186.67
-currHeading: 333.43
-looping in scan2()
- 
- 
--12 24 -17 
-8191 218 
-ahe: 186.67
-currHeading: 333.43
-looping in scan2()
- 
- 
--15 19 -19 
-8191 233 
-ahe: 174.94
-currHeading: 321.71
-looping in scan2()
- 
- 
--11 18 -20 
-8191 232 
-ahe: 181.80
-currHeading: 328.57
-looping in scan2()
- 
- 
--14 20 -19 
-8191 234 
-ahe: 178.24
-currHeading: 325.01
-looping in scan2()
- 
- 
--16 22 -17 
-8191 242 
-ahe: 177.20
-currHeading: 323.97
-looping in scan2()
- 
- 
--14 22 -19 
-8191 245 
-ahe: 180.76
-currHeading: 327.53
-looping in scan2()
- 
- 
--15 21 -19 
-385 259 
-ahe: 177.69
-currHeading: 324.46
-looping in scan2()
- 
- 
--15 19 -17 
-613 276 
-ahe: 174.94
-currHeading: 321.71
-looping in scan2()
- 
- 
--18 19 -18 
-8191 281 
-ahe: 169.78
-currHeading: 316.55
-looping in scan2()
- 
- 
--19 17 -18 
-8191 300 
-ahe: 165.05
-currHeading: 311.82
-looping in scan2()
- 
- 
--20 17 -19 
-8191 315 
-ahe: 163.60
-currHeading: 310.36
-looping in scan2()
- 
- 
--21 16 -19 
-8191 306 
-ahe: 160.54
-currHeading: 307.30
-looping in scan2()
- 
- 
--21 18 -18 
-556 307 
-ahe: 163.83
-currHeading: 310.60
-looping in scan2()
- 
- 
--21 15 -19 
-537 299 
-ahe: 158.77
-currHeading: 305.54
-looping in scan2()
- 
- 
--22 17 -17 
-576 321 
-ahe: 160.93
-currHeading: 307.69
-looping in scan2()
- 
- 
--24 14 -18 
-593 299 
-ahe: 153.49
-currHeading: 300.26
-looping in scan2()
- 
- 
--24 16 -19 
-615 303 
-ahe: 156.92
-currHeading: 303.69
-looping in scan2()
- 
- 
--26 16 -16 
-637 295 
-ahe: 154.84
-currHeading: 301.61
-looping in scan2()
- 
- 
--27 17 -18 
-663 295 
-ahe: 155.43
-currHeading: 302.20
-looping in scan2()
- 
- 
--27 16 -17 
-664 293 
-ahe: 153.88
-currHeading: 300.65
-looping in scan2()
- 
- 
--28 15 -17 
-664 272 
-ahe: 151.41
-currHeading: 298.18
-looping in scan2()
- 
- 
--30 15 -16 
-660 274 
-ahe: 149.80
-currHeading: 296.57
-looping in scan2()
- 
- 
--28 16 -17 
-671 271 
-ahe: 152.98
-currHeading: 299.74
-looping in scan2()
- 
- 
--28 14 -17 
-675 265 
-ahe: 149.80
-currHeading: 296.57
-looping in scan2()
- 
- 
--29 14 -18 
-668 265 
-ahe: 149.00
-currHeading: 295.77
-looping in scan2()
- 
- 
--31 16 -18 
-683 260 
-ahe: 150.53
-currHeading: 297.30
-looping in scan2()
- 
- 
--31 16 -18 
-675 253 
-ahe: 150.53
-currHeading: 297.30
-looping in scan2()
- 
- 
--30 16 -18 
-700 244 
-ahe: 151.30
-currHeading: 298.07
-looping in scan2()
- 
- 
--32 16 -15 
-698 242 
-ahe: 149.80
-currHeading: 296.57
-looping in scan2()
- 
- 
--32 14 -18 
-694 232 
-ahe: 146.86
-currHeading: 293.63
-looping in scan2()
- 
- 
--33 16 -20 
-683 228 
-ahe: 149.10
-currHeading: 295.87
-looping in scan2()
- 
- 
--35 15 -17 
-697 233 
-ahe: 146.43
-currHeading: 293.20
-looping in scan2()
- 
- 
--27 15 -18 
-646 231 
-ahe: 152.29
-currHeading: 299.05
-looping in scan2()
- 
- 
--25 14 -17 
-666 226 
-ahe: 152.48
-currHeading: 299.25
-looping in scan2()
- 
- 
--22 16 -17 
-619 227 
-ahe: 159.26
-currHeading: 306.03
-looping in scan2()
- 
- 
--17 15 -16 
-598 250 
-ahe: 164.66
-currHeading: 311.42
-looping in scan2()
- 
- 
--13 15 -17 
-612 245 
-ahe: 172.32
-currHeading: 319.09
-looping in scan2()
- 
- 
--9 18 -17 
-835 228 
-ahe: 186.67
-currHeading: 333.43
-looping in scan2()
- 
- 
--3 18 -14 
-932 230 
-ahe: 203.77
-currHeading: 350.54
-looping in scan2()
- 
- 
-3 19 -17 
-943 223 
-ahe: 137.80
-currHeading: 8.97
-looping in scan2()
- 
- 
-3 20 -14 
-975 223 
-ahe: 138.24
-currHeading: 8.53
-looping in scan2()
- 
- 
-9 23 -13 
-881 217 
-ahe: 125.40
-currHeading: 21.37
-looping in scan2()
- 
- 
-15 23 -16 
-747 220 
-ahe: 113.66
-currHeading: 33.11
-looping in scan2()
- 
- 
-19 24 -14 
-8191 212 
-ahe: 108.40
-currHeading: 38.37
-looping in scan2()
- 
- 
-22 27 -17 
-8191 234 
-ahe: 107.59
-currHeading: 39.17
-looping in scan2()
- 
- 
-31 26 -14 
-332 237 
-ahe: 96.76
-currHeading: 50.01
-looping in scan2()
- 
- 
-28 31 -13 
-484 257 
-ahe: 104.68
-currHeading: 42.09
-looping in scan2()
- 
- 
-29 31 -16 
-438 251 
-ahe: 103.68
-currHeading: 43.09
-looping in scan2()
- 
- 
-24 33 -17 
-414 233 
-ahe: 110.74
-currHeading: 36.03
-looping in scan2()
- 
- 
-25 35 -13 
-372 230 
-ahe: 111.23
-currHeading: 35.54
-looping in scan2()
- 
- 
-26 37 -15 
-349 238 
-ahe: 111.67
-currHeading: 35.10
-looping in scan2()
- 
- 
-24 39 -15 
-365 237 
-ahe: 115.16
-currHeading: 31.61
-looping in scan2()
- 
- 
-25 42 -13 
-368 247 
-ahe: 116.01
-currHeading: 30.76
-looping in scan2()
- 
- 
-27 41 -15 
-391 264 
-ahe: 113.40
-currHeading: 33.37
-looping in scan2()
- 
- 
-26 46 -13 
-8191 266 
-ahe: 117.29
-currHeading: 29.48
-looping in scan2()
- 
- 
-23 41 -14 
-515 276 
-ahe: 117.48
-currHeading: 29.29
-looping in scan2()
- 
- 
-28 39 -13 
-586 315 
-ahe: 111.09
-currHeading: 35.68
-looping in scan2()
- 
- 
-30 35 -15 
-613 356 
-ahe: 106.17
-currHeading: 40.60
-looping in scan2()
- 
- 
-32 31 -14 
-601 327 
-ahe: 100.86
-currHeading: 45.91
-looping in scan2()
- 
- 
-34 29 -15 
-578 273 
-ahe: 97.23
-currHeading: 49.54
-looping in scan2()
- 
- 
-36 24 -16 
-549 239 
-ahe: 90.46
-currHeading: 56.31
-looping in scan2()
- 
- 
-39 20 -15 
-515 231 
-ahe: 83.92
-currHeading: 62.85
-looping in scan2()
- 
- 
-41 13 -15 
-479 216 
-ahe: 74.36
-currHeading: 72.41
-looping in scan2()
- 
- 
-46 7 -16 
-405 211 
-ahe: 65.42
-currHeading: 81.35
-looping in scan2()
- 
- 
-51 4 -16 
-8190 221 
-ahe: 61.25
-currHeading: 85.52
-looping in scan2()
- 
- 
-46 -4 -16 
-8190 212 
-ahe: 51.80
-currHeading: 94.97
-looping in scan2()
- 
- 
-42 -9 -15 
-8190 211 
-ahe: 44.67
-currHeading: 102.09
-looping in scan2()
- 
- 
-37 -15 -17 
-0 201 
-ahe: 34.70
-currHeading: 112.07
-looping in scan2()
- 
- 
-35 -25 -17 
-8191 199 
-ahe: 21.23
-currHeading: 125.54
-looping in scan2()
- 
- 
-27 -32 -15 
-8191 199 
-ahe: 6.92
-(39.60, -2.36)
-dHeading: -135.00
-timeFmillis: 5083.83
- 
- 
-23 -38 -16 
-8190 195 
-right
-looping inside tupToInstrux
- 
- 
-23 -57 -19 
-8191 214 
-currHeading: 158.03
-ahe: 144.21
-right
-looping inside tupToInstrux
- 
- 
-16 -61 -20 
-8191 229 
-currHeading: 165.30
-ahe: 151.49
-right
-looping inside tupToInstrux
- 
- 
-8 -58 -20 
-344 211 
-currHeading: 172.15
-ahe: 158.33
-right
-looping inside tupToInstrux
- 
- 
--3 -54 -18 
-8191 225 
-currHeading: 183.18
-ahe: 169.36
-right
-looping inside tupToInstrux
- 
- 
--11 -49 -17 
-8191 222 
-currHeading: 192.65
-ahe: 178.84
-right
-looping inside tupToInstrux
- 
- 
--25 -47 -17 
-8191 254 
-currHeading: 208.01
-ahe: 194.19
-right
-looping inside tupToInstrux
- 
- 
--35 -43 -18 
-8191 305 
-currHeading: 219.14
-ahe: 205.33
-right
-looping inside tupToInstrux
- 
- 
--48 -39 -20 
-625 311 
-currHeading: 230.91
-ahe: 217.09
-right
-looping inside tupToInstrux
- 
- 
--52 -31 -17 
-647 280 
-currHeading: 239.20
-ahe: 225.38
-right
-looping inside tupToInstrux
- 
- 
--55 -24 -18 
-669 243 
-currHeading: 246.43
-ahe: 232.61
-right
-looping inside tupToInstrux
- 
- 
--59 -18 -18 
-698 211 
-currHeading: 253.03
-ahe: 239.22
-right
-looping inside tupToInstrux
- 
- 
--68 -11 -16 
-8191 236 
-currHeading: 260.81
-ahe: 247.00
-right
-looping inside tupToInstrux
- 
- 
--63 -3 -15 
-726 239 
-currHeading: 267.27
-ahe: 253.46
-right
-looping inside tupToInstrux
- 
- 
--56 6 -19 
-916 244 
-currHeading: 276.12
-ahe: 262.30
-right
-looping inside tupToInstrux
- 
- 
--53 12 -14 
-920 223 
-currHeading: 282.76
-ahe: 268.94
-right
-looping inside tupToInstrux
- 
- 
--48 20 -16 
-811 223 
-currHeading: 292.62
-ahe: 278.80
-right
-looping inside tupToInstrux
- 
- 
--43 34 -14 
-324 247 
-currHeading: 308.33
-ahe: 294.52
-right
-looping inside tupToInstrux
- 
- 
--36 45 -14 
-433 245 
-currHeading: 321.34
-ahe: 307.53
-right
-looping inside tupToInstrux
- 
- 
--30 54 -13 
-380 232 
-currHeading: 330.95
-ahe: 317.13
-right
-looping inside tupToInstrux
- 
- 
--23 60 -15 
-323 263 
-currHeading: 339.03
-ahe: 325.21
-right
-looping inside tupToInstrux
- 
- 
--15 61 -15 
-330 259 
-currHeading: 346.18
-ahe: 332.37
-right
-looping inside tupToInstrux
- 
- 
--7 66 -13 
-508 298 
-currHeading: 353.95
-ahe: 340.13
-right
-looping inside tupToInstrux
- 
- 
-4 67 -11 
-599 350 
-currHeading: 3.42
-ahe: 10.40
- 
- 
-14 72 -10 
-596 329 
- 
- 
-17 74 -10 
-559 285 
- 
- 
-18 77 -10 
-543 217 
- 
- 
-23 78 -11 
-495 217 
- 
- 
-27 80 -8 
-442 223 
- 
- 
-29 82 -8 
-361 218 
- 
- 
-33 82 -7 
-351 214 
- 
- 
-33 83 -9 
-363 213 
- 
- 
-34 86 -10 
-369 204 
- 
- 
-37 86 -11 
-701 216 
- 
- 
-35 85 -12 
-8190 219 
- 
- 
-38 87 -11 
-8190 218 
- 
- 
-36 87 -9 
-8190 203 
- 
- 
-39 87 -11 
-8190 210 
- 
- 
-38 88 -11 
-8190 210 
- 
- 
-41 87 -11 
-8190 204 
- 
- 
-41 89 -11 
-8190 214 
- 
- 
-40 86 -9 
-8190 209 
- 
- 
-40 86 -12 
-8190 211 
- 
- 
-41 86 -14 
-8190 202 
- 
- 
-39 84 -13 
-8190 190 
- 
- 
-40 84 -15 
-8190 202 
- 
- 
-36 87 -16 
-8190 208 
- 
- 
-39 88 -15 
-8190 214 
- 
- 
-37 88 -17 
-8190 198 
- 
- 
-39 87 -15 
-8190 210 
- 
- 
-40 88 -16 
-8190 203 
- 
- 
-39 88 -15 
-8190 236 
- 
- 
-39 86 -15 
-8190 211 
- 
- 
-41 87 -16 
-8190 193 
- 
- 
-38 85 -15 
-8190 8191 
- 
- 
-40 86 -16 
-8190 8191 
- 
- 
-40 85 -16 
-8190 8191 
- 
- 
-42 85 -17 
-8190 8191 
- 
- 
-41 85 -16 
-8190 8191 
- 
- 
-41 88 -16 
-8190 8191 
- 
- 
-40 86 -17 
-8191 8191 
- 
- 
-44 85 -17 
-8190 8191 
- 
- 
-45 84 -17 
-8190 8191 
- 
- 
-45 84 -16 
-8190 8191 
- 
- 
-46 83 -17 
-8190 8191 
- 
- 
-46 81 -16 
-8191 8191 
- 
- 
-49 84 -15 
-8191 8191 
- 
- 
-48 82 -17 
-8190 8191 
- 
- 
-47 82 -18 
-8190 8190 
- 
- 
-46 84 -17 
-8190 8191 
- 
- 
-48 82 -17 
-8190 8191 
- 
- 
-45 84 -18 
-8190 8191 
- 
- 
-43 86 -17 
-8190 8191 
- 
- 
-44 85 -17 
-8190 8191 
- 
- 
-45 85 -18 
-8190 8191 
- 
- 
-39 83 -16 
-8190 8191 
- 
- 
-40 85 -16 
-8190 8191 
- 
- 
-38 85 -16 
-8190 8190 
- 
- 
-37 86 -15 
-8190 8190 
- 
- 
-37 84 -14 
-8190 8190 
- 
- 
-36 85 -15 
-8190 8190 
- 
- 
-37 87 -15 
-8190 8190 
- 
- 
-34 86 -14 
-8190 8190 
- 
- 
-34 86 -16 
-8190 8191 
- 
- 
-36 86 -15 
-8190 8191 
- 
- 
-36 87 -14 
-8190 846 
- 
- 
-37 86 -13 
-8190 8191 
- 
- 
-34 89 -15 
-8190 463 
- 
- 
-35 89 -15 
-8190 8191 
- 
- 
-34 86 -16 
-8190 8191 
- 
- 
-34 86 -15 
-8190 8190 
- 
- 
-36 88 -15 
-8190 8190 
- 
- 
-34 87 -13 
-8190 8190 
- 
- 
-35 87 -13 
-8190 8191 
- 
- 
-35 86 -13 
-8190 8191 
- 
- 
-34 87 -12 
-8190 8190 
- 
- 
-33 88 -12 
-8190 8191 
- 
- 
-34 86 -15 
-8190 8190 
- 
- 
-33 88 -15 
-8190 8191 
- 
- 
-32 85 -14 
-8190 8191 
- 
- 
-33 87 -14 
-8190 8190 
- 
- 
-34 88 -14 
-8190 8190 
- 
- 
-32 88 -13 
-8190 8191 
- 
- 
-34 86 -15 
-8190 8190 
- 
- 
-33 86 -12 
-8190 8190 
- 
- 
-33 87 -15 
-8190 8190 
- 
- 
-31 89 -15 
-8190 8190 
- 
- 
-33 86 -13 
-8191 8190 
- 
- 
-34 88 -13 
-8190 8190 
- 
- 
-33 88 -13 
-8190 8190 
- 
- 
-31 88 -13 
-8190 8190 
- 
- 
-31 85 -14 
-8190 8190 
- 
- 
-32 88 -14 
-8190 8190 
- 
- 
-32 86 -13 
-8191 8190 
- 
- 
-32 88 -12 
-8190 8191 
- 
- 
-31 88 -13 
-270 8190 
- 
- 
-32 87 -13 
-8190 8190 
- 
- 
-32 85 -15 
-8190 8190 
- 
- 
-31 86 -12 
-8190 8190 
- 
- 
-32 86 -13 
-8190 8191 
- 
- 
-32 86 -13 
-8190 8190 
- 
- 
-30 86 -13 
-8190 8190 
- 
- 
-31 85 -13 
-868 8190 
- 
- 
-33 87 -12 
-8190 8190 
- 
- 
-31 87 -14 
-259 8190 
- 
- 
-29 85 -13 
-8190 8190 
- 
- 
-31 86 -13 
-55 8190 
- 
- 
-31 86 -13 
-8190 8190 
- 
- 
-32 86 -13 
-8190 8191 
- 
- 
-32 87 -14 
-8190 8190 
- 
- 
-31 87 -14 
-238 8191 
- 
- 
-29 86 -14 
-192 8190 
- 
- 
-31 86 -14 
-8190 8190 
-
- 
- 
-32 88 -14 
-8190 8190 
-startHeading: 19.98
-looping in scan2()
- 
- 
-38 73 -12 
-8190 8190 
-ahe: 7.52
-currHeading: 27.50
-looping in scan2()
- 
- 
-46 57 -12 
-8190 8190 
-ahe: 18.92
-currHeading: 38.90
-looping in scan2()
- 
- 
-54 45 -12 
-454 8191 
-ahe: 30.21
-currHeading: 50.19
-looping in scan2()
- 
- 
-60 28 -12 
-414 8190 
-ahe: 45.00
-currHeading: 64.98
-looping in scan2()
- 
- 
-62 18 -13 
-8190 8191 
-ahe: 53.83
-currHeading: 73.81
-looping in scan2()
- 
- 
-63 4 -13 
-263 8191 
-ahe: 66.38
-currHeading: 86.37
-looping in scan2()
- 
- 
-62 -11 -13 
-8190 242 
-ahe: 80.08
-currHeading: 100.06
-looping in scan2()
- 
- 
-63 -25 -12 
-8190 245 
-ahe: 91.66
-currHeading: 111.64
-looping in scan2()
- 
- 
-65 -38 -13 
-8190 216 
-ahe: 100.33
-currHeading: 120.31
-looping in scan2()
- 
- 
-65 -51 -13 
-8190 207 
-ahe: 108.14
-currHeading: 128.12
-looping in scan2()
- 
- 
-67 -64 -15 
-8190 209 
-ahe: 113.71
-currHeading: 133.69
-looping in scan2()
- 
- 
-67 -78 -15 
-8190 227 
-ahe: 119.36
-currHeading: 139.34
-looping in scan2()
- 
- 
-69 -77 -13 
-8190 214 
-ahe: 118.15
-currHeading: 138.14
-looping in scan2()
- 
- 
-70 -82 -14 
-8190 206 
-ahe: 119.53
-currHeading: 139.51
-looping in scan2()
- 
- 
-71 -77 -13 
-8190 200 
-ahe: 117.34
-currHeading: 137.32
-looping in scan2()
- 
- 
-72 -80 -15 
-8190 222 
-ahe: 118.03
-currHeading: 138.01
-looping in scan2()
- 
- 
-76 -81 -13 
-8190 210 
-ahe: 116.84
-currHeading: 136.82
-looping in scan2()
- 
- 
-75 -81 -16 
-221 210 
-ahe: 117.22
-currHeading: 137.20
-looping in scan2()
- 
- 
-77 -81 -15 
-8191 217 
-ahe: 116.47
-currHeading: 136.45
-looping in scan2()
- 
- 
-79 -82 -15 
-8190 203 
-ahe: 116.08
-currHeading: 136.07
-looping in scan2()
- 
- 
-79 -82 -17 
-8191 190 
-ahe: 116.08
-currHeading: 136.07
-looping in scan2()
- 
- 
-81 -81 -15 
-8191 201 
-ahe: 115.02
-currHeading: 135.00
-looping in scan2()
- 
- 
-76 -85 -16 
-8191 211 
-ahe: 118.22
-currHeading: 138.20
-looping in scan2()
- 
- 
-72 -85 -17 
-8190 210 
-ahe: 119.75
-currHeading: 139.73
-looping in scan2()
- 
- 
-66 -87 -17 
-61 223 
-ahe: 122.83
-currHeading: 142.82
-looping in scan2()
- 
- 
-62 -86 -15 
-8190 218 
-ahe: 124.23
-currHeading: 144.21
-looping in scan2()
- 
- 
-59 -88 -17 
-8190 214 
-ahe: 126.18
-currHeading: 146.16
-looping in scan2()
- 
- 
-52 -90 -17 
-8191 209 
-ahe: 130.00
-currHeading: 149.98
-looping in scan2()
- 
- 
-48 -94 -19 
-8191 200 
-ahe: 132.97
-currHeading: 152.95
-looping in scan2()
- 
- 
-45 -94 -19 
-8190 206 
-ahe: 134.44
-currHeading: 154.42
-looping in scan2()
- 
- 
-40 -97 -19 
-8190 199 
-ahe: 137.61
-currHeading: 157.59
-looping in scan2()
- 
- 
-33 -100 -21 
-8190 215 
-ahe: 141.75
-currHeading: 161.74
-looping in scan2()
- 
- 
-28 -103 -20 
-8191 217 
-ahe: 144.81
-currHeading: 164.79
-looping in scan2()
- 
- 
-23 -98 -19 
-8190 217 
-ahe: 146.81
-currHeading: 166.79
-looping in scan2()
- 
- 
-17 -94 -21 
-342 221 
-ahe: 149.77
-currHeading: 169.75
-looping in scan2()
- 
- 
-11 -89 -19 
-8191 222 
-ahe: 152.97
-currHeading: 172.95
-looping in scan2()
- 
- 
-4 -84 -21 
-8191 213 
-ahe: 157.29
-currHeading: 177.27
-looping in scan2()
- 
- 
--2 -78 -17 
-8191 221 
-ahe: 161.49
-currHeading: 181.47
-looping in scan2()
- 
- 
--8 -72 -21 
-8191 232 
-ahe: 166.36
-currHeading: 186.34
-looping in scan2()
- 
- 
--17 -68 -21 
-8191 227 
-ahe: 174.05
-currHeading: 194.04
-looping in scan2()
- 
- 
--23 -63 -19 
-8191 227 
-ahe: 180.07
-currHeading: 200.06
-looping in scan2()
- 
- 
--30 -54 -16 
-8190 210 
-ahe: 189.07
+31 -15 -17 
+362 191 
+sensTx: 31.00
+sensTy: -15.00
+found ball scan: (0, 52)
+ 
+ 
+31 -16 -15 
+378 218 
+sensTx: 31.00
+sensTy: -16.00
+startHeading: 117.30
+looping in scan2()
+rightSlow
+ 
+ 
+33 -15 -15 
+376 216 
+sensTx: 33.00
+sensTy: -15.00
+ahe: 2.86
+found ball scan: (0, 280)
+found ball exit scan: (0, 280)
+currHeading: 114.44
+nBlocks: 1
+found ball: (0, 135)
+areaF: 595.49
+x_error: 12
+y_error: -83
+nBlocks: 3
+found ball: (0, 464)
+leftSpeed: 102
+rightSpeed: 56
+blocks not > 0
+areaF: 561.42
+x_error: 32
+y_error: -62
+nBlocks: 2
+found ball: (1, 140)
+leftSpeed: 80
+rightSpeed: 34
+blocks not > 0
+areaF: 529.30
+x_error: 94
+y_error: -224
+nBlocks: 1
+nBlocks: 1
+nBlocks: 3
+leftSpeed: 97
+rightSpeed: 51
+areaF: 500.85
+x_error: 45
+y_error: -67
+nBlocks: 1
+nBlocks: 2
+found ball: (1, 462)
+leftSpeed: 121
+rightSpeed: 75
+blocks not > 0
+areaF: 472.19
+x_error: -23
+y_error: -63
+nBlocks: 1
+found ball: (0, 2444)
+leftSpeed: 122
+rightSpeed: 76
+areaF: 461.65
+x_error: -27
+y_error: -67
+nBlocks: 1
+found ball: (0, 680)
+leftSpeed: 124
+rightSpeed: 78
+areaF: 439.36
+x_error: -31
+y_error: -60
+nBlocks: 4
+found ball: (0, 987)
+leftSpeed: 125
+rightSpeed: 79
+areaF: 510.51
+x_error: -34
+y_error: -64
+nBlocks: 1
+found ball: (0, 1242)
+leftSpeed: 124
+rightSpeed: 78
+areaF: 641.96
+x_error: -31
+y_error: -61
+leftSpeed: 127
+rightSpeed: 81
+blocks not > 0
+areaF: 605.23
+x_error: -42
+y_error: -63
+leftSpeed: 127
+rightSpeed: 81
+blocks not > 0
+areaF: 570.61
+x_error: -42
+y_error: -63
+leftSpeed: 127
+rightSpeed: 81
+blocks not > 0
+areaF: 537.96
+x_error: -42
+y_error: -63
+leftSpeed: 127
+rightSpeed: 81
+blocks not > 0
+areaF: 507.18
+x_error: -42
+y_error: -63
+leftSpeed: 127
+rightSpeed: 81
+blocks not > 0
+areaF: 478.16
+x_error: -42
+y_error: -63
+leftSpeed: 127
+rightSpeed: 81
+blocks not > 0
+areaF: 450.80
+x_error: -42
+y_error: -63
+leftSpeed: 127
+rightSpeed: 81
+blocks not > 0
+areaF: 425.01
+x_error: -42
+y_error: -63
+leftSpeed: 127
+rightSpeed: 81
+blocks not > 0
+areaF: 400.69
+x_error: -42
+y_error: -63
+leftSpeed: 127
+rightSpeed: 81
+blocks not > 0
+areaF: 377.77
+x_error: -42
+y_error: -63
+leftSpeed: 127
+rightSpeed: 81
+blocks not > 0
+areaF: 356.15
+x_error: -42
+y_error: -63
+leftSpeed: 127
+rightSpeed: 81
+blocks not > 0
+areaF: 335.78
+x_error: -42
+y_error: -63
+leftSpeed: 127
+rightSpeed: 81
+blocks not > 0
+areaF: 316.56
+x_error: -42
+y_error: -63
+leftSpeed: 127
+rightSpeed: 81
+blocks not > 0
+areaF: 298.45
+x_error: -42
+y_error: -63
+leftSpeed: 127
+rightSpeed: 81
+blocks not > 0
+areaF: 281.38
+x_error: -42
+y_error: -63
+leftSpeed: 127
+rightSpeed: 81
+blocks not > 0
+areaF: 265.28
+x_error: -42
+y_error: -63
+leftSpeed: 127
+rightSpeed: 81
+blocks not > 0
+areaF: 250.10
+x_error: -42
+y_error: -63
+leftSpeed: 127
+rightSpeed: 81
+blocks not > 0
+areaF: 235.79
+x_error: -42
+y_error: -63
+leftSpeed: 127
+rightSpeed: 81
+blocks not > 0
+areaF: 222.30
+x_error: -42
+y_error: -63
+leftSpeed: 127
+rightSpeed: 81
+blocks not > 0
+areaF: 209.58
+x_error: -42
+y_error: -63
+leftSpeed: 127
+rightSpeed: 81
+blocks not > 0
+areaF: 197.59
+x_error: -42
+y_error: -63
+leftSpeed: 127
+rightSpeed: 81
+blocks not > 0
+areaF: 186.28
+x_error: -42
+y_error: -63
+leftSpeed: 127
+rightSpeed: 81
+blocks not > 0
+areaF: 175.63
+x_error: -42
+y_error: -63
+leftSpeed: 127
+rightSpeed: 81
+areaF: 189.49
+x_error: -42
+y_error: -63
+nBlocks: 1
+found ball: (0, 960)
+leftSpeed: 90
+rightSpeed: 90
+areaF: 261.04
+x_error: 62
+y_error: 27
+nBlocks: 1
+found ball: (0, 2700)
+leftSpeed: 90
+rightSpeed: 90
+blocks not > 0
+areaF: 246.11
+x_error: 17
+y_error: 16
+nBlocks: 2
+found ball: (0, 1600)
+leftSpeed: 90
+rightSpeed: 89
+areaF: 401.95
+x_error: -15
+y_error: 9
+final x and y errors
+x_error: -15
+y_error: 9
+areaF: 567.42
+ 
+ 
+31 -14 -11 
+466 221 
+sensTx: 31.00
+sensTy: -14.00
+areaF: 736.35
+ 
+ 
+21 -20 -10 
+420 217 
+sensTx: 21.00
+sensTy: -20.00
+areaF: 889.90
+ 
+ 
+22 -20 -10 
+334 205 
+sensTx: 22.00
+sensTy: -20.00
+areaF: 910.39
+ 
+ 
+24 -22 -10 
+289 197 
+sensTx: 24.00
+sensTy: -22.00
+areaF: 961.63
+ 
+ 
+24 -20 -12 
+277 195 
+sensTx: 24.00
+sensTy: -20.00
+areaF: 944.37
+ 
+ 
+25 -22 -12 
+273 205 
+sensTx: 25.00
+sensTy: -22.00
+areaF: 962.43
+ 
+ 
+24 -20 -12 
+280 193 
+sensTx: 24.00
+sensTy: -20.00
+areaF: 1055.67
+ 
+ 
+25 -20 -14 
+284 193 
+sensTx: 25.00
+sensTy: -20.00
+areaF: 1135.44
+ 
+ 
+21 -21 -11 
+295 188 
+sensTx: 21.00
+sensTy: -21.00
+areaF: 1293.85
+ 
+ 
+24 -22 -11 
+288 202 
+sensTx: 24.00
+sensTy: -22.00
+areaF: 1461.50
+ 
+ 
+24 -18 -15 
+282 232 
+sensTx: 24.00
+sensTy: -18.00
+areaF: 1578.01
+ 
+ 
+23 -22 -13 
+294 196 
+sensTx: 23.00
+sensTy: -22.00
+areaF: 1729.46
+ 
+ 
+22 -19 -14 
+278 209 
+sensTx: 22.00
+sensTy: -19.00
+areaF: 1872.01
+ 
+ 
+22 -22 -11 
+297 212 
+sensTx: 22.00
+sensTy: -22.00
+areaF: 2002.81
+ 
+ 
+25 -19 -13 
+285 197 
+sensTx: 25.00
+sensTy: -19.00
+areaF: 1973.18
+ 
+ 
+24 -21 -11 
+287 205 
+sensTx: 24.00
+sensTy: -21.00
+areaF: 2029.53
+ 
+ 
+24 -21 -13 
+288 213 
+sensTx: 24.00
+sensTy: -21.00
+areaF: 2112.75
+ 
+ 
+23 -20 -11 
+286 203 
+sensTx: 23.00
+sensTy: -20.00
+areaF: 2225.30
+ 
+ 
+25 -19 -14 
+285 216 
+sensTx: 25.00
+sensTy: -19.00
+areaF: 2313.22
+ 
+ 
+26 -19 -13 
+280 186 
+sensTx: 26.00
+sensTy: -19.00
+areaF: 2366.54
+ 
+ 
+23 -21 -13 
+289 209 
+sensTx: 23.00
+sensTy: -21.00
+areaF: 2363.99
+ 
+ 
+23 -21 -11 
+283 210 
+sensTx: 23.00
+sensTy: -21.00
+areaF: 2434.71
+ 
+ 
+21 -19 -12 
+288 203 
+sensTx: 21.00
+sensTy: -19.00
+areaF: 2377.79
+ 
+ 
+24 -20 -14 
+284 197 
+sensTx: 24.00
+sensTy: -20.00
+On connection #0
+  got text: #!Beg@
+Beg is: Beg
+ 
+ 
+24 -18 -12 
+282 197 
+sensTx: 24.00
+sensTy: -18.00
+found ball scan: (0, 1734)
+found ball exit scan: (0, 1734)
+ 
+ 
+22 -20 -12 
+273 188 
+sensTx: 22.00
+sensTy: -20.00
+startHeading: 132.27
+nBlocks: 1
+found ball: (0, 3339)
+areaF: 2490.92
+x_error: -14
+y_error: -46
+nBlocks: 1
+found ball: (0, 4030)
+leftSpeed: 119
+rightSpeed: 73
+areaF: 2593.74
+x_error: -17
+y_error: -48
+leftSpeed: 119
+rightSpeed: 73
+blocks not > 0
+areaF: 2445.34
+x_error: -18
+y_error: -48
+leftSpeed: 116
+rightSpeed: 70
+areaF: 2413.05
+x_error: -9
+y_error: -45
+nBlocks: 2
+found ball: (0, 3648)
+leftSpeed: 121
+rightSpeed: 75
+areaF: 2371.22
+x_error: -22
+y_error: -37
+nBlocks: 1
+found ball: (0, 5040)
+leftSpeed: 115
+rightSpeed: 69
+areaF: 2597.15
+x_error: -6
+y_error: -28
+nBlocks: 3
+found ball: (0, 2139)
+leftSpeed: 112
+rightSpeed: 66
+areaF: 2730.63
+x_error: 3
+y_error: -20
+nBlocks: 1
+found ball: (0, 4482)
+leftSpeed: 120
+rightSpeed: 74
+areaF: 2650.49
+x_error: -19
+y_error: -14
+nBlocks: 2
+found ball: (0, 2923)
+leftSpeed: 123
+rightSpeed: 77
+areaF: 2603.37
+x_error: -28
+y_error: -10
+nBlocks: 3
+found ball: (0, 806)
+leftSpeed: 114
+rightSpeed: 68
+blocks not > 0
+areaF: 2454.42
+x_error: -4
+y_error: -13
+nBlocks: 1
+found ball: (0, 795)
+leftSpeed: 118
+rightSpeed: 72
+blocks not > 0
+areaF: 2313.99
+x_error: -14
+y_error: 0
+final x and y errors
+x_error: -14
+y_error: 0
+areaF: 2223.71
+ 
+ 
+24 -21 -12 
+234 171 
+sensTx: 24.00
+sensTy: -21.00
+areaF: 2471.52
+ 
+ 
+18 -17 -13 
+226 215 
+sensTx: 18.00
+sensTy: -17.00
+areaF: 2718.20
+ 
+ 
+16 -17 -11 
+229 178 
+sensTx: 16.00
+sensTy: -17.00
+areaF: 2943.96
+ 
+ 
+19 -20 -11 
+237 150 
+sensTx: 19.00
+sensTy: -20.00
+areaF: 3179.23
+ 
+ 
+19 -18 -11 
+239 161 
+sensTx: 19.00
+sensTy: -18.00
+areaF: 3241.41
+ 
+ 
+19 -17 -8 
+232 158 
+sensTx: 19.00
+sensTy: -17.00
+areaF: 3177.02
+ 
+ 
+18 -17 -12 
+233 100 
+sensTx: 18.00
+sensTy: -17.00
+areaF: 3286.82
+ 
+ 
+18 -18 -13 
+223 189 
+sensTx: 18.00
+sensTy: -18.00
+areaF: 3409.55
+ 
+ 
+19 -19 -10 
+233 184 
+sensTx: 19.00
+sensTy: -19.00
+areaF: 3595.76
+ 
+ 
+19 -18 -9 
+236 193 
+sensTx: 19.00
+sensTy: -18.00
+areaF: 3768.10
+ 
+ 
+18 -18 -13 
+232 166 
+sensTx: 18.00
+sensTy: -18.00
+areaF: 3855.29
+ 
+ 
+19 -17 -12 
+232 204 
+sensTx: 19.00
+sensTy: -17.00
+areaF: 3875.70
+ 
+ 
+17 -18 -12 
+233 190 
+sensTx: 17.00
+sensTy: -18.00
+areaF: 3826.80
+ 
+ 
+18 -19 -13 
+231 186 
+sensTx: 18.00
+sensTy: -19.00
+areaF: 3728.34
+ 
+ 
+17 -18 -12 
+235 192 
+sensTx: 17.00
+sensTy: -18.00
+areaF: 3696.97
+ 
+ 
+17 -17 -13 
+232 189 
+sensTx: 17.00
+sensTy: -17.00
+areaF: 3775.70
+ 
+ 
+18 -17 -12 
+233 205 
+sensTx: 18.00
+sensTy: -17.00
+areaF: 3870.46
+ 
+ 
+18 -17 -14 
+233 200 
+sensTx: 18.00
+sensTy: -17.00
+areaF: 3856.48
+ 
+ 
+17 -16 -15 
+236 152 
+sensTx: 17.00
+sensTy: -16.00
+areaF: 3760.79
+ 
+ 
+18 -16 -13 
+236 182 
+sensTx: 18.00
+sensTy: -16.00
+areaF: 3857.15
+ 
+ 
+17 -18 -11 
+238 211 
+sensTx: 17.00
+sensTy: -18.00
+areaF: 3848.44
+ 
+ 
+19 -17 -11 
+238 178 
+sensTx: 19.00
+sensTy: -17.00
+areaF: 3774.27
+ 
+ 
+17 -18 -11 
+234 170 
+sensTx: 17.00
+sensTy: -18.00
+On connection #0
+  got text: #!Ret@
+Ret is: Ret
+return to base
+initHeading: 126.87
+targetHeading: 306.87
+rightSlow
+ 
+ 
+15 -19 -12 
+238 157 
+sensTx: 15.00
+sensTy: -19.00
+currHeading: 141.71
+difference: -165.16
+ahe: 165.16
+rightSlow
+ 
+ 
+17 -15 -10 
+234 121 
+sensTx: 17.00
+sensTy: -15.00
+currHeading: 131.42
+difference: -175.45
+ahe: 175.45
+rightSlow
+ 
+ 
+16 -18 -9 
+222 205 
+sensTx: 16.00
+sensTy: -18.00
+currHeading: 138.37
+difference: -168.50
+ahe: 168.50
+rightSlow
+ 
+ 
+13 -20 -11 
+199 197 
+sensTx: 13.00
+sensTy: -20.00
+currHeading: 146.98
+difference: -159.89
+ahe: 159.89
+rightSlow
+ 
+ 
+11 -20 -9 
+165 142 
+sensTx: 11.00
+sensTy: -20.00
+currHeading: 151.19
+difference: -155.68
+ahe: 155.68
+rightSlow
+ 
+ 
+8 -20 -13 
+165 110 
+sensTx: 8.00
+sensTy: -20.00
+currHeading: 158.20
+difference: -148.67
+ahe: 148.67
+rightSlow
+ 
+ 
+6 -20 -10 
+182 153 
+sensTx: 6.00
+sensTy: -20.00
+currHeading: 163.30
+difference: -143.57
+ahe: 143.57
+rightSlow
+ 
+ 
+2 -19 -12 
+219 220 
+sensTx: 2.00
+sensTy: -19.00
+currHeading: 173.99
+difference: -132.88
+ahe: 132.88
+rightSlow
+ 
+ 
+-3 -17 -10 
+237 175 
+sensTx: -3.00
+sensTy: -17.00
+currHeading: 190.01
+difference: -116.86
+ahe: 116.86
+rightSlow
+ 
+ 
+-4 -19 -10 
+481 189 
+sensTx: -4.00
+sensTy: -19.00
+currHeading: 191.89
+difference: -114.98
+ahe: 114.98
+rightSlow
+ 
+ 
+-9 -17 -10 
+317 185 
+sensTx: -9.00
+sensTy: -17.00
+currHeading: 207.90
+difference: -98.97
+ahe: 98.97
+rightSlow
+ 
+ 
+-10 -18 -8 
+414 8191 
+sensTx: -10.00
+sensTy: -18.00
 currHeading: 209.05
-looping in scan2()
- 
- 
--37 -50 -20 
-8191 211 
-ahe: 196.52
-currHeading: 216.50
-looping in scan2()
- 
- 
--47 -44 -19 
-342 216 
-ahe: 206.91
-currHeading: 226.89
-looping in scan2()
- 
- 
--53 -39 -19 
-8190 247 
-ahe: 213.67
-currHeading: 233.65
-looping in scan2()
- 
- 
--62 -34 -17 
-423 277 
-ahe: 221.28
-currHeading: 241.26
-looping in scan2()
- 
- 
--68 -27 -17 
-471 282 
-ahe: 228.36
-currHeading: 248.34
-looping in scan2()
- 
- 
--76 -21 -20 
-394 286 
-ahe: 234.57
-currHeading: 254.55
-looping in scan2()
- 
- 
--77 -14 -15 
-638 279 
-ahe: 239.71
-currHeading: 259.70
-looping in scan2()
- 
- 
--80 -12 -18 
-596 286 
-ahe: 241.49
-currHeading: 261.47
-looping in scan2()
- 
- 
--80 -2 -19 
-684 297 
-ahe: 248.58
-currHeading: 268.57
-looping in scan2()
- 
- 
--80 3 -19 
-678 278 
-ahe: 252.16
-currHeading: 272.15
-looping in scan2()
- 
- 
--83 12 -19 
-712 263 
-ahe: 258.24
-currHeading: 278.23
-looping in scan2()
- 
- 
--87 19 -20 
-719 252 
-ahe: 262.34
-currHeading: 282.32
-looping in scan2()
- 
- 
--86 24 -17 
-739 239 
-ahe: 265.61
-currHeading: 285.59
-looping in scan2()
- 
- 
--88 30 -17 
-748 239 
-ahe: 268.84
-currHeading: 288.82
-looping in scan2()
- 
- 
--89 38 -17 
-713 219 
-ahe: 273.14
-currHeading: 293.12
-looping in scan2()
- 
- 
--91 45 -17 
-745 234 
-ahe: 276.33
-currHeading: 296.31
-looping in scan2()
- 
- 
--94 53 -15 
-638 234 
-ahe: 279.43
-currHeading: 299.42
-looping in scan2()
- 
- 
--89 61 -16 
-563 245 
-ahe: 284.44
-currHeading: 304.43
-looping in scan2()
- 
- 
--87 68 -16 
-588 239 
-ahe: 288.03
-currHeading: 308.01
-looping in scan2()
- 
- 
--83 75 -20 
-883 239 
-ahe: 292.12
-currHeading: 312.10
-looping in scan2()
- 
- 
--76 84 -14 
-951 247 
-ahe: 297.88
-currHeading: 317.86
-looping in scan2()
- 
- 
--70 89 -16 
-972 240 
-ahe: 301.83
-currHeading: 321.81
-looping in scan2()
- 
- 
--67 98 -16 
-990 237 
-ahe: 305.66
-currHeading: 325.64
-looping in scan2()
- 
- 
--60 98 -14 
-963 226 
-ahe: 308.54
-currHeading: 328.52
-looping in scan2()
- 
- 
--57 101 -15 
-923 219 
-ahe: 310.58
-currHeading: 330.56
-looping in scan2()
- 
- 
--52 102 -13 
-762 231 
-ahe: 313.00
-currHeading: 332.99
-looping in scan2()
- 
- 
--48 103 -12 
-354 239 
-ahe: 315.03
-currHeading: 335.01
-looping in scan2()
- 
- 
--42 105 -15 
-8191 234 
-ahe: 318.22
-currHeading: 338.20
-looping in scan2()
- 
- 
--36 105 -13 
-8191 239 
-ahe: 321.09
-currHeading: 341.08
-looping in scan2()
- 
- 
--33 107 -11 
-357 242 
-ahe: 322.88
-currHeading: 342.86
-looping in scan2()
- 
- 
--27 108 -15 
-366 239 
-ahe: 325.98
-currHeading: 345.96
-looping in scan2()
- 
- 
--21 110 -12 
-413 232 
-ahe: 329.21
-currHeading: 349.19
-looping in scan2()
- 
- 
--15 112 -14 
-325 233 
-ahe: 332.39
-currHeading: 352.37
-looping in scan2()
- 
- 
--11 117 -11 
-324 225 
-ahe: 334.65
-currHeading: 354.63
-looping in scan2()
- 
- 
--4 109 -11 
-311 250 
-ahe: 337.92
-currHeading: 357.90
-looping in scan2()
- 
- 
-0 104 -11 
-290 259 
-ahe: 19.98
-currHeading: 0.00
-looping in scan2()
- 
- 
-7 99 -11 
-341 253 
-ahe: 15.94
-currHeading: 4.04
-looping in scan2()
- 
- 
-11 94 -10 
-435 249 
-ahe: 13.31
-(39.60, -2.36)
-dHeading: -135.00
-timeFmillis: 5083.83
- 
- 
-20 86 -12 
-523 304 
-right
-looping inside tupToInstrux
- 
- 
-26 90 -12 
-602 328 
-currHeading: 16.11
-ahe: 138.02
-right
-looping inside tupToInstrux
- 
- 
-35 84 -12 
-620 345 
-currHeading: 22.62
-ahe: 144.53
-right
-looping inside tupToInstrux
- 
- 
-40 79 -12 
-601 335 
-currHeading: 26.85
-ahe: 148.76
-right
-looping inside tupToInstrux
- 
- 
-48 75 -12 
-532 292 
-currHeading: 32.62
-ahe: 154.53
-right
-looping inside tupToInstrux
- 
- 
-57 71 -12 
-521 241 
-currHeading: 38.76
-ahe: 160.67
-right
-looping inside tupToInstrux
- 
- 
-66 66 -13 
-502 232 
-currHeading: 45.00
-ahe: 166.91
-right
-looping inside tupToInstrux
- 
- 
-76 60 -13 
-483 214 
-currHeading: 51.71
-ahe: 173.62
-right
-looping inside tupToInstrux
- 
- 
-84 56 -14 
-285 219 
-currHeading: 56.31
-ahe: 178.22
-right
-looping inside tupToInstrux
- 
- 
-89 47 -16 
-8190 218 
-currHeading: 62.16
-ahe: 184.07
-right
-looping inside tupToInstrux
- 
- 
-93 42 -14 
-8190 223 
-currHeading: 65.70
-ahe: 187.60
-right
-looping inside tupToInstrux
- 
- 
-100 32 -14 
-269 206 
-currHeading: 72.26
-ahe: 194.16
-right
-looping inside tupToInstrux
- 
- 
-104 23 -16 
-8191 189 
-currHeading: 77.53
-ahe: 199.44
-right
-looping inside tupToInstrux
- 
- 
-108 15 -16 
-8190 211 
-currHeading: 82.09
-ahe: 204.00
-right
-looping inside tupToInstrux
- 
- 
-103 2 -15 
-8190 215 
-currHeading: 88.89
-ahe: 210.80
-right
-looping inside tupToInstrux
- 
- 
-103 -5 -18 
-8191 204 
-currHeading: 92.78
-ahe: 214.69
-right
-looping inside tupToInstrux
- 
- 
-94 -16 -17 
-8190 217 
-currHeading: 99.66
-ahe: 221.57
-right
-looping inside tupToInstrux
- 
- 
-90 -26 -19 
-8191 217 
-currHeading: 106.11
-ahe: 228.02
-right
-looping inside tupToInstrux
- 
- 
-86 -40 -17 
-8191 220 
-currHeading: 114.94
-ahe: 236.85
-right
-looping inside tupToInstrux
- 
- 
-77 -49 -16 
-8191 219 
-currHeading: 122.47
-ahe: 244.38
-right
-looping inside tupToInstrux
- 
- 
-69 -61 -19 
-8191 221 
-currHeading: 131.48
-ahe: 253.39
-right
-looping inside tupToInstrux
- 
- 
-60 -72 -17 
-8191 217 
-currHeading: 140.19
-ahe: 262.10
-right
-looping inside tupToInstrux
- 
- 
-52 -82 -18 
-8191 215 
-currHeading: 147.62
-ahe: 269.53
-right
-looping inside tupToInstrux
- 
- 
-45 -91 -18 
-8191 234 
-currHeading: 153.69
-ahe: 275.60
-right
-looping inside tupToInstrux
- 
- 
-33 -101 -18 
-8191 270 
-currHeading: 161.91
-ahe: 283.81
-right
-looping inside tupToInstrux
- 
- 
-24 -110 -18 
-8191 300 
-currHeading: 167.69
-ahe: 289.60
-right
-looping inside tupToInstrux
- 
- 
-13 -110 -19 
-621 301 
-currHeading: 173.26
-ahe: 295.17
-right
-looping inside tupToInstrux
- 
- 
-3 -114 -18 
-663 275 
-currHeading: 178.49
-ahe: 300.40
-right
-looping inside tupToInstrux
- 
- 
--10 -114 -19 
-728 236 
-currHeading: 185.01
-ahe: 306.92
-right
-looping inside tupToInstrux
- 
- 
--19 -114 -17 
-741 223 
-currHeading: 189.46
-ahe: 311.37
-right
-looping inside tupToInstrux
- 
- 
--30 -116 -18 
-656 242 
-currHeading: 194.50
-ahe: 316.41
-right
-looping inside tupToInstrux
- 
- 
--44 -116 -15 
-598 252 
-currHeading: 200.77
-ahe: 322.68
-right
-looping inside tupToInstrux
- 
- 
--53 -113 -16 
-904 246 
-currHeading: 205.13
-ahe: 327.04
-right
-looping inside tupToInstrux
- 
- 
--63 -110 -15 
-880 230 
-currHeading: 209.80
-ahe: 331.71
-right
-looping inside tupToInstrux
- 
- 
--74 -109 -13 
-8191 232 
-currHeading: 214.17
-ahe: 336.08
-right
-looping inside tupToInstrux
- 
- 
--83 -103 -17 
-8191 236 
-currHeading: 218.86
-ahe: 340.77
-right
-looping inside tupToInstrux
- 
- 
--95 -101 -13 
-323 239 
-currHeading: 223.25
-ahe: 345.15
-right
-looping inside tupToInstrux
- 
- 
--102 -98 -13 
-246 246 
-currHeading: 226.15
-ahe: 348.05
-right
-looping inside tupToInstrux
- 
- 
--103 -91 -12 
-311 252 
-currHeading: 228.54
-ahe: 350.45
-right
-looping inside tupToInstrux
- 
- 
--103 -84 -13 
-418 265 
-currHeading: 230.80
-ahe: 352.71
-right
-looping inside tupToInstrux
- 
- 
--104 -81 -12 
-464 321 
-currHeading: 232.09
-ahe: 353.99
-right
-looping inside tupToInstrux
- 
- 
--101 -77 -13 
-634 350 
-currHeading: 232.68
-ahe: 354.59
-right
-looping inside tupToInstrux
- 
- 
--96 -74 -13 
-551 318 
-currHeading: 232.37
-ahe: 354.28
-right
-looping inside tupToInstrux
- 
- 
--93 -69 -14 
-512 245 
-currHeading: 233.43
-ahe: 355.34
-right
-looping inside tupToInstrux
- 
- 
--89 -66 -12 
-484 218 
-currHeading: 233.44
-ahe: 355.35
-right
-looping inside tupToInstrux
- 
- 
--86 -66 -13 
-496 212 
-currHeading: 232.50
-ahe: 354.40
-right
-looping inside tupToInstrux
- 
- 
--82 -65 -14 
-578 222 
-currHeading: 231.60
-ahe: 353.50
-right
-looping inside tupToInstrux
- 
- 
--77 -64 -15 
-8190 210 
-currHeading: 230.27
-ahe: 352.18
-right
-looping inside tupToInstrux
- 
- 
--73 -64 -14 
-8190 202 
-currHeading: 228.76
-ahe: 350.67
-right
-looping inside tupToInstrux
- 
- 
--70 -65 -16 
-8191 214 
-currHeading: 227.12
-ahe: 349.03
-right
-looping inside tupToInstrux
- 
- 
--62 -66 -15 
-8191 218 
-currHeading: 223.21
-ahe: 345.12
-right
-looping inside tupToInstrux
- 
- 
--59 -69 -15 
-8191 223 
-currHeading: 220.53
-ahe: 342.44
-right
-looping inside tupToInstrux
- 
- 
--56 -72 -16 
-8190 217 
-currHeading: 217.87
-ahe: 339.78
-right
-looping inside tupToInstrux
- 
- 
--51 -73 -16 
-8191 210 
-currHeading: 214.94
-ahe: 336.85
-right
-looping inside tupToInstrux
- 
- 
--50 -78 -16 
-225 218 
-currHeading: 212.66
-ahe: 334.57
-right
-looping inside tupToInstrux
- 
- 
--49 -83 -18 
-8190 216 
-currHeading: 210.56
-ahe: 332.46
-right
-looping inside tupToInstrux
- 
- 
--47 -88 -18 
-8190 207 
-currHeading: 208.11
-ahe: 330.01
-right
-looping inside tupToInstrux
- 
- 
--49 -90 -17 
-8191 207 
-currHeading: 208.57
-ahe: 330.47
-right
-looping inside tupToInstrux
- 
- 
--46 -95 -19 
-8191 224 
-currHeading: 205.84
-ahe: 327.74
-right
-looping inside tupToInstrux
- 
- 
--49 -100 -17 
-8191 216 
-currHeading: 206.10
-ahe: 328.01
-right
-looping inside tupToInstrux
- 
- 
--53 -101 -20 
-8191 226 
-currHeading: 207.69
-ahe: 329.60
-right
-looping inside tupToInstrux
- 
- 
--54 -107 -17 
-8191 232 
-currHeading: 206.78
-ahe: 328.69
-right
-looping inside tupToInstrux
- 
- 
--56 -108 -17 
-8191 279 
-currHeading: 207.41
-ahe: 329.32
-right
-looping inside tupToInstrux
- 
- 
--59 -111 -18 
-503 317 
-currHeading: 207.99
-ahe: 329.90
-right
-looping inside tupToInstrux
- 
- 
--62 -112 -17 
-641 301 
-currHeading: 208.97
-ahe: 330.88
-right
-looping inside tupToInstrux
- 
- 
--68 -114 -17 
-710 243 
-currHeading: 210.82
-ahe: 332.72
-right
-looping inside tupToInstrux
- 
- 
--73 -115 -16 
-721 221 
-currHeading: 212.41
-ahe: 334.31
-right
-looping inside tupToInstrux
- 
- 
--77 -115 -19 
-659 224 
-currHeading: 213.80
-ahe: 335.71
-right
-looping inside tupToInstrux
- 
- 
--80 -114 -15 
-549 240 
-currHeading: 215.06
-ahe: 336.97
-right
-looping inside tupToInstrux
- 
- 
--85 -113 -16 
-631 250 
-currHeading: 216.95
-ahe: 338.86
-right
-looping inside tupToInstrux
- 
- 
--88 -112 -19 
-839 237 
+difference: -97.82
+ahe: 97.82
+rightSlow
+ 
+ 
+-11 -14 -7 
+284 130 
+sensTx: -11.00
+sensTy: -14.00
 currHeading: 218.16
-ahe: 340.07
-right
-looping inside tupToInstrux
+difference: -88.71
+ahe: 88.71
+rightSlow
  
  
--89 -115 -17 
-881 230 
-currHeading: 217.74
-ahe: 339.64
-right
-looping inside tupToInstrux
+-13 -14 -8 
+293 8191 
+sensTx: -13.00
+sensTy: -14.00
+currHeading: 222.88
+difference: -83.99
+ahe: 83.99
+rightSlow
  
  
--95 -111 -15 
-890 220 
-currHeading: 220.56
-ahe: 342.47
-right
-looping inside tupToInstrux
+-17 -9 -9 
+317 185 
+sensTx: -17.00
+sensTy: -9.00
+currHeading: 242.10
+difference: -64.77
+ahe: 64.77
+rightSlow
  
  
--97 -107 -14 
-757 233 
-currHeading: 222.19
-ahe: 344.10
-right
-looping inside tupToInstrux
+-20 -10 -5 
+388 210 
+sensTx: -20.00
+sensTy: -10.00
+currHeading: 243.43
+difference: -63.43
+ahe: 63.43
+rightSlow
  
  
--100 -105 -14 
-8191 229 
-currHeading: 223.60
-ahe: 345.51
-right
-looping inside tupToInstrux
+-21 -5 -7 
+8191 361 
+sensTx: -21.00
+sensTy: -5.00
+currHeading: 256.61
+difference: -50.26
+ahe: 50.26
+rightSlow
  
  
--100 -101 -14 
-406 238 
-currHeading: 224.71
-ahe: 346.62
-right
-looping inside tupToInstrux
+-23 -2 -7 
+8191 348 
+sensTx: -23.00
+sensTy: -2.00
+currHeading: 265.03
+difference: -41.84
+ahe: 41.84
+rightSlow
  
  
--102 -101 -12 
-384 231 
-currHeading: 225.28
-ahe: 347.19
-right
-looping inside tupToInstrux
+-25 2 -5 
+8191 411 
+sensTx: -25.00
+sensTy: 2.00
+currHeading: 274.57
+difference: -32.30
+ahe: 32.30
+rightSlow
  
  
--103 -96 -12 
-255 229 
-currHeading: 227.01
-ahe: 348.92
-right
-looping inside tupToInstrux
+-24 4 -5 
+1024 423 
+sensTx: -24.00
+sensTy: 4.00
+currHeading: 279.46
+difference: -27.41
+ahe: 27.41
+rightSlow
  
  
--105 -91 -15 
-225 232 
-currHeading: 229.09
-ahe: 350.99
-right
-looping inside tupToInstrux
+-24 7 -5 
+1097 312 
+sensTx: -24.00
+sensTy: 7.00
+currHeading: 286.26
+difference: -20.61
+ahe: 20.61
+rightSlow
  
  
--104 -88 -14 
-336 256 
-currHeading: 229.76
-ahe: 351.67
-right
-looping inside tupToInstrux
+-25 7 -5 
+773 319 
+sensTx: -25.00
+sensTy: 7.00
+currHeading: 285.64
+difference: -21.23
+ahe: 21.23
+rightSlow
  
  
--104 -84 -12 
-409 298 
-currHeading: 231.07
-ahe: 352.98
-right
-looping inside tupToInstrux
+-24 9 -5 
+770 294 
+sensTx: -24.00
+sensTy: 9.00
+currHeading: 290.56
+difference: -16.31
+ahe: 16.31
+rightSlow
  
  
--101 -79 -14 
-660 337 
-currHeading: 231.97
-ahe: 353.88
-right
-looping inside tupToInstrux
+-23 8 -4 
+648 321 
+sensTx: -23.00
+sensTy: 8.00
+currHeading: 289.18
+difference: -17.69
+ahe: 17.69
+rightSlow
  
  
--100 -74 -13 
-632 353 
-currHeading: 233.50
-ahe: 355.41
-right
-looping inside tupToInstrux
+-26 11 -4 
+605 310 
+sensTx: -26.00
+sensTy: 11.00
+currHeading: 292.93
+difference: -13.94
+ahe: 13.94
+end turn around
+found ball scan: (0, 2280)
  
  
--100 -73 -13 
-527 311 
-currHeading: 233.87
-ahe: 355.78
-right
-looping inside tupToInstrux
+-26 12 -5 
+531 309 
+sensTx: -26.00
+sensTy: 12.00
+adjusted: 249.78
+adjusted: 339.78
+startHeading: 294.78
+sweepLeft: 249.78
+sweepRight: 339.78
+rightSlow
  
  
--96 -69 -10 
-494 240 
-currHeading: 234.29
-ahe: 356.20
-right
-looping inside tupToInstrux
+-25 15 -5 
+452 328 
+sensTx: -25.00
+sensTy: 15.00
+ahe: 38.81
+currHeading: 300.96
+rightSlow
  
  
--90 -68 -11 
-499 237 
-currHeading: 232.93
-ahe: 354.84
-right
-looping inside tupToInstrux
+-26 14 -3 
+417 346 
+sensTx: -26.00
+sensTy: 14.00
+ahe: 41.47
+currHeading: 298.30
+rightSlow
  
  
--85 -65 -12 
-462 224 
-currHeading: 232.59
-ahe: 354.50
-right
-looping inside tupToInstrux
+-24 14 -3 
+411 331 
+sensTx: -24.00
+sensTy: 14.00
+ahe: 39.52
+currHeading: 300.26
+rightSlow
  
  
--82 -63 -13 
-8190 213 
-currHeading: 232.47
-ahe: 354.37
-right
-looping inside tupToInstrux
+-24 19 -9 
+351 391 
+sensTx: -24.00
+sensTy: 19.00
+ahe: 31.41
+currHeading: 308.37
+rightSlow
  
  
--73 -61 -14 
-8191 214 
-currHeading: 230.12
-ahe: 352.03
-right
-looping inside tupToInstrux
+-23 19 -4 
+345 396 
+sensTx: -23.00
+sensTy: 19.00
+ahe: 30.22
+currHeading: 309.56
+rightSlow
  
  
--71 -64 -15 
-194 215 
-currHeading: 227.97
-ahe: 349.88
-right
-looping inside tupToInstrux
+-23 21 -4 
+331 383 
+sensTx: -23.00
+sensTy: 21.00
+found ball scan: (0, 130)
+found ball exit scan: (0, 130)
+done sweeping, now track2
+nBlocks: 1
+found ball: (0, 286)
+blocks not > 0
+areaF: 3558.32
+x_error: -89
+y_error: -87
+nBlocks: 1
+found ball: (0, 420)
+leftSpeed: 142
+rightSpeed: 96
+areaF: 3369.15
+x_error: -83
+y_error: -88
+nBlocks: 2
+found ball: (0, 132)
+leftSpeed: 135
+rightSpeed: 89
+areaF: 3181.42
+x_error: -64
+y_error: -88
+nBlocks: 1
+found ball: (0, 336)
+leftSpeed: 124
+rightSpeed: 78
+blocks not > 0
+areaF: 2999.40
+x_error: -32
+y_error: -84
+nBlocks: 1
+found ball: (0, 230)
+leftSpeed: 116
+rightSpeed: 70
+areaF: 2846.32
+x_error: -10
+y_error: -85
+leftSpeed: 113
+rightSpeed: 67
+blocks not > 0
+areaF: 2683.47
+x_error: -1
+y_error: -80
+nBlocks: 2
+found ball: (0, 165)
+leftSpeed: 103
+rightSpeed: 57
+areaF: 2561.69
+x_error: 28
+y_error: -84
+nBlocks: 1
+found ball: (0, 924)
+leftSpeed: 97
+rightSpeed: 51
+areaF: 2437.44
+x_error: 46
+y_error: -78
+nBlocks: 1
+nBlocks: 1
+leftSpeed: 97
+rightSpeed: 51
+areaF: 2299.35
+x_error: 44
+y_error: -79
+leftSpeed: 84
+rightSpeed: 38
+areaF: 2170.54
+x_error: 82
+y_error: -77
+nBlocks: 1
+found ball: (0, 323)
+leftSpeed: 97
+rightSpeed: 51
+blocks not > 0
+areaF: 2046.35
+x_error: 46
+y_error: -78
+leftSpeed: 97
+rightSpeed: 51
+areaF: 1934.08
+x_error: 46
+y_error: -78
+nBlocks: 2
+found ball: (0, 155)
+leftSpeed: 115
+rightSpeed: 69
+blocks not > 0
+areaF: 1823.42
+x_error: -5
+y_error: -75
+nBlocks: 1
+nBlocks: 1
+found ball: (0, 126)
+leftSpeed: 132
+rightSpeed: 86
+blocks not > 0
+areaF: 1719.09
+x_error: -54
+y_error: -85
+nBlocks: 2
+found ball: (0, 319)
+leftSpeed: 124
+rightSpeed: 78
+areaF: 1651.86
+x_error: -32
+y_error: -75
+nBlocks: 2
+found ball: (0, 507)
+leftSpeed: 127
+rightSpeed: 81
+areaF: 1603.12
+x_error: -42
+y_error: -80
+nBlocks: 1
+found ball: (0, 1734)
+leftSpeed: 125
+rightSpeed: 79
+blocks not > 0
+areaF: 1511.40
+x_error: -36
+y_error: -76
+nBlocks: 2
+found ball: (0, 1419)
+leftSpeed: 119
+rightSpeed: 73
+areaF: 1449.24
+x_error: -18
+y_error: -75
+leftSpeed: 118
+rightSpeed: 72
+areaF: 1377.99
+x_error: -16
+y_error: -74
+nBlocks: 1
+found ball: (0, 144)
+leftSpeed: 106
+rightSpeed: 60
+areaF: 1305.96
+x_error: 19
+y_error: -71
+nBlocks: 1
+found ball: (0, 130)
+leftSpeed: 99
+rightSpeed: 53
+blocks not > 0
+areaF: 1231.24
+x_error: 40
+y_error: -66
+leftSpeed: 99
+rightSpeed: 53
+blocks not > 0
+areaF: 1160.79
+x_error: 40
+y_error: -66
+leftSpeed: 99
+rightSpeed: 53
+areaF: 1098.96
+x_error: 40
+y_error: -66
+nBlocks: 1
+nBlocks: 1
+nBlocks: 1
+nBlocks: 1
+leftSpeed: 104
+rightSpeed: 58
+areaF: 1041.80
+x_error: 26
+y_error: -64
+leftSpeed: 105
+rightSpeed: 59
+blocks not > 0
+areaF: 982.19
+x_error: 23
+y_error: -63
+nBlocks: 1
+nBlocks: 1
+leftSpeed: 111
+rightSpeed: 65
+blocks not > 0
+areaF: 926.00
+x_error: 7
+y_error: -64
+nBlocks: 1
+leftSpeed: 115
+rightSpeed: 69
+blocks not > 0
+areaF: 873.02
+x_error: -5
+y_error: -64
+nBlocks: 2
+nBlocks: 1
+leftSpeed: 107
+rightSpeed: 61
+blocks not > 0
+areaF: 823.07
+x_error: 18
+y_error: -75
+nBlocks: 1
+nBlocks: 1
+found ball: (0, 132)
+leftSpeed: 115
+rightSpeed: 69
+blocks not > 0
+areaF: 775.98
+x_error: -6
+y_error: -61
+nBlocks: 1
+found ball: (0, 143)
+leftSpeed: 115
+rightSpeed: 69
+blocks not > 0
+areaF: 731.58
+x_error: -7
+y_error: -60
+nBlocks: 1
+found ball: (0, 182)
+leftSpeed: 116
+rightSpeed: 70
+areaF: 697.27
+x_error: -8
+y_error: -59
+nBlocks: 1
+found ball: (0, 225)
+leftSpeed: 116
+rightSpeed: 70
+areaF: 666.30
+x_error: -9
+y_error: -60
+nBlocks: 1
+nBlocks: 1
+found ball: (0, 304)
+leftSpeed: 115
+rightSpeed: 69
+blocks not > 0
+areaF: 628.18
+x_error: -5
+y_error: -59
+leftSpeed: 115
+rightSpeed: 69
+blocks not > 0
+areaF: 592.24
+x_error: -5
+y_error: -59
+nBlocks: 1
+nBlocks: 1
+found ball: (0, 182)
+leftSpeed: 113
+rightSpeed: 67
+areaF: 571.23
+x_error: 0
+y_error: -56
+nBlocks: 1
+found ball: (0, 400)
+leftSpeed: 112
+rightSpeed: 66
+blocks not > 0
+areaF: 538.55
+x_error: 2
+y_error: -59
+reorder
+reorder
+leftSpeed: 112
+rightSpeed: 66
+areaF: 518.03
+x_error: 2
+y_error: -59
+nBlocks: 1
+found ball: (0, 144)
+leftSpeed: 110
+rightSpeed: 64
+areaF: 497.83
+x_error: 9
+y_error: -89
+nBlocks: 1
+nBlocks: 1
+nBlocks: 1
+nBlocks: 1
+found ball: (0, 192)
+leftSpeed: 103
+rightSpeed: 57
+blocks not > 0
+areaF: 469.35
+x_error: 29
+y_error: -98
+nBlocks: 1
+found ball: (0, 210)
+leftSpeed: 104
+rightSpeed: 58
+blocks not > 0
+areaF: 442.50
+x_error: 27
+y_error: -98
+nBlocks: 1
+found ball: (0, 255)
+leftSpeed: 104
+rightSpeed: 58
+areaF: 434.69
+x_error: 24
+y_error: -100
+nBlocks: 1
+found ball: (0, 256)
+leftSpeed: 104
+rightSpeed: 58
+areaF: 419.48
+x_error: 26
+y_error: -94
+nBlocks: 1
+nBlocks: 1
+found ball: (0, 266)
+leftSpeed: 103
+rightSpeed: 57
+blocks not > 0
+areaF: 395.48
+x_error: 28
+y_error: -92
+nBlocks: 1
+found ball: (0, 224)
+leftSpeed: 102
+rightSpeed: 56
+blocks not > 0
+areaF: 372.86
+x_error: 31
+y_error: -86
+nBlocks: 1
+nBlocks: 1
+nBlocks: 1
+leftSpeed: 102
+rightSpeed: 56
+areaF: 353.13
+x_error: 32
+y_error: -89
+nBlocks: 1
+found ball: (0, 560)
+leftSpeed: 101
+rightSpeed: 55
+blocks not > 0
+areaF: 332.92
+x_error: 35
+y_error: -111
+nBlocks: 1
+found ball: (0, 204)
+leftSpeed: 104
+rightSpeed: 58
+areaF: 321.31
+x_error: 26
+y_error: -89
+nBlocks: 1
+found ball: (0, 176)
+leftSpeed: 105
+rightSpeed: 59
+areaF: 314.83
+x_error: 23
+y_error: -93
+nBlocks: 1
+found ball: (0, 270)
+leftSpeed: 104
+rightSpeed: 58
+areaF: 299.10
+x_error: 24
+y_error: -89
+nBlocks: 1
+nBlocks: 1
+nBlocks: 1
+found ball: (0, 165)
+leftSpeed: 106
+rightSpeed: 60
+blocks not > 0
+areaF: 281.99
+x_error: 21
+y_error: -79
+leftSpeed: 106
+rightSpeed: 60
+blocks not > 0
+areaF: 265.86
+x_error: 21
+y_error: -79
+nBlocks: 1
+nBlocks: 1
+found ball: (0, 272)
+leftSpeed: 103
+rightSpeed: 57
+blocks not > 0
+areaF: 250.65
+x_error: 28
+y_error: -73
+leftSpeed: 103
+rightSpeed: 57
+areaF: 245.97
+x_error: 28
+y_error: -73
+nBlocks: 1
+nBlocks: 1
+nBlocks: 1
+nBlocks: 1
+leftSpeed: 100
+rightSpeed: 54
+areaF: 234.99
+x_error: 38
+y_error: -65
+nBlocks: 1
+found ball: (0, 169)
+leftSpeed: 101
+rightSpeed: 55
+blocks not > 0
+areaF: 221.55
+x_error: 34
+y_error: -63
+nBlocks: 1
+found ball: (0, 182)
+leftSpeed: 101
+rightSpeed: 55
+areaF: 213.50
+x_error: 35
+y_error: -59
+nBlocks: 1
+found ball: (0, 121)
+leftSpeed: 100
+rightSpeed: 54
+areaF: 215.94
+x_error: 37
+y_error: -56
+nBlocks: 1
+nBlocks: 1
+nBlocks: 1
+leftSpeed: 100
+rightSpeed: 54
+areaF: 205.98
+x_error: 36
+y_error: -57
+nBlocks: 1
+found ball: (0, 182)
+leftSpeed: 100
+rightSpeed: 54
+areaF: 196.20
+x_error: 36
+y_error: -58
+nBlocks: 1
+nBlocks: 1
+found ball: (0, 169)
+leftSpeed: 97
+rightSpeed: 51
+blocks not > 0
+areaF: 184.98
+x_error: 45
+y_error: -62
+leftSpeed: 97
+rightSpeed: 51
+blocks not > 0
+areaF: 174.39
+x_error: 45
+y_error: -62
+nBlocks: 1
+nBlocks: 1
+nBlocks: 1
+found ball: (0, 288)
+leftSpeed: 97
+rightSpeed: 51
+blocks not > 0
+areaF: 164.41
+x_error: 47
+y_error: -61
+nBlocks: 1
+nBlocks: 1
+nBlocks: 1
+found ball: (0, 210)
+leftSpeed: 95
+rightSpeed: 49
+blocks not > 0
+areaF: 155.01
+x_error: 50
+y_error: -68
+nBlocks: 1
+nBlocks: 1
+leftSpeed: 97
+rightSpeed: 51
+areaF: 148.88
+x_error: 47
+y_error: -69
+nBlocks: 1
+nBlocks: 1
+nBlocks: 1
+found ball: (0, 240)
+leftSpeed: 96
+rightSpeed: 50
+blocks not > 0
+areaF: 140.37
+x_error: 48
+y_error: -68
+leftSpeed: 96
+rightSpeed: 50
+areaF: 137.83
+x_error: 48
+y_error: -68
+nBlocks: 1
+found ball: (0, 128)
+leftSpeed: 91
+rightSpeed: 45
+blocks not > 0
+areaF: 129.94
+x_error: 62
+y_error: -87
+nBlocks: 1
+nBlocks: 1
+found ball: (0, 156)
+leftSpeed: 94
+rightSpeed: 48
+blocks not > 0
+areaF: 122.51
+x_error: 55
+y_error: -69
+nBlocks: 1
+leftSpeed: 95
+rightSpeed: 49
+blocks not > 0
+areaF: 115.50
+x_error: 52
+y_error: -72
+leftSpeed: 95
+rightSpeed: 49
+blocks not > 0
+areaF: 108.89
+x_error: 52
+y_error: -72
+leftSpeed: 95
+rightSpeed: 49
+areaF: 104.72
+x_error: 52
+y_error: -72
+leftSpeed: 96
+rightSpeed: 50
+blocks not > 0
+areaF: 98.73
+x_error: 48
+y_error: -77
+nBlocks: 1
+nBlocks: 1
+found ball: (0, 108)
+leftSpeed: 95
+rightSpeed: 49
+blocks not > 0
+areaF: 93.08
+x_error: 53
+y_error: -73
+nBlocks: 1
+nBlocks: 1
+nBlocks: 1
+nBlocks: 1
+leftSpeed: 95
+rightSpeed: 49
+areaF: 89.76
+x_error: 52
+y_error: -70
+nBlocks: 1
+found ball: (0, 140)
+leftSpeed: 91
+rightSpeed: 45
+areaF: 103.50
+x_error: 63
+y_error: -70
+nBlocks: 1
+found ball: (0, 341)
+leftSpeed: 87
+rightSpeed: 41
+blocks not > 0
+areaF: 97.58
+x_error: 74
+y_error: -70
+nBlocks: 1
+nBlocks: 1
+leftSpeed: 88
+rightSpeed: 42
+areaF: 104.01
+x_error: 73
+y_error: -79
+nBlocks: 1
+found ball: (0, 144)
+leftSpeed: 86
+rightSpeed: 40
+areaF: 99.21
+x_error: 76
+y_error: -79
+leftSpeed: 88
+rightSpeed: 42
+blocks not > 0
+areaF: 93.53
+x_error: 73
+y_error: -81
+leftSpeed: 88
+rightSpeed: 42
+areaF: 91.04
+x_error: 73
+y_error: -81
+leftSpeed: 83
+rightSpeed: 37
+blocks not > 0
+areaF: 85.83
+x_error: 85
+y_error: -74
+leftSpeed: 83
+rightSpeed: 37
+blocks not > 0
+areaF: 80.92
+x_error: 85
+y_error: -74
+nBlocks: 1
+leftSpeed: 83
+rightSpeed: 37
+blocks not > 0
+areaF: 76.29
+x_error: 87
+y_error: -74
+leftSpeed: 83
+rightSpeed: 37
+blocks not > 0
+areaF: 71.92
+x_error: 87
+y_error: -74
+leftSpeed: 83
+rightSpeed: 37
+blocks not > 0
+areaF: 67.81
+x_error: 87
+y_error: -74
+leftSpeed: 83
+rightSpeed: 37
+blocks not > 0
+areaF: 63.93
+x_error: 87
+y_error: -74
+nBlocks: 2
+found ball: (1, 247)
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 60.27
+x_error: 80
+y_error: -79
+nBlocks: 1
+found ball: (0, 156)
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 56.82
+x_error: 79
+y_error: -71
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 53.57
+x_error: 79
+y_error: -71
+nBlocks: 1
+leftSpeed: 88
+rightSpeed: 42
+areaF: 51.65
+x_error: 70
+y_error: -59
+nBlocks: 1
+found ball: (0, 169)
+leftSpeed: 88
+rightSpeed: 42
+areaF: 57.51
+x_error: 73
+y_error: -62
+nBlocks: 1
+found ball: (0, 130)
+leftSpeed: 87
+rightSpeed: 41
+blocks not > 0
+areaF: 54.22
+x_error: 74
+y_error: -57
+nBlocks: 1
+nBlocks: 1
+nBlocks: 1
+leftSpeed: 87
+rightSpeed: 41
+areaF: 53.17
+x_error: 75
+y_error: -56
+nBlocks: 1
+leftSpeed: 86
+rightSpeed: 40
+areaF: 56.43
+x_error: 78
+y_error: -59
+nBlocks: 1
+nBlocks: 1
+leftSpeed: 86
+rightSpeed: 40
+blocks not > 0
+areaF: 53.20
+x_error: 78
+y_error: -59
+nBlocks: 1
+found ball: (0, 140)
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 50.15
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 47.28
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 44.58
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 42.03
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 39.62
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 37.36
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 35.22
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 33.20
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 31.30
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 29.51
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 27.82
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 26.23
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 24.73
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 23.32
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 21.98
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 20.72
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 19.54
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 18.42
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 17.37
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 16.37
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 15.44
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 14.55
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 13.72
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 12.94
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 12.20
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 11.50
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 10.84
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 10.22
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 9.64
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 9.08
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 8.56
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 8.07
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 7.61
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 7.18
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 6.77
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 6.38
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 6.01
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 5.67
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 5.35
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 5.04
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 4.75
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 4.48
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 4.22
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 3.98
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 3.75
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 3.54
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 3.34
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 3.15
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 2.97
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 2.80
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 2.64
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 2.49
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 2.34
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 2.21
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 2.08
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 1.96
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 1.85
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 1.75
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 1.65
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 1.55
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 1.46
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 1.38
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 1.30
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 1.23
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 1.16
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 1.09
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 1.03
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 0.97
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 0.91
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 0.86
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 0.81
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 0.76
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 0.72
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 0.68
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 0.64
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 0.60
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 0.57
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 0.54
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 0.51
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 0.48
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 0.45
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 0.42
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 0.40
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 0.38
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 0.36
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 0.34
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 0.32
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+blocks not > 0
+areaF: 0.30
+x_error: 80
+y_error: -59
+leftSpeed: 85
+rightSpeed: 39
+areaF: 4.29
+x_error: 80
+y_error: -59
+nBlocks: 1
+nBlocks: 2
+found ball: (0, 110)
+leftSpeed: 99
+rightSpeed: 53
+areaF: 8.05
+x_error: 39
+y_error: -75
+nBlocks: 1
+found ball: (0, 360)
+leftSpeed: 103
+rightSpeed: 57
+areaF: 30.47
+x_error: 29
+y_error: -81
+nBlocks: 1
+found ball: (0, 322)
+leftSpeed: 114
+rightSpeed: 68
+blocks not > 0
+areaF: 28.73
+x_error: -3
+y_error: -79
+nBlocks: 1
+found ball: (0, 270)
+leftSpeed: 118
+rightSpeed: 72
+areaF: 32.75
+x_error: -16
+y_error: -77
+nBlocks: 2
+nBlocks: 1
+found ball: (0, 117)
+leftSpeed: 124
+rightSpeed: 78
+blocks not > 0
+areaF: 30.87
+x_error: -32
+y_error: -77
+leftSpeed: 124
+rightSpeed: 78
+blocks not > 0
+areaF: 29.11
+x_error: -32
+y_error: -77
+leftSpeed: 124
+rightSpeed: 78
+blocks not > 0
+areaF: 27.44
+x_error: -32
+y_error: -77
+leftSpeed: 124
+rightSpeed: 78
+blocks not > 0
+areaF: 25.87
+x_error: -32
+y_error: -77
+leftSpeed: 124
+rightSpeed: 78
+blocks not > 0
+areaF: 24.39
+x_error: -32
+y_error: -77
+leftSpeed: 124
+rightSpeed: 78
+blocks not > 0
+areaF: 23.00
+x_error: -32
+y_error: -77
+leftSpeed: 124
+rightSpeed: 78
+blocks not > 0
+areaF: 21.68
+x_error: -32
+y_error: -77
+nBlocks: 1
+leftSpeed: 104
+rightSpeed: 58
+blocks not > 0
+areaF: 20.44
+x_error: 27
+y_error: -68
+leftSpeed: 104
+rightSpeed: 58
+areaF: 20.99
+x_error: 27
+y_error: -68
+nBlocks: 1
+leftSpeed: 114
+rightSpeed: 68
+blocks not > 0
+areaF: 19.79
+x_error: -4
+y_error: -28
+leftSpeed: 114
+rightSpeed: 68
+blocks not > 0
+areaF: 18.65
+x_error: -4
+y_error: -28
+leftSpeed: 114
+rightSpeed: 68
+blocks not > 0
+areaF: 17.59
+x_error: -4
+y_error: -28
+leftSpeed: 114
+rightSpeed: 68
+blocks not > 0
+areaF: 16.58
+x_error: -4
+y_error: -28
+leftSpeed: 114
+rightSpeed: 68
+blocks not > 0
+areaF: 15.63
+x_error: -4
+y_error: -28
+leftSpeed: 114
+rightSpeed: 68
+blocks not > 0
+areaF: 14.74
+x_error: -4
+y_error: -28
+leftSpeed: 114
+rightSpeed: 68
+blocks not > 0
+areaF: 13.89
+x_error: -4
+y_error: -28
+leftSpeed: 114
+rightSpeed: 68
+blocks not > 0
+areaF: 13.10
+x_error: -4
+y_error: -28
+leftSpeed: 114
+rightSpeed: 68
+areaF: 30.77
+x_error: -4
+y_error: -28
+nBlocks: 1
+found ball: (0, 169)
+leftSpeed: 117
+rightSpeed: 71
+areaF: 30.16
+x_error: -11
+y_error: -87
+leftSpeed: 111
+rightSpeed: 65
+blocks not > 0
+areaF: 28.43
+x_error: 7
+y_error: -74
+leftSpeed: 111
+rightSpeed: 65
+blocks not > 0
+areaF: 26.80
+x_error: 7
+y_error: -74
+leftSpeed: 111
+rightSpeed: 65
+blocks not > 0
+areaF: 25.27
+x_error: 7
+y_error: -74
+leftSpeed: 111
+rightSpeed: 65
+blocks not > 0
+areaF: 23.83
+x_error: 7
+y_error: -74
+leftSpeed: 111
+rightSpeed: 65
+blocks not > 0
+areaF: 22.46
+x_error: 7
+y_error: -74
+leftSpeed: 111
+rightSpeed: 65
+blocks not > 0
+areaF: 21.18
+x_error: 7
+y_error: -74
+leftSpeed: 111
+rightSpeed: 65
+blocks not > 0
+areaF: 19.97
+x_error: 7
+y_error: -74
+leftSpeed: 111
+rightSpeed: 65
+blocks not > 0
+areaF: 18.82
+x_error: 7
+y_error: -74
+leftSpeed: 111
+rightSpeed: 65
+blocks not > 0
+areaF: 17.75
+x_error: 7
+y_error: -74
+leftSpeed: 111
+rightSpeed: 65
+blocks not > 0
+areaF: 16.73
+x_error: 7
+y_error: -74
+leftSpeed: 111
+rightSpeed: 65
+blocks not > 0
+areaF: 15.77
+x_error: 7
+y_error: -74
+leftSpeed: 111
+rightSpeed: 65
+blocks not > 0
+areaF: 14.87
+x_error: 7
+y_error: -74
+leftSpeed: 111
+rightSpeed: 65
+blocks not > 0
+areaF: 14.02
+x_error: 7
+y_error: -74
+leftSpeed: 111
+rightSpeed: 65
+blocks not > 0
+areaF: 13.22
+x_error: 7
+y_error: -74
+leftSpeed: 111
+rightSpeed: 65
+blocks not > 0
+areaF: 12.46
+x_error: 7
+y_error: -74
+leftSpeed: 111
+rightSpeed: 65
+blocks not > 0
+areaF: 11.75
+x_error: 7
+y_error: -74
+leftSpeed: 111
+rightSpeed: 65
+blocks not > 0
+areaF: 11.08
+x_error: 7
+y_error: -74
+leftSpeed: 111
+rightSpeed: 65
+blocks not > 0
+areaF: 10.44
+x_error: 7
+y_error: -74
+leftSpeed: 111
+rightSpeed: 65
+blocks not > 0
+areaF: 9.85
+x_error: 7
+y_error: -74
+leftSpeed: 111
+rightSpeed: 65
+blocks not > 0
+areaF: 9.28
+x_error: 7
+y_error: -74
+leftSpeed: 111
+rightSpeed: 65
+blocks not > 0
+areaF: 8.75
+x_error: 7
+y_error: -74
+leftSpeed: 111
+rightSpeed: 65
+blocks not > 0
+areaF: 8.25
+x_error: 7
+y_error: -74
+nBlocks: 2
+nBlocks: 1
+found ball: (0, 168)
+leftSpeed: 113
+rightSpeed: 67
+blocks not > 0
+areaF: 7.78
+x_error: 0
+y_error: -86
+nBlocks: 1
+found ball: (0, 120)
+leftSpeed: 113
+rightSpeed: 67
+areaF: 19.35
+x_error: 0
+y_error: -78
+nBlocks: 2
+found ball: (0, 105)
+leftSpeed: 116
+rightSpeed: 70
+blocks not > 0
+areaF: 18.24
+x_error: -10
+y_error: -86
+leftSpeed: 116
+rightSpeed: 70
+blocks not > 0
+areaF: 17.20
+x_error: -10
+y_error: -86
+nBlocks: 2
+found ball: (0, 247)
+leftSpeed: 115
+rightSpeed: 69
+areaF: 56.49
+x_error: -5
+y_error: -139
+nBlocks: 2
+found ball: (0, 1364)
+leftSpeed: 111
+rightSpeed: 65
+blocks not > 0
+areaF: 53.26
+x_error: 4
+y_error: -153
+nBlocks: 4
+found ball: (0, 1056)
+leftSpeed: 110
+rightSpeed: 64
+areaF: 182.38
+x_error: 9
+y_error: -148
+nBlocks: 3
+found ball: (0, 630)
+leftSpeed: 111
+rightSpeed: 65
+areaF: 250.73
+x_error: 6
+y_error: -125
+nBlocks: 2
+found ball: (0, 384)
+leftSpeed: 113
+rightSpeed: 67
+areaF: 246.40
+x_error: 1
+y_error: -110
+nBlocks: 1
+found ball: (0, 533)
+leftSpeed: 118
+rightSpeed: 72
+areaF: 249.92
+x_error: -14
+y_error: -84
+nBlocks: 2
+found ball: (0, 216)
+leftSpeed: 123
+rightSpeed: 77
+areaF: 241.23
+x_error: -29
+y_error: -90
+nBlocks: 1
+nBlocks: 2
+nBlocks: 1
+leftSpeed: 136
+rightSpeed: 90
+blocks not > 0
+areaF: 227.43
+x_error: -67
+y_error: -93
+leftSpeed: 136
+rightSpeed: 90
+blocks not > 0
+areaF: 214.42
+x_error: -67
+y_error: -93
+leftSpeed: 136
+rightSpeed: 90
+blocks not > 0
+areaF: 202.15
+x_error: -67
+y_error: -93
+leftSpeed: 136
+rightSpeed: 90
+blocks not > 0
+areaF: 190.58
+x_error: -67
+y_error: -93
+leftSpeed: 136
+rightSpeed: 90
+blocks not > 0
+areaF: 179.68
+x_error: -67
+y_error: -93
+leftSpeed: 136
+rightSpeed: 90
+blocks not > 0
+areaF: 169.40
+x_error: -67
+y_error: -93
+nBlocks: 1
+leftSpeed: 115
+rightSpeed: 69
+blocks not > 0
+areaF: 159.71
+x_error: -6
+y_error: -96
+leftSpeed: 115
+rightSpeed: 69
+blocks not > 0
+areaF: 150.57
+x_error: -6
+y_error: -96
+nBlocks: 1
+leftSpeed: 138
+rightSpeed: 92
+blocks not > 0
+areaF: 141.95
+x_error: -73
+y_error: -58
+nBlocks: 1
+nBlocks: 2
+leftSpeed: 125
+rightSpeed: 79
+areaF: 135.89
+x_error: -35
+y_error: -147
+leftSpeed: 125
+rightSpeed: 79
+areaF: 131.09
+x_error: -36
+y_error: -149
+nBlocks: 1
+nBlocks: 2
+leftSpeed: 138
+rightSpeed: 92
+areaF: 125.31
+x_error: -73
+y_error: -58
+nBlocks: 2
+nBlocks: 2
+leftSpeed: 135
+rightSpeed: 89
+blocks not > 0
+areaF: 118.14
+x_error: -64
+y_error: -54
+nBlocks: 3
+leftSpeed: 110
+rightSpeed: 64
+areaF: 125.97
+x_error: 9
+y_error: -148
+leftSpeed: 103
+rightSpeed: 57
+areaF: 135.93
+x_error: 29
+y_error: -139
+nBlocks: 1
+found ball: (0, 336)
+leftSpeed: 97
+rightSpeed: 51
+areaF: 146.63
+x_error: 45
+y_error: -119
+nBlocks: 2
+nBlocks: 2
+nBlocks: 1
+nBlocks: 2
+found ball: (0, 231)
+leftSpeed: 119
+rightSpeed: 73
+blocks not > 0
+areaF: 138.24
+x_error: -17
+y_error: -123
+nBlocks: 1
+found ball: (0, 616)
+leftSpeed: 137
+rightSpeed: 91
+areaF: 186.40
+x_error: -69
+y_error: -136
+nBlocks: 2
+found ball: (0, 162)
+leftSpeed: 141
+rightSpeed: 95
+areaF: 177.80
+x_error: -80
+y_error: -127
+nBlocks: 2
+found ball: (0, 220)
+leftSpeed: 146
+rightSpeed: 100
+blocks not > 0
+areaF: 167.62
+x_error: -94
+y_error: -140
+nBlocks: 2
+found ball: (0, 1504)
+leftSpeed: 139
+rightSpeed: 93
+blocks not > 0
+areaF: 158.03
+x_error: -74
+y_error: -144
+nBlocks: 2
+nBlocks: 2
+leftSpeed: 102
+rightSpeed: 56
+blocks not > 0
+areaF: 148.99
+x_error: 31
+y_error: -132
+leftSpeed: 102
+rightSpeed: 56
+blocks not > 0
+areaF: 140.47
+x_error: 31
+y_error: -132
+nBlocks: 1
+leftSpeed: 89
+rightSpeed: 43
+areaF: 134.03
+x_error: 69
+y_error: -83
+leftSpeed: 90
+rightSpeed: 44
+blocks not > 0
+areaF: 126.36
+x_error: 66
+y_error: -76
+leftSpeed: 90
+rightSpeed: 44
+blocks not > 0
+areaF: 119.13
+x_error: 66
+y_error: -76
+leftSpeed: 90
+rightSpeed: 44
+blocks not > 0
+areaF: 112.32
+x_error: 66
+y_error: -76
+nBlocks: 1
+nBlocks: 1
+leftSpeed: 98
+rightSpeed: 52
+blocks not > 0
+areaF: 105.89
+x_error: 42
+y_error: -70
+leftSpeed: 98
+rightSpeed: 52
+blocks not > 0
+areaF: 99.83
+x_error: 42
+y_error: -70
+leftSpeed: 98
+rightSpeed: 52
+blocks not > 0
+areaF: 94.12
+x_error: 42
+y_error: -70
+leftSpeed: 98
+rightSpeed: 52
+blocks not > 0
+areaF: 88.74
+x_error: 42
+y_error: -70
+leftSpeed: 98
+rightSpeed: 52
+blocks not > 0
+areaF: 83.66
+x_error: 42
+y_error: -70
+leftSpeed: 98
+rightSpeed: 52
+blocks not > 0
+areaF: 78.87
+x_error: 42
+y_error: -70
+leftSpeed: 98
+rightSpeed: 52
+blocks not > 0
+areaF: 74.36
+x_error: 42
+y_error: -70
+leftSpeed: 98
+rightSpeed: 52
+blocks not > 0
+areaF: 70.10
+x_error: 42
+y_error: -70
+leftSpeed: 98
+rightSpeed: 52
+blocks not > 0
+areaF: 66.09
+x_error: 42
+y_error: -70
+leftSpeed: 98
+rightSpeed: 52
+blocks not > 0
+areaF: 62.31
+x_error: 42
+y_error: -70
+leftSpeed: 98
+rightSpeed: 52
+areaF: 61.15
+x_error: 42
+y_error: -70
+leftSpeed: 88
+rightSpeed: 42
+blocks not > 0
+areaF: 57.65
+x_error: 70
+y_error: -79
+leftSpeed: 88
+rightSpeed: 42
+blocks not > 0
+areaF: 54.35
+x_error: 70
+y_error: -79
+leftSpeed: 88
+rightSpeed: 42
+blocks not > 0
+areaF: 51.24
+x_error: 70
+y_error: -79
+leftSpeed: 88
+rightSpeed: 42
+blocks not > 0
+areaF: 48.31
+x_error: 70
+y_error: -79
+leftSpeed: 88
+rightSpeed: 42
+blocks not > 0
+areaF: 45.55
+x_error: 70
+y_error: -79
+leftSpeed: 88
+rightSpeed: 42
+blocks not > 0
+areaF: 42.94
+x_error: 70
+y_error: -79
+leftSpeed: 88
+rightSpeed: 42
+blocks not > 0
+areaF: 40.48
+x_error: 70
+y_error: -79
+leftSpeed: 88
+rightSpeed: 42
+blocks not > 0
+areaF: 38.17
+x_error: 70
+y_error: -79
+leftSpeed: 88
+rightSpeed: 42
+blocks not > 0
+areaF: 35.98
+x_error: 70
+y_error: -79
+leftSpeed: 88
+rightSpeed: 42
+blocks not > 0
+areaF: 33.93
+x_error: 70
+y_error: -79
+leftSpeed: 88
+rightSpeed: 42
+blocks not > 0
+areaF: 31.98
+x_error: 70
+y_error: -79
+leftSpeed: 88
+rightSpeed: 42
+blocks not > 0
+areaF: 30.15
+x_error: 70
+y_error: -79
+leftSpeed: 88
+rightSpeed: 42
+blocks not > 0
+areaF: 28.43
+x_error: 70
+y_error: -79
+leftSpeed: 88
+rightSpeed: 42
+blocks not > 0
+areaF: 26.80
+x_error: 70
+y_error: -79
+leftSpeed: 88
+rightSpeed: 42
+blocks not > 0
+areaF: 25.27
+x_error: 70
+y_error: -79
+leftSpeed: 88
+rightSpeed: 42
+blocks not > 0
+areaF: 23.82
+x_error: 70
+y_error: -79
+leftSpeed: 88
+rightSpeed: 42
+blocks not > 0
+areaF: 22.46
+x_error: 70
+y_error: -79
+leftSpeed: 88
+rightSpeed: 42
+blocks not > 0
+areaF: 21.17
+x_error: 70
+y_error: -79
+leftSpeed: 88
+rightSpeed: 42
+blocks not > 0
+areaF: 19.96
+x_error: 70
+y_error: -79
+leftSpeed: 88
+rightSpeed: 42
+blocks not > 0
+areaF: 18.82
+x_error: 70
+y_error: -79
+leftSpeed: 88
+rightSpeed: 42
+blocks not > 0
+areaF: 17.74
+x_error: 70
+y_error: -79
+leftSpeed: 88
+rightSpeed: 42
+areaF: 18.56
+x_error: 70
+y_error: -79
+nBlocks: 1
+found ball: (0, 280)
+leftSpeed: 147
+rightSpeed: 101
+blocks not > 0
+areaF: 17.50
+x_error: -97
+y_error: -146
+leftSpeed: 147
+rightSpeed: 101
+blocks not > 0
+areaF: 16.50
+x_error: -97
+y_error: -146
+leftSpeed: 147
+rightSpeed: 101
+blocks not > 0
+areaF: 15.55
+x_error: -97
+y_error: -146
+leftSpeed: 147
+rightSpeed: 101
+blocks not > 0
+areaF: 14.66
+x_error: -97
+y_error: -146
+leftSpeed: 147
+rightSpeed: 101
+areaF: 25.95
+x_error: -97
+y_error: -146
+nBlocks: 1
+found ball: (0, 2720)
+leftSpeed: 142
+rightSpeed: 96
+blocks not > 0
+areaF: 24.47
+x_error: -84
+y_error: -234
+nBlocks: 3
+found ball: (0, 594)
+leftSpeed: 143
+rightSpeed: 97
+areaF: 678.07
+x_error: -86
+y_error: -226
+nBlocks: 1
+found ball: (0, 4680)
+leftSpeed: 125
+rightSpeed: 79
+areaF: 758.28
+x_error: -34
+y_error: -191
+nBlocks: 1
+found ball: (0, 1800)
+leftSpeed: 98
+rightSpeed: 52
+areaF: 724.05
+x_error: 43
+y_error: -115
+leftSpeed: 83
+rightSpeed: 37
+blocks not > 0
+areaF: 682.62
+x_error: 86
+y_error: -74
+nBlocks: 1
+nBlocks: 1
+nBlocks: 2
+found ball: (0, 644)
+leftSpeed: 109
+rightSpeed: 63
+blocks not > 0
+areaF: 643.57
+x_error: 11
+y_error: -76
+leftSpeed: 109
+rightSpeed: 63
+areaF: 607.89
+x_error: 11
+y_error: -76
+leftSpeed: 130
+rightSpeed: 84
+blocks not > 0
+areaF: 573.11
+x_error: -48
+y_error: -275
+leftSpeed: 130
+rightSpeed: 84
+blocks not > 0
+areaF: 540.32
+x_error: -48
+y_error: -275
+nBlocks: 1
+nBlocks: 3
+found ball: (0, 2652)
+leftSpeed: 141
+rightSpeed: 95
+areaF: 713.32
+x_error: -81
+y_error: -69
+nBlocks: 1
+found ball: (0, 140)
+leftSpeed: 94
+rightSpeed: 48
+blocks not > 0
+areaF: 672.50
+x_error: 54
+y_error: -40
+leftSpeed: 94
+rightSpeed: 48
+blocks not > 0
+areaF: 634.03
+x_error: 54
+y_error: -40
+nBlocks: 1
+nBlocks: 1
+leftSpeed: 82
+rightSpeed: 36
+blocks not > 0
+areaF: 597.75
+x_error: 88
+y_error: -61
+leftSpeed: 82
+rightSpeed: 36
+blocks not > 0
+areaF: 563.55
+x_error: 88
+y_error: -61
+nBlocks: 1
+leftSpeed: 99
+rightSpeed: 53
+areaF: 536.74
+x_error: 41
+y_error: -76
+leftSpeed: 82
+rightSpeed: 36
+areaF: 514.27
+x_error: 89
+y_error: -163
+nBlocks: 1
+leftSpeed: 116
+rightSpeed: 70
+blocks not > 0
+areaF: 484.85
+x_error: -10
+y_error: -275
+leftSpeed: 116
+rightSpeed: 70
+blocks not > 0
+areaF: 457.11
+x_error: -10
+y_error: -275
+leftSpeed: 116
+rightSpeed: 70
+blocks not > 0
+areaF: 430.95
+x_error: -10
+y_error: -275
+leftSpeed: 116
+rightSpeed: 70
+areaF: 420.77
+x_error: -10
+y_error: -275
+nBlocks: 2
+found ball: (0, 195)
+leftSpeed: 145
+rightSpeed: 99
+blocks not > 0
+areaF: 396.70
+x_error: -93
+y_error: -80
+nBlocks: 3
+nBlocks: 2
+found ball: (0, 896)
+leftSpeed: 141
+rightSpeed: 95
+areaF: 410.96
+x_error: -80
+y_error: -104
+nBlocks: 1
+found ball: (0, 1166)
+leftSpeed: 144
+rightSpeed: 98
+areaF: 460.40
+x_error: -89
+y_error: -54
+nBlocks: 4
+found ball: (0, 238)
+leftSpeed: 147
+rightSpeed: 101
+areaF: 437.26
+x_error: -97
+y_error: -70
+nBlocks: 2
+found ball: (0, 2964)
+leftSpeed: 141
+rightSpeed: 95
+areaF: 631.83
+x_error: -81
+y_error: -125
+nBlocks: 1
+found ball: (0, 3876)
+leftSpeed: 141
+rightSpeed: 95
+areaF: 677.21
+x_error: -81
+y_error: -123
+nBlocks: 3
+found ball: (0, 2320)
+leftSpeed: 141
+rightSpeed: 95
+areaF: 793.86
+x_error: -80
+y_error: -109
+nBlocks: 1
+found ball: (0, 3393)
+leftSpeed: 141
+rightSpeed: 95
+blocks not > 0
+areaF: 748.44
+x_error: -81
+y_error: -116
+nBlocks: 2
+found ball: (0, 1188)
+leftSpeed: 143
+rightSpeed: 97
+blocks not > 0
+areaF: 705.62
+x_error: -86
+y_error: -94
+nBlocks: 3
+found ball: (0, 1073)
+leftSpeed: 143
+rightSpeed: 97
+blocks not > 0
+areaF: 665.25
+x_error: -86
+y_error: -78
+nBlocks: 3
+found ball: (0, 1035)
+leftSpeed: 145
+rightSpeed: 99
+areaF: 664.26
+x_error: -93
+y_error: -96
+nBlocks: 3
+found ball: (0, 276)
+leftSpeed: 144
+rightSpeed: 98
+areaF: 664.88
+x_error: -88
+y_error: -78
+nBlocks: 3
+found ball: (0, 264)
+leftSpeed: 144
+rightSpeed: 98
+areaF: 659.45
+x_error: -88
+y_error: -75
+nBlocks: 1
+found ball: (0, 2184)
+leftSpeed: 143
+rightSpeed: 97
+areaF: 731.86
+x_error: -87
+y_error: -109
+nBlocks: 1
+found ball: (0, 2600)
+leftSpeed: 141
+rightSpeed: 95
+blocks not > 0
+areaF: 689.98
+x_error: -80
+y_error: -99
+nBlocks: 1
+found ball: (0, 2880)
+leftSpeed: 139
+rightSpeed: 93
+blocks not > 0
+areaF: 650.51
+x_error: -76
+y_error: -92
+nBlocks: 1
+nBlocks: 4
+found ball: (0, 162)
+leftSpeed: 139
+rightSpeed: 93
+areaF: 667.41
+x_error: -76
+y_error: -123
+nBlocks: 1
+found ball: (0, 2530)
+leftSpeed: 132
+rightSpeed: 86
+blocks not > 0
+areaF: 629.23
+x_error: -54
+y_error: -92
+nBlocks: 1
+found ball: (0, 2769)
+leftSpeed: 125
+rightSpeed: 79
+areaF: 865.34
+x_error: -36
+y_error: -91
+nBlocks: 2
+found ball: (0, 3675)
+leftSpeed: 124
+rightSpeed: 78
+blocks not > 0
+areaF: 815.83
+x_error: -33
+y_error: -87
+nBlocks: 1
+found ball: (0, 4320)
+leftSpeed: 116
+rightSpeed: 70
+areaF: 1190.25
+x_error: -9
+y_error: -91
+nBlocks: 2
+found ball: (0, 550)
+leftSpeed: 109
+rightSpeed: 63
+areaF: 1419.67
+x_error: 12
+y_error: -131
+nBlocks: 2
+found ball: (0, 2652)
+leftSpeed: 113
+rightSpeed: 67
+areaF: 1533.43
+x_error: 0
+y_error: -92
+nBlocks: 4
+found ball: (0, 3404)
+leftSpeed: 123
+rightSpeed: 77
+areaF: 1668.84
+x_error: -28
+y_error: -74
+nBlocks: 4
+found ball: (0, 3081)
+leftSpeed: 127
+rightSpeed: 81
+areaF: 1717.99
+x_error: -42
+y_error: -66
+nBlocks: 7
+found ball: (0, 671)
+leftSpeed: 118
+rightSpeed: 72
+areaF: 1662.84
+x_error: -16
+y_error: -97
+nBlocks: 1
+found ball: (0, 1080)
+leftSpeed: 119
+rightSpeed: 73
+areaF: 1582.00
+x_error: -18
+y_error: -81
+nBlocks: 1
+nBlocks: 1
+leftSpeed: 127
+rightSpeed: 81
+blocks not > 0
+areaF: 1491.49
+x_error: -41
+y_error: -57
+nBlocks: 1
+found ball: (0, 240)
+leftSpeed: 111
+rightSpeed: 65
+blocks not > 0
+areaF: 1406.15
+x_error: 7
+y_error: -47
+leftSpeed: 111
+rightSpeed: 65
+areaF: 1443.85
+x_error: 7
+y_error: -47
+leftSpeed: 142
+rightSpeed: 96
+blocks not > 0
+areaF: 1361.24
+x_error: -83
+y_error: -224
+leftSpeed: 142
+rightSpeed: 96
+areaF: 1370.27
+x_error: -83
+y_error: -224
+nBlocks: 2
+found ball: (1, 135)
+leftSpeed: 114
+rightSpeed: 68
+areaF: 1398.06
+x_error: -3
+y_error: -11
+nBlocks: 1
+nBlocks: 1
+nBlocks: 1
+found ball: (0, 144)
+leftSpeed: 125
+rightSpeed: 79
+areaF: 1319.10
+x_error: -34
+y_error: -1
+nBlocks: 2
+found ball: (0, 105)
+leftSpeed: 90
+rightSpeed: 89
+blocks not > 0
+areaF: 1243.63
+x_error: -30
+y_error: 7
+nBlocks: 1
+found ball: (0, 120)
+leftSpeed: 96
+rightSpeed: 50
+blocks not > 0
+areaF: 1172.47
+x_error: 48
+y_error: -13
+leftSpeed: 96
+rightSpeed: 50
+blocks not > 0
+areaF: 1105.39
+x_error: 48
+y_error: -13
+leftSpeed: 96
+rightSpeed: 50
+blocks not > 0
+areaF: 1042.14
+x_error: 48
+y_error: -13
+leftSpeed: 96
+rightSpeed: 50
+areaF: 1045.34
+x_error: 48
+y_error: -13
+nBlocks: 2
+found ball: (0, 665)
+leftSpeed: 102
+rightSpeed: 56
+areaF: 989.99
+x_error: 30
+y_error: -97
+nBlocks: 3
+nBlocks: 9
+leftSpeed: 97
+rightSpeed: 51
+blocks not > 0
+areaF: 933.35
+x_error: 46
+y_error: -219
+nBlocks: 2
+nBlocks: 1
+leftSpeed: 139
+rightSpeed: 93
+blocks not > 0
+areaF: 879.95
+x_error: -76
+y_error: -32
+nBlocks: 1
+nBlocks: 1
+found ball: (0, 1475)
+leftSpeed: 135
+rightSpeed: 89
+blocks not > 0
+areaF: 829.60
+x_error: -63
+y_error: -75
+nBlocks: 1
+found ball: (0, 135)
+leftSpeed: 140
+rightSpeed: 94
+blocks not > 0
+areaF: 782.14
+x_error: -79
+y_error: -75
+nBlocks: 1
+nBlocks: 1
+nBlocks: 1
+found ball: (0, 140)
+leftSpeed: 141
+rightSpeed: 95
+blocks not > 0
+areaF: 737.39
+x_error: -80
+y_error: -84
+nBlocks: 2
+nBlocks: 2
+found ball: (0, 171)
+leftSpeed: 144
+rightSpeed: 98
+blocks not > 0
+areaF: 695.20
+x_error: -89
+y_error: -84
+leftSpeed: 144
+rightSpeed: 98
+areaF: 657.82
+x_error: -89
+y_error: -84
+nBlocks: 1
+nBlocks: 2
+nBlocks: 2
+leftSpeed: 144
+rightSpeed: 98
+areaF: 623.62
+x_error: -90
+y_error: -123
+leftSpeed: 144
+rightSpeed: 98
+areaF: 591.54
+x_error: -90
+y_error: -128
+nBlocks: 3
+found ball: (0, 680)
+leftSpeed: 145
+rightSpeed: 99
+areaF: 642.03
+x_error: -92
+y_error: -130
+nBlocks: 2
+nBlocks: 1
+nBlocks: 3
+found ball: (0, 380)
+leftSpeed: 140
+rightSpeed: 94
+areaF: 644.78
+x_error: -78
+y_error: -134
+nBlocks: 2
+found ball: (0, 1972)
+leftSpeed: 138
+rightSpeed: 92
+areaF: 790.98
+x_error: -73
+y_error: -112
+nBlocks: 1
+found ball: (0, 2340)
+leftSpeed: 132
+rightSpeed: 86
+blocks not > 0
+areaF: 745.72
+x_error: -54
+y_error: -111
+nBlocks: 1
+found ball: (0, 3024)
+leftSpeed: 125
+rightSpeed: 79
+areaF: 764.85
+x_error: -36
+y_error: -109
+nBlocks: 2
+found ball: (0, 1508)
+leftSpeed: 121
+rightSpeed: 75
+areaF: 900.68
+x_error: -24
+y_error: -109
+nBlocks: 4
+found ball: (0, 700)
+leftSpeed: 117
+rightSpeed: 71
+areaF: 927.42
+x_error: -12
+y_error: -96
+nBlocks: 1
+found ball: (0, 992)
+leftSpeed: 109
+rightSpeed: 63
+areaF: 995.20
+x_error: 12
+y_error: -104
+nBlocks: 1
+found ball: (0, 5440)
+leftSpeed: 103
+rightSpeed: 57
+areaF: 1112.19
+x_error: 29
+y_error: -99
+nBlocks: 2
+found ball: (0, 2024)
+leftSpeed: 104
+rightSpeed: 58
+areaF: 1228.78
+x_error: 26
+y_error: -112
+nBlocks: 2
+found ball: (0, 4165)
+leftSpeed: 108
+rightSpeed: 62
+areaF: 1309.87
+x_error: 15
+y_error: -95
+nBlocks: 1
+found ball: (0, 936)
+leftSpeed: 106
+rightSpeed: 60
+areaF: 1477.52
+x_error: 21
+y_error: -110
+nBlocks: 4
+found ball: (0, 3128)
+leftSpeed: 117
+rightSpeed: 71
+areaF: 1766.31
+x_error: -11
+y_error: -102
+nBlocks: 2
+found ball: (0, 6060)
+leftSpeed: 124
+rightSpeed: 78
+blocks not > 0
+areaF: 1665.25
+x_error: -31
+y_error: -90
+nBlocks: 3
+found ball: (0, 140)
+leftSpeed: 122
+rightSpeed: 76
+areaF: 1750.60
+x_error: -26
+y_error: -128
+leftSpeed: 122
+rightSpeed: 76
+areaF: 1848.69
+x_error: -26
+y_error: -88
+nBlocks: 1
+found ball: (0, 8855)
+leftSpeed: 117
+rightSpeed: 71
+areaF: 1979.10
+x_error: -12
+y_error: -76
+nBlocks: 1
+found ball: (0, 8816)
+leftSpeed: 119
+rightSpeed: 73
+areaF: 2248.98
+x_error: -17
+y_error: -75
+nBlocks: 1
+found ball: (0, 6745)
+leftSpeed: 115
+rightSpeed: 69
+areaF: 2263.11
+x_error: -7
+y_error: -87
+nBlocks: 1
+found ball: (0, 2013)
+leftSpeed: 114
+rightSpeed: 68
+areaF: 2190.84
+x_error: -2
+y_error: -62
+nBlocks: 1
+found ball: (0, 660)
+leftSpeed: 115
+rightSpeed: 69
+areaF: 2073.22
+x_error: -6
+y_error: -52
+nBlocks: 1
+found ball: (0, 176)
+leftSpeed: 107
+rightSpeed: 61
+areaF: 1955.80
+x_error: 18
+y_error: -71
+nBlocks: 1
+nBlocks: 2
+nBlocks: 1
+nBlocks: 1
+leftSpeed: 99
+rightSpeed: 53
+blocks not > 0
+areaF: 1843.90
+x_error: 41
+y_error: -61
+leftSpeed: 99
+rightSpeed: 53
+areaF: 1740.46
+x_error: 41
+y_error: -61
+leftSpeed: 90
+rightSpeed: 90
+blocks not > 0
+areaF: 1640.88
+x_error: 1
+y_error: 25
+nBlocks: 5
+found ball: (2, 910)
+leftSpeed: 90
+rightSpeed: 90
+areaF: 1629.90
+x_error: 16
+y_error: 6
+final x and y errors
+x_error: 16
+y_error: 6
+done return homebase
+blocks not > 0
+areaF: 1536.65
  
  
--63 -67 -14 
-8191 204 
-currHeading: 223.24
-ahe: 345.15
-right
-looping inside tupToInstrux
+-21 25 -4 
+276 151 
+sensTx: -21.00
+sensTy: 25.00
+blocks not > 0
+areaF: 1448.73
  
  
--61 -69 -17 
-8191 209 
-currHeading: 221.48
-ahe: 343.39
-right
-looping inside tupToInstrux
+-10 -19 -7 
+8190 127 
+sensTx: -10.00
+sensTy: -19.00
+areaF: 1368.07
  
  
--56 -71 -15 
-8190 194 
-currHeading: 218.26
-ahe: 340.17
-right
-looping inside tupToInstrux
+-7 -17 -6 
+8190 146 
+sensTx: -7.00
+sensTy: -17.00
+areaF: 1297.00
  
  
--54 -73 -15 
-8191 212 
-currHeading: 216.49
-ahe: 338.40
-right
-looping inside tupToInstrux
+-8 -18 -8 
+8191 178 
+sensTx: -8.00
+sensTy: -18.00
+areaF: 1225.77
  
  
--49 -76 -17 
-0 223 
-currHeading: 212.81
-ahe: 334.72
-right
-looping inside tupToInstrux
+-9 -18 -7 
+311 197 
+sensTx: -9.00
+sensTy: -18.00
+blocks not > 0
+areaF: 1155.64
  
  
--48 -82 -15 
+-9 -20 -7 
+201 215 
+sensTx: -9.00
+sensTy: -20.00
+blocks not > 0
+areaF: 1089.52
+ 
+ 
+-9 -19 -8 
+74 213 
+sensTx: -9.00
+sensTy: -19.00
+blocks not > 0
+areaF: 1027.18
+ 
+ 
+-9 -18 -7 
+280 216 
+sensTx: -9.00
+sensTy: -18.00
+areaF: 971.16
+ 
+ 
+-10 -19 -8 
+310 224 
+sensTx: -10.00
+sensTy: -19.00
+areaF: 918.80
+ 
+ 
+-11 -21 -7 
+8191 225 
+sensTx: -11.00
+sensTy: -21.00
+areaF: 888.60
+ 
+ 
+-10 -21 -7 
+274 216 
+sensTx: -10.00
+sensTy: -21.00
+areaF: 911.57
+ 
+ 
+-11 -21 -9 
+296 210 
+sensTx: -11.00
+sensTy: -21.00
+areaF: 881.72
+ 
+ 
+-15 -23 -9 
+8191 207 
+sensTx: -15.00
+sensTy: -23.00
+areaF: 838.20
+ 
+ 
+-16 -23 -9 
+216 213 
+sensTx: -16.00
+sensTy: -23.00
+areaF: 913.83
+ 
+ 
+-15 -23 -10 
+255 207 
+sensTx: -15.00
+sensTy: -23.00
+areaF: 887.17
+ 
+ 
+-15 -22 -8 
+180 208 
+sensTx: -15.00
+sensTy: -22.00
+areaF: 922.69
+ 
+ 
+-14 -19 -10 
 8190 199 
-currHeading: 210.34
-ahe: 332.25
-right
-looping inside tupToInstrux
+sensTx: -14.00
+sensTy: -19.00
+areaF: 895.99
  
  
--46 -86 -17 
-8190 216 
-currHeading: 208.14
-ahe: 330.05
-right
-looping inside tupToInstrux
- 
- 
--48 -87 -15 
-8191 214 
-currHeading: 208.89
-ahe: 330.79
-right
-looping inside tupToInstrux
- 
- 
--45 -91 -18 
-8190 215 
-currHeading: 206.31
-ahe: 328.22
-right
-looping inside tupToInstrux
- 
- 
--47 -95 -18 
-8191 233 
-currHeading: 206.32
-ahe: 328.23
-right
-looping inside tupToInstrux
- 
- 
--50 -100 -17 
-8191 221 
-currHeading: 206.57
-ahe: 328.47
-right
-looping inside tupToInstrux
- 
- 
--49 -103 -18 
-8191 233 
-currHeading: 205.44
-ahe: 327.35
-right
-looping inside tupToInstrux
- 
- 
--54 -108 -15 
-8191 250 
-currHeading: 206.57
-ahe: 328.47
-right
-looping inside tupToInstrux
- 
- 
--54 -111 -18 
-361 288 
-currHeading: 205.94
-ahe: 327.85
-right
-looping inside tupToInstrux
- 
- 
--59 -114 -16 
-605 309 
-currHeading: 207.36
-ahe: 329.27
-right
-looping inside tupToInstrux
- 
- 
--63 -117 -18 
-675 288 
-currHeading: 208.30
-ahe: 330.21
-right
-looping inside tupToInstrux
- 
- 
--67 -116 -16 
-712 262 
-currHeading: 210.01
-ahe: 331.92
-right
-looping inside tupToInstrux
- 
- 
--69 -115 -16 
-738 241 
-currHeading: 210.96
-ahe: 332.87
-right
-looping inside tupToInstrux
- 
- 
--73 -115 -18 
-763 216 
-currHeading: 212.41
-ahe: 334.31
-right
-looping inside tupToInstrux
- 
- 
--77 -118 -18 
-684 222 
-currHeading: 213.13
-ahe: 335.03
-right
-looping inside tupToInstrux
- 
- 
--79 -117 -15 
-587 243 
-currHeading: 214.03
-ahe: 335.94
-right
-looping inside tupToInstrux
- 
- 
--81 -118 -18 
-517 236 
-currHeading: 214.47
-ahe: 336.38
-right
-looping inside tupToInstrux
- 
- 
--80 -115 -17 
-796 236 
-currHeading: 214.82
-ahe: 336.73
-right
-looping inside tupToInstrux
- 
- 
--83 -118 -18 
-920 226 
-currHeading: 215.12
-ahe: 337.03
-right
-looping inside tupToInstrux
- 
- 
--88 -106 -13 
-930 221 
-currHeading: 219.70
-ahe: 341.61
-right
-looping inside tupToInstrux
- 
- 
--94 -105 -16 
-840 216 
-currHeading: 221.84
-ahe: 343.74
-right
-looping inside tupToInstrux
- 
- 
--98 -104 -15 
-456 225 
-currHeading: 223.30
-ahe: 345.21
-right
-looping inside tupToInstrux
- 
- 
--97 -102 -12 
-8191 234 
-currHeading: 223.56
-ahe: 345.47
-right
-looping inside tupToInstrux
- 
- 
--100 -98 -13 
-337 237 
-currHeading: 225.58
-ahe: 347.49
-right
-looping inside tupToInstrux
- 
- 
--105 -96 -12 
-218 236 
-currHeading: 227.56
-ahe: 349.47
-right
-looping inside tupToInstrux
- 
- 
--105 -87 -10 
-364 243 
-currHeading: 230.36
-ahe: 352.26
-right
-looping inside tupToInstrux
- 
- 
--104 -73 -12 
-471 283 
-currHeading: 234.93
-ahe: 356.84
-right
-looping inside tupToInstrux
- 
- 
--100 -67 -13 
-572 336 
-currHeading: 236.18
-ahe: 358.09
-right
-looping inside tupToInstrux
- 
- 
--96 -65 -12 
-614 346 
-currHeading: 235.90
-ahe: 357.81
-right
-looping inside tupToInstrux
- 
- 
--93 -62 -13 
-529 327 
-currHeading: 236.31
-ahe: 358.22
-right
-looping inside tupToInstrux
- 
- 
--89 -58 -15 
-490 286 
-currHeading: 236.91
-ahe: 358.82
-right
-looping inside tupToInstrux
- 
- 
--82 -56 -13 
-500 264 
-currHeading: 235.67
-ahe: 357.58
-right
-looping inside tupToInstrux
- 
- 
--79 -56 -12 
-467 251 
-currHeading: 234.67
-ahe: 356.58
-right
-looping inside tupToInstrux
- 
- 
--71 -53 -13 
-402 213 
-currHeading: 233.26
-ahe: 355.17
-right
-looping inside tupToInstrux
- 
- 
--66 -54 -14 
-333 218 
-currHeading: 230.71
-ahe: 352.62
-right
-looping inside tupToInstrux
- 
- 
--61 -55 -13 
-309 220 
-currHeading: 227.96
-ahe: 349.87
-right
-looping inside tupToInstrux
- 
- 
--59 -58 -13 
-328 197 
-currHeading: 225.49
-ahe: 347.40
-right
-looping inside tupToInstrux
- 
- 
--52 -63 -14 
-8191 -1 
-currHeading: 219.54
-ahe: 341.44
-right
-looping inside tupToInstrux
- 
- 
--50 -67 -16 
-8190 201 
-currHeading: 216.73
-ahe: 338.64
-right
-looping inside tupToInstrux
- 
- 
--50 -72 -15 
-8190 219 
-currHeading: 214.78
-ahe: 336.69
-right
-looping inside tupToInstrux
- 
- 
--47 -77 -15 
-8191 211 
-currHeading: 211.40
-ahe: 333.31
-right
-looping inside tupToInstrux
- 
- 
--47 -78 -15 
-8191 202 
-currHeading: 211.07
-ahe: 332.98
-right
-looping inside tupToInstrux
- 
- 
--45 -81 -15 
-8191 211 
-currHeading: 209.05
-ahe: 330.96
-right
-looping inside tupToInstrux
- 
- 
--45 -86 -14 
-8190 205 
-currHeading: 207.62
-ahe: 329.53
-right
-looping inside tupToInstrux
- 
- 
--44 -87 -15 
-8191 214 
-currHeading: 206.83
-ahe: 328.74
-right
-looping inside tupToInstrux
- 
- 
--44 -92 -17 
-8191 206 
-currHeading: 205.56
-ahe: 327.47
-right
-looping inside tupToInstrux
- 
- 
--48 -93 -14 
-175 214 
-currHeading: 207.30
-ahe: 329.21
-right
-looping inside tupToInstrux
- 
- 
--47 -97 -16 
-361 223 
-currHeading: 205.85
-ahe: 327.76
-right
-looping inside tupToInstrux
- 
- 
--47 -98 -17 
-373 212 
-currHeading: 205.62
-ahe: 327.53
-right
-looping inside tupToInstrux
- 
- 
--48 -99 -18 
-8191 240 
-currHeading: 205.87
-ahe: 327.77
-right
-looping inside tupToInstrux
- 
- 
--46 -100 -16 
-8191 204 
-currHeading: 204.70
-ahe: 326.61
-right
-looping inside tupToInstrux
- 
- 
--48 -101 -17 
-8191 219 
-currHeading: 205.42
-ahe: 327.33
-right
-looping inside tupToInstrux
- 
- 
--48 -100 -16 
-8191 219 
-currHeading: 205.64
-ahe: 327.55
-right
-looping inside tupToInstrux
- 
- 
--48 -102 -18 
-8191 220 
-currHeading: 205.20
-ahe: 327.11
-right
-looping inside tupToInstrux
- 
- 
--48 -101 -14 
-8191 219 
-currHeading: 205.42
-ahe: 327.33
-right
-looping inside tupToInstrux
- 
- 
--50 -100 -16 
+-15 -24 -12 
 8191 217 
-currHeading: 206.57
-ahe: 328.47
-right
-looping inside tupToInstrux
+sensTx: -15.00
+sensTy: -24.00
+areaF: 1046.41
  
  
--48 -101 -16 
-323 220 
-currHeading: 205.42
-ahe: 327.33
-right
-looping inside tupToInstrux
+-12 -22 -7 
+362 213 
+sensTx: -12.00
+sensTy: -22.00
+areaF: 1174.38
  
  
--50 -102 -18 
-8191 221 
-currHeading: 206.11
-ahe: 328.02
-right
-looping inside tupToInstrux
+-15 -21 -10 
+156 226 
+sensTx: -15.00
+sensTy: -21.00
+areaF: 1229.05
  
  
--46 -101 -17 
-8191 222 
-currHeading: 204.49
-ahe: 326.39
-right
-looping inside tupToInstrux
+-16 -20 -10 
+293 227 
+sensTx: -16.00
+sensTy: -20.00
+areaF: 1282.89
  
  
--48 -102 -18 
-520 214 
-currHeading: 205.20
-ahe: 327.11
-right
-looping inside tupToInstrux
+-14 -22 -10 
+8191 260 
+sensTx: -14.00
+sensTy: -22.00
+areaF: 1432.91
  
+ 
+-13 -22 -10 
+177 200 
+sensTx: -13.00
+sensTy: -22.00
+areaF: 1370.84
+ 
+ 
+-14 -22 -11 
+219 185 
+sensTx: -14.00
+sensTy: -22.00
+areaF: 1459.48
+ 
+ 
+-16 -21 -10 
+8191 172 
+sensTx: -16.00
+sensTy: -21.00
+areaF: 1718.12
+ 
+ 
+-17 -21 -10 
+37 162 
+sensTx: -17.00
+sensTy: -21.00
+areaF: 2078.62
+ 
+ 
+-17 -20 -11 
+124 153 
+sensTx: -17.00
+sensTy: -20.00
+areaF: 2158.29
+ 
+ 
+-15 -20 -8 
+183 163 
+sensTx: -15.00
+sensTy: -20.00
+areaF: 2301.19
+ 
+ 
+-14 -21 -10 
+180 164 
+sensTx: -14.00
+sensTy: -21.00
+areaF: 2649.17
+ 
+ 
+-14 -20 -9 
+8190 167 
+sensTx: -14.00
+sensTy: -20.00
+areaF: 2780.81
+ 
+ 
+-14 -20 -9 
+8191 191 
+sensTx: -14.00
+sensTy: -20.00
+areaF: 2885.24
+ 
+ 
+-14 -23 -9 
+265 198 
+sensTx: -14.00
+sensTy: -23.00
+areaF: 2826.69
+ 
+ 
+-15 -23 -7 
+247 196 
+sensTx: -15.00
+sensTy: -23.00
+areaF: 2826.31
+ 
+ 
+-14 -21 -7 
+314 236 
+sensTx: -14.00
+sensTy: -21.00
+areaF: 2933.51
+ 
+ 
+-15 -20 -11 
+339 272 
+sensTx: -15.00
+sensTy: -20.00
+areaF: 2770.53
+ 
+ 
+-14 -21 -9 
+311 257 
+sensTx: -14.00
+sensTy: -21.00
+areaF: 3056.92
+ 
+ 
+-12 -20 -9 
+317 256 
+sensTx: -12.00
+sensTy: -20.00
+areaF: 3317.66
+ 
+ 
+-14 -21 -9 
+318 271 
+sensTx: -14.00
+sensTy: -21.00
+areaF: 3567.25
+ 
+ 
+-15 -20 -8 
+321 262 
+sensTx: -15.00
+sensTy: -20.00
+areaF: 3675.08
+ 
+ 
+-14 -22 -8 
+320 248 
+sensTx: -14.00
+sensTy: -22.00
+areaF: 3669.19
+ 
+ 
+-14 -20 -9 
+317 252 
+sensTx: -14.00
+sensTy: -20.00
+areaF: 3773.36
+ 
+ 
+-13 -22 -10 
+312 257 
+sensTx: -13.00
+sensTy: -22.00
+areaF: 3978.00
+ 
+ 
+-14 -22 -9 
+318 260 
+sensTx: -14.00
+sensTy: -22.00
+areaF: 4097.58
+ 
+ 
+-14 -21 -11 
+324 252 
+sensTx: -14.00
+sensTy: -21.00
+areaF: 4062.93
+ 
+ 
+-12 -21 -11 
+336 248 
+sensTx: -12.00
+sensTy: -21.00
+areaF: 4250.83
+ 
+ 
+-15 -23 -11 
+333 253 
+sensTx: -15.00
+sensTy: -23.00
+areaF: 4480.90
+ 
+ 
+-15 -21 -10 
+308 251 
+sensTx: -15.00
+sensTy: -21.00
+areaF: 4527.99
+ 
+ 
+-15 -21 -10 
+313 259 
+sensTx: -15.00
+sensTy: -21.00
+areaF: 4481.36
+ 
+ 
+-16 -22 -7 
+320 250 
+sensTx: -16.00
+sensTy: -22.00
+areaF: 4365.14
+ 
+ 
+-16 -23 -10 
+308 239 
+sensTx: -16.00
+sensTy: -23.00
+areaF: 4439.45
+ 
+ 
+-16 -20 -11 
+323 230 
+sensTx: -16.00
+sensTy: -20.00
+areaF: 4634.02
+ 
+ 
+-14 -22 -9 
+317 241 
+sensTx: -14.00
+sensTy: -22.00
+areaF: 4904.41
+ 
+ 
+-16 -22 -8 
+330 240 
+sensTx: -16.00
+sensTy: -22.00
+areaF: 4903.93
+ 
+ 
+-13 -22 -9 
+321 234 
+sensTx: -13.00
+sensTy: -22.00
+areaF: 5117.29
+ 
+ 
+-13 -21 -10 
+314 235 
+sensTx: -13.00
+sensTy: -21.00
+areaF: 5289.89
+ 
+ 
+-14 -22 -10 
+304 222 
+sensTx: -14.00
+sensTy: -22.00
+areaF: 5378.58
+ 
+ 
+-16 -20 -8 
+329 228 
+sensTx: -16.00
+sensTy: -20.00
+areaF: 5334.38
+ 
+ 
+-14 -22 -7 
+325 236 
+sensTx: -14.00
+sensTy: -22.00
+areaF: 5179.42
+ 
+ 
+-13 -19 -8 
+322 243 
+sensTx: -13.00
+sensTy: -19.00
+areaF: 5095.23
+ 
+ 
+-12 -19 -10 
+328 231 
+sensTx: -12.00
+sensTy: -19.00
+areaF: 5263.49
+ 
+ 
+-13 -20 -8 
+325 222 
+sensTx: -13.00
+sensTy: -20.00
+areaF: 5088.90
+ 
+ 
+-13 -22 -8 
+322 215 
+sensTx: -13.00
+sensTy: -22.00
+areaF: 4801.40
+ 
+ 
+-16 -23 -12 
+324 216 
+sensTx: -16.00
+sensTy: -23.00
+areaF: 4923.87
+ 
+ 
+-14 -21 -12 
+337 203 
+sensTx: -14.00
+sensTy: -21.00
+areaF: 4939.33
+ 
+ 
+-14 -23 -9 
+342 206 
+sensTx: -14.00
+sensTy: -23.00
+areaF: 4939.88
+ 
+ 
+-13 -21 -10 
+331 207 
+sensTx: -13.00
+sensTy: -21.00
+areaF: 4844.22
+ 
+ 
+-15 -21 -7 
+330 199 
+sensTx: -15.00
+sensTy: -21.00
+areaF: 4703.92
+ 
+ 
+-13 -20 -12 
+347 204 
+sensTx: -13.00
+sensTy: -20.00
+areaF: 4818.13
+ 
+ 
+-12 -20 -10 
+328 199 
+sensTx: -12.00
+sensTy: -20.00
+areaF: 5046.58
+ 
+ 
+-13 -21 -10 
+338 198 
+sensTx: -13.00
+sensTy: -21.00
+areaF: 5015.31
+ 
+ 
+-14 -20 -11 
+318 199 
+sensTx: -14.00
+sensTy: -20.00
+areaF: 5187.16
+ 
+ 
+-14 -21 -10 
+319 203 
+sensTx: -14.00
+sensTy: -21.00
+areaF: 5348.10
+ 
+ 
+-12 -24 -8 
+328 201 
+sensTx: -12.00
+sensTy: -24.00
+areaF: 5302.84
+ 
+ 
+-15 -21 -8 
+333 196 
+sensTx: -15.00
+sensTy: -21.00
+areaF: 5215.88
+ 
+ 
+-13 -25 -11 
+329 205 
+sensTx: -13.00
+sensTy: -25.00
+areaF: 5156.72
+ 
+ 
+-13 -22 -9 
+336 191 
+sensTx: -13.00
+sensTy: -22.00
+areaF: 5177.51
+ 
+ 
+-13 -23 -11 
+295 196 
+sensTx: -13.00
+sensTy: -23.00
+areaF: 5318.97
+ 
+ 
+-14 -21 -10 
+351 193 
+sensTx: -14.00
+sensTy: -21.00
+areaF: 5177.60
+ 
+ 
+-14 -22 -9 
+330 189 
+sensTx: -14.00
+sensTy: -22.00
+areaF: 4928.05
+ 
+ 
+-14 -21 -12 
+322 200 
+sensTx: -14.00
+sensTy: -21.00
+areaF: 4958.88
+ 
+ 
+-14 -21 -9 
+311 192 
+sensTx: -14.00
+sensTy: -21.00
+a

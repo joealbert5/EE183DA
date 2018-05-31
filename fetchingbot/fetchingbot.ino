@@ -148,7 +148,8 @@ void setup() {
   #endif
   //servo_grab.write(80);
   //grab = 1;
-  //grasp();
+  grasp();
+  grasp();
   //setupMDNS(mDNS_name);
 
   stop();
@@ -198,13 +199,17 @@ bool obstacleCheck()
 
 void obstacleAvoid()
 {
+  Serial.println("inside obstacle avoid");
   getHeading();
-  if (leftSensor > MIN_DIS && rightSensor > MIN_DIS)
+  if (leftSensor > MIN_DIS && rightSensor > MIN_DIS){
+    Serial.println("leaving obstacle avoid");
     return;
+  }
   else if (leftSensor <= MIN_DIS && rightSensor > MIN_DIS)
   {
     while (leftSensor < CLEAR_DIS)
     {
+      Serial.println("inside obstacle avoid");
       right();
       getHeading();
     }
@@ -213,6 +218,7 @@ void obstacleAvoid()
   {
     while (rightSensor < CLEAR_DIS)
     {
+      Serial.println("inside obstacle avoid");
       left();
       getHeading();
     }
@@ -220,8 +226,10 @@ void obstacleAvoid()
   else if (leftSensor <= MIN_DIS && rightSensor <= MIN_DIS)
   {
     float current = sendCoords(0);
-    if (sendCoords(0) > current - 89)
+    if (sendCoords(0) > current - 89){
+      Serial.println("inside obstacle avoid");
       right();
+    }
   }
 }
 
@@ -237,7 +245,7 @@ void stop() {
 }
 
 void forward() {
-  //DEBUG("forward");
+  DEBUG("forward");
   drive(180, 0);
 }
 
@@ -257,10 +265,12 @@ void right() {
 }
 
 void rightSlow(){
+  DEBUG("rightSlow");
   drive(110, 110);
 }
 
 void leftSlow(){
+  DEBUG("leftSlow");
   drive(70, 70);
 }
 
@@ -365,8 +375,8 @@ int16_t findMinMax(int16_t x, int16_t y)
     minY = y;
 }
 
-int MX_BIAS = 37;
-int MY_BIAS = -16;
+int MX_BIAS = 34;
+int MY_BIAS = -31;
 
 float getHeading(bool sendToWebApp, uint8_t id, int32_t area, bool calibrate){
   char buff [50];
@@ -376,6 +386,10 @@ float getHeading(bool sendToWebApp, uint8_t id, int32_t area, bool calibrate){
   double sensY = (double) * (p + 2);
   double sensTx = (double) * (p + 3);
   double sensTy = (double) * (p + 4);
+  Serial.print("sensTx: ");
+  Serial.println(sensTx);
+  Serial.print("sensTy: ");
+  Serial.println(sensTy);
   int16_t filX = (int16_t) sensX;
   int16_t filY = (int16_t) sensY;
   int16_t filTx = (int16_t) sensTx;
@@ -443,7 +457,7 @@ String tupToInstrux(tuple<double,double> dirs){
   Serial.println(dHeading);
   Serial.print("timeFmillis: ");
   Serial.println(timeFmillis);
-  float initHeading = getHeading(false, 0,0, true);
+  float initHeading = getHeading(false, 0,0, false);
   float targetHeading = initHeading + (float) dHeading;
   float HEADING_ERROR = 15;
   float currHeading;
@@ -452,7 +466,7 @@ String tupToInstrux(tuple<double,double> dirs){
     while (true) {
       left();
       Serial.println("looping inside tupToInstrux");
-      currHeading = getHeading(false, 0,0, true);
+      currHeading = getHeading(false, 0, 0, false);
       Serial.print("currHeading: ");
       Serial.println(currHeading);
       ahe = adjustedHeadingError(targetHeading, currHeading);
@@ -464,7 +478,7 @@ String tupToInstrux(tuple<double,double> dirs){
     while (true) {
       right();
       Serial.println("looping inside tupToInstrux");
-      currHeading = getHeading(false, 0,0, true);
+      currHeading = getHeading(false, 0, 0, false);
       Serial.print("currHeading: ");
       Serial.println(currHeading);
       ahe = adjustedHeadingError(targetHeading, currHeading);
@@ -570,18 +584,22 @@ float adjustedHeadingError(float f1, float f2){
     Serial.println(abs(f1 - f2));
     return abs(f1 - f2);
   }
-  else {
-    Serial.print("ahe: ");
-    Serial.println(abs(f1 - f2));
-    return spinerror;
+  else if (f1 < 0){
+    f1 += 360;
   }
+  else if (f2 < 0){
+    f2 += 360;
+  }
+  Serial.print("ahe: ");
+  Serial.println(abs(f1 - f2));
+  return spinerror;
 }
 
 bool scan2(){
   long t1 = millis();
   int count = 0;
   bool found = foundBall();
-  float startHeading = getHeading(false, 0,0, true);
+  float startHeading = getHeading(false, 0, 0, false);
   Serial.print("startHeading: ");
   Serial.println(startHeading);
   float SPINERROR = 15;   //5 degrees
@@ -589,7 +607,7 @@ bool scan2(){
   while(!found){
     Serial.println("looping in scan2()");
     rightSlow();
-    currHeading = getHeading(false, 0,0, true);
+    currHeading = getHeading(false, 0, 0, false);
     //currHeading = getHeading();
     float ahe = adjustedHeadingError(currHeading, startHeading);
     if (millis() - t1 > 1000 &&  ahe < SPINERROR)
@@ -617,8 +635,8 @@ bool sweep(float range, int32_t sig) {
   long t1 = millis();
   bool found = foundBall(sig);
   float startHeading = getHeading();
-  float sweepLeft = adjustHeading(startHeading + range);
-  float sweepRight = adjustHeading(startHeading - range);
+  float sweepLeft = adjustHeading(startHeading - range);
+  float sweepRight = adjustHeading(startHeading + range);
   Serial.print("startHeading: ");
   Serial.println(startHeading);
   Serial.print("sweepLeft: ");
@@ -657,6 +675,8 @@ bool sweep(float range, int32_t sig) {
   while (!found) {
     rightSlow();
     currHeading = getHeading();
+    Serial.print("currHeading: ");
+    Serial.println(currHeading);
     found = foundBall(sig);
     if (found)
       return true;
@@ -664,9 +684,8 @@ bool sweep(float range, int32_t sig) {
     if (ahe < SPINERROR) {
       break;
     }
-    Serial.print("currHeading: ");
-    Serial.println(currHeading);
   }
+  Serial.println("returning false out of sweep");
   return false;
 }
 
@@ -674,11 +693,11 @@ void returnToBase() {
   float initHeading = ballsearch.getInitHeading();
   float targetHeading;
   float currHeading;
-  float SPINERROR = 10;
+  float SPINERROR = 15;
   int32_t HOME_BASE_SIGNITURE = 3;
   double inchesPerSecF = 7.789;
   double timeFmillis;
-  float SWEEP_DEGREES = 30;
+  float SWEEP_DEGREES = 45;
   bool found;
   float ahe;
   Serial.println("return to base");
@@ -710,19 +729,33 @@ void returnToBase() {
   Serial.println("end turn around");
   found = sweep(SWEEP_DEGREES, HOME_BASE_SIGNITURE);
   //found = foundBall(HOME_BASE_SIGNITURE);
+  float maxR = (float) ballsearch.getMaxR();
+  long t3;
+  long t4;
   while (!found) {
-    timeFmillis = ballsearch.getMaxR() / inchesPerSecF * 1000;
-    long t3 = millis();
+    Serial.print("ballsearch.getMaxR(): ");
+    Serial.println(maxR);
+    timeFmillis = maxR / inchesPerSecF * 1000;
+    Serial.print("timeFmillis: ");
+    Serial.println(timeFmillis);
+    t3 = millis();
+    Serial.println("after t3");
     while (true) {
       forward();
-      if (millis() - t3 > timeFmillis)
+      t4 = millis();
+      Serial.print("t4 - t3");
+      Serial.println(t4 - t3);
+      if (t4 - t3 > timeFmillis)
         break;
     }
     //scan
+    Serial.println("attempting to sweep again");
     found = sweep(SWEEP_DEGREES, HOME_BASE_SIGNITURE);
   }
+  Serial.println("done sweeping, now track2");
   //found homebase, approach it
   track2(HOME_BASE_SIGNITURE);
+  Serial.println("done return homebase");
 }
 
 void grasp()
@@ -734,7 +767,7 @@ void grasp()
   }
   else
   {
-    servo_grab.write(170);
+    servo_grab.write(160);
     grab = 0;
   }
 }
@@ -808,7 +841,7 @@ void webSocketEvent(uint8_t id, WStype_t type, uint8_t * payload, size_t length)
           }
           if (cmd == "Beg") {
             Serial.println("Beg is: " + cmd);
-            ballsearch.setMaxR(40);
+            ballsearch.setMaxR(10);
             ballsearch.setInitHeading(getHeading());
             while (!scan2()) {
               tuple<double, double> toMove = ballsearch.search("L");
@@ -817,7 +850,7 @@ void webSocketEvent(uint8_t id, WStype_t type, uint8_t * payload, size_t length)
               drive(90, 90);
             }
             track2();
-            grasp();
+            //grasp();
           }
           else if (cmd == "Ret"){
             Serial.println("Ret is: " + cmd);

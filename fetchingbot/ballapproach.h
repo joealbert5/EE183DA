@@ -12,7 +12,7 @@
 using namespace std;
 
 const int32_t CENTER_X = 100;
-const int32_t CENTER_Y = 280; //max is 320
+int32_t CENTER_Y = 280; //max is 320
 
 class Ballapproach {
   private:
