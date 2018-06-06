@@ -183,13 +183,20 @@ void loop() {
 // Movement Functions //
 //
 
-int MIN_DIS = 15;
-int CLEAR_DIS = 20;
+const int UP_DIS = 18;
+const int DOWN_DIS = 23;
+const int CLEAR_DIS = 5;
 
 bool obstacleCheck()
 {
+  int distance;
+  if (!grab)
+    distance = UP_DIS;
+  else
+    distance = DOWN_DIS;
+    
   getHeading();
-  if (leftSensor <= MIN_DIS || rightSensor <= MIN_DIS)
+  if (leftSensor <= distance || rightSensor <= distance)
     return true;
   else
     return false;
@@ -199,31 +206,37 @@ bool obstacleCheck()
 
 void obstacleAvoid()
 {
+  int distance;
+  if (!grab)
+    distance = UP_DIS;
+  else
+    distance = DOWN_DIS;
+    
   Serial.println("inside obstacle avoid");
   getHeading();
-  if (leftSensor > MIN_DIS && rightSensor > MIN_DIS){
+  if (leftSensor > distance && rightSensor > distance){
     Serial.println("leaving obstacle avoid");
     return;
   }
-  else if (leftSensor <= MIN_DIS && rightSensor > MIN_DIS)
+  else if (leftSensor <= distance && rightSensor > distance)
   {
-    while (leftSensor < CLEAR_DIS)
+    while (leftSensor < distance + CLEAR_DIS)
     {
       Serial.println("inside obstacle avoid");
       right();
       getHeading();
     }
   }
-  else if (rightSensor <= MIN_DIS && leftSensor > MIN_DIS)
+  else if (rightSensor <= distance && leftSensor > distance)
   {
-    while (rightSensor < CLEAR_DIS)
+    while (rightSensor < distance + CLEAR_DIS)
     {
       Serial.println("inside obstacle avoid");
       left();
       getHeading();
     }
   }
-  else if (leftSensor <= MIN_DIS && rightSensor <= MIN_DIS)
+  else if (leftSensor <= distance && rightSensor <= distance)
   {
     float current = sendCoords(0);
     if (sendCoords(0) > current - 89){
@@ -404,7 +417,7 @@ float getHeading(bool sendToWebApp, uint8_t id, int32_t area, bool calibrate){
     if (abs(newYbias) > 5)
       MY_BIAS += newYbias;  //this might have to only be called when call spins 360°, such as in scan2(), not totally sure
   }
-  printWebApp(String(newXbias) + " " + String(newYbias));
+  //printWebApp(String(newXbias) + " " + String(newYbias));
   //>>>>>>>end autoupdate
   float headingRad = headingCalc(filTx, filTy);
   float headingDeg = convertDeg(headingRad);
@@ -533,6 +546,9 @@ void track2(int32_t sig) {
   Block ball = foundBall2(sig);
   printWebApp("passed foundBall2()");
   Ballapproach bApproach(ball, servo_left, servo_right);
+  int32_t CENTER_Y = bApproach.getCY();
+  delay(10);
+  printWebApp("CENTER_Y is " + String(CENTER_Y));
   printWebApp("passed bApproach");
   int32_t area = getArea();
   bApproach.setArea(area);
@@ -544,16 +560,34 @@ void track2(int32_t sig) {
       Serial.println(x_error);
       Serial.print("y_error: ");
       Serial.println(y_error);
-      while(((abs(x_error) > 20) || (abs(y_error) > 10)) && area){
-        ball = foundBall2(sig);
-        bApproach.update2(ball);
-        bApproach.setArea(getArea());
-        x_error = bApproach.getX() - CENTER_X;
-        y_error = bApproach.getY() - CENTER_Y;
-        Serial.print("x_error: ");
-        Serial.println(x_error);
-        Serial.print("y_error: ");
-        Serial.println(y_error);
+      if (sig == 2){
+        while(((abs(x_error) > 20) || (abs(y_error) > 10)) && area){
+          ball = foundBall2(sig);
+          printWebApp("CENTER_Y is " + String(CENTER_Y));
+          bApproach.update2(ball);
+          bApproach.setArea(getArea());
+          x_error = bApproach.getX() - CENTER_X;
+          y_error = bApproach.getY() - CENTER_Y;
+          Serial.print("x_error: ");
+          Serial.println(x_error);
+          Serial.print("y_error: ");
+          Serial.println(y_error);
+        }
+      }
+      if (sig == 3){
+        y_error = bApproach.getW()*bApproach.getH() - 13000;
+        while((((abs(x_error) > 20) || y_error < 0)) && area){
+          ball = foundBall2(sig);
+          printWebApp("CENTER_Y is " + String(CENTER_Y));
+          bApproach.update2(ball);
+          bApproach.setArea(getArea());
+          x_error = bApproach.getX() - CENTER_X;
+          y_error = bApproach.getW()*bApproach.getH() - 13000;
+          Serial.print("x_error: ");
+          Serial.println(x_error);
+          Serial.print("y_error: ");
+          Serial.println(y_error);
+        }
       }
       x_error = bApproach.getX() - CENTER_X;
       y_error = bApproach.getY() - CENTER_Y;
@@ -643,7 +677,7 @@ bool sweep(float range, int32_t sig) {
   Serial.println(sweepLeft);
   Serial.print("sweepRight: ");
   Serial.println(sweepRight);
-  float SPINERROR = 15;   //5 degrees
+  float SPINERROR = 12;   //5 degrees
   float currHeading;
   float ahe;
   while(!found){
@@ -652,7 +686,7 @@ bool sweep(float range, int32_t sig) {
     found = foundBall(sig);
     if(found)
       return true;
-    ahe = adjustedHeadingError(currHeading, sweepRight);
+    ahe = adjustedHeadingError(currHeading, adjustHeading(sweepRight + 20));
     if (ahe < SPINERROR){
       break;
     }
@@ -741,15 +775,29 @@ void returnToBase() {
     t3 = millis();
     Serial.println("after t3");
     while (true) {
-      forward();
-      t4 = millis();
-      Serial.print("t4 - t3");
-      Serial.println(t4 - t3);
-      if (t4 - t3 > timeFmillis)
-        break;
+      if (!obstacleCheck()){
+        forward();
+        t4 = millis();
+        if (t4 - t3 > timeFmillis/5)
+          break;
+      }
+      else{
+        obstacleAvoid();
+      }
     }
     //scan
     Serial.println("attempting to sweep again");
+    while (true) {
+      rightSlow();
+      currHeading = getHeading();
+      Serial.print("currHeading: ");
+      Serial.println(currHeading);
+      Serial.print("difference: ");
+      Serial.println(currHeading - targetHeading);
+      ahe = adjustedHeadingError(currHeading, targetHeading);
+      if (ahe < SPINERROR)
+        break;
+    }
     found = sweep(SWEEP_DEGREES, HOME_BASE_SIGNITURE);
   }
   Serial.println("done sweeping, now track2");
@@ -841,6 +889,26 @@ void webSocketEvent(uint8_t id, WStype_t type, uint8_t * payload, size_t length)
           }
           if (cmd == "Beg") {
             Serial.println("Beg is: " + cmd);
+            ballsearch.setMaxR(35);
+            ballsearch.setInitHeading(getHeading());
+            while (!scan2()) {
+              tuple<double, double> toMove = ballsearch.search("L");
+              //Serial.println("out of ballsearch.search");
+              String instructions = tupToInstrux(toMove);
+              drive(90, 90);
+            }
+            track2();
+            grasp();
+            delay(500);
+            returnToBase();
+            grasp();
+          }
+          else if (cmd == "Ret"){
+            Serial.println("Ret is: " + cmd);
+            returnToBase();
+          }
+          else if (cmd == "App"){
+            Serial.println("Small search, approach: " + cmd);
             ballsearch.setMaxR(10);
             ballsearch.setInitHeading(getHeading());
             while (!scan2()) {
@@ -850,15 +918,7 @@ void webSocketEvent(uint8_t id, WStype_t type, uint8_t * payload, size_t length)
               drive(90, 90);
             }
             track2();
-            //grasp();
-          }
-          else if (cmd == "Ret"){
-            Serial.println("Ret is: " + cmd);
-            returnToBase();
-          }
-          else if (cmd == "App"){
-            Serial.println("App is: " + cmd);
-            track2();
+            //grasp()
           }
           else if (cmd == "Dep"){
             Serial.println("Dep is: " + cmd);

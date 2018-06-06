@@ -12,7 +12,7 @@
 using namespace std;
 
 const int32_t CENTER_X = 100;
-int32_t CENTER_Y = 280; //max is 320
+//int32_t CENTER_Y = 280; //max is 320
 
 class Ballapproach {
   private:
@@ -25,6 +25,7 @@ class Ballapproach {
   	Servo m_lServo;
   	Servo m_rServo;
   	int32_t area;
+    int32_t m_center_y;
 
     double _normalize(int32_t data, int32_t center){
       double norm = 0;
@@ -53,6 +54,10 @@ class Ballapproach {
         this->m_balls = block.signature;
         this->m_lServo = left;
         this->m_rServo = right;
+        if (m_balls == 2)
+          this->m_center_y = 280;
+        if (m_balls == 3)
+          this->m_center_y = 180;
     }
 
     int updateBlock(Block block){
@@ -61,6 +66,10 @@ class Ballapproach {
         this->m_ballw = block.height;
         this->m_ballh = block.width;
         this->m_balls = block.signature;
+        if (m_balls == 2)
+          this->m_center_y = 280;
+        if (m_balls == 3)
+          this->m_center_y = 240;
     }
     void setArea(int32_t a){this->area = a;}	//SET THIS FROM KALMAN FILTER IN FETCHINGBOT.INO
 
@@ -68,6 +77,7 @@ class Ballapproach {
     int32_t getY(){return m_bally;}
     int32_t getW(){return m_ballw;}
     int32_t getH(){return m_ballh;}
+    int32_t getCY(){return m_center_y;}
 
     void drive(int left, int right) {
       m_lServo.write(left);
@@ -94,10 +104,37 @@ class Ballapproach {
     void stopApp(){
       drive(90,90);
     }
+
+    void update2A(){
+      int32_t CENTER_Y = 13000;
+      int32_t x_error = m_ballx - CENTER_X;
+      int32_t y_error = area - CENTER_Y;
+      int speed;
+      int32_t diff;
+      double y_norm = _normalize(y_error, CENTER_Y);
+      speed = constrain(y_norm*400, -100, 400);
+      diff = (x_error + (x_error * speed))>>6;
+      int leftSpeed = constrain(speed - diff, -400, 400);
+      int rightSpeed = constrain(speed + diff, -400, 400);
+      leftSpeed = map(leftSpeed,-400,400,180,0); // Map to servo output values
+      rightSpeed = map(rightSpeed,-400,400,0,180); // Map to servo output values 
+      m_lServo.write(leftSpeed);
+      m_rServo.write(rightSpeed);
+      char buff [100];
+      sprintf(buff, "leftSpeed: %d", leftSpeed);
+      Serial.println( buff);
+      sprintf(buff, "rightSpeed: %d", rightSpeed);
+      Serial.println( buff);
+    }
     
 
     void update2(Block block){
       updateBlock(block);
+      if (m_balls == 3){
+        update2A();
+        return;
+      }
+      int32_t CENTER_Y = getCY();
       int32_t x_error = m_ballx - CENTER_X;
       int32_t y_error = m_bally - CENTER_Y;
       int speed;

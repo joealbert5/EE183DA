@@ -32,9 +32,9 @@ class Ballsearch {
     float initHeading;
 
     int _randint(int low, int high){
-      srand(millis());
-      int diff = high - low;
-      int r = rand() % diff + low;
+      int r = random(low, high + 1);
+      //Serial.print("r is: ");
+      //Serial.println(r);
       return r;
     }
 
@@ -169,6 +169,7 @@ class Ballsearch {
         count = 0;
         prevAngle = 0;
         finish = false;
+        randomSeed(analogRead(0));
     }
 
     void setMaxR(int r){this->maxR = r;}
@@ -179,11 +180,24 @@ class Ballsearch {
     float getInitHeading(){return this->initHeading;}
     int getMaxR(){return this->maxR;}
 
+  String printTup(tuple<double,double> tup){
+    String e1 = String(get<0>(tup));
+    double d = get<1>(tup);
+    d = d*180/PI;
+    String e2 = String(d);
+    return "(" + e1 + ", " + e2 + "),";
+  }
+  
   String printTup(tuple<int,int> tup){
     String e1 = String(get<0>(tup));
-    String e2 = String(get<1>(tup));
+    double d = get<1>(tup);
+    Serial.println(d);
+    d = d*180/PI;
+    Serial.println(d);
+    String e2 = String(d);
     return "(" + e1 + ", " + e2 + ")";
   }
+
 
   tuple<double,double> toMove(tuple<int,int> start, tuple<int,int> endd){
       //TODO: implement this
@@ -201,12 +215,12 @@ class Ballsearch {
   tuple<int,int> movee(tuple<int,int>&start, tuple<int,int>&endd){
     //TODO: implement this
     Serial.print("start is: ");
-    Serial.println(_printTup(start));
+    //Serial.println(_printTup(start));
     Serial.print("end is: ");
-    Serial.println(_printTup(endd));
+    //Serial.println(_printTup(endd));
     delay(100);
     Serial.print("size is: ");
-    Serial.println(this->pastPoints.size());
+    //Serial.println(this->pastPoints.size());
     return endd;
   }
 
@@ -249,7 +263,7 @@ class Ballsearch {
     }
     //Serial.println(_printTup(endd));
     tuple<double,double> moveTo = toMove(start,endd);
-    Serial.println(_printTup(moveTo));
+    //Serial.println(_printTup(moveTo));
     start = endd;
     addToHistory(start);
     count++;
