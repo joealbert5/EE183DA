@@ -1,0 +1,5219 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2018.05.17 16:32:49 =~=~=~=~=~=~=~=~=~=~=~=
+areaF: 8021.22
+ 
+areaF: 8002.15
+ 
+areaF: 8037.79
+ 
+areaF: 8063.49
+ 
+areaF: 8031.25
+ 
+areaF: 8061.96
+ 
+areaF: 8005.32
+ 
+areaF: 8036.83
+ 
+areaF: 8067.22
+ 
+areaF: 7825.02
+ 
+areaF: 7863.63
+ 
+areaF: 7835.68
+ 
+areaF: 7816.47
+ 
+areaF: 7845.05
+ 
+areaF: 7886.42
+ 
+areaF: 7875.06
+ 
+areaF: 7895.26
+ 
+areaF: 7907.37
+ 
+areaF: 7963.71
+ 
+areaF: 7990.73
+ 
+areaF: 8070.45
+ 
+areaF: 8113.73
+ 
+areaF: 7942.67
+ 
+areaF: 7863.62
+ 
+areaF: 7718.60
+ 
+areaF: 7549.33
+ 
+areaF: 7337.27
+ 
+areaF: 7103.30
+ 
+areaF: 6860.52
+ 
+areaF: 6607.83
+ 
+areaF: 6361.36
+ 
+areaF: 6117.94
+ 
+areaF: 5873.64
+ 
+areaF: 5635.42
+ 
+areaF: 5406.48
+ 
+areaF: 5183.94
+ 
+areaF: 4972.02
+ 
+areaF: 4763.64
+ 
+areaF: 4565.01
+ 
+areaF: 4379.69
+ 
+areaF: 4198.97
+ 
+areaF: 4032.64
+ 
+areaF: 3875.84
+ 
+areaF: 3729.95
+ 
+areaF: 3586.40
+ 
+areaF: 3455.12
+ 
+areaF: 3333.31
+ 
+areaF: 3216.51
+ 
+areaF: 3108.58
+ 
+areaF: 3006.59
+ 
+areaF: 2912.66
+ 
+areaF: 2822.11
+ 
+areaF: 2740.97
+ 
+areaF: 2664.48
+ 
+areaF: 2586.12
+ 
+areaF: 2512.31
+ 
+areaF: 2444.78
+ 
+areaF: 2385.23
+ 
+areaF: 2327.03
+ 
+areaF: 2272.16
+ 
+areaF: 2216.25
+ 
+areaF: 2151.75
+ 
+areaF: 2100.62
+ 
+areaF: 2052.41
+ 
+areaF: 2006.96
+ 
+areaF: 1962.22
+ 
+areaF: 1926.16
+ 
+areaF: 1882.09
+ 
+areaF: 1854.85
+ 
+areaF: 1822.82
+ 
+areaF: 1790.62
+ 
+areaF: 1764.27
+ 
+areaF: 1737.42
+ 
+areaF: 1712.10
+ 
+areaF: 1687.78
+ 
+areaF: 1663.19
+ 
+areaF: 1644.13
+ 
+areaF: 1620.15
+ 
+areaF: 1603.66
+ 
+areaF: 1583.88
+ 
+areaF: 1567.36
+ 
+areaF: 1551.77
+ 
+areaF: 1537.08
+ 
+areaF: 1523.23
+ 
+areaF: 1512.29
+ 
+areaF: 1482.18
+ 
+areaF: 1467.46
+ 
+areaF: 1457.65
+ 
+areaF: 1450.35
+ 
+areaF: 1443.58
+ 
+areaF: 1435.08
+ 
+areaF: 1426.89
+ 
+areaF: 1421.46
+ 
+areaF: 1418.40
+ 
+On connection #0
+  got text: #!App@
+App is: App
+nBlocks: 1
+found ball: (0, 1332)
+areaF: 1415.52
+x_error: -32
+y_error: -97
+nBlocks: 1
+found ball: (0, 1258)
+leftSpeed: 124
+rightSpeed: 78
+areaF: 1412.80
+x_error: -32
+y_error: -97
+nBlocks: 1
+found ball: (0, 1225)
+leftSpeed: 124
+rightSpeed: 78
+areaF: 1410.29
+x_error: -33
+y_error: -98
+nBlocks: 1
+nBlocks: 1
+found ball: (0, 1089)
+leftSpeed: 124
+rightSpeed: 78
+areaF: 1360.04
+x_error: -31
+y_error: -98
+nBlocks: 1
+found ball: (0, 310)
+leftSpeed: 124
+rightSpeed: 78
+blocks not > 0
+areaF: 1282.23
+x_error: -31
+y_error: -109
+nBlocks: 1
+found ball: (0, 1443)
+leftSpeed: 122
+rightSpeed: 76
+blocks not > 0
+areaF: 1208.87
+x_error: -25
+y_error: -94
+nBlocks: 1
+found ball: (0, 1517)
+leftSpeed: 121
+rightSpeed: 75
+areaF: 1224.49
+x_error: -24
+y_error: -93
+nBlocks: 1
+found ball: (0, 1558)
+leftSpeed: 120
+rightSpeed: 74
+areaF: 1239.23
+x_error: -20
+y_error: -91
+nBlocks: 1
+found ball: (0, 1558)
+leftSpeed: 119
+rightSpeed: 73
+areaF: 1255.35
+x_error: -18
+y_error: -91
+nBlocks: 1
+found ball: (0, 1600)
+leftSpeed: 119
+rightSpeed: 73
+areaF: 1284.39
+x_error: -17
+y_error: -89
+nBlocks: 1
+found ball: (0, 1845)
+leftSpeed: 118
+rightSpeed: 72
+areaF: 1309.43
+x_error: -16
+y_error: -87
+nBlocks: 1
+found ball: (0, 1638)
+leftSpeed: 118
+rightSpeed: 72
+areaF: 1330.63
+x_error: -14
+y_error: -88
+nBlocks: 1
+found ball: (0, 1763)
+leftSpeed: 117
+rightSpeed: 72
+areaF: 1355.37
+x_error: -13
+y_error: -86
+nBlocks: 1
+found ball: (0, 1892)
+leftSpeed: 117
+rightSpeed: 71
+areaF: 1386.07
+x_error: -11
+y_error: -83
+nBlocks: 1
+found ball: (0, 2021)
+leftSpeed: 116
+rightSpeed: 70
+areaF: 1433.10
+x_error: -10
+y_error: -81
+nBlocks: 1
+found ball: (0, 2115)
+leftSpeed: 116
+rightSpeed: 70
+areaF: 1477.44
+x_error: -8
+y_error: -79
+nBlocks: 1
+found ball: (0, 2304)
+leftSpeed: 115
+rightSpeed: 69
+areaF: 1530.05
+x_error: -6
+y_error: -75
+nBlocks: 1
+found ball: (0, 2703)
+leftSpeed: 114
+rightSpeed: 68
+blocks not > 0
+areaF: 1442.51
+x_error: -3
+y_error: -72
+leftSpeed: 114
+rightSpeed: 68
+blocks not > 0
+areaF: 1359.97
+x_error: -3
+y_error: -72
+nBlocks: 1
+found ball: (0, 3080)
+leftSpeed: 113
+rightSpeed: 67
+areaF: 1461.53
+x_error: 1
+y_error: -65
+leftSpeed: 112
+rightSpeed: 66
+blocks not > 0
+areaF: 1377.91
+x_error: 2
+y_error: -63
+nBlocks: 1
+found ball: (0, 3534)
+leftSpeed: 111
+rightSpeed: 65
+areaF: 1522.44
+x_error: 5
+y_error: -59
+nBlocks: 1
+found ball: (0, 4422)
+leftSpeed: 110
+rightSpeed: 64
+blocks not > 0
+areaF: 1435.33
+x_error: 8
+y_error: -50
+nBlocks: 1
+found ball: (0, 4900)
+leftSpeed: 110
+rightSpeed: 64
+blocks not > 0
+areaF: 1353.21
+x_error: 8
+y_error: -45
+nBlocks: 1
+found ball: (0, 5040)
+leftSpeed: 110
+rightSpeed: 64
+areaF: 1567.93
+x_error: 8
+y_error: -43
+nBlocks: 1
+found ball: (0, 459)
+leftSpeed: 105
+rightSpeed: 59
+areaF: 1791.01
+x_error: 23
+y_error: -61
+nBlocks: 1
+found ball: (0, 5840)
+leftSpeed: 111
+rightSpeed: 65
+areaF: 2040.76
+x_error: 4
+y_error: -36
+nBlocks: 1
+found ball: (0, 6308)
+leftSpeed: 113
+rightSpeed: 67
+areaF: 2317.92
+x_error: 1
+y_error: -30
+nBlocks: 1
+found ball: (0, 7221)
+leftSpeed: 114
+rightSpeed: 68
+areaF: 2602.40
+x_error: -3
+y_error: -23
+nBlocks: 1
+found ball: (0, 7998)
+leftSpeed: 115
+rightSpeed: 69
+areaF: 2925.24
+x_error: -6
+y_error: -16
+nBlocks: 1
+found ball: (0, 8514)
+leftSpeed: 115
+rightSpeed: 69
+areaF: 3288.94
+x_error: -7
+y_error: -12
+nBlocks: 1
+found ball: (0, 9256)
+leftSpeed: 116
+rightSpeed: 70
+areaF: 3627.26
+x_error: -9
+y_error: -5
+final x and y errors
+x_error: -9
+y_error: -5
+areaF: 3910.63
+ 
+areaF: 4193.23
+ 
+areaF: 4445.94
+ 
+areaF: 4652.26
+ 
+areaF: 4643.55
+ 
+areaF: 4686.83
+ 
+areaF: 4648.51
+ 
+areaF: 4600.59
+ 
+areaF: 4569.43
+ 
+areaF: 4608.02
+ 
+areaF: 4571.98
+ 
+areaF: 4540.22
+ 
+areaF: 4504.39
+ 
+areaF: 4477.82
+ 
+areaF: 4469.48
+ 
+areaF: 4479.24
+ 
+areaF: 4455.02
+ 
+areaF: 4421.89
+ 
+areaF: 4392.83
+ 
+areaF: 4363.26
+ 
+areaF: 4351.63
+ 
+areaF: 4339.58
+ 
+areaF: 4401.46
+ 
+areaF: 4406.24
+ 
+areaF: 4457.60
+ 
+areaF: 4502.60
+ 
+areaF: 4461.42
+ 
+areaF: 4441.89
+ 
+areaF: 4435.43
+ 
+areaF: 4402.56
+ 
+areaF: 4398.53
+ 
+areaF: 4370.80
+ 
+areaF: 4426.43
+ 
+areaF: 4403.00
+ 
+areaF: 4438.99
+ 
+areaF: 4411.13
+ 
+areaF: 4359.57
+ 
+areaF: 4339.97
+ 
+areaF: 4347.98
+ 
+areaF: 4274.92
+ 
+areaF: 4260.16
+ 
+areaF: 4240.36
+ 
+areaF: 4213.67
+ 
+areaF: 4202.42
+ 
+areaF: 4180.03
+ 
+areaF: 4158.28
+ 
+areaF: 4212.51
+ 
+areaF: 4175.75
+ 
+areaF: 4154.88
+ 
+areaF: 4002.29
+ 
+areaF: 4007.60
+ 
+areaF: 4012.60
+ 
+areaF: 3873.47
+ 
+areaF: 3892.84
+ 
+areaF: 3896.23
+ 
+areaF: 3947.25
+ 
+areaF: 3812.89
+ 
+areaF: 3866.68
+ 
+areaF: 4103.23
+ 
+areaF: 4396.78
+ 
+areaF: 4701.35
+ 
+areaF: 4927.16
+ 
+areaF: 5063.38
+ 
+areaF: 5082.41
+ 
+areaF: 5052.18
+ 
+areaF: 4955.53
+ 
+areaF: 4817.56
+ 
+areaF: 4681.41
+ 
+areaF: 4525.70
+ 
+areaF: 4358.19
+ 
+areaF: 4165.14
+ 
+areaF: 3974.89
+ 
+areaF: 3781.80
+ 
+areaF: 3592.89
+ 
+areaF: 3406.37
+ 
+areaF: 3239.00
+ 
+areaF: 3085.43
+ 
+areaF: 2941.51
+ 
+areaF: 2807.08
+ 
+areaF: 2681.26
+ 
+areaF: 2560.81
+ 
+areaF: 2446.05
+ 
+areaF: 2338.71
+ 
+areaF: 2236.94
+ 
+areaF: 2142.83
+ 
+areaF: 2055.01
+ 
+areaF: 1972.22
+ 
+areaF: 1895.08
+ 
+areaF: 1821.44
+ 
+areaF: 1748.98
+ 
+areaF: 1684.62
+ 
+areaF: 1623.93
+ 
+On connection #0
+  got text: #!App@
+App is: App
+nBlocks: 1
+found ball: (0, 592)
+areaF: 1563.63
+x_error: -92
+y_error: -100
+nBlocks: 1
+found ball: (0, 592)
+leftSpeed: 145
+rightSpeed: 99
+areaF: 1508.04
+x_error: -92
+y_error: -100
+nBlocks: 1
+found ball: (0, 544)
+leftSpeed: 145
+rightSpeed: 99
+areaF: 1455.63
+x_error: -92
+y_error: -102
+nBlocks: 1
+found ball: (0, 420)
+leftSpeed: 145
+rightSpeed: 99
+areaF: 1401.18
+x_error: -93
+y_error: -102
+nBlocks: 1
+found ball: (0, 612)
+leftSpeed: 145
+rightSpeed: 99
+areaF: 1353.62
+x_error: -92
+y_error: -100
+nBlocks: 1
+found ball: (0, 1000)
+leftSpeed: 144
+rightSpeed: 98
+areaF: 1337.57
+x_error: -88
+y_error: -98
+nBlocks: 1
+found ball: (0, 1404)
+leftSpeed: 141
+rightSpeed: 95
+areaF: 1339.14
+x_error: -82
+y_error: -98
+nBlocks: 1
+found ball: (0, 1440)
+leftSpeed: 137
+rightSpeed: 91
+areaF: 1345.08
+x_error: -70
+y_error: -96
+nBlocks: 1
+found ball: (0, 1443)
+leftSpeed: 133
+rightSpeed: 87
+areaF: 1352.91
+x_error: -58
+y_error: -96
+nBlocks: 1
+found ball: (0, 1560)
+leftSpeed: 124
+rightSpeed: 78
+blocks not > 0
+areaF: 1275.51
+x_error: -31
+y_error: -93
+nBlocks: 1
+found ball: (0, 1681)
+leftSpeed: 119
+rightSpeed: 73
+blocks not > 0
+areaF: 1202.53
+x_error: -18
+y_error: -91
+nBlocks: 1
+found ball: (0, 1521)
+leftSpeed: 115
+rightSpeed: 69
+blocks not > 0
+areaF: 1133.73
+x_error: -5
+y_error: -90
+nBlocks: 1
+found ball: (0, 1480)
+leftSpeed: 111
+rightSpeed: 65
+blocks not > 0
+areaF: 1068.86
+x_error: 4
+y_error: -89
+nBlocks: 1
+found ball: (0, 1680)
+leftSpeed: 110
+rightSpeed: 64
+blocks not > 0
+areaF: 1007.71
+x_error: 9
+y_error: -87
+nBlocks: 1
+found ball: (0, 1722)
+leftSpeed: 109
+rightSpeed: 63
+blocks not > 0
+areaF: 950.05
+x_error: 11
+y_error: -84
+nBlocks: 1
+found ball: (0, 1804)
+leftSpeed: 109
+rightSpeed: 63
+blocks not > 0
+areaF: 895.69
+x_error: 10
+y_error: -84
+nBlocks: 1
+found ball: (0, 1935)
+leftSpeed: 110
+rightSpeed: 64
+areaF: 970.78
+x_error: 9
+y_error: -80
+nBlocks: 1
+found ball: (0, 2070)
+leftSpeed: 110
+rightSpeed: 64
+areaF: 1031.04
+x_error: 8
+y_error: -80
+nBlocks: 1
+found ball: (0, 2256)
+leftSpeed: 111
+rightSpeed: 65
+areaF: 1103.81
+x_error: 5
+y_error: -76
+nBlocks: 1
+found ball: (0, 2499)
+leftSpeed: 112
+rightSpeed: 66
+areaF: 1195.14
+x_error: 3
+y_error: -75
+nBlocks: 1
+found ball: (0, 2650)
+leftSpeed: 113
+rightSpeed: 67
+areaF: 1272.54
+x_error: 1
+y_error: -73
+nBlocks: 1
+found ball: (0, 2652)
+leftSpeed: 113
+rightSpeed: 67
+areaF: 1354.39
+x_error: -1
+y_error: -72
+nBlocks: 1
+found ball: (0, 3080)
+leftSpeed: 115
+rightSpeed: 69
+areaF: 1456.32
+x_error: -6
+y_error: -67
+nBlocks: 1
+found ball: (0, 3422)
+leftSpeed: 116
+rightSpeed: 70
+areaF: 1565.41
+x_error: -8
+y_error: -65
+nBlocks: 1
+found ball: (0, 3600)
+leftSpeed: 116
+rightSpeed: 70
+areaF: 1685.14
+x_error: -9
+y_error: -61
+nBlocks: 1
+found ball: (0, 4095)
+leftSpeed: 117
+rightSpeed: 72
+blocks not > 0
+areaF: 1588.72
+x_error: -13
+y_error: -56
+nBlocks: 1
+found ball: (0, 4288)
+leftSpeed: 118
+rightSpeed: 72
+blocks not > 0
+areaF: 1497.82
+x_error: -15
+y_error: -52
+nBlocks: 1
+found ball: (0, 4899)
+leftSpeed: 119
+rightSpeed: 73
+blocks not > 0
+areaF: 1412.13
+x_error: -17
+y_error: -47
+nBlocks: 1
+found ball: (0, 5180)
+leftSpeed: 120
+rightSpeed: 74
+blocks not > 0
+areaF: 1331.33
+x_error: -19
+y_error: -42
+nBlocks: 1
+found ball: (0, 6004)
+leftSpeed: 120
+rightSpeed: 74
+blocks not > 0
+areaF: 1255.16
+x_error: -21
+y_error: -36
+nBlocks: 1
+found ball: (0, 6557)
+leftSpeed: 121
+rightSpeed: 75
+blocks not > 0
+areaF: 1183.35
+x_error: -23
+y_error: -32
+nBlocks: 1
+found ball: (0, 7138)
+leftSpeed: 121
+rightSpeed: 75
+blocks not > 0
+areaF: 1115.64
+x_error: -24
+y_error: -26
+nBlocks: 1
+found ball: (0, 7380)
+leftSpeed: 121
+rightSpeed: 75
+areaF: 1479.21
+x_error: -24
+y_error: -23
+nBlocks: 1
+found ball: (0, 7812)
+leftSpeed: 122
+rightSpeed: 76
+areaF: 1850.46
+x_error: -26
+y_error: -19
+nBlocks: 1
+found ball: (0, 8118)
+leftSpeed: 122
+rightSpeed: 76
+areaF: 2224.22
+x_error: -27
+y_error: -14
+nBlocks: 1
+found ball: (0, 8961)
+leftSpeed: 122
+rightSpeed: 76
+areaF: 2574.25
+x_error: -27
+y_error: -5
+nBlocks: 1
+found ball: (0, 8502)
+leftSpeed: 90
+rightSpeed: 89
+areaF: 2779.18
+x_error: -27
+y_error: 1
+nBlocks: 2
+found ball: (0, 5589)
+leftSpeed: 90
+rightSpeed: 89
+areaF: 3117.20
+x_error: -8
+y_error: 4
+final x and y errors
+x_error: -8
+y_error: 4
+areaF: 3372.02
+ 
+areaF: 3654.89
+ 
+areaF: 3798.05
+ 
+areaF: 3821.85
+ 
+areaF: 3844.86
+ 
+areaF: 3865.98
+ 
+areaF: 4086.14
+ 
+areaF: 4194.79
+ 
+areaF: 4297.21
+ 
+areaF: 4386.17
+ 
+areaF: 4387.53
+ 
+areaF: 4582.09
+ 
+areaF: 4583.46
+ 
+areaF: 4570.96
+ 
+areaF: 4564.73
+ 
+areaF: 4544.66
+ 
+areaF: 4287.78
+ 
+areaF: 4292.20
+ 
+areaF: 4285.27
+ 
+areaF: 4289.83
+ 
+areaF: 4386.82
+ 
+areaF: 4379.39
+ 
+areaF: 4381.14
+ 
+areaF: 4364.20
+ 
+areaF: 4350.00
+ 
+areaF: 4337.30
+ 
+areaF: 4319.03
+ 
+areaF: 4305.01
+ 
+areaF: 4291.79
+ 
+areaF: 4279.33
+ 
+areaF: 4267.58
+ 
+areaF: 4273.16
+ 
+areaF: 4451.60
+ 
+areaF: 4539.33
+ 
+areaF: 4515.80
+ 
+areaF: 4512.72
+ 
+areaF: 4692.56
+ 
+areaF: 4657.17
+ 
+areaF: 4629.36
+ 
+areaF: 4450.08
+ 
+areaF: 4433.37
+ 
+areaF: 4420.82
+ 
+areaF: 4398.57
+ 
+areaF: 4377.60
+ 
+areaF: 4354.68
+ 
+areaF: 4347.20
+ 
+areaF: 4482.28
+ 
+areaF: 4679.54
+ 
+areaF: 4862.88
+ 
+areaF: 5045.69
+ 
+areaF: 5215.29
+ 
+areaF: 5325.30
+ 
+areaF: 5333.01
+ 
+areaF: 5306.80
+ 
+areaF: 5218.87
+ 
+areaF: 5122.13
+ 
+areaF: 4997.85
+ 
+areaF: 4830.16
+ 
+areaF: 4653.87
+ 
+areaF: 4459.01
+ 
+areaF: 4267.05
+ 
+areaF: 4078.18
+ 
+areaF: 3896.46
+ 
+areaF: 3721.35
+ 
+areaF: 3548.31
+ 
+areaF: 3386.49
+ 
+areaF: 3236.22
+ 
+areaF: 3094.54
+ 
+areaF: 2964.40
+ 
+areaF: 2839.36
+ 
+areaF: 2720.39
+ 
+areaF: 2606.97
+ 
+areaF: 2499.12
+ 
+areaF: 2396.30
+ 
+areaF: 2302.68
+ 
+On connection #0
+  got text: #!App@
+App is: App
+nBlocks: 1
+found ball: (0, 720)
+areaF: 2213.16
+x_error: -91
+y_error: -97
+nBlocks: 1
+found ball: (0, 760)
+leftSpeed: 144
+rightSpeed: 99
+blocks not > 0
+areaF: 2086.53
+x_error: -91
+y_error: -97
+nBlocks: 1
+found ball: (0, 760)
+leftSpeed: 144
+rightSpeed: 99
+areaF: 2011.72
+x_error: -91
+y_error: -97
+nBlocks: 1
+found ball: (0, 648)
+leftSpeed: 144
+rightSpeed: 99
+areaF: 1937.81
+x_error: -91
+y_error: -99
+nBlocks: 1
+found ball: (0, 840)
+leftSpeed: 144
+rightSpeed: 98
+areaF: 1883.24
+x_error: -90
+y_error: -96
+nBlocks: 1
+found ball: (0, 1120)
+leftSpeed: 143
+rightSpeed: 97
+areaF: 1851.02
+x_error: -86
+y_error: -95
+nBlocks: 1
+found ball: (0, 1599)
+leftSpeed: 141
+rightSpeed: 95
+areaF: 1838.83
+x_error: -80
+y_error: -94
+nBlocks: 1
+found ball: (0, 1760)
+leftSpeed: 136
+rightSpeed: 90
+areaF: 1827.45
+x_error: -66
+y_error: -91
+nBlocks: 1
+found ball: (0, 1763)
+leftSpeed: 131
+rightSpeed: 85
+areaF: 1823.76
+x_error: -53
+y_error: -91
+nBlocks: 1
+found ball: (0, 1848)
+leftSpeed: 126
+rightSpeed: 81
+areaF: 1822.75
+x_error: -39
+y_error: -89
+nBlocks: 1
+found ball: (0, 1849)
+leftSpeed: 122
+rightSpeed: 76
+areaF: 1824.25
+x_error: -25
+y_error: -88
+nBlocks: 1
+found ball: (0, 1845)
+leftSpeed: 117
+rightSpeed: 71
+areaF: 1818.29
+x_error: -11
+y_error: -87
+nBlocks: 1
+found ball: (0, 1804)
+leftSpeed: 108
+rightSpeed: 62
+blocks not > 0
+areaF: 1714.25
+x_error: 15
+y_error: -84
+nBlocks: 2
+found ball: (0, 1248)
+leftSpeed: 102
+rightSpeed: 56
+blocks not > 0
+areaF: 1616.17
+x_error: 32
+y_error: -79
+nBlocks: 1
+found ball: (0, 2254)
+leftSpeed: 104
+rightSpeed: 58
+blocks not > 0
+areaF: 1523.70
+x_error: 25
+y_error: -77
+nBlocks: 1
+found ball: (0, 2208)
+leftSpeed: 104
+rightSpeed: 58
+blocks not > 0
+areaF: 1436.52
+x_error: 24
+y_error: -77
+nBlocks: 1
+found ball: (0, 2499)
+leftSpeed: 106
+rightSpeed: 60
+blocks not > 0
+areaF: 1354.33
+x_error: 20
+y_error: -74
+nBlocks: 1
+found ball: (0, 2856)
+leftSpeed: 108
+rightSpeed: 62
+blocks not > 0
+areaF: 1276.84
+x_error: 15
+y_error: -70
+nBlocks: 1
+found ball: (0, 2808)
+leftSpeed: 109
+rightSpeed: 63
+blocks not > 0
+areaF: 1203.79
+x_error: 11
+y_error: -69
+nBlocks: 1
+found ball: (0, 2912)
+leftSpeed: 111
+rightSpeed: 65
+blocks not > 0
+areaF: 1134.91
+x_error: 6
+y_error: -69
+leftSpeed: 111
+rightSpeed: 65
+blocks not > 0
+areaF: 1069.98
+x_error: 6
+y_error: -69
+nBlocks: 1
+found ball: (0, 3480)
+leftSpeed: 114
+rightSpeed: 68
+areaF: 1171.37
+x_error: -3
+y_error: -62
+nBlocks: 1
+found ball: (0, 154)
+leftSpeed: 110
+rightSpeed: 64
+areaF: 1324.05
+x_error: 8
+y_error: -77
+nBlocks: 1
+found ball: (0, 3904)
+leftSpeed: 117
+rightSpeed: 71
+areaF: 1493.75
+x_error: -12
+y_error: -56
+nBlocks: 1
+found ball: (0, 4355)
+leftSpeed: 118
+rightSpeed: 72
+areaF: 1668.84
+x_error: -16
+y_error: -52
+nBlocks: 1
+found ball: (0, 4690)
+leftSpeed: 120
+rightSpeed: 74
+areaF: 1770.75
+x_error: -19
+y_error: -48
+nBlocks: 1
+found ball: (0, 5325)
+leftSpeed: 121
+rightSpeed: 75
+areaF: 1986.64
+x_error: -24
+y_error: -43
+nBlocks: 1
+found ball: (0, 5850)
+leftSpeed: 122
+rightSpeed: 76
+areaF: 2216.26
+x_error: -27
+y_error: -37
+nBlocks: 1
+found ball: (0, 6396)
+leftSpeed: 123
+rightSpeed: 77
+areaF: 2469.14
+x_error: -29
+y_error: -32
+nBlocks: 1
+found ball: (0, 6966)
+leftSpeed: 124
+rightSpeed: 78
+areaF: 2745.76
+x_error: -31
+y_error: -26
+nBlocks: 1
+found ball: (0, 7826)
+leftSpeed: 124
+rightSpeed: 78
+areaF: 3088.15
+x_error: -31
+y_error: -19
+nBlocks: 1
+found ball: (0, 9393)
+leftSpeed: 123
+rightSpeed: 77
+blocks not > 0
+areaF: 2911.46
+x_error: -29
+y_error: -7
+nBlocks: 2
+found ball: (0, 5246)
+leftSpeed: 130
+rightSpeed: 84
+blocks not > 0
+areaF: 2744.88
+x_error: -49
+y_error: -4
+nBlocks: 1
+found ball: (0, 9153)
+leftSpeed: 122
+rightSpeed: 76
+blocks not > 0
+areaF: 2587.84
+x_error: -26
+y_error: -2
+nBlocks: 1
+found ball: (0, 8816)
+leftSpeed: 90
+rightSpeed: 89
+blocks not > 0
+areaF: 2439.77
+x_error: -20
+y_error: 2
+final x and y errors
+x_error: -20
+y_error: 2
+blocks not > 0
+areaF: 2300.18
+ 
+blocks not > 0
+areaF: 2168.58
+ 
+blocks not > 0
+areaF: 2044.50
+ 
+blocks not > 0
+areaF: 1927.52
+ 
+areaF: 2303.57
+ 
+areaF: 2416.88
+ 
+areaF: 2477.02
+ 
+areaF: 2531.77
+ 
+areaF: 2620.35
+ 
+areaF: 2718.46
+ 
+areaF: 2673.06
+ 
+areaF: 2724.38
+ 
+areaF: 2776.54
+ 
+areaF: 2851.11
+ 
+areaF: 2896.02
+ 
+areaF: 2938.36
+ 
+areaF: 2976.50
+ 
+areaF: 3016.29
+ 
+areaF: 3094.66
+ 
+areaF: 3081.01
+ 
+areaF: 3102.98
+ 
+areaF: 3201.79
+ 
+areaF: 3228.69
+ 
+areaF: 3154.85
+ 
+areaF: 3186.49
+ 
+areaF: 3212.21
+ 
+areaF: 3184.05
+ 
+areaF: 3202.13
+ 
+areaF: 3259.22
+ 
+cs error
+blocks not > 0
+areaF: 3072.74
+ 
+areaF: 3055.54
+ 
+blocks not > 0
+areaF: 2880.71
+ 
+blocks not > 0
+areaF: 2715.89
+ 
+blocks not > 0
+areaF: 2560.50
+ 
+blocks not > 0
+areaF: 2414.01
+ 
+areaF: 2452.11
+ 
+areaF: 2465.49
+ 
+areaF: 2522.85
+ 
+areaF: 2621.67
+ 
+areaF: 2681.25
+ 
+areaF: 2885.78
+ 
+areaF: 3166.26
+ 
+areaF: 3467.08
+ 
+areaF: 3615.38
+ 
+areaF: 3919.45
+ 
+areaF: 4113.33
+ 
+areaF: 4174.59
+ 
+areaF: 4219.41
+ 
+areaF: 4218.82
+ 
+areaF: 4161.90
+ 
+areaF: 4066.47
+ 
+areaF: 3908.18
+ 
+areaF: 3740.02
+ 
+areaF: 3556.93
+ 
+areaF: 3376.88
+ 
+areaF: 3210.10
+ 
+areaF: 3052.53
+ 
+areaF: 2915.41
+ 
+areaF: 2796.67
+ 
+areaF: 2680.14
+ 
+areaF: 2574.85
+ 
+areaF: 2475.59
+ 
+areaF: 2380.87
+ 
+areaF: 2292.71
+ 
+areaF: 2202.84
+ 
+areaF: 2126.01
+ 
+areaF: 2052.20
+ 
+On connection #0
+  got text: #!App@
+App is: App
+nBlocks: 1
+found ball: (0, 840)
+areaF: 1982.62
+x_error: -90
+y_error: -93
+nBlocks: 1
+found ball: (0, 780)
+leftSpeed: 144
+rightSpeed: 98
+areaF: 1918.39
+x_error: -90
+y_error: -95
+nBlocks: 1
+found ball: (0, 798)
+leftSpeed: 144
+rightSpeed: 99
+areaF: 1855.37
+x_error: -91
+y_error: -92
+nBlocks: 1
+found ball: (0, 680)
+leftSpeed: 145
+rightSpeed: 99
+blocks not > 0
+areaF: 1749.22
+x_error: -92
+y_error: -94
+nBlocks: 1
+found ball: (0, 882)
+leftSpeed: 144
+rightSpeed: 98
+areaF: 1707.04
+x_error: -90
+y_error: -92
+nBlocks: 1
+found ball: (0, 1188)
+leftSpeed: 143
+rightSpeed: 97
+areaF: 1683.17
+x_error: -87
+y_error: -91
+nBlocks: 1
+found ball: (0, 169)
+leftSpeed: 140
+rightSpeed: 94
+areaF: 1682.82
+x_error: -78
+y_error: -106
+nBlocks: 1
+found ball: (0, 1804)
+leftSpeed: 139
+rightSpeed: 93
+areaF: 1694.68
+x_error: -76
+y_error: -90
+nBlocks: 1
+found ball: (0, 1848)
+leftSpeed: 135
+rightSpeed: 90
+areaF: 1705.97
+x_error: -65
+y_error: -89
+nBlocks: 1
+found ball: (0, 2112)
+leftSpeed: 131
+rightSpeed: 85
+areaF: 1724.22
+x_error: -52
+y_error: -86
+nBlocks: 1
+found ball: (0, 1980)
+leftSpeed: 127
+rightSpeed: 81
+areaF: 1724.09
+x_error: -40
+y_error: -86
+nBlocks: 1
+nBlocks: 1
+found ball: (0, 2208)
+leftSpeed: 118
+rightSpeed: 72
+blocks not > 0
+areaF: 1625.45
+x_error: -16
+y_error: -83
+nBlocks: 1
+found ball: (0, 2397)
+leftSpeed: 117
+rightSpeed: 71
+areaF: 1648.25
+x_error: -11
+y_error: -80
+nBlocks: 1
+found ball: (0, 2303)
+leftSpeed: 112
+rightSpeed: 66
+areaF: 1674.96
+x_error: 2
+y_error: -80
+nBlocks: 1
+found ball: (0, 2254)
+leftSpeed: 110
+rightSpeed: 64
+areaF: 1694.76
+x_error: 9
+y_error: -78
+nBlocks: 1
+found ball: (0, 2450)
+leftSpeed: 108
+rightSpeed: 62
+areaF: 1764.40
+x_error: 14
+y_error: -75
+nBlocks: 1
+found ball: (0, 2704)
+leftSpeed: 107
+rightSpeed: 61
+areaF: 1833.03
+x_error: 17
+y_error: -71
+nBlocks: 1
+found ball: (0, 2703)
+leftSpeed: 107
+rightSpeed: 61
+areaF: 1904.27
+x_error: 18
+y_error: -70
+nBlocks: 1
+found ball: (0, 2968)
+leftSpeed: 107
+rightSpeed: 61
+areaF: 1977.94
+x_error: 16
+y_error: -67
+nBlocks: 1
+found ball: (0, 3422)
+leftSpeed: 108
+rightSpeed: 62
+areaF: 2063.94
+x_error: 14
+y_error: -62
+nBlocks: 1
+found ball: (0, 3540)
+leftSpeed: 109
+rightSpeed: 63
+areaF: 2158.75
+x_error: 11
+y_error: -59
+nBlocks: 1
+found ball: (0, 3658)
+leftSpeed: 111
+rightSpeed: 65
+areaF: 2265.58
+x_error: 7
+y_error: -57
+nBlocks: 3
+found ball: (0, 437)
+leftSpeed: 108
+rightSpeed: 62
+blocks not > 0
+areaF: 2135.96
+x_error: 15
+y_error: -71
+nBlocks: 1
+found ball: (0, 4964)
+leftSpeed: 114
+rightSpeed: 68
+blocks not > 0
+areaF: 2013.75
+x_error: -4
+y_error: -44
+nBlocks: 1
+found ball: (0, 5624)
+leftSpeed: 115
+rightSpeed: 69
+blocks not > 0
+areaF: 1898.53
+x_error: -7
+y_error: -38
+nBlocks: 1
+found ball: (0, 5920)
+leftSpeed: 117
+rightSpeed: 71
+blocks not > 0
+areaF: 1789.91
+x_error: -11
+y_error: -35
+nBlocks: 1
+found ball: (0, 6636)
+leftSpeed: 117
+rightSpeed: 72
+blocks not > 0
+areaF: 1687.50
+x_error: -13
+y_error: -29
+nBlocks: 1
+found ball: (0, 7209)
+leftSpeed: 118
+rightSpeed: 72
+blocks not > 0
+areaF: 1590.95
+x_error: -16
+y_error: -22
+nBlocks: 1
+found ball: (0, 8084)
+leftSpeed: 119
+rightSpeed: 73
+blocks not > 0
+areaF: 1499.92
+x_error: -17
+y_error: -15
+nBlocks: 1
+found ball: (0, 9292)
+leftSpeed: 120
+rightSpeed: 74
+blocks not > 0
+areaF: 1414.10
+x_error: -19
+y_error: -7
+final x and y errors
+x_error: -19
+y_error: -7
+blocks not > 0
+areaF: 1333.20
+ 
+blocks not > 0
+areaF: 1256.92
+ 
+blocks not > 0
+areaF: 1185.00
+ 
+areaF: 1652.74
+ 
+areaF: 2043.76
+ 
+areaF: 2416.36
+ 
+areaF: 2761.11
+ 
+areaF: 3039.11
+ 
+areaF: 3337.54
+ 
+areaF: 3575.70
+ 
+areaF: 3843.14
+ 
+areaF: 4106.26
+ 
+areaF: 4358.16
+ 
+areaF: 4602.92
+ 
+areaF: 4761.01
+ 
+areaF: 4975.45
+ 
+areaF: 5123.33
+ 
+areaF: 5309.77
+ 
+areaF: 5488.98
+ 
+areaF: 5650.73
+ 
+areaF: 5796.01
+ 
+areaF: 5875.31
+ 
+areaF: 6022.17
+ 
+areaF: 6163.94
+ 
+areaF: 6290.44
+ 
+areaF: 6420.75
+ 
+areaF: 6543.61
+ 
+areaF: 6572.92
+ 
+areaF: 6658.24
+ 
+areaF: 6658.85
+ 
+areaF: 6681.57
+ 
+areaF: 6775.09
+ 
+areaF: 6808.90
+ 
+areaF: 6891.64
+ 
+areaF: 6973.13
+ 
+areaF: 7046.47
+ 
+areaF: 7108.35
+ 
+areaF: 7119.78
+ 
+areaF: 7130.54
+ 
+areaF: 7079.59
+ 
+areaF: 7095.98
+ 
+areaF: 7172.99
+ 
+areaF: 7180.72
+ 
+areaF: 7230.45
+ 
+areaF: 7278.26
+ 
+areaF: 7312.97
+ 
+areaF: 7357.95
+ 
+areaF: 7316.98
+ 
+areaF: 7237.51
+ 
+areaF: 7080.03
+ 
+areaF: 6908.78
+ 
+areaF: 6681.71
+ 
+areaF: 6435.47
+ 
+blocks not > 0
+areaF: 6067.26
+ 
+blocks not > 0
+areaF: 5720.13
+ 
+blocks not > 0
+areaF: 5392.85
+ 
+blocks not > 0
+areaF: 5084.30
+ 
+areaF: 4864.80
+ 
+areaF: 4636.81
+ 
+areaF: 4436.40
+ 
+areaF: 4269.37
+ 
+areaF: 4116.41
+ 
+areaF: 3967.86
+ 
+areaF: 3825.28
+ 
+areaF: 3693.22
+ 
+areaF: 3566.36
+ 
+areaF: 3453.34
+ 
+areaF: 3331.96
+ 
+On connection #0
+  got text: #!App@
+App is: App
+nBlocks: 1
+found ball: (0, 1517)
+areaF: 3219.65
+x_error: -82
+y_error: -96
+nBlocks: 1
+found ball: (0, 1480)
+leftSpeed: 141
+rightSpeed: 95
+blocks not > 0
+areaF: 3035.44
+x_error: -82
+y_error: -95
+nBlocks: 1
+found ball: (0, 1400)
+leftSpeed: 142
+rightSpeed: 96
+blocks not > 0
+areaF: 2861.77
+x_error: -83
+y_error: -95
+nBlocks: 1
+found ball: (0, 1634)
+leftSpeed: 141
+rightSpeed: 95
+blocks not > 0
+areaF: 2698.03
+x_error: -81
+y_error: -95
+nBlocks: 1
+found ball: (0, 1482)
+leftSpeed: 139
+rightSpeed: 93
+blocks not > 0
+areaF: 2543.66
+x_error: -76
+y_error: -95
+nBlocks: 1
+found ball: (0, 1558)
+leftSpeed: 137
+rightSpeed: 91
+blocks not > 0
+areaF: 2398.13
+x_error: -68
+y_error: -94
+nBlocks: 1
+found ball: (0, 1720)
+leftSpeed: 135
+rightSpeed: 89
+areaF: 2359.33
+x_error: -63
+y_error: -93
+nBlocks: 1
+found ball: (0, 1720)
+leftSpeed: 131
+rightSpeed: 85
+areaF: 2325.27
+x_error: -51
+y_error: -92
+nBlocks: 1
+found ball: (0, 1890)
+leftSpeed: 126
+rightSpeed: 81
+areaF: 2298.02
+x_error: -39
+y_error: -90
+nBlocks: 1
+found ball: (0, 1892)
+leftSpeed: 122
+rightSpeed: 76
+areaF: 2272.33
+x_error: -26
+y_error: -89
+nBlocks: 1
+found ball: (0, 1892)
+leftSpeed: 117
+rightSpeed: 72
+areaF: 2255.60
+x_error: -13
+y_error: -87
+nBlocks: 1
+found ball: (0, 1840)
+leftSpeed: 114
+rightSpeed: 68
+areaF: 2244.98
+x_error: -3
+y_error: -87
+nBlocks: 1
+found ball: (0, 2070)
+leftSpeed: 111
+rightSpeed: 65
+areaF: 2240.23
+x_error: 6
+y_error: -82
+nBlocks: 1
+found ball: (0, 2209)
+leftSpeed: 109
+rightSpeed: 63
+areaF: 2243.83
+x_error: 11
+y_error: -80
+nBlocks: 1
+found ball: (0, 2256)
+leftSpeed: 108
+rightSpeed: 62
+areaF: 2241.78
+x_error: 14
+y_error: -78
+nBlocks: 1
+found ball: (0, 2352)
+leftSpeed: 108
+rightSpeed: 62
+areaF: 2245.11
+x_error: 15
+y_error: -76
+nBlocks: 1
+found ball: (0, 2400)
+leftSpeed: 108
+rightSpeed: 62
+areaF: 2277.31
+x_error: 14
+y_error: -75
+nBlocks: 1
+found ball: (0, 2805)
+leftSpeed: 110
+rightSpeed: 64
+blocks not > 0
+areaF: 2147.02
+x_error: 9
+y_error: -69
+nBlocks: 1
+found ball: (0, 3306)
+leftSpeed: 111
+rightSpeed: 65
+blocks not > 0
+areaF: 2024.18
+x_error: 6
+y_error: -63
+nBlocks: 1
+found ball: (0, 3717)
+leftSpeed: 111
+rightSpeed: 65
+blocks not > 0
+areaF: 1908.36
+x_error: 4
+y_error: -58
+nBlocks: 1
+found ball: (0, 3780)
+leftSpeed: 113
+rightSpeed: 67
+blocks not > 0
+areaF: 1799.17
+x_error: 1
+y_error: -58
+nBlocks: 1
+found ball: (0, 4095)
+leftSpeed: 113
+rightSpeed: 67
+blocks not > 0
+areaF: 1696.24
+x_error: -1
+y_error: -54
+nBlocks: 1
+found ball: (0, 4624)
+leftSpeed: 114
+rightSpeed: 68
+blocks not > 0
+areaF: 1599.18
+x_error: -3
+y_error: -48
+nBlocks: 1
+found ball: (0, 4968)
+leftSpeed: 114
+rightSpeed: 68
+blocks not > 0
+areaF: 1507.69
+x_error: -4
+y_error: -45
+nBlocks: 1
+found ball: (0, 5472)
+leftSpeed: 115
+rightSpeed: 69
+blocks not > 0
+areaF: 1421.43
+x_error: -6
+y_error: -40
+nBlocks: 1
+found ball: (0, 5544)
+leftSpeed: 115
+rightSpeed: 69
+areaF: 1679.10
+x_error: -7
+y_error: -38
+nBlocks: 1
+found ball: (0, 6399)
+leftSpeed: 116
+rightSpeed: 70
+areaF: 1958.19
+x_error: -9
+y_error: -32
+nBlocks: 1
+found ball: (0, 6800)
+leftSpeed: 117
+rightSpeed: 71
+areaF: 2264.28
+x_error: -11
+y_error: -26
+nBlocks: 1
+found ball: (0, 7735)
+leftSpeed: 117
+rightSpeed: 72
+areaF: 2613.39
+x_error: -13
+y_error: -21
+nBlocks: 1
+found ball: (0, 7826)
+leftSpeed: 116
+rightSpeed: 70
+areaF: 2985.32
+x_error: -10
+y_error: -14
+nBlocks: 1
+found ball: (0, 9270)
+leftSpeed: 119
+rightSpeed: 73
+areaF: 3348.22
+x_error: -17
+y_error: -5
+final x and y errors
+x_error: -17
+y_error: -5
+areaF: 3692.98
+ 
+areaF: 3930.25
+ 
+areaF: 4216.03
+ 
+areaF: 4381.72
+ 
+areaF: 4527.52
+ 
+areaF: 4613.49
+ 
+areaF: 4584.11
+ 
+areaF: 4566.94
+ 
+areaF: 4544.91
+ 
+areaF: 4516.02
+ 
+areaF: 4461.72
+ 
+areaF: 4439.88
+ 
+areaF: 4430.97
+ 
+areaF: 4422.56
+ 
+areaF: 4417.03
+ 
+areaF: 4396.55
+ 
+areaF: 4381.93
+ 
+areaF: 4314.19
+ 
+areaF: 4299.59
+ 
+areaF: 4284.73
+ 
+areaF: 4264.78
+ 
+areaF: 4260.05
+ 
+areaF: 4259.01
+ 
+areaF: 4258.04
+ 
+areaF: 4243.28
+ 
+areaF: 4235.08
+ 
+areaF: 4229.70
+ 
+areaF: 4228.00
+ 
+areaF: 4223.02
+ 
+areaF: 4220.67
+ 
+areaF: 4169.71
+ 
+areaF: 4171.45
+ 
+areaF: 4159.35
+ 
+areaF: 3924.57
+ 
+areaF: 3931.18
+ 
+areaF: 3967.44
+ 
+areaF: 3977.37
+ 
+areaF: 3987.71
+ 
+areaF: 3994.13
+ 
+areaF: 4005.91
+ 
+areaF: 4098.09
+ 
+areaF: 4098.20
+ 
+areaF: 4128.05
+ 
+areaF: 4126.45
+ 
+areaF: 4131.97
+ 
+areaF: 4224.78
+ 
+areaF: 4231.54
+ 
+areaF: 4255.37
+ 
+areaF: 4454.06
+ 
+areaF: 4515.04
+ 
+areaF: 4495.99
+ 
+areaF: 4469.90
+ 
+areaF: 4474.71
+ 
+areaF: 4720.87
+ 
+areaF: 4949.22
+ 
+areaF: 5088.53
+ 
+areaF: 5188.22
+ 
+areaF: 5260.41
+ 
+areaF: 5280.36
+ 
+areaF: 5234.85
+ 
+areaF: 5169.69
+ 
+areaF: 5063.06
+ 
+areaF: 4946.40
+ 
+areaF: 4809.29
+ 
+areaF: 4676.65
+ 
+areaF: 4534.94
+ 
+areaF: 4386.19
+ 
+areaF: 4238.45
+ 
+areaF: 4099.28
+ 
+areaF: 3970.53
+ 
+areaF: 3844.28
+ 
+areaF: 3722.85
+ 
+areaF: 3608.37
+ 
+areaF: 3502.85
+ 
+areaF: 3403.30
+ 
+On connection #0
+  got text: #!App@
+App is: App
+nBlocks: 1
+found ball: (0, 1681)
+areaF: 3311.91
+x_error: -4
+y_error: -88
+nBlocks: 1
+found ball: (0, 1804)
+leftSpeed: 115
+rightSpeed: 69
+blocks not > 0
+areaF: 3122.42
+x_error: -6
+y_error: -87
+nBlocks: 1
+found ball: (0, 1764)
+leftSpeed: 115
+rightSpeed: 69
+blocks not > 0
+areaF: 2943.77
+x_error: -5
+y_error: -87
+nBlocks: 1
+found ball: (0, 1088)
+leftSpeed: 114
+rightSpeed: 68
+areaF: 2802.81
+x_error: -2
+y_error: -90
+nBlocks: 2
+found ball: (0, 1064)
+leftSpeed: 115
+rightSpeed: 69
+areaF: 2729.47
+x_error: -7
+y_error: -94
+nBlocks: 1
+found ball: (0, 1720)
+leftSpeed: 115
+rightSpeed: 69
+areaF: 2667.02
+x_error: -6
+y_error: -87
+nBlocks: 1
+found ball: (0, 1892)
+leftSpeed: 115
+rightSpeed: 69
+areaF: 2630.06
+x_error: -7
+y_error: -84
+nBlocks: 1
+found ball: (0, 1892)
+leftSpeed: 116
+rightSpeed: 70
+areaF: 2613.81
+x_error: -9
+y_error: -84
+nBlocks: 1
+found ball: (0, 2254)
+leftSpeed: 116
+rightSpeed: 70
+areaF: 2601.57
+x_error: -9
+y_error: -80
+nBlocks: 1
+found ball: (0, 2208)
+leftSpeed: 116
+rightSpeed: 70
+areaF: 2595.70
+x_error: -10
+y_error: -79
+nBlocks: 1
+found ball: (0, 2703)
+leftSpeed: 117
+rightSpeed: 71
+areaF: 2590.17
+x_error: -12
+y_error: -74
+nBlocks: 1
+found ball: (0, 2915)
+leftSpeed: 118
+rightSpeed: 72
+blocks not > 0
+areaF: 2441.97
+x_error: -14
+y_error: -69
+nBlocks: 1
+found ball: (0, 3135)
+leftSpeed: 118
+rightSpeed: 72
+blocks not > 0
+areaF: 2302.26
+x_error: -15
+y_error: -68
+nBlocks: 1
+found ball: (0, 3363)
+leftSpeed: 118
+rightSpeed: 72
+blocks not > 0
+areaF: 2170.53
+x_error: -16
+y_error: -66
+nBlocks: 1
+found ball: (0, 3599)
+leftSpeed: 119
+rightSpeed: 73
+blocks not > 0
+areaF: 2046.35
+x_error: -17
+y_error: -62
+nBlocks: 1
+found ball: (0, 3904)
+leftSpeed: 119
+rightSpeed: 73
+blocks not > 0
+areaF: 1929.26
+x_error: -18
+y_error: -57
+nBlocks: 1
+found ball: (0, 4288)
+leftSpeed: 120
+rightSpeed: 74
+blocks not > 0
+areaF: 1818.88
+x_error: -19
+y_error: -53
+nBlocks: 1
+found ball: (0, 4620)
+leftSpeed: 119
+rightSpeed: 73
+blocks not > 0
+areaF: 1714.81
+x_error: -18
+y_error: -49
+nBlocks: 1
+found ball: (0, 4824)
+leftSpeed: 119
+rightSpeed: 73
+areaF: 1913.08
+x_error: -17
+y_error: -47
+nBlocks: 1
+found ball: (0, 5329)
+leftSpeed: 119
+rightSpeed: 73
+areaF: 2125.22
+x_error: -18
+y_error: -41
+nBlocks: 1
+found ball: (0, 5767)
+leftSpeed: 118
+rightSpeed: 72
+areaF: 2346.58
+x_error: -16
+y_error: -37
+nBlocks: 1
+found ball: (0, 6391)
+leftSpeed: 118
+rightSpeed: 72
+areaF: 2569.40
+x_error: -16
+y_error: -32
+nBlocks: 1
+found ball: (0, 7047)
+leftSpeed: 118
+rightSpeed: 72
+areaF: 2840.29
+x_error: -14
+y_error: -25
+nBlocks: 1
+found ball: (0, 7735)
+leftSpeed: 117
+rightSpeed: 72
+areaF: 3140.31
+x_error: -13
+y_error: -19
+nBlocks: 1
+found ball: (0, 8330)
+leftSpeed: 117
+rightSpeed: 71
+areaF: 3481.29
+x_error: -12
+y_error: -14
+nBlocks: 1
+found ball: (0, 9568)
+leftSpeed: 117
+rightSpeed: 71
+areaF: 3819.70
+x_error: -11
+y_error: -6
+final x and y errors
+x_error: -11
+y_error: -6
+areaF: 4125.02
+ 
+areaF: 4403.42
+ 
+areaF: 4648.51
+ 
+areaF: 4847.53
+ 
+areaF: 4863.35
+ 
+areaF: 4822.02
+ 
+areaF: 4769.27
+ 
+areaF: 4607.96
+ 
+areaF: 4569.69
+ 
+areaF: 4543.96
+ 
+areaF: 4519.70
+ 
+areaF: 4493.17
+ 
+areaF: 4462.21
+ 
+areaF: 4446.18
+ 
+areaF: 4309.19
+ 
+areaF: 4290.24
+ 
+areaF: 4286.40
+ 
+areaF: 4183.04
+ 
+areaF: 4169.08
+ 
+areaF: 4158.15
+ 
+areaF: 4155.97
+ 
+areaF: 4142.12
+ 
+areaF: 4129.07
+ 
+areaF: 4118.19
+ 
+areaF: 4186.96
+ 
+areaF: 4260.94
+ 
+areaF: 4243.26
+ 
+areaF: 4146.55
+ 
+areaF: 4136.91
+ 
+areaF: 4171.30
+ 
+areaF: 4106.57
+ 
+areaF: 4109.52
+ 
+areaF: 4131.17
+ 
+areaF: 4032.18
+ 
+areaF: 4261.49
+ 
+areaF: 4482.65
+ 
+areaF: 4705.75
+ 
+areaF: 4932.11
+ 
+areaF: 5157.99
+ 
+areaF: 5382.67
+ 
+areaF: 5408.84
+ 
+areaF: 5621.74
+ 
+areaF: 5828.76
+ 
+areaF: 5860.02
+ 
+areaF: 6059.70
+ 
+areaF: 6238.22
+ 
+areaF: 6406.54
+ 
+On connection #0
+  got text: #!App@
+App is: App
+nBlocks: 1
+found ball: (0, 9265)
+areaF: 6570.08
+x_error: -4
+y_error: -4
+final x and y errors
+x_error: -4
+y_error: -4
+blocks not > 0
+areaF: 6194.18
+ 
+blocks not > 0
+areaF: 5839.78
+ 
+blocks not > 0
+areaF: 5505.65
+ 
+blocks not > 0
+areaF: 5190.65
+ 
+areaF: 5423.76
+ 
+areaF: 5647.14
+ 
+areaF: 5611.03
+ 
+areaF: 5818.66
+ 
+areaF: 6014.42
+ 
+areaF: 6210.98
+ 
+areaF: 6396.30
+ 
+areaF: 6539.55
+ 
+areaF: 6694.97
+ 
+areaF: 6824.62
+ 
+areaF: 6968.83
+ 
+areaF: 7092.77
+ 
+areaF: 7227.63
+ 
+areaF: 7184.86
+ 
+areaF: 7309.31
+ 
+areaF: 7425.78
+ 
+areaF: 7541.60
+ 
+areaF: 7650.79
+ 
+areaF: 7753.73
+ 
+areaF: 7850.78
+ 
+areaF: 7942.28
+ 
+areaF: 8002.80
+ 
+areaF: 8085.60
+ 
+areaF: 8152.56
+ 
+areaF: 8231.95
+ 
+areaF: 8301.64
+ 
+areaF: 8356.24
+ 
+areaF: 8418.82
+ 
+areaF: 8466.72
+ 
+areaF: 8517.83
+ 
+areaF: 8566.01
+ 
+areaF: 8617.39
+ 
+areaF: 8665.83
+ 
+areaF: 8711.50
+ 
+areaF: 8754.55
+ 
+areaF: 8789.19
+ 
+areaF: 8821.85
+ 
+areaF: 8852.64
+ 
+On connection #0
+  got text: #!App@
+App is: App
+nBlocks: 1
+found ball: (0, 9256)
+areaF: 8881.67
+x_error: -2
+y_error: -6
+final x and y errors
+x_error: -2
+y_error: -6
+blocks not > 0
+areaF: 8373.51
+ 
+blocks not > 0
+areaF: 7894.42
+ 
+blocks not > 0
+areaF: 7442.74
+ 
+blocks not > 0
+areaF: 7016.90
+ 
+areaF: 7151.70
+ 
+areaF: 7277.19
+ 
+areaF: 7389.50
+ 
+cs error
+blocks not > 0
+areaF: 6966.71
+ 
+areaF: 7108.79
+ 
+areaF: 7236.73
+ 
+areaF: 7358.21
+ 
+areaF: 7467.60
+ 
+areaF: 7581.02
+ 
+areaF: 7688.76
+ 
+areaF: 7779.23
+ 
+areaF: 7870.41
+ 
+areaF: 7421.65
+ 
+areaF: 7532.56
+ 
+areaF: 7637.11
+ 
+areaF: 7735.69
+ 
+areaF: 7828.62
+ 
+areaF: 7916.24
+ 
+areaF: 8003.99
+ 
+areaF: 8087.53
+ 
+areaF: 8160.33
+ 
+areaF: 8228.97
+ 
+areaF: 8288.53
+ 
+areaF: 8348.98
+ 
+areaF: 8407.57
+ 
+areaF: 8468.01
+ 
+areaF: 8513.10
+ 
+areaF: 8566.70
+ 
+areaF: 8611.23
+ 
+areaF: 8659.22
+ 
+areaF: 8693.37
+ 
+areaF: 8735.74
+ 
+areaF: 8764.59
+ 
+areaF: 8796.83
+ 
+areaF: 8798.16
+ 
+areaF: 8828.47
+ 
+areaF: 8857.05
+ 
+areaF: 8889.03
+ 
+areaF: 8919.18
+ 
+areaF: 8947.61
+ 
+areaF: 8973.26
+ 
+areaF: 8987.49
+ 
+On connection #0
+  got text: #!App@
+App is: App
+nBlocks: 1
+found ball: (0, 9416)
+areaF: 9012.01
+x_error: -4
+y_error: -4
+final x and y errors
+x_error: -4
+y_error: -4
+areaF: 9035.12
+ 
+areaF: 9050.79
+ 
+areaF: 9060.59
+ 
+areaF: 9080.92
+ 
+areaF: 9095.06
+ 
+areaF: 9078.06
+ 
+areaF: 9086.30
+ 
+areaF: 9094.06
+ 
+areaF: 9101.38
+ 
+cs error
+blocks not > 0
+areaF: 8580.65
+ 
+areaF: 8565.51
+ 
+areaF: 8609.13
+ 
+areaF: 8650.26
+ 
+areaF: 8687.95
+ 
+areaF: 8718.51
+ 
+areaF: 8747.32
+ 
+areaF: 8780.54
+ 
+areaF: 8810.77
+ 
+areaF: 8840.37
+ 
+areaF: 8868.27
+ 
+areaF: 8884.50
+ 
+areaF: 8903.81
+ 
+areaF: 8928.08
+ 
+areaF: 8956.00
+ 
+areaF: 8977.28
+ 
+areaF: 8977.90
+ 
+areaF: 8992.89
+ 
+areaF: 9017.10
+ 
+areaF: 9039.92
+ 
+areaF: 9067.56
+ 
+areaF: 9058.20
+ 
+areaF: 9078.68
+ 
+areaF: 9092.94
+ 
+areaF: 8898.47
+ 
+areaF: 8923.05
+ 
+areaF: 8952.28
+ 
+areaF: 8973.78
+ 
+areaF: 8999.08
+ 
+areaF: 8988.83
+ 
+areaF: 9014.30
+ 
+areaF: 9033.22
+ 
+areaF: 9057.07
+ 
+areaF: 9075.15
+ 
+areaF: 9051.96
+ 
+areaF: 9053.45
+ 
+areaF: 9050.40
+ 
+areaF: 9036.07
+ 
+areaF: 9028.28
+ 
+areaF: 9010.76
+ 
+areaF: 8988.63
+ 
+areaF: 8962.73
+ 
+areaF: 8932.77
+ 
+areaF: 8904.52
+ 
+On connection #0
+  got text: #!App@
+App is: App
+nBlocks: 1
+found ball: (0, 8448)
+areaF: 8883.43
+x_error: 0
+y_error: -14
+nBlocks: 1
+found ball: (0, 8536)
+leftSpeed: 113
+rightSpeed: 67
+areaF: 8858.52
+x_error: 0
+y_error: -14
+nBlocks: 1
+found ball: (0, 8536)
+leftSpeed: 113
+rightSpeed: 67
+areaF: 8677.58
+x_error: 0
+y_error: -14
+nBlocks: 1
+found ball: (0, 1484)
+leftSpeed: 124
+rightSpeed: 78
+areaF: 8477.69
+x_error: -31
+y_error: -32
+nBlocks: 1
+found ball: (0, 1272)
+leftSpeed: 123
+rightSpeed: 77
+areaF: 8113.48
+x_error: -28
+y_error: -32
+nBlocks: 1
+found ball: (0, 4131)
+leftSpeed: 120
+rightSpeed: 74
+areaF: 7868.97
+x_error: -21
+y_error: -16
+nBlocks: 2
+found ball: (0, 3116)
+leftSpeed: 122
+rightSpeed: 76
+areaF: 7565.22
+x_error: -26
+y_error: -15
+nBlocks: 1
+found ball: (0, 1690)
+leftSpeed: 124
+rightSpeed: 78
+areaF: 7266.26
+x_error: -31
+y_error: -9
+nBlocks: 2
+found ball: (0, 7140)
+leftSpeed: 109
+rightSpeed: 63
+blocks not > 0
+areaF: 6850.52
+x_error: 12
+y_error: -8
+final x and y errors
+x_error: 12
+y_error: -8
+blocks not > 0
+areaF: 6458.57
+ 
+blocks not > 0
+areaF: 6089.04
+ 
+blocks not > 0
+areaF: 5740.65
+ 
+blocks not > 0
+areaF: 5412.20
+ 
+areaF: 5161.82
+ 
+areaF: 5370.61
+ 
+areaF: 5572.54
+ 
+areaF: 5752.16
+ 
+areaF: 5921.51
+ 
+areaF: 6086.83
+ 
+areaF: 6247.79
+ 
+areaF: 6393.81
+ 
+areaF: 6526.45
+ 
+areaF: 6657.16
+ 
+areaF: 6780.91
+ 
+areaF: 6897.06
+ 
+areaF: 6995.24
+ 
+areaF: 6846.69
+ 
+areaF: 6947.75
+ 
+areaF: 7054.36
+ 
+areaF: 7047.93
+ 
+areaF: 7137.47
+ 
+areaF: 7227.56
+ 
+areaF: 7237.14
+ 
+areaF: 7321.53
+ 
+areaF: 7406.12
+ 
+areaF: 7480.83
+ 
+areaF: 7551.27
+ 
+areaF: 7617.68
+ 
+areaF: 7685.96
+ 
+On connection #0
+  got text: #!App@
+App is: App
+nBlocks: 1
+found ball: (0, 8455)
+areaF: 7745.24
+x_error: 0
+y_error: -12
+nBlocks: 1
+found ball: (0, 8811)
+leftSpeed: 113
+rightSpeed: 67
+areaF: 7811.88
+x_error: -1
+y_error: -12
+nBlocks: 1
+found ball: (0, 8712)
+leftSpeed: 114
+rightSpeed: 68
+areaF: 7869.04
+x_error: -2
+y_error: -11
+nBlocks: 1
+found ball: (0, 3848)
+leftSpeed: 110
+rightSpeed: 64
+areaF: 7922.94
+x_error: 8
+y_error: -17
+nBlocks: 2
+found ball: (0, 3375)
+leftSpeed: 113
+rightSpeed: 67
+areaF: 7948.29
+x_error: 1
+y_error: -15
+nBlocks: 1
+found ball: (0, 1428)
+leftSpeed: 124
+rightSpeed: 78
+areaF: 7941.63
+x_error: -32
+y_error: -29
+nBlocks: 1
+found ball: (0, 2408)
+leftSpeed: 104
+rightSpeed: 58
+areaF: 7991.38
+x_error: 24
+y_error: -25
+nBlocks: 1
+found ball: (0, 7224)
+leftSpeed: 115
+rightSpeed: 69
+areaF: 7844.77
+x_error: -7
+y_error: -7
+final x and y errors
+x_error: -7
+y_error: -7
+areaF: 7660.09
+ 
+areaF: 7435.00
+ 
+areaF: 7314.56
+ 
+areaF: 7400.18
+ 
+areaF: 7486.00
+ 
+areaF: 7561.18
+ 
+areaF: 7621.99
+ 
+areaF: 7684.92
+ 
+areaF: 7738.65
+ 
+areaF: 7784.27
+ 
+areaF: 7816.18
+ 
+areaF: 7851.82
+ 
+areaF: 7885.93
+ 
+areaF: 7923.12
+ 
+areaF: 7958.65
+ 
+areaF: 7986.64
+ 
+areaF: 8007.55
+ 
+areaF: 8037.78
+ 
+areaF: 8055.76
+ 
+areaF: 8073.17
+ 
+On connection #0
+  got text: #!App@
+App is: App
+nBlocks: 1
+found ball: (0, 8265)
+areaF: 8089.12
+x_error: 0
+y_error: -14
+nBlocks: 1
+found ball: (0, 8256)
+leftSpeed: 113
+rightSpeed: 67
+areaF: 8093.75
+x_error: 0
+y_error: -14
+nBlocks: 1
+found ball: (0, 3120)
+leftSpeed: 123
+rightSpeed: 77
+blocks not > 0
+areaF: 7630.66
+x_error: -29
+y_error: -17
+nBlocks: 1
+found ball: (0, 3239)
+leftSpeed: 122
+rightSpeed: 76
+blocks not > 0
+areaF: 7194.08
+x_error: -27
+y_error: -18
+nBlocks: 1
+found ball: (0, 2387)
+leftSpeed: 124
+rightSpeed: 78
+blocks not > 0
+areaF: 6782.47
+x_error: -32
+y_error: -19
+nBlocks: 3
+found ball: (0, 3960)
+leftSpeed: 107
+rightSpeed: 61
+blocks not > 0
+areaF: 6394.41
+x_error: 16
+y_error: -19
+nBlocks: 3
+found ball: (0, 374)
+leftSpeed: 99
+rightSpeed: 53
+blocks not > 0
+areaF: 6028.55
+x_error: 39
+y_error: -41
+nBlocks: 1
+found ball: (0, 8184)
+leftSpeed: 112
+rightSpeed: 66
+blocks not > 0
+areaF: 5683.63
+x_error: 3
+y_error: -12
+nBlocks: 2
+found ball: (0, 782)
+leftSpeed: 100
+rightSpeed: 54
+blocks not > 0
+areaF: 5358.44
+x_error: 36
+y_error: -37
+nBlocks: 1
+found ball: (0, 1666)
+leftSpeed: 106
+rightSpeed: 60
+areaF: 5253.54
+x_error: 21
+y_error: -37
+nBlocks: 1
+found ball: (0, 6889)
+leftSpeed: 113
+rightSpeed: 67
+areaF: 5014.75
+x_error: 0
+y_error: -14
+nBlocks: 1
+found ball: (0, 7221)
+leftSpeed: 111
+rightSpeed: 65
+areaF: 5164.72
+x_error: 6
+y_error: -14
+nBlocks: 2
+found ball: (0, 4964)
+leftSpeed: 107
+rightSpeed: 61
+areaF: 5207.65
+x_error: 16
+y_error: -18
+nBlocks: 1
+found ball: (0, 153)
+leftSpeed: 109
+rightSpeed: 63
+areaF: 5360.84
+x_error: 10
+y_error: -41
+nBlocks: 1
+found ball: (0, 8084)
+leftSpeed: 111
+rightSpeed: 65
+areaF: 5531.98
+x_error: 4
+y_error: -12
+nBlocks: 1
+found ball: (0, 8448)
+leftSpeed: 112
+rightSpeed: 66
+blocks not > 0
+areaF: 5215.46
+x_error: 3
+y_error: -12
+nBlocks: 1
+found ball: (0, 8084)
+leftSpeed: 111
+rightSpeed: 65
+areaF: 5389.94
+x_error: 4
+y_error: -12
+nBlocks: 1
+found ball: (0, 8272)
+leftSpeed: 112
+rightSpeed: 66
+areaF: 5559.87
+x_error: 2
+y_error: -12
+nBlocks: 1
+found ball: (0, 8265)
+leftSpeed: 112
+rightSpeed: 66
+areaF: 5709.67
+x_error: 2
+y_error: -13
+nBlocks: 1
+found ball: (0, 8360)
+leftSpeed: 113
+rightSpeed: 67
+areaF: 5860.85
+x_error: 1
+y_error: -12
+nBlocks: 1
+found ball: (0, 7776)
+leftSpeed: 112
+rightSpeed: 66
+blocks not > 0
+areaF: 5525.52
+x_error: 2
+y_error: -16
+nBlocks: 1
+found ball: (0, 7954)
+leftSpeed: 112
+rightSpeed: 66
+blocks not > 0
+areaF: 5209.38
+x_error: 2
+y_error: -15
+nBlocks: 1
+found ball: (0, 7469)
+leftSpeed: 113
+rightSpeed: 67
+blocks not > 0
+areaF: 4911.33
+x_error: 1
+y_error: -17
+nBlocks: 1
+found ball: (0, 4692)
+leftSpeed: 107
+rightSpeed: 61
+blocks not > 0
+areaF: 4630.32
+x_error: 17
+y_error: -20
+nBlocks: 1
+found ball: (0, 8316)
+leftSpeed: 112
+rightSpeed: 66
+blocks not > 0
+areaF: 4365.40
+x_error: 2
+y_error: -14
+nBlocks: 1
+found ball: (0, 4216)
+leftSpeed: 106
+rightSpeed: 60
+blocks not > 0
+areaF: 4115.63
+x_error: 19
+y_error: -19
+nBlocks: 1
+found ball: (0, 8084)
+leftSpeed: 111
+rightSpeed: 65
+blocks not > 0
+areaF: 3880.16
+x_error: 4
+y_error: -12
+nBlocks: 1
+found ball: (0, 7626)
+leftSpeed: 111
+rightSpeed: 65
+areaF: 4130.52
+x_error: 4
+y_error: -14
+nBlocks: 1
+found ball: (0, 6882)
+leftSpeed: 111
+rightSpeed: 65
+areaF: 4267.69
+x_error: 4
+y_error: -17
+nBlocks: 1
+found ball: (0, 8256)
+leftSpeed: 112
+rightSpeed: 66
+areaF: 4477.69
+x_error: 2
+y_error: -12
+nBlocks: 1
+found ball: (0, 8342)
+leftSpeed: 113
+rightSpeed: 67
+areaF: 4720.99
+x_error: 1
+y_error: -12
+nBlocks: 1
+found ball: (0, 8428)
+leftSpeed: 112
+rightSpeed: 66
+areaF: 4927.48
+x_error: 2
+y_error: -12
+nBlocks: 1
+found ball: (0, 8624)
+leftSpeed: 113
+rightSpeed: 67
+areaF: 5134.40
+x_error: 1
+y_error: -10
+final x and y errors
+x_error: 1
+y_error: -10
+areaF: 5356.08
+ 
+areaF: 5548.66
+ 
+areaF: 5751.28
+ 
+areaF: 5948.08
+ 
+areaF: 6122.70
+ 
+areaF: 6281.60
+ 
+areaF: 6437.14
+ 
+areaF: 6578.05
+ 
+areaF: 6705.81
+ 
+areaF: 6826.26
+ 
+areaF: 6951.14
+ 
+areaF: 7051.89
+ 
+areaF: 7141.84
+ 
+areaF: 7237.34
+ 
+areaF: 7327.38
+ 
+areaF: 7406.60
+ 
+areaF: 7486.95
+ 
+areaF: 7551.38
+ 
+areaF: 7597.99
+ 
+areaF: 7656.69
+ 
+areaF: 7727.82
+ 
+areaF: 7784.71
+ 
+areaF: 7842.80
+ 
+areaF: 7892.53
+ 
+areaF: 7939.99
+ 
+areaF: 7984.16
+ 
+areaF: 8031.46
+ 
+areaF: 8065.37
+ 
+areaF: 8102.94
+ 
+areaF: 8138.36
+ 
+areaF: 8166.14
+ 
+areaF: 8197.95
+ 
+areaF: 8233.02
+ 
+areaF: 8266.61
+ 
+areaF: 8292.09
+ 
+areaF: 8316.11
+ 
+On connection #0
+  got text: #!App@
+App is: App
+nBlocks: 1
+found ball: (0, 8712)
+areaF: 8338.76
+x_error: -2
+y_error: -12
+nBlocks: 1
+found ball: (0, 8526)
+leftSpeed: 114
+rightSpeed: 68
+blocks not > 0
+areaF: 7861.66
+x_error: -2
+y_error: -11
+leftSpeed: 114
+rightSpeed: 68
+blocks not > 0
+areaF: 7411.86
+x_error: -2
+y_error: -11
+nBlocks: 1
+found ball: (0, 8342)
+leftSpeed: 114
+rightSpeed: 68
+areaF: 7519.43
+x_error: -2
+y_error: -12
+nBlocks: 1
+found ball: (0, 8976)
+leftSpeed: 111
+rightSpeed: 65
+blocks not > 0
+areaF: 7089.20
+x_error: 5
+y_error: -5
+final x and y errors
+x_error: 5
+y_error: -5
+blocks not > 0
+areaF: 6683.60
+ 
+blocks not > 0
+areaF: 6301.19
+ 
+blocks not > 0
+areaF: 5940.67
+ 
+areaF: 6102.78
+ 
+areaF: 6225.63
+ 
+areaF: 6338.02
+ 
+areaF: 6440.44
+ 
+areaF: 6536.99
+ 
+areaF: 6617.15
+ 
+areaF: 6696.33
+ 
+areaF: 6778.24
+ 
+areaF: 6591.82
+ 
+areaF: 6686.98
+ 
+areaF: 6769.43
+ 
+areaF: 6613.66
+ 
+areaF: 6703.85
+ 
+areaF: 6781.67
+ 
+areaF: 6606.84
+ 
+areaF: 6701.14
+ 
+areaF: 6775.51
+ 
+areaF: 6842.03
+ 
+areaF: 6911.94
+ 
+areaF: 6974.19
+ 
+areaF: 7029.34
+ 
+areaF: 6891.32
+ 
+areaF: 6962.07
+ 
+areaF: 7014.31
+ 
+areaF: 6805.40
+ 
+areaF: 6873.80
+ 
+areaF: 6927.48
+ 
+On connection #0
+  got text: #!App@
+App is: App
+nBlocks: 2
+found ball: (0, 5229)
+areaF: 6992.51
+x_error: 36
+y_error: 7
+nBlocks: 1
+found ball: (0, 8001)
+leftSpeed: 90
+rightSpeed: 90
+areaF: 7053.81
+x_error: 14
+y_error: 7
+final x and y errors
+x_error: 14
+y_error: 7
+areaF: 7100.74
+ 
+areaF: 7152.19
+ 
+areaF: 7186.40
+ 
+areaF: 7229.40
+ 
+areaF: 7083.25
+ 
+areaF: 7135.76
+ 
+areaF: 7188.87
+ 
+areaF: 7133.55
+ 
+areaF: 7165.16
+ 
+areaF: 7220.25
+ 
+areaF: 7264.86
+ 
+areaF: 7306.98
+ 
+areaF: 7350.29
+ 
+areaF: 7402.05
+ 
+areaF: 7443.59
+ 
+areaF: 7479.09
+ 
+areaF: 7505.34
+ 
+areaF: 7503.61
+ 
+areaF: 7510.27
+ 
+areaF: 7545.61
+ 
+areaF: 7485.56
+ 
+areaF: 7533.30
+ 
+areaF: 7570.99
+ 
+areaF: 7602.86
+ 
+areaF: 7632.90
+ 
+areaF: 7664.78
+ 
+areaF: 7691.28
+ 
+areaF: 7606.41
+ 
+areaF: 7636.26
+ 
+areaF: 7664.39
+ 
+areaF: 7658.65
+ 
+areaF: 7670.97
+ 
+areaF: 7697.12
+ 
+areaF: 7718.11
+ 
+areaF: 7734.29
+ 
+areaF: 7764.09
+ 
+areaF: 7781.25
+ 
+areaF: 7801.09
+ 
+areaF: 7827.06
+ 
+areaF: 7833.40
+ 
+areaF: 7861.24
+ 
+areaF: 7876.51
+ 
+areaF: 7890.90
+ 
+areaF: 7868.53
+ 
+areaF: 7883.38
+ 
+areaF: 7890.11
+ 
+areaF: 7896.45
+ 
+areaF: 7887.90
+ 
+areaF: 7890.77
+ 
+areaF: 7900.68
+ 
+areaF: 7633.45
+ 
+areaF: 7658.08
+ 
+areaF: 7684.97
+ 
+areaF: 7699.44
+ 
+areaF: 7716.70
+ 
+areaF: 7732.96
+ 
+areaF: 7755.57
+ 
+areaF: 7780.54
+ 
+areaF: 7796.75
+ 
+areaF: 7804.84
+ 
+areaF: 7812.45
+ 
+areaF: 7826.85
+ 
+areaF: 7847.74
+ 
+areaF: 7863.77
+ 
+areaF: 7864.36
+ 
+areaF: 7879.44
+ 
+areaF: 7886.40
+ 
+areaF: 7900.22
+ 
+areaF: 7913.25
+ 
+areaF: 7925.54
+ 
+On connection #0
+  got text: #!Ret@
+Ret is: Ret
+found ball scan: (0, 8001)
+found ball exit scan: (0, 8001)
+areaF: 7926.14
+ 
+blocks not > 0
+areaF: 7472.64
+ 
+blocks not > 0
+areaF: 7045.10
+ 
+blocks not > 0
+areaF: 6642.01
+ 
+blocks not > 0
+areaF: 6261.99
+ 
+areaF: 5929.46
+ 
+areaF: 6055.25
+ 
+areaF: 6170.18
+ 
+areaF: 6278.53
+ 
+areaF: 5924.51
+ 
+areaF: 6039.71
+ 
+areaF: 6151.93
+ 
+areaF: 6257.72
+ 
+areaF: 6364.73
+ 
+areaF: 6458.35
+ 
+areaF: 6303.51
+ 
+areaF: 6393.36
+ 
+areaF: 6478.08
+ 
+areaF: 6572.48
+ 
+areaF: 6665.14
+ 
+areaF: 6752.50
+ 
+areaF: 6834.86
+ 
+areaF: 6901.58
+ 
+areaF: 6968.09
+ 
+areaF: 7023.58
+ 
+areaF: 7079.50
+ 
+areaF: 7135.83
+ 
+areaF: 7192.60
+ 
+areaF: 7238.85
+ 
+areaF: 7278.85
+ 
+areaF: 7323.78
+ 
+areaF: 7333.69
+ 
+areaF: 7371.87
+ 
+areaF: 7411.47
+ 
+areaF: 7448.80
+ 
+areaF: 7498.65
+ 
+areaF: 7530.99
+ 
+On connection #0
+  got text: #BK
+backward
+areaF: 7554.17
+ 
+areaF: 7587.00
+ 
+blocks not > 0
+areaF: 7152.91
+ 
+blocks not > 0
+areaF: 6743.65
+ 
+blocks not > 0
+areaF: 6357.82
+ 
+blocks not > 0
+areaF: 5994.05
+ 
+blocks not > 0
+areaF: 5651.10
+ 
+areaF: 5503.88
+ 
+areaF: 5698.19
+ 
+areaF: 5855.52
+ 
+areaF: 5947.90
+ 
+areaF: 6015.76
+ 
+areaF: 6028.13
+ 
+areaF: 6017.37
+ 
+areaF: 5977.75
+ 
+areaF: 5916.03
+ 
+areaF: 5846.00
+ 
+areaF: 5764.52
+ 
+areaF: 5672.72
+ 
+areaF: 5564.54
+ 
+areaF: 5448.71
+ 
+areaF: 5332.75
+ 
+areaF: 5216.79
+ 
+areaF: 5106.78
+ 
+areaF: 4990.70
+ 
+areaF: 4871.48
+ 
+areaF: 4735.74
+ 
+areaF: 4593.75
+ 
+areaF: 4465.49
+ 
+areaF: 4333.69
+ 
+areaF: 4196.51
+ 
+On connection #0
+  got text: #0
+stop
+areaF: 4062.14
+ 
+areaF: 3928.25
+ 
+areaF: 3801.90
+ 
+areaF: 3675.92
+ 
+areaF: 3554.86
+ 
+areaF: 3438.49
+ 
+areaF: 3328.78
+ 
+areaF: 3225.35
+ 
+areaF: 3127.83
+ 
+areaF: 3033.67
+ 
+areaF: 2944.89
+ 
+areaF: 2861.19
+ 
+areaF: 2780.05
+ 
+areaF: 2707.95
+ 
+areaF: 2637.81
+ 
+areaF: 2569.45
+ 
+areaF: 2507.23
+ 
+areaF: 2448.57
+ 
+areaF: 2391.10
+ 
+On connection #0
+  got text: #LT
+left
+areaF: 2341.26
+ 
+areaF: 2294.27
+ 
+areaF: 2250.03
+ 
+areaF: 2197.50
+ 
+areaF: 2139.51
+ 
+areaF: 2091.25
+ 
+areaF: 2052.05
+ 
+areaF: 2012.91
+ 
+areaF: 1971.66
+ 
+areaF: 1908.86
+ 
+On connection #0
+  got text: #0
+stop
+blocks not > 0
+areaF: 1799.64
+ 
+blocks not > 0
+areaF: 1696.68
+ 
+blocks not > 0
+areaF: 1599.60
+ 
+blocks not > 0
+areaF: 1508.08
+ 
+blocks not > 0
+areaF: 1421.79
+ 
+blocks not > 0
+areaF: 1340.45
+ 
+blocks not > 0
+areaF: 1263.75
+ 
+blocks not > 0
+areaF: 1191.45
+ 
+blocks not > 0
+areaF: 1123.28
+ 
+blocks not > 0
+areaF: 1059.01
+ 
+blocks not > 0
+areaF: 998.42
+ 
+blocks not > 0
+areaF: 941.29
+ 
+blocks not > 0
+areaF: 887.44
+ 
+blocks not > 0
+areaF: 836.66
+ 
+blocks not > 0
+areaF: 788.79
+ 
+blocks not > 0
+areaF: 743.66
+ 
+blocks not > 0
+areaF: 701.11
+ 
+blocks not > 0
+areaF: 661.00
+ 
+blocks not > 0
+areaF: 623.18
+ 
+blocks not > 0
+areaF: 587.53
+ 
+blocks not > 0
+areaF: 553.91
+ 
+blocks not > 0
+areaF: 522.22
+ 
+blocks not > 0
+areaF: 492.34
+ 
+blocks not > 0
+areaF: 464.17
+ 
+blocks not > 0
+areaF: 437.61
+ 
+blocks not > 0
+areaF: 412.57
+ 
+blocks not > 0
+areaF: 388.97
+ 
+blocks not > 0
+areaF: 366.71
+ 
+blocks not > 0
+areaF: 345.73
+ 
+blocks not > 0
+areaF: 325.95
+ 
+blocks not > 0
+areaF: 307.30
+ 
+blocks not > 0
+areaF: 289.72
+ 
+blocks not > 0
+areaF: 273.14
+ 
+blocks not > 0
+areaF: 257.52
+ 
+blocks not > 0
+areaF: 242.78
+ 
+blocks not > 0
+areaF: 228.89
+ 
+blocks not > 0
+areaF: 215.80
+ 
+blocks not > 0
+areaF: 203.45
+ 
+blocks not > 0
+areaF: 191.81
+ 
+On connection #0
+  got text: #!Ret@
+Ret is: Ret
+scanIterTime: 0
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+found ball scan: (0, 2016)
+found ball exit scan: (0, 2016)
+scanIterTime: 6
+blocks not > 0
+areaF: 180.83
+ 
+blocks not > 0
+areaF: 170.49
+ 
+blocks not > 0
+areaF: 160.73
+ 
+blocks not > 0
+areaF: 151.54
+ 
+blocks not > 0
+areaF: 142.87
+ 
+blocks not > 0
+areaF: 134.69
+ 
+blocks not > 0
+areaF: 126.99
+ 
+blocks not > 0
+areaF: 119.72
+ 
+blocks not > 0
+areaF: 112.87
+ 
+blocks not > 0
+areaF: 106.41
+ 
+blocks not > 0
+areaF: 100.32
+ 
+blocks not > 0
+areaF: 94.58
+ 
+blocks not > 0
+areaF: 89.17
+ 
+blocks not > 0
+areaF: 84.07
+ 
+blocks not > 0
+areaF: 79.26
+ 
+blocks not > 0
+areaF: 74.73
+ 
+blocks not > 0
+areaF: 70.45
+ 
+On connection #0
+  got text: #!Ret@
+Ret is: Ret
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 0
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+found ball scan: (0, 64)
+found ball scan: (1, 30)
+scanIterTime: 6
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+found ball scan: (0, 44)
+scanIterTime: 4
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+found ball scan: (0, 18)
+scanIterTime: 4
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+found ball scan: (0, 39)
+found ball scan: (1, 27)
+found ball scan: (2, 30)
+scanIterTime: 8
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+found ball scan: (0, 150)
+found ball exit scan: (0, 150)
+scanIterTime: 7
+blocks not > 0
+areaF: 66.42
+ 
+blocks not > 0
+areaF: 62.62
+ 
+blocks not > 0
+areaF: 59.04
+ 
+blocks not > 0
+areaF: 55.66
+ 
+blocks not > 0
+areaF: 52.47
+ 
+blocks not > 0
+areaF: 49.47
+ 
+blocks not > 0
+areaF: 46.64
+ 
+blocks not > 0
+areaF: 43.97
+ 
+blocks not > 0
+areaF: 41.46
+ 
+blocks not > 0
+areaF: 39.08
+ 
+blocks not > 0
+areaF: 36.85
+ 
+blocks not > 0
+areaF: 34.74
+ 
+blocks not > 0
+areaF: 32.75
+ 
+blocks not > 0
+areaF: 30.88
+ 
+On connection #0
+  got text: #!Ret@
+Ret is: Ret
+scanIterTime: 1
+scanIterTime: 0
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 0
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 7
+scanIterTime: 1
+scanIterTime: 0
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 0
+scanIterTime: 1
+scanIterTime: 45
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 0
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 0
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 0
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 15
+scanIterTime: 1
+scanIterTime: 0
+scanIterTime: 3
+scanIterTime: 1
+scanIterTime: 0
+scanIterTime: 1
+scanIterTime: 0
+scanIterTime: 0
+scanIterTime: 1
+scanIterTime: 11
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 0
+scanIterTime: 1
+scanIterTime: 0
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 0
+scanIterTime: 1
+scanIterTime: 18
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 0
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 0
+scanIterTime: 1
+scanIterTime: 0
+scanIterTime: 2
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 0
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+found ball scan: (0, 270)
+found ball exit scan: (0, 270)
+scanIterTime: 6
+blocks not > 0
+areaF: 29.11
+ 
+blocks not > 0
+areaF: 27.45
+ 
+blocks not > 0
+areaF: 25.88
+ 
+blocks not > 0
+areaF: 24.40
+ 
+blocks not > 0
+areaF: 23.00
+ 
+areaF: 62.88
+ 
+areaF: 95.78
+ 
+areaF: 145.23
+ 
+areaF: 191.85
+ 
+areaF: 235.80
+ 
+areaF: 278.61
+ 
+areaF: 318.96
+ 
+areaF: 354.27
+ 
+areaF: 383.43
+ 
+areaF: 415.05
+ 
+areaF: 440.73
+ 
+areaF: 467.70
+ 
+areaF: 494.49
+ 
+areaF: 522.50
+ 
+areaF: 547.53
+ 
+areaF: 568.38
+ 
+areaF: 592.16
+ 
+areaF: 611.84
+ 
+On connection #0
+  got text: #!Ret@
+Ret is: Ret
+found ball scan: (0, 936)
+found ball exit scan: (0, 936)
+areaF: 628.15
+ 
+blocks not > 0
+areaF: 592.21
+ 
+blocks not > 0
+areaF: 558.33
+ 
+blocks not > 0
+areaF: 526.38
+ 
+blocks not > 0
+areaF: 496.27
+ 
+areaF: 519.19
+ 
+areaF: 542.13
+ 
+areaF: 563.75
+ 
+areaF: 584.13
+ 
+areaF: 603.35
+ 
+areaF: 621.46
+ 
+areaF: 637.23
+ 
+areaF: 656.04
+ 
+areaF: 667.19
+ 
+areaF: 676.39
+ 
+areaF: 690.33
+ 
+areaF: 702.16
+ 
+areaF: 711.99
+ 
+areaF: 722.57
+ 
+areaF: 732.55
+ 
+areaF: 745.57
+ 
+areaF: 754.23
+ 
+areaF: 763.72
+ 
+areaF: 770.03
+ 
+areaF: 777.29
+ 
+areaF: 782.25
+ 
+areaF: 788.82
+ 
+areaF: 799.98
+ 
+areaF: 809.14
+ 
+areaF: 816.80
+ 
+areaF: 822.93
+ 
+areaF: 811.84
+ 
+areaF: 807.61
+ 
+areaF: 801.57
+ 
+areaF: 794.61
+ 
+areaF: 788.06
+ 
+areaF: 780.90
+ 
+areaF: 776.10
+ 
+On connection #0
+  got text: #LT
+left
+areaF: 770.60
+ 
+areaF: 765.42
+ 
+areaF: 757.33
+ 
+areaF: 718.63
+ 
+areaF: 694.45
+ 
+areaF: 659.69
+ 
+On connection #0
+  got text: #0
+stop
+blocks not > 0
+areaF: 621.95
+ 
+blocks not > 0
+areaF: 586.37
+ 
+blocks not > 0
+areaF: 552.82
+ 
+blocks not > 0
+areaF: 521.19
+ 
+blocks not > 0
+areaF: 491.37
+ 
+blocks not > 0
+areaF: 463.25
+ 
+blocks not > 0
+areaF: 436.75
+ 
+blocks not > 0
+areaF: 411.76
+ 
+blocks not > 0
+areaF: 388.20
+ 
+blocks not > 0
+areaF: 365.99
+ 
+blocks not > 0
+areaF: 345.05
+ 
+blocks not > 0
+areaF: 325.31
+ 
+On connection #0
+  got text: #LT
+left
+blocks not > 0
+areaF: 306.70
+ 
+blocks not > 0
+areaF: 289.15
+ 
+blocks not > 0
+areaF: 272.60
+ 
+On connection #0
+  got text: #0
+stop
+blocks not > 0
+areaF: 257.01
+ 
+blocks not > 0
+areaF: 242.30
+ 
+blocks not > 0
+areaF: 228.44
+ 
+areaF: 301.65
+ 
+blocks not > 0
+areaF: 284.39
+ 
+blocks not > 0
+areaF: 268.12
+ 
+blocks not > 0
+areaF: 252.78
+ 
+blocks not > 0
+areaF: 238.32
+ 
+blocks not > 0
+areaF: 224.68
+ 
+blocks not > 0
+areaF: 211.83
+ 
+blocks not > 0
+areaF: 199.71
+ 
+blocks not > 0
+areaF: 188.28
+ 
+blocks not > 0
+areaF: 177.51
+ 
+blocks not > 0
+areaF: 167.35
+ 
+blocks not > 0
+areaF: 157.78
+ 
+blocks not > 0
+areaF: 148.75
+ 
+blocks not > 0
+areaF: 140.24
+ 
+blocks not > 0
+areaF: 132.21
+ 
+blocks not > 0
+areaF: 124.65
+ 
+blocks not > 0
+areaF: 117.52
+ 
+blocks not > 0
+areaF: 110.79
+ 
+blocks not > 0
+areaF: 104.46
+ 
+blocks not > 0
+areaF: 98.48
+ 
+blocks not > 0
+areaF: 92.84
+ 
+blocks not > 0
+areaF: 87.53
+ 
+blocks not > 0
+areaF: 82.52
+ 
+blocks not > 0
+areaF: 77.80
+ 
+blocks not > 0
+areaF: 73.35
+ 
+blocks not > 0
+areaF: 69.15
+ 
+blocks not > 0
+areaF: 65.20
+ 
+blocks not > 0
+areaF: 61.47
+ 
+blocks not > 0
+areaF: 57.95
+ 
+blocks not > 0
+areaF: 54.63
+ 
+blocks not > 0
+areaF: 51.51
+ 
+blocks not > 0
+areaF: 48.56
+ 
+blocks not > 0
+areaF: 45.78
+ 
+blocks not > 0
+areaF: 43.16
+ 
+blocks not > 0
+areaF: 40.69
+ 
+blocks not > 0
+areaF: 38.37
+ 
+blocks not > 0
+areaF: 36.17
+ 
+blocks not > 0
+areaF: 34.10
+ 
+blocks not > 0
+areaF: 32.15
+ 
+blocks not > 0
+areaF: 30.31
+ 
+blocks not > 0
+areaF: 28.58
+ 
+blocks not > 0
+areaF: 26.94
+ 
+blocks not > 0
+areaF: 25.40
+ 
+blocks not > 0
+areaF: 23.95
+ 
+blocks not > 0
+areaF: 22.58
+ 
+blocks not > 0
+areaF: 21.28
+ 
+blocks not > 0
+areaF: 20.07
+ 
+blocks not > 0
+areaF: 18.92
+ 
+blocks not > 0
+areaF: 17.84
+ 
+blocks not > 0
+areaF: 16.82
+ 
+blocks not > 0
+areaF: 15.85
+ 
+blocks not > 0
+areaF: 14.95
+ 
+blocks not > 0
+areaF: 14.09
+ 
+blocks not > 0
+areaF: 13.29
+ 
+blocks not > 0
+areaF: 12.53
+ 
+blocks not > 0
+areaF: 11.81
+ 
+blocks not > 0
+areaF: 11.13
+ 
+blocks not > 0
+areaF: 10.50
+ 
+On connection #0
+  got text: #!Ret@
+Ret is: Ret
+scanIterTime: 0
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 0
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 0
+scanIterTime: 1
+scanIterTime: 0
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 2
+found ball scan: (0, 1292)
+found ball exit scan: (0, 1292)
+scanIterTime: 7
+blocks not > 0
+areaF: 9.90
+ 
+blocks not > 0
+areaF: 9.33
+ 
+blocks not > 0
+areaF: 8.80
+ 
+blocks not > 0
+areaF: 8.29
+ 
+blocks not > 0
+areaF: 7.82
+ 
+areaF: 10.35
+ 
+blocks not > 0
+areaF: 9.75
+ 
+blocks not > 0
+areaF: 9.20
+ 
+blocks not > 0
+areaF: 8.67
+ 
+blocks not > 0
+areaF: 8.17
+ 
+blocks not > 0
+areaF: 7.71
+ 
+blocks not > 0
+areaF: 7.27
+ 
+blocks not > 0
+areaF: 6.85
+ 
+blocks not > 0
+areaF: 6.46
+ 
+blocks not > 0
+areaF: 6.09
+ 
+blocks not > 0
+areaF: 5.74
+ 
+blocks not > 0
+areaF: 5.41
+ 
+areaF: 15.74
+ 
+blocks not > 0
+areaF: 14.84
+ 
+blocks not > 0
+areaF: 13.99
+ 
+blocks not > 0
+areaF: 13.19
+ 
+blocks not > 0
+areaF: 12.44
+ 
+On connection #0
+  got text: #!Ret@
+Ret is: Ret
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 0
+scanIterTime: 1
+scanIterTime: 0
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 22
+scanIterTime: 1
+scanIterTime: 0
+scanIterTime: 0
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 0
+scanIterTime: 12
+scanIterTime: 1
+scanIterTime: 0
+scanIterTime: 1
+found ball scan: (0, 1598)
+found ball exit scan: (0, 1598)
+scanIterTime: 2
+blocks not > 0
+areaF: 11.73
+ 
+blocks not > 0
+areaF: 11.06
+ 
+blocks not > 0
+areaF: 10.42
+ 
+blocks not > 0
+areaF: 9.83
+ 
+blocks not > 0
+areaF: 9.26
+ 
+areaF: 10.45
+ 
+blocks not > 0
+areaF: 9.85
+ 
+blocks not > 0
+areaF: 9.29
+ 
+blocks not > 0
+areaF: 8.76
+ 
+blocks not > 0
+areaF: 8.26
+ 
+blocks not > 0
+areaF: 7.78
+ 
+blocks not > 0
+areaF: 7.34
+ 
+areaF: 23.28
+ 
+blocks not > 0
+areaF: 21.95
+ 
+blocks not > 0
+areaF: 20.69
+ 
+blocks not > 0
+areaF: 19.51
+ 
+blocks not > 0
+areaF: 18.39
+ 
+blocks not > 0
+areaF: 17.34
+ 
+blocks not > 0
+areaF: 16.35
+ 
+blocks not > 0
+areaF: 15.41
+ 
+blocks not > 0
+areaF: 14.53
+ 
+blocks not > 0
+areaF: 13.70
+ 
+areaF: 89.81
+ 
+blocks not > 0
+areaF: 84.68
+ 
+On connection #0
+  got text: #!Ret@
+Ret is: Ret
+scanIterTime: 0
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 0
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 0
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 0
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+found ball scan: (0, 54)
+scanIterTime: 4
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 2
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+scanIterTime: 1
+found ball scan: (0, 667)
+found ball exit scan: (0, 667)
+scanIterTime: 7
+blocks not > 0
+areaF: 79.83
+ 
+blocks not > 0
+areaF: 75.26
+ 
+blocks not > 0
+areaF: 70.96
+ 
+blocks not > 0
+areaF: 66.90
+ 
+blocks not > 0
+areaF: 63.07
+ 
+areaF: 61.18
+ 
+blocks not > 0
+areaF: 57.68
+ 
+blocks not > 0
+areaF: 54.38
+ 
+blocks not > 0
+areaF: 51.27
+ 
+blocks not > 0
+areaF: 48.33
+ 
+blocks not > 0
+areaF: 45.57
+ 
+blocks not > 0
+areaF: 42.96
+ 
+blocks not > 0
+areaF: 40.50
+ 
+blocks not > 0
+areaF: 38.18
+ 
+blocks not > 0
+areaF: 36.00
+ 
+blocks not > 0
+areaF: 33.94
+ 
+blocks not > 0
+areaF: 32.00
+ 
+blocks not > 0
+areaF: 30.17
+ 
+blocks not > 0
+areaF: 28.44
+ 
+blocks not > 0
+areaF: 26.81
+ 
+blocks not > 0
+areaF: 25.28
+ 
+blocks not > 0
+areaF: 23.83
+ 
+blocks not > 0
+areaF: 22.47
+ 
+blocks not > 0
+areaF: 21.18
+ 
+blocks not > 0
+areaF: 19.97
+ 
+blocks not > 0
+areaF: 18.83
+ 
+blocks not > 0
+areaF: 17.75
+ 
+blocks not > 0
+areaF: 16.74
+ 
+blocks not > 0
+areaF: 15.78
+ 
+blocks not > 0
+areaF: 14.88
+ 
+blocks not > 0
+areaF: 14.03
+ 
+blocks not > 0
+areaF: 13.22
+ 
+blocks not > 0
+areaF: 12.47
+ 
+blocks not > 0
+areaF: 11.75
+ 
+blocks not > 0
+areaF: 11.08
+ 
+blocks not > 0
+areaF: 10.45
+ 
+blocks not > 0
+areaF: 9.85
+ 
+blocks not > 0
+areaF: 9.29
+ 
+blocks not > 0
+areaF: 8.75
+ 
+blocks not > 0
+areaF: 8.25
+ 
+blocks not > 0
+areaF: 7.78
+ 
+blocks not > 0
+areaF: 7.34
+ 
+blocks not > 0
+areaF: 6.92
+ 
+blocks not > 0
+areaF: 6.52
+ 
+blocks not > 0
+areaF: 6.15
+ 
+blocks not > 0
+areaF: 5.80
+ 
+blocks not > 0
+areaF: 5.46
+ 
+blocks not > 0
+areaF: 5.15
+ 
+areaF: 8.52
+ 
+blocks not > 0
+areaF: 8.03
+ 
+blocks not > 0
+areaF: 7.57
+ 
+blocks not > 0
+areaF: 7.14
+ 
+blocks not > 0
+areaF: 6.73
+ 
+blocks not > 0
+areaF: 6.34
+ 
+blocks not > 0
+areaF: 5.98
+ 
+blocks not > 0
+areaF: 5.64
+ 
+blocks not > 0
+areaF: 5.32
+ 
+blocks not > 0
+areaF: 5.01
+ 
+blocks not > 0
+areaF: 4.73
+ 
+blocks not > 0
+areaF: 4.46
+ 
+blocks not > 0
+areaF: 4.20
+ 
+blocks not > 0
+areaF: 3.96
+ 
+blocks not > 0
+areaF: 3.73
+ 
+blocks not > 0
+areaF: 3.52
+ 
+blocks not > 0
+areaF: 3.32
+ 
+blocks not > 0
+areaF: 3.13
+ 
+areaF: 4.09
+ 
+blocks not > 0
+areaF: 3.86
+ 
+blocks not > 0
+areaF: 3.64
+ 
+blocks not > 0
+areaF: 3.43
+ 
+blocks not > 0
+areaF: 3.23
+ 
+blocks not > 0
+areaF: 3.05
+ 
+blocks not > 0
+areaF: 2.87
+ 
+blocks not > 0
+a

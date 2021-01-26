@@ -1,0 +1,175 @@
+<!-- ball fetcher </-->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <title>Fetching Robot</title>
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+
+<body>
+  <h1>Fetching Robot</h1>
+  <h2>Instructions to send: <input type="test" id='instrux'> <button id='send' onclick="sendIt()">Send</button></h2>
+  <table width="100%">
+    <tr>
+      <td>
+        <table align='center' class=btns>
+          <tr>
+            <td> </td>
+            <td><button id="forward"   name="bt" value="FD" style="height:75px;width:75px">▲</button></td>
+            <td> </td>
+          </tr>
+          <tr>
+            <td><button id="left"      name="bt" value="LT" style="height:75px;width:75px">◀</button></td>
+            <td><button id="center"    name="bt" value="CC" style="height:75px;width:75px">❤</button></td>
+            <td><button id="right"     name="bt" value="RT" style="height:75px;width:75px">▶</button></td>
+          </tr>
+          <tr>
+            <td> </td>
+            <td><button id="backward"  name="bt" value="BK" style="height:75px;width:75px">▼</button></td>
+            <td> </td>
+            <td></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+  <table width="100%">
+    <tr align='center'>
+      <td><button style="width:125px; height:125px" id="Beg" onclick="btnPressed(id)">Begin Search</input></td>
+      <td><button style="width:125px; height:125px" id="Ret" onclick="btnPressed(id)">Return</input></td>
+    </tr>
+    <tr align='center'>
+      <td><button style="width:125px; height:125px" id="App" onclick="btnPressed(id)">Approach</input></td>
+      <td><button style="width:125px; height:125px" id="Dep" onclick="btnPressed(id)">Deposit</input></td>
+    </tr>
+    <tr align='center'>
+      <td><button style="width:125px; height:125px" id="Gra" onclick="btnPressed(id)">Grab</input></td>
+      <td><button style="width:125px; height:125px" id="Can" onclick="btnPressed(id)">Cancel</input></td>
+    </tr>
+  </table>
+  <br>
+  <br>
+  <table align='center' class=wslog> <tr>
+      <td width="50%" valign="top">
+        <div id="wsRx" class="log"></div>
+      </td>
+      <td width="50%" valign="top">
+        <div id="wsTx" class="log"></div>
+      </td>
+  </tr></table>
+
+  <script>
+    /* Handle button / slider clicks + touches */
+
+    window.onload = function () {
+      var btns = document.getElementsByName("bt");
+      for (var i = 0; i < btns.length; i++) {
+          btns[i].ontouchstart = function(e) {
+            btnSend(this.value); 
+            e.stopPropagation(); 
+            e.preventDefault();
+          };
+          btns[i].onmousedown = function(e) {btnSend(this.value); e.stopPropagation(); e.preventDefault();};
+          btns[i].ontouchend = function() {btnRelease(); e.stopPropagation(); e.preventDefault();}
+          btns[i].onmouseup = function() {btnRelease(); e.stopPropagation(); e.preventDefault();}
+      }
+    }
+
+    /* Handle keyboard commands */
+    document.onkeydown = function(e) {
+        e = e || window.event;
+        switch(e.which || e.keyCode) {
+        case 38:
+            btnSend("FD");
+            console.log("Up key");
+            break;
+        case 40:
+            btnSend("BK");
+            console.log("Down key");
+            break;
+        case 37:
+            btnSend("LT");
+            console.log("Left key");
+            break;
+        case 39:
+            btnSend("RT");
+            console.log("Right key");
+            break;
+      }
+    }
+    document.onkeyup = function(e) {
+        btnRelease();
+        console.log("Key up");
+    }
+
+    /* Logging */
+    var wsRx = document.getElementById("wsRx");
+    var wsTx = document.getElementById("wsTx");
+    function rxLog(text) {
+      wsRx.innerHTML = text + wsRx.innerHTML.split("<br>").slice(0, 20).join("<br>") ;
+    }
+    function txLog(text) {
+      wsTx.innerHTML = text + wsTx.innerHTML.split("<br>").slice(0, 4).join("<br>") ;
+    }
+
+    /* WebSocket utilities */
+    var connection = new WebSocket('ws://'+location.hostname+':81/', ['arduino']);
+    connection.onopen = function(){
+      var timeStr = new Date().toLocaleTimeString();
+      var text = "(" + timeStr + ") : CONNECTED <br>";
+      connection.send('Connect ' + new Date()); 
+      txLog(text);
+    };
+    connection.onerror = function(error){
+      var timeStr = new Date().toLocaleTimeString();
+      var text = "(" + timeStr + ") : EE = " + error + "<br>";
+      console.log('WebSocket Error ', error);
+      txLog(text);
+    };
+    connection.onmessage = function(e){
+      var timeStr = new Date().toLocaleTimeString();
+      var text = "(" + timeStr + ") : RX = " + e.data + "<br>";
+      console.log('Server: ', e.data);
+      rxLog(text);
+    };
+
+    /* Commands */
+
+    function btnSend(val) {
+      var timeStr = new Date().toLocaleTimeString();
+      var text = "(" + timeStr + ") : TX = #" + val + "<br>";
+      txLog(text);
+
+      console.log('Button pressed, sending #'+val); 
+      connection.send('#'+val);
+    }
+
+    function btnRelease() {
+      var timeStr = new Date().toLocaleTimeString();
+      var text = "(" + timeStr + ") : TX = #0<br>";
+      txLog(text);
+
+      console.log('Button released'); 
+      connection.send('#0');
+    }
+
+    function sendIt(){
+      var instrux = document.getElementById("instrux").value
+      var len = instrux.length
+      console.log("Calculated instructions, sending ##" + instrux + "@");
+      connection.send('##' + instrux + "@");
+    }
+
+    function btnPressed(arg){
+      var msg = '#!' + arg + '@';
+      console.log("Sending " + msg);
+      txLog("Sending " + msg + "<br>");
+      connection.send(msg);
+    }
+  </script>
+  </body>
+</html>

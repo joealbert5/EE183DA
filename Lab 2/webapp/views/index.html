@@ -1,0 +1,117 @@
+<html>
+<p1>
+	<input type="image" src = "https://media.wwbw.com/is/image/MMGS7/5J-Series-4-Valve-4-4-BBb-Tuba-Only/468315000000000-00-500x500.jpg" id=b1 width="400" height="400"onclick="myFunction(id)" value="tuba">
+	</input>
+	<input type="image" src = "http://www.clker.com/cliparts/K/K/o/K/N/d/blue-button-hi.png" id=b2 width="400" height="100"onclick="myFunction(id)" value="blue">
+	</input>
+	<input type="image" src = "http://www.clker.com/cliparts/K/K/o/K/N/d/blue-button-hi.png" id=b3 width="400" height="100"onclick="myFunction(id)" value="blue">
+	</input>
+</p1>
+<p2>
+	<table style="width:1200">
+  <tr>
+    <th id=l1>label 1</th>
+    <th id=l2>label 2</th> 
+    <th id=l3>label 3</th>
+  </tr>
+</table>
+</p2>
+
+<script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+<script>
+//links for images used
+var red = "http://www.clker.com/cliparts/a/9/0/0/1194984762373696923pill-button-red_benji_pa_01.svg.med.png";
+var blue = "http://www.clker.com/cliparts/K/K/o/K/N/d/blue-button-hi.png";
+var tuba = "https://media.wwbw.com/is/image/MMGS7/5J-Series-4-Valve-4-4-BBb-Tuba-Only/468315000000000-00-500x500.jpg";
+var trumpet = "https://i.ytimg.com/vi/2l0rRHXtlUw/hqdefault.jpg";
+
+//update captions for buttons depending on button state
+function loadLabels(){
+	var b1 = document.getElementById("b1");
+	var b2 = document.getElementById("b2");
+	var b3 = document.getElementById("b3");
+	if (b1.value == "tuba")
+		document.getElementById("l1").innerHTML = "Tuba";
+	else if (b1.value == "trumpet")
+		document.getElementById("l1").innerHTML = "Trumpet";
+	if (b2.value == "blue")
+		document.getElementById("l2").innerHTML = "blue";
+	else
+		document.getElementById("l2").innerHTML = "red";
+	if (b3.value == "blue")
+		document.getElementById("l3").innerHTML = "blue";
+	else
+		document.getElementById("l3").innerHTML = "red";
+}
+
+$(function(){
+	loadLabels();
+
+	//send button states to ESP
+	function jpost(data){
+		$.ajax({
+			type: 'POST',
+			data: JSON.stringify(data),
+	        contentType: 'application/json',
+	        url: '/blink',						
+	        success: function(data) {
+	            console.log('success');
+	            console.log(JSON.stringify(data));
+	        }
+	    });
+	}
+	f = jpost;
+});
+
+function myFunction(btnID) {
+	var data = {};
+	var bin = "";
+	//update button images on click
+	if(document.getElementById(btnID).id == "b1"){
+		if(document.getElementById(btnID).value == "tuba"){
+		    document.getElementById(btnID).src = trumpet;
+		    document.getElementById(btnID).value = "trumpet";
+		}
+		else{
+			document.getElementById(btnID).src = tuba;
+			document.getElementById(btnID).value = "tuba";
+		}
+	}
+	else if(document.getElementById(btnID).id == "b2"){
+		if(document.getElementById(btnID).value == "blue"){
+		    document.getElementById(btnID).src = red;
+		    document.getElementById(btnID).value = "red";
+		}
+		else{
+			document.getElementById(btnID).src = blue;
+			document.getElementById(btnID).value = "blue";
+		}
+	}
+	else if(document.getElementById(btnID).id == "b3"){
+		if(document.getElementById(btnID).value == "blue"){
+		    document.getElementById(btnID).src = red;
+		    document.getElementById(btnID).value = "red";
+		}
+		else{
+			document.getElementById(btnID).src = blue;
+			document.getElementById(btnID).value = "blue";
+		}
+	}
+	//encode values for button states to be sent to ESP
+	for(var i = 1; i <= 3; i++){
+		var id = 'b' + i.toString();
+		if(document.getElementById(id).src == red || document.getElementById(id).src == trumpet){
+			bin += "f";
+		}
+		else{
+			bin += "t";
+		}
+	}
+	loadLabels();
+	data.blk = bin;
+	//send data to ESP
+	f(data);
+}
+
+</script>
+</html>

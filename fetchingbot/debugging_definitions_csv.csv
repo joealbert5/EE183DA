@@ -1,0 +1,9 @@
+key,serial monitor key,value
+area of object detected,areaF: ,double
+number of blocks detected,nBlocks: ,int
+"found ball, number and area",found ball: ,"(block#, area)"
+tracking x error,x_error: ,int
+tracking y error,y_error: ,int
+scanItertime,scanIterTime: ,long
+left motor speed,leftSpeed: ,int
+right motor speed,rightSpeed: ,int
